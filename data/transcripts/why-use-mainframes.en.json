@@ -1,0 +1,223 @@
+{
+  "slug": "why-use-mainframes",
+  "title": "Why use Mainframes?",
+  "language": "en",
+  "duration": 239.5138125,
+  "segments": [
+    {
+      "start": 3.22,
+      "end": 8.58,
+      "text": "So, why use mainframes? Because no two businesses are alike, even competitors in the same"
+    },
+    {
+      "start": 8.58,
+      "end": 14.1,
+      "text": "field, mainframes need to be open, adaptable, and ever evolving. And that's before we even"
+    },
+    {
+      "start": 14.1,
+      "end": 19.1,
+      "text": "talk about the processing power or the system capacity. Because mainframes are built for"
+    },
+    {
+      "start": 19.1,
+      "end": 23.14,
+      "text": "business, they need to support anything a business could possibly want as part of their"
+    },
+    {
+      "start": 23.14,
+      "end": 27.94,
+      "text": "business model. When the first companies started using Linux, Linux became a supportive"
+    },
+    {
+      "start": 27.94,
+      "end": 32.1,
+      "text": "operating system. When open source software and hybrid cloud models started becoming"
+    },
+    {
+      "start": 32.1,
+      "end": 36.66,
+      "text": "part of the way work gets done, you started seeing APIs and cloud-ready solutions"
+    },
+    {
+      "start": 36.66,
+      "end": 41.7,
+      "text": "appear on the mainframe. What I'm getting at here is that if it's important, you'll find"
+    },
+    {
+      "start": 41.7,
+      "end": 46.66,
+      "text": "it here on the mainframe. So, for example, let's talk about Linux for a minute, because this"
+    },
+    {
+      "start": 46.66,
+      "end": 52.86,
+      "text": "is a great example of something that runs really well on Z. Linux runs great on my rented"
+    },
+    {
+      "start": 52.86,
+      "end": 57.66,
+      "text": "cloud instance. It runs great on the server under my desk. It even runs on my Raspberry"
+    },
+    {
+      "start": 57.66,
+      "end": 62.06,
+      "text": "Pi. So, why do I want to run Linux on the mainframe? Is it going to run any better? Well,"
+    },
+    {
+      "start": 62.46,
+      "end": 69.42,
+      "text": "what if I could make a Linux instance with 15 processors and a couple gigs of memory? And I"
+    },
+    {
+      "start": 69.42,
+      "end": 75.02,
+      "text": "also wanted to access like 32 different storage area networks and a couple different network"
+    },
+    {
+      "start": 75.02,
+      "end": 81.26,
+      "text": "VLANs. Well, I can get that big powerful Linux system, but I can also run that Linux with all"
+    },
+    {
+      "start": 81.26,
+      "end": 86.54,
+      "text": "of its data being encrypted at all times through pervasive encryption. So, that's possible and"
+    },
+    {
+      "start": 86.54,
+      "end": 91.66,
+      "text": "that's pretty cool. I could build five more of those same exact servers without needing"
+    },
+    {
+      "start": 91.74,
+      "end": 97.34,
+      "text": "five times the physical resources because of virtualization. That's a huge bonus. I can even"
+    },
+    {
+      "start": 97.34,
+      "end": 103.02,
+      "text": "bring up Linux Docker instances within the ZOS operating system where they can run right next to"
+    },
+    {
+      "start": 103.02,
+      "end": 107.82,
+      "text": "ZOS applications. So, I don't need a full system image if there's just one specific application"
+    },
+    {
+      "start": 107.82,
+      "end": 113.42,
+      "text": "I need. Part of the big reason for running things on the mainframe is consolidation. Now, companies"
+    },
+    {
+      "start": 113.42,
+      "end": 118.46,
+      "text": "are always looking for ways to save money on operations. So, in addition to being able to bring"
+    },
+    {
+      "start": 118.46,
+      "end": 124.46,
+      "text": "all of those compute resources like the CPU and memory into one big box, companies are also able"
+    },
+    {
+      "start": 124.46,
+      "end": 130.54,
+      "text": "to consolidate things like power supplies, networking adapters, and cooling. Having one larger"
+    },
+    {
+      "start": 130.54,
+      "end": 136.46,
+      "text": "efficient cooling unit in a mainframe is much better than having 300 individual CPU fans out"
+    },
+    {
+      "start": 136.46,
+      "end": 142.3,
+      "text": "there. In business, you'll often find two major types of transactions happening. There's real-time"
+    },
+    {
+      "start": 142.3,
+      "end": 147.42,
+      "text": "transactions. That's like stuff that is reactionary, event-based needs to happen right now. And"
+    },
+    {
+      "start": 147.42,
+      "end": 152.38,
+      "text": "that stuff like swiping a credit card, making a purchase, changing your insurance policy,"
+    },
+    {
+      "start": 152.38,
+      "end": 157.18,
+      "text": "that stuff needs to happen instantly. And then there's batch processes, which we've talked about"
+    },
+    {
+      "start": 157.18,
+      "end": 161.34,
+      "text": "a little bit before, but that kind of summarizes changes and actions that have happened during a"
+    },
+    {
+      "start": 161.34,
+      "end": 166.14,
+      "text": "period of time, like figuring out page checks or figuring out your phone bill for the month."
+    },
+    {
+      "start": 166.14,
+      "end": 171.66,
+      "text": "Those are batch processes. The mainframe excels in doing both from a performance,"
+    },
+    {
+      "start": 171.66,
+      "end": 177.1,
+      "text": "security, and a data integrity point of view. Just to give an idea about how prevalent the"
+    },
+    {
+      "start": 177.1,
+      "end": 183.18,
+      "text": "mainframe is and what a powerhouse it is in business. They power 68% of the world's production"
+    },
+    {
+      "start": 183.18,
+      "end": 193.18,
+      "text": "workloads. 68%. That's more than half. It's quite a bit more than half. It's two-thirds."
+    },
+    {
+      "start": 193.18,
+      "end": 198.54,
+      "text": "It's more than two-thirds. So despite running two-thirds of the world's production workloads,"
+    },
+    {
+      "start": 198.62,
+      "end": 207.82,
+      "text": "they take up only 6% of the total IT cost. Think about that. 6% to run 68%. That's, I mean,"
+    },
+    {
+      "start": 207.82,
+      "end": 212.7,
+      "text": "okay, I'm a little bit biased, but I happen to think that even if I wasn't sitting in an IBM"
+    },
+    {
+      "start": 212.7,
+      "end": 217.5,
+      "text": "studio right now, that would still impress me. And that's why I'm so excited you're here to learn"
+    },
+    {
+      "start": 217.5,
+      "end": 221.98,
+      "text": "all about the IBM Z. You'll walk into a job interview and tell them you know parallel"
+    },
+    {
+      "start": 221.98,
+      "end": 227.5,
+      "text": "cystplex, IODF configs. You put down on a resume that you know about ZOS components and how to"
+    },
+    {
+      "start": 227.5,
+      "end": 232.3,
+      "text": "to manage mainframe security. You're putting yourself in a great place. I hope you're having"
+    },
+    {
+      "start": 232.3,
+      "end": 237.5,
+      "text": "fun. I know I am because these skills are great ones to have."
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "slug": "activation-profiles",
+  "title": "Activation Profiles",
+  "language": "en",
+  "duration": 225.558625,
+  "segments": [
+    {
+      "start": 3.31,
+      "end": 8.65,
+      "text": "activation profiles. What the heck is an activation profile? I mean I know"
+    },
+    {
+      "start": 8.65,
+      "end": 13.17,
+      "text": "those two words mean and I can kind of take a guess but between all of the"
+    },
+    {
+      "start": 13.17,
+      "end": 18.27,
+      "text": "physical and logical and virtual and associations you know my head is still"
+    },
+    {
+      "start": 18.27,
+      "end": 22.19,
+      "text": "spinning a little bit from all that IOCDS stuff. Maybe it's best we start with"
+    },
+    {
+      "start": 22.19,
+      "end": 27.15,
+      "text": "some solid definitions. Now you're gonna hear me talking a lot about the CPC."
+    },
+    {
+      "start": 27.15,
+      "end": 31.99,
+      "text": "That stands for the central processor complex and it's the area of the main"
+    },
+    {
+      "start": 31.99,
+      "end": 35.75,
+      "text": "frame where all the processors and memory live. Now the activation"
+    },
+    {
+      "start": 35.75,
+      "end": 40.13,
+      "text": "profiles contain configuration information about the CPC and all of its"
+    },
+    {
+      "start": 40.13,
+      "end": 44.03,
+      "text": "l-pars as well as information about the operating systems that we want to"
+    },
+    {
+      "start": 44.03,
+      "end": 48.63,
+      "text": "run on them. That activation profile information gets stored on the"
+    },
+    {
+      "start": 48.63,
+      "end": 54.47,
+      "text": "SE's the computers within the computer and when you use the HMC or the SE to"
+    },
+    {
+      "start": 54.47,
+      "end": 60.35,
+      "text": "boot up or IPL and l-par it's going to read from the activation profile to see"
+    },
+    {
+      "start": 60.35,
+      "end": 64.75,
+      "text": "exactly what it's supposed to do. I want to draw a clear distinction"
+    },
+    {
+      "start": 64.75,
+      "end": 72.75,
+      "text": "between two terms that people often mix up. IPL and POR. An IPL is an initial"
+    },
+    {
+      "start": 72.75,
+      "end": 77.83,
+      "text": "program load. It's what happens when an l-par gets its operating system loaded"
+    },
+    {
+      "start": 77.83,
+      "end": 84.11,
+      "text": "into its memory, enough that it can start starting up. And a POR or power-on"
+    },
+    {
+      "start": 84.11,
+      "end": 89.95,
+      "text": "reset is when the IOCDS gets loaded from the SE's into the hardware systems"
+    },
+    {
+      "start": 89.95,
+      "end": 96.03,
+      "text": "area or HSA. And it creates all those logical paths we defined earlier. Doing a"
+    },
+    {
+      "start": 96.03,
+      "end": 100.59,
+      "text": "POR means stopping everything that is currently running on all of the l-pars"
+    },
+    {
+      "start": 100.59,
+      "end": 105.63,
+      "text": "and taking everything down. So PORs are typically something that is planned far in"
+    },
+    {
+      "start": 105.63,
+      "end": 111.11,
+      "text": "advance to minimize the effect of that downtime. Now there are four types of"
+    },
+    {
+      "start": 111.11,
+      "end": 115.43,
+      "text": "activation profiles. There's the reset profile. This determines how the"
+    },
+    {
+      "start": 115.47,
+      "end": 119.99,
+      "text": "licensed internal code will be loaded and how much central and expanded"
+    },
+    {
+      "start": 119.99,
+      "end": 125.43,
+      "text": "storage it will get. Then there's the image profile. Each l-par has an image"
+    },
+    {
+      "start": 125.43,
+      "end": 130.19,
+      "text": "profile. This defines the l-par parameters like how many processes it'll get,"
+    },
+    {
+      "start": 130.19,
+      "end": 134.75,
+      "text": "also how much memory it'll get. It'll also spell out if those processes are"
+    },
+    {
+      "start": 134.75,
+      "end": 139.39,
+      "text": "dedicated to that l-par or if they're shared with others. Next up is the load"
+    },
+    {
+      "start": 139.39,
+      "end": 144.23,
+      "text": "profile. This is needed to determine the channel addresses of the device that"
+    },
+    {
+      "start": 144.23,
+      "end": 148.99,
+      "text": "the operating system is going to be loaded from. And then last up is the group"
+    },
+    {
+      "start": 148.99,
+      "end": 153.11,
+      "text": "profile. This is a way of grouping objects so you don't have to change in"
+    },
+    {
+      "start": 153.11,
+      "end": 157.43,
+      "text": "objects activation profile every time you want to activate it. These aren't"
+    },
+    {
+      "start": 157.43,
+      "end": 161.83,
+      "text": "necessary but with a large number of objects, grouping can make managing them"
+    },
+    {
+      "start": 161.83,
+      "end": 167.39,
+      "text": "slightly easier. During the activation of a reset activation profile, if the"
+    },
+    {
+      "start": 167.39,
+      "end": 172.19,
+      "text": "mainframe is powered off, it'll begin powering up all of its components. Next,"
+    },
+    {
+      "start": 172.19,
+      "end": 177.03,
+      "text": "the IOCDS gets loaded into the hardware storage area and all of those logical"
+    },
+    {
+      "start": 177.03,
+      "end": 181.67,
+      "text": "definitions start getting made. It's coming to life here. The sub-channels, which the"
+    },
+    {
+      "start": 181.67,
+      "end": 185.99,
+      "text": "l-par is used to communicate over those channels, start coming online, and we"
+    },
+    {
+      "start": 185.99,
+      "end": 189.87,
+      "text": "start getting our l-pars and chippids and all the logical connections between"
+    },
+    {
+      "start": 189.87,
+      "end": 195.27,
+      "text": "them. And that's all for the reset profile. Then the activation profile gets"
+    },
+    {
+      "start": 195.27,
+      "end": 198.99,
+      "text": "loaded. And there's one of these for each l-par. This brings online the"
+    },
+    {
+      "start": 198.99,
+      "end": 204.03,
+      "text": "processors and the storage to find for each l-par. And finally, we get to the"
+    },
+    {
+      "start": 204.03,
+      "end": 208.47,
+      "text": "load profile. This means the l-par is starting to get its operating system and"
+    },
+    {
+      "start": 208.47,
+      "end": 214.23,
+      "text": "it's coming online. It's ready to rock. So we've just gone all the way from P-O-R to"
+    },
+    {
+      "start": 214.23,
+      "end": 219.99,
+      "text": "I-P-L. In the next section, we'll take a closer look at that I-P-L process. I know."
+    },
+    {
+      "start": 219.99,
+      "end": 221.39,
+      "text": "You're hoping I'd say that."
+    }
+  ]
+}

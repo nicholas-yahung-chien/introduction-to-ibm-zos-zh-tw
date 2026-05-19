@@ -1,0 +1,508 @@
+{
+  "slug": "mainframe-features",
+  "title": "Mainframe Features",
+  "language": "en",
+  "duration": 333.949375,
+  "segments": [
+    {
+      "start": 4.85,
+      "end": 7.85,
+      "text": "The mainframe is an ever-evolving platform."
+    },
+    {
+      "start": 7.85,
+      "end": 10.85,
+      "text": "It's one of the reasons we get to come back and re-record this video."
+    },
+    {
+      "start": 10.85,
+      "end": 13.85,
+      "text": "New features are constantly being developed,"
+    },
+    {
+      "start": 13.85,
+      "end": 15.85,
+      "text": "existing components are getting upgrades,"
+    },
+    {
+      "start": 15.85,
+      "end": 19.85,
+      "text": "and its capabilities are always being extended to meet the world's business demands."
+    },
+    {
+      "start": 19.85,
+      "end": 23.85,
+      "text": "As it evolves, the mainframe continues to gain unique capabilities"
+    },
+    {
+      "start": 23.85,
+      "end": 25.85,
+      "text": "that you won't find anywhere else."
+    },
+    {
+      "start": 25.85,
+      "end": 29.85,
+      "text": "And last time, Jeff stood here and talked about the brand-new Z14"
+    },
+    {
+      "start": 29.85,
+      "end": 31.85,
+      "text": "and ZOS version 2 release 2."
+    },
+    {
+      "start": 31.85,
+      "end": 37.85,
+      "text": "Today, a Z17 with ZOS 3.2 is the new hotness."
+    },
+    {
+      "start": 37.85,
+      "end": 39.85,
+      "text": "Point is, new is relative,"
+    },
+    {
+      "start": 39.85,
+      "end": 42.85,
+      "text": "so we're going to talk about some new things,"
+    },
+    {
+      "start": 42.85,
+      "end": 45.85,
+      "text": "but just understand, as long as time keeps doing its thing,"
+    },
+    {
+      "start": 45.85,
+      "end": 48.85,
+      "text": "there will always be new new things."
+    },
+    {
+      "start": 48.85,
+      "end": 51.85,
+      "text": "There's three new things I really want to focus in on."
+    },
+    {
+      "start": 51.85,
+      "end": 55.85,
+      "text": "Of course, the ability to process AI models on the Tellum 2"
+    },
+    {
+      "start": 55.85,
+      "end": 57.85,
+      "text": "and the Spire chip are huge."
+    },
+    {
+      "start": 57.85,
+      "end": 60.85,
+      "text": "And AI runs throughout everything on the system,"
+    },
+    {
+      "start": 60.85,
+      "end": 62.85,
+      "text": "so let's look at some of the other highlights."
+    },
+    {
+      "start": 62.85,
+      "end": 65.85,
+      "text": "Let's start with IBM Concert for Z."
+    },
+    {
+      "start": 65.85,
+      "end": 69.85,
+      "text": "The job of an operator is to keep things running and stay invisible."
+    },
+    {
+      "start": 69.85,
+      "end": 71.85,
+      "text": "If people are thinking about the operator,"
+    },
+    {
+      "start": 71.85,
+      "end": 73.85,
+      "text": "it's usually because something's going wrong,"
+    },
+    {
+      "start": 73.85,
+      "end": 76.85,
+      "text": "so staying ahead of those situations is a good strategy."
+    },
+    {
+      "start": 76.85,
+      "end": 80.85,
+      "text": "IBM Concert for Z brings key performance indicators and metrics"
+    },
+    {
+      "start": 80.85,
+      "end": 82.85,
+      "text": "to a single pane of glass."
+    },
+    {
+      "start": 82.85,
+      "end": 85.85,
+      "text": "So not just CPU and memory and events,"
+    },
+    {
+      "start": 85.85,
+      "end": 88.85,
+      "text": "but the relationships between applications and resources."
+    },
+    {
+      "start": 88.85,
+      "end": 90.85,
+      "text": "So you won't just see what's happening,"
+    },
+    {
+      "start": 90.85,
+      "end": 93.85,
+      "text": "you'll be able to detect trends before they become problems."
+    },
+    {
+      "start": 93.85,
+      "end": 97.85,
+      "text": "And then, once we see something we know we need to act on,"
+    },
+    {
+      "start": 97.85,
+      "end": 100.85,
+      "text": "not only is there an integrated command console,"
+    },
+    {
+      "start": 100.85,
+      "end": 105.85,
+      "text": "there's AI-driven root cause detection and built-in recommendations,"
+    },
+    {
+      "start": 105.85,
+      "end": 106.85,
+      "text": "which is great."
+    },
+    {
+      "start": 106.85,
+      "end": 109.85,
+      "text": "You get to start with a heads-up in a series of recommendations."
+    },
+    {
+      "start": 109.85,
+      "end": 112.85,
+      "text": "And of course, I'm not jealous at all of this."
+    },
+    {
+      "start": 112.85,
+      "end": 114.85,
+      "text": "I'm happy for you."
+    },
+    {
+      "start": 114.85,
+      "end": 115.85,
+      "text": "Really."
+    },
+    {
+      "start": 115.85,
+      "end": 117.85,
+      "text": "It's not about me."
+    },
+    {
+      "start": 117.85,
+      "end": 119.85,
+      "text": "It's not about me."
+    },
+    {
+      "start": 119.85,
+      "end": 120.85,
+      "text": "Let's move on."
+    },
+    {
+      "start": 120.85,
+      "end": 122.85,
+      "text": "How about quantum-safe cryptography?"
+    },
+    {
+      "start": 122.85,
+      "end": 124.85,
+      "text": "In the world of data,"
+    },
+    {
+      "start": 124.85,
+      "end": 127.85,
+      "text": "there's not very much these days that travels out over a network"
+    },
+    {
+      "start": 127.85,
+      "end": 130.85,
+      "text": "or between entities without being encrypted at one end"
+    },
+    {
+      "start": 130.85,
+      "end": 132.85,
+      "text": "before being decrypted at the other."
+    },
+    {
+      "start": 132.85,
+      "end": 135.85,
+      "text": "This is done by using a series of public and private keys."
+    },
+    {
+      "start": 135.85,
+      "end": 139.85,
+      "text": "Those same keys are used to authenticate our communications."
+    },
+    {
+      "start": 139.85,
+      "end": 143.85,
+      "text": "The entire public-private key ecosystem relies on two things."
+    },
+    {
+      "start": 143.85,
+      "end": 147.85,
+      "text": "Those private keys remaining private and the encryption being so strong"
+    },
+    {
+      "start": 147.85,
+      "end": 152.85,
+      "text": "that even if someone did manage to intercept a few packets of data,"
+    },
+    {
+      "start": 152.85,
+      "end": 154.85,
+      "text": "they wouldn't be able to peek inside."
+    },
+    {
+      "start": 154.85,
+      "end": 156.85,
+      "text": "Here's the problem."
+    },
+    {
+      "start": 156.85,
+      "end": 160.85,
+      "text": "Today's sophisticated hackers are out there gathering that encrypted data,"
+    },
+    {
+      "start": 160.85,
+      "end": 165.85,
+      "text": "knowing that it may only be a few years before they get their hands on the tools to decrypt it."
+    },
+    {
+      "start": 165.85,
+      "end": 166.85,
+      "text": "They're playing the long game here."
+    },
+    {
+      "start": 166.85,
+      "end": 169.85,
+      "text": "And you may have heard figures about how it would take thousands"
+    },
+    {
+      "start": 169.85,
+      "end": 172.85,
+      "text": "or even millions of years to crack a properly encrypted key."
+    },
+    {
+      "start": 172.85,
+      "end": 176.85,
+      "text": "But most of those figures are based on classical computing methods."
+    },
+    {
+      "start": 176.85,
+      "end": 180.85,
+      "text": "Shores algorithm, a method for finding prime factors of an integer"
+    },
+    {
+      "start": 180.85,
+      "end": 184.85,
+      "text": "is a good example of something that runs very slowly on today's computers,"
+    },
+    {
+      "start": 184.85,
+      "end": 189.85,
+      "text": "but could be greatly accelerated once quantum computing advances in several areas."
+    },
+    {
+      "start": 189.85,
+      "end": 193.85,
+      "text": "Long story short, the technology we consider ultra secure today"
+    },
+    {
+      "start": 193.85,
+      "end": 196.85,
+      "text": "could fall apart in the face of quantum computing,"
+    },
+    {
+      "start": 196.85,
+      "end": 200.85,
+      "text": "which is why quantum-safe cryptography on IBM Z provides not only"
+    },
+    {
+      "start": 200.85,
+      "end": 205.85,
+      "text": "algorithms and key exchange mechanisms with this emerging threat in mind."
+    },
+    {
+      "start": 205.85,
+      "end": 209.85,
+      "text": "It also provides the tools to analyze your environment for potential exposures,"
+    },
+    {
+      "start": 209.85,
+      "end": 212.85,
+      "text": "facilitate the rollout of quantum-safe algorithms,"
+    },
+    {
+      "start": 212.85,
+      "end": 216.85,
+      "text": "and ensure keys are rotated and managed based on policy."
+    },
+    {
+      "start": 216.85,
+      "end": 220.85,
+      "text": "Those tools include the ZOS encryption readiness toolkit,"
+    },
+    {
+      "start": 220.85,
+      "end": 224.85,
+      "text": "ZERT, application discovery and delivery intelligence,"
+    },
+    {
+      "start": 224.85,
+      "end": 227.85,
+      "text": "ADDI, and unified key orchestrator."
+    },
+    {
+      "start": 227.85,
+      "end": 230.85,
+      "text": "There's also something you really ought to be aware of,"
+    },
+    {
+      "start": 230.85,
+      "end": 234.85,
+      "text": "which is still fairly new, called system recovery boost."
+    },
+    {
+      "start": 234.85,
+      "end": 236.85,
+      "text": "This is a favorite of mine."
+    },
+    {
+      "start": 236.85,
+      "end": 238.85,
+      "text": "So your typical mainframe is meant to be used."
+    },
+    {
+      "start": 238.85,
+      "end": 242.85,
+      "text": "It's built with a capacity in mind, and any time it's not running applications,"
+    },
+    {
+      "start": 242.85,
+      "end": 244.85,
+      "text": "it's costing someone money."
+    },
+    {
+      "start": 244.85,
+      "end": 248.85,
+      "text": "So it's important to keep those windows as brief as possible."
+    },
+    {
+      "start": 248.85,
+      "end": 252.85,
+      "text": "Now, let me also say that most IBM Z environments"
+    },
+    {
+      "start": 252.85,
+      "end": 256.85,
+      "text": "will have multiple L-Pars across multiple physical systems and assist blocks,"
+    },
+    {
+      "start": 256.85,
+      "end": 259.85,
+      "text": "so they can do what's called a rolling IPL."
+    },
+    {
+      "start": 259.85,
+      "end": 264.85,
+      "text": "So we're working on these two systems, and then these two systems,"
+    },
+    {
+      "start": 264.85,
+      "end": 267.85,
+      "text": "and when we work on these last two systems,"
+    },
+    {
+      "start": 267.85,
+      "end": 272.85,
+      "text": "everything's got maintenance, and we always had at least six systems ready to go."
+    },
+    {
+      "start": 272.85,
+      "end": 276.85,
+      "text": "But even then, we don't want to spend all day doing these rolling IPLs,"
+    },
+    {
+      "start": 276.85,
+      "end": 281.85,
+      "text": "and we also want to spend as little time with a decreased pool of systems as possible."
+    },
+    {
+      "start": 281.85,
+      "end": 284.85,
+      "text": "That's where system recovery boost comes in."
+    },
+    {
+      "start": 284.85,
+      "end": 288.85,
+      "text": "During what is called the boost period, the system is allowed to use processors,"
+    },
+    {
+      "start": 288.85,
+      "end": 292.85,
+      "text": "which are typically off limits, reserved for specialty workloads,"
+    },
+    {
+      "start": 292.85,
+      "end": 296.85,
+      "text": "in order to get everything running at full capacity again as quickly as possible."
+    },
+    {
+      "start": 296.85,
+      "end": 299.85,
+      "text": "That's the technology part of this."
+    },
+    {
+      "start": 299.85,
+      "end": 302.85,
+      "text": "The other part that makes the people with the calculators happy,"
+    },
+    {
+      "start": 302.85,
+      "end": 307.85,
+      "text": "is that during the boost period, all that extra power doesn't increase software licensing costs."
+    },
+    {
+      "start": 307.85,
+      "end": 310.85,
+      "text": "It's just there to help shorten that window."
+    },
+    {
+      "start": 310.85,
+      "end": 314.85,
+      "text": "The features we just went through are interesting and exciting to me right now."
+    },
+    {
+      "start": 314.85,
+      "end": 318.85,
+      "text": "The real important lesson here is to stay up to date."
+    },
+    {
+      "start": 318.85,
+      "end": 322.85,
+      "text": "IBM.com slash Z will give you the latest on software, hardware,"
+    },
+    {
+      "start": 322.85,
+      "end": 325.85,
+      "text": "design, security, services, everything."
+    },
+    {
+      "start": 325.85,
+      "end": 329.85,
+      "text": "So don't stop with what we've covered. Keep going, keep learning."
+    }
+  ]
+}

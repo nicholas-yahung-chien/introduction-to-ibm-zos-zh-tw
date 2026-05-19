@@ -1,0 +1,593 @@
+{
+  "slug": "mainframe-operating-systems",
+  "title": "Mainframe Operating Systems",
+  "language": "en",
+  "duration": 663.603125,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 10.38,
+      "text": "Operating systems. Once you've made an LPAR on a mainframe, you probably want to run an operating system on it."
+    },
+    {
+      "start": 10.38,
+      "end": 15.38,
+      "text": "Now, the mainframe runs several different operating systems, and I'm going to take you through them."
+    },
+    {
+      "start": 15.38,
+      "end": 23.38,
+      "text": "First up, there's ZOS. Now, one thing you'll notice about all the IBM built operating systems is they all start with a Z slash."
+    },
+    {
+      "start": 23.38,
+      "end": 32.38,
+      "text": "When the mainframe moved to the Z architecture, basically when it started running 64-bit, the operating systems got renamed with that Z as well."
+    },
+    {
+      "start": 32.38,
+      "end": 39.38,
+      "text": "So that's why you see that. So the ZOS operating system is the flagship IBM mainframe operating system."
+    },
+    {
+      "start": 39.38,
+      "end": 49.38,
+      "text": "And if you trace the lineage of that operating system way back, it's a direct descendant of the original OS360 that ran back on that first mainframe back in 1964."
+    },
+    {
+      "start": 49.38,
+      "end": 58.38,
+      "text": "Its focus is on running a wide variety of mixed workloads simultaneously, all while delivering an extremely high level of quality of service."
+    },
+    {
+      "start": 58.38,
+      "end": 68.38,
+      "text": "If someone today has a mainframe, chances are they're running ZOS. And we're actually going to come back to this and talk more about ZOS later, but I want to talk about the other operating systems first."
+    },
+    {
+      "start": 68.38,
+      "end": 80.38,
+      "text": "First, there's Z-TPF, which stands for Z transaction processing facility, commonly used by companies dealing with high volumes of transactions that need to get handled in real time."
+    },
+    {
+      "start": 80.38,
+      "end": 91.38,
+      "text": "That means credit card processors, airline reservation systems, hotel and auto rental chains, Z-TPF is extremely tied to the world of travel and logistics."
+    },
+    {
+      "start": 91.38,
+      "end": 106.38,
+      "text": "ZVM is all about virtualization. Now, we mentioned ZVM briefly before the idea behind it is to provide guest operating systems running essentially within ZVM, and then they get access to all the resources that the host ZVM is running with."
+    },
+    {
+      "start": 106.38,
+      "end": 120.38,
+      "text": "Interesting thing about ZVM is that it is a type one hypervisor. So, instead of running it on top of another operating system and then using that to host the virtual machines, ZVM doesn't need another operating system to do its thing."
+    },
+    {
+      "start": 120.38,
+      "end": 131.38,
+      "text": "It does its own thing. That makes ZVM extremely efficient and valuable for testing and development. Any operating system that runs on the mainframe will run within ZVM."
+    },
+    {
+      "start": 131.38,
+      "end": 138.38,
+      "text": "So, if you need a whole bunch of systems, but don't want to use up your L-Pars, ZVM can do some pretty interesting things."
+    },
+    {
+      "start": 138.38,
+      "end": 155.38,
+      "text": "The other operating system IBM makes is called ZVSE. This is a lesser used operating system, but it's still very important for smaller companies who need something like ZOS, which can do transaction and batch processing, but don't need something that big or that complex."
+    },
+    {
+      "start": 155.38,
+      "end": 162.38,
+      "text": "Also don't need as many people to run as ZVSE instance, and that's appealing to smaller companies with fewer people."
+    },
+    {
+      "start": 162.38,
+      "end": 170.38,
+      "text": "And then there's Linux. The same Linux that runs on phones, watches, game consoles, toasters. Guess what? It runs on the mainframe too."
+    },
+    {
+      "start": 170.38,
+      "end": 177.38,
+      "text": "And it runs extremely well. And if you know Linux, then you know Linux on the mainframe. Everything looks pretty much the same."
+    },
+    {
+      "start": 177.38,
+      "end": 182.38,
+      "text": "If you're not familiar with Linux, it's an open source operating system that's used pretty much all over the place."
+    },
+    {
+      "start": 182.38,
+      "end": 188.38,
+      "text": "I remember when Linux first started showing up on the mainframe, people thought it was crazy. It was a crazy idea."
+    },
+    {
+      "start": 188.38,
+      "end": 195.38,
+      "text": "The idea of an operating system running on our beloved mainframe that was coded by a bunch of strangers on the internet."
+    },
+    {
+      "start": 195.38,
+      "end": 202.38,
+      "text": "I mean, you wanted to take this seriously? Well, that was like back in 2000. Another leap of faith in Linux is still running on the mainframe."
+    },
+    {
+      "start": 202.38,
+      "end": 209.38,
+      "text": "It's hugely popular. Lastly, KVM, or a kernel-based virtual machine, is an open source hypervisor."
+    },
+    {
+      "start": 209.38,
+      "end": 217.38,
+      "text": "Similar to ZVM, it's another type I hypervisor, meaning it doesn't require another operating system because it is an operating system."
+    },
+    {
+      "start": 217.38,
+      "end": 225.38,
+      "text": "People like it because it integrates with KVM running on other platforms, and it's used a lot for distributed workloads where you need a lot of something."
+    },
+    {
+      "start": 225.38,
+      "end": 233.38,
+      "text": "Because you can scale it out horizontally by adding more instances or up vertically by adding additional capacity on demand."
+    },
+    {
+      "start": 233.38,
+      "end": 237.38,
+      "text": "All right, back to the Z operating system, often just short into ZOS."
+    },
+    {
+      "start": 237.38,
+      "end": 244.38,
+      "text": "We're going to spend a lot of time talking about ZOS in this course because it is the premier mainframe operating system."
+    },
+    {
+      "start": 244.38,
+      "end": 253.38,
+      "text": "It's built specifically for the Z hardware. It offers continuous high volume operations with high security and stability."
+    },
+    {
+      "start": 253.38,
+      "end": 261.38,
+      "text": "ZOS excels at supporting a huge ecosystem of different workloads, supporting large numbers of different users at the same time."
+    },
+    {
+      "start": 261.38,
+      "end": 266.38,
+      "text": "It does all this while maintaining the highest quality of service for any operating system."
+    },
+    {
+      "start": 266.38,
+      "end": 275.38,
+      "text": "By better knowing the management functions of an operating system, we can better evaluate exactly what components of ZOS are responsible for what we're interested in."
+    },
+    {
+      "start": 275.38,
+      "end": 284.38,
+      "text": "The ZOS operating system is made up of components. Some of these components are base elements, which the operating system comes with and is configured with by default."
+    },
+    {
+      "start": 284.38,
+      "end": 287.38,
+      "text": "Other components are add-ons called features."
+    },
+    {
+      "start": 287.38,
+      "end": 293.38,
+      "text": "The OS doesn't necessarily need these to run, but you may run into them depending on your job role."
+    },
+    {
+      "start": 293.38,
+      "end": 297.38,
+      "text": "Now, I'll just tell you right up front, there's a lot of components."
+    },
+    {
+      "start": 297.38,
+      "end": 301.38,
+      "text": "Some of them will just breeze right through, no need to define what's essentially spelled out in the name."
+    },
+    {
+      "start": 301.38,
+      "end": 304.38,
+      "text": "Others, we're going to dive deeper into."
+    },
+    {
+      "start": 304.38,
+      "end": 307.38,
+      "text": "We're going to cover a lot of these in much greater detail later."
+    },
+    {
+      "start": 307.38,
+      "end": 309.38,
+      "text": "So, here we go."
+    },
+    {
+      "start": 309.38,
+      "end": 314.38,
+      "text": "To start off, we've got the transaction manager, which does basically what it's called."
+    },
+    {
+      "start": 314.38,
+      "end": 318.38,
+      "text": "It manages transactions across one or more resources."
+    },
+    {
+      "start": 318.38,
+      "end": 320.38,
+      "text": "Then there's databases."
+    },
+    {
+      "start": 320.38,
+      "end": 327.38,
+      "text": "The databases job is to keep data not only stored, but organized, so it can be easily found and updated later on."
+    },
+    {
+      "start": 327.38,
+      "end": 329.38,
+      "text": "All right, let's talk about batch jobs."
+    },
+    {
+      "start": 329.38,
+      "end": 332.38,
+      "text": "Some work doesn't need to happen in real time."
+    },
+    {
+      "start": 332.38,
+      "end": 338.38,
+      "text": "This could be because the systems are less busy later on in the day, or it could just be because of the nature of the data."
+    },
+    {
+      "start": 338.38,
+      "end": 346.38,
+      "text": "For example, a delivery logistics company loads its trucks at night so they can hit the roads bright and early in the morning when the drivers come in."
+    },
+    {
+      "start": 346.38,
+      "end": 353.38,
+      "text": "They might take all the data about what deliveries need to be made that day and process it all at once, so it's ready when the drivers come in."
+    },
+    {
+      "start": 353.38,
+      "end": 356.38,
+      "text": "And that's where you might see a batch job."
+    },
+    {
+      "start": 356.38,
+      "end": 358.38,
+      "text": "Then there's the security manager."
+    },
+    {
+      "start": 358.38,
+      "end": 361.38,
+      "text": "Make sure you can only get to resources if you're supposed to."
+    },
+    {
+      "start": 361.38,
+      "end": 368.38,
+      "text": "Crypto services, that allows for the data to be protected by being encrypted and then used by decrypting it."
+    },
+    {
+      "start": 368.38,
+      "end": 370.38,
+      "text": "There's end user interfaces."
+    },
+    {
+      "start": 370.38,
+      "end": 375.38,
+      "text": "Obviously, you need something to bridge that gap between the system and the people who are trying to use it."
+    },
+    {
+      "start": 375.38,
+      "end": 379.38,
+      "text": "And we use TSO, which stands for time sharing option."
+    },
+    {
+      "start": 379.38,
+      "end": 383.38,
+      "text": "That makes it possible for one system to have thousands of connected users."
+    },
+    {
+      "start": 383.38,
+      "end": 388.38,
+      "text": "So there's this concept on ZOS of a job, and you're going to hear that word a lot."
+    },
+    {
+      "start": 388.38,
+      "end": 394.38,
+      "text": "A job is like a program, but it's a program with a specific set of input and output."
+    },
+    {
+      "start": 394.38,
+      "end": 397.38,
+      "text": "So imagine you've got a payroll program, right?"
+    },
+    {
+      "start": 397.38,
+      "end": 398.38,
+      "text": "It does the same thing."
+    },
+    {
+      "start": 398.38,
+      "end": 403.38,
+      "text": "It takes the number of hours somebody worked their wages and creates a sheet basically saying,"
+    },
+    {
+      "start": 403.38,
+      "end": 406.38,
+      "text": "pay this person this much or maybe even cuts the checks for them."
+    },
+    {
+      "start": 406.38,
+      "end": 413.38,
+      "text": "So the program itself doesn't change from run to run, but it's got a different set of input and output each time."
+    },
+    {
+      "start": 413.38,
+      "end": 419.38,
+      "text": "So you're going to write how you want your job to run in something called the job control language or JCL."
+    },
+    {
+      "start": 419.38,
+      "end": 423.38,
+      "text": "And that gets submitted to the job entry subsystem, JES."
+    },
+    {
+      "start": 423.38,
+      "end": 425.38,
+      "text": "So you win me so far?"
+    },
+    {
+      "start": 425.38,
+      "end": 426.38,
+      "text": "Good."
+    },
+    {
+      "start": 426.38,
+      "end": 432.38,
+      "text": "When the system gets around to running it, it processes the data and it puts every piece of output."
+    },
+    {
+      "start": 432.38,
+      "end": 435.38,
+      "text": "Good, bad, and different into the job output."
+    },
+    {
+      "start": 435.38,
+      "end": 438.38,
+      "text": "So you know exactly how your job ran."
+    },
+    {
+      "start": 438.38,
+      "end": 446.38,
+      "text": "When you use another component, the system display and search facility, thankfully shortened to SDSF to look at all of that output."
+    },
+    {
+      "start": 446.38,
+      "end": 455.38,
+      "text": "Now, as you can imagine, when it comes time to upgrade and manage software on a mainframe, it's kind of important that everything get managed and tracked."
+    },
+    {
+      "start": 455.38,
+      "end": 461.38,
+      "text": "Some software depends on other software to run, so to install, you have to also install what's called a prerequisite."
+    },
+    {
+      "start": 461.38,
+      "end": 466.38,
+      "text": "Sometimes you can't upgrade one piece of software without also upgrading another one."
+    },
+    {
+      "start": 466.38,
+      "end": 469.38,
+      "text": "So how do you keep all these dependencies straight?"
+    },
+    {
+      "start": 469.38,
+      "end": 471.38,
+      "text": "Fortunately, you don't have to."
+    },
+    {
+      "start": 471.38,
+      "end": 476.38,
+      "text": "You have SMPE, the system modification program extended."
+    },
+    {
+      "start": 476.38,
+      "end": 479.38,
+      "text": "Performance is extremely important on the mainframe."
+    },
+    {
+      "start": 479.38,
+      "end": 482.38,
+      "text": "And it's not enough just to say, yep, everything's running really fast."
+    },
+    {
+      "start": 482.38,
+      "end": 483.38,
+      "text": "It's good, right?"
+    },
+    {
+      "start": 483.38,
+      "end": 491.38,
+      "text": "You need to be able to say exactly how long the average transaction is running for, how long users are waiting for the response, all that kind of stuff."
+    },
+    {
+      "start": 491.38,
+      "end": 498.38,
+      "text": "On the mainframe, you'll use RMF or the resource measurement facility to keep tabs on how everything is being used."
+    },
+    {
+      "start": 498.38,
+      "end": 505.38,
+      "text": "This is kind of like the gauges in your car, but it also includes data gathered over time, so you can see trends and patterns."
+    },
+    {
+      "start": 505.38,
+      "end": 514.38,
+      "text": "Managing storage is important, and the mainframe uses DFSMS, the data facility storage management service, to manage what data goes where."
+    },
+    {
+      "start": 514.38,
+      "end": 520.38,
+      "text": "It also handles backups, migrations, copies, and all input-output management."
+    },
+    {
+      "start": 520.38,
+      "end": 525.38,
+      "text": "Something else that's fairly unique to the mainframe platform is workload manager."
+    },
+    {
+      "start": 525.38,
+      "end": 534.38,
+      "text": "Just like with other managers, it makes sure that when you're running multiple things at the same time on the same platform, they all get a fair slice of the system resources."
+    },
+    {
+      "start": 534.38,
+      "end": 537.38,
+      "text": "But the workload manager takes it a step further."
+    },
+    {
+      "start": 537.38,
+      "end": 540.38,
+      "text": "It's actually kind of backwards from what you might be used to."
+    },
+    {
+      "start": 540.38,
+      "end": 542.38,
+      "text": "You start by defining goals."
+    },
+    {
+      "start": 542.38,
+      "end": 547.38,
+      "text": "You say, whenever this type of transaction happens, it needs to finish in this amount of time."
+    },
+    {
+      "start": 547.38,
+      "end": 553.38,
+      "text": "Or maybe it's just this LPAR over here is extremely important. It gets priority over all the other LPARs."
+    },
+    {
+      "start": 553.38,
+      "end": 557.38,
+      "text": "So don't let anything they're doing slow down anything on this LPAR."
+    },
+    {
+      "start": 557.38,
+      "end": 559.38,
+      "text": "It's the most important one."
+    },
+    {
+      "start": 559.38,
+      "end": 562.38,
+      "text": "So when you set it up correctly, it's not a free-for-all."
+    },
+    {
+      "start": 562.38,
+      "end": 565.38,
+      "text": "It's a carefully controlled and managed environment."
+    },
+    {
+      "start": 565.38,
+      "end": 576.38,
+      "text": "TCPIP, or to be complete, SNA, TCPIP, which stands for Systems Network Architecture, Transmission Control Protocol, Internet Protocol."
+    },
+    {
+      "start": 576.38,
+      "end": 579.38,
+      "text": "You can see why we just say, SNA, TCPIP."
+    },
+    {
+      "start": 579.38,
+      "end": 584.38,
+      "text": "This is a component of ZOS, and it's where all the network communication lives."
+    },
+    {
+      "start": 584.38,
+      "end": 587.38,
+      "text": "That's all computer to computer, computer to internet."
+    },
+    {
+      "start": 587.38,
+      "end": 591.38,
+      "text": "Basically, anything network network gets used uses SNA, TCPIP."
+    },
+    {
+      "start": 591.38,
+      "end": 597.38,
+      "text": "Now, whenever anything happens on the mainframe, it's extremely important that there be a record of it happening."
+    },
+    {
+      "start": 597.38,
+      "end": 602.38,
+      "text": "The idea of a program writing out a diagnostic log isn't unique to the mainframe."
+    },
+    {
+      "start": 602.38,
+      "end": 609.38,
+      "text": "But because there's so much happening here, it's important that there be a standard format and a facility to keep it all straight."
+    },
+    {
+      "start": 609.38,
+      "end": 615.38,
+      "text": "Almost like a database for tracking events, that's SMF, the Systems Management Facility."
+    },
+    {
+      "start": 615.38,
+      "end": 621.38,
+      "text": "SMF comes in handy for diagnosing problems, auditing transactions, and for tracing process flows."
+    },
+    {
+      "start": 621.38,
+      "end": 626.38,
+      "text": "And last, but certainly not least, is USS, or UNIX system services."
+    },
+    {
+      "start": 626.38,
+      "end": 631.38,
+      "text": "You may not know this, but you can actually run UNIX programs within the ZOS environment."
+    },
+    {
+      "start": 631.38,
+      "end": 635.38,
+      "text": "ZOS has USS, which is a POSIX compliant environment."
+    },
+    {
+      "start": 635.38,
+      "end": 638.38,
+      "text": "So, you can run scripts, utilities, and tools."
+    },
+    {
+      "start": 638.38,
+      "end": 642.38,
+      "text": "It's not an operating system within ZOS, like a VM."
+    },
+    {
+      "start": 642.38,
+      "end": 644.38,
+      "text": "It's an environment."
+    },
+    {
+      "start": 644.38,
+      "end": 647.38,
+      "text": "So, that means a lot of the utilities are shared between them."
+    },
+    {
+      "start": 647.38,
+      "end": 651.38,
+      "text": "And you can even fire off the ZOS jobs from within a UNIX shell."
+    },
+    {
+      "start": 651.38,
+      "end": 655.38,
+      "text": "And those are the ZOS components."
+    },
+    {
+      "start": 655.38,
+      "end": 659.38,
+      "text": "It took a little while, but I think it was time well spent."
+    }
+  ]
+}

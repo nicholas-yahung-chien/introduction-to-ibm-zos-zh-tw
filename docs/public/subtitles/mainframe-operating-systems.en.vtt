@@ -1,0 +1,469 @@
+WEBVTT
+
+1
+00:00:03.380 --> 00:00:10.380
+Operating systems. Once you've made an LPAR on a mainframe, you probably want to run an operating system on it.
+
+2
+00:00:10.380 --> 00:00:15.380
+Now, the mainframe runs several different operating systems, and I'm going to take you through them.
+
+3
+00:00:15.380 --> 00:00:23.380
+First up, there's ZOS. Now, one thing you'll notice about all the IBM built operating systems is they all start with a Z slash.
+
+4
+00:00:23.380 --> 00:00:32.380
+When the mainframe moved to the Z architecture, basically when it started running 64-bit, the operating systems got renamed with that Z as well.
+
+5
+00:00:32.380 --> 00:00:39.380
+So that's why you see that. So the ZOS operating system is the flagship IBM mainframe operating system.
+
+6
+00:00:39.380 --> 00:00:49.380
+And if you trace the lineage of that operating system way back, it's a direct descendant of the original OS360 that ran back on that first mainframe back in 1964.
+
+7
+00:00:49.380 --> 00:00:58.380
+Its focus is on running a wide variety of mixed workloads simultaneously, all while delivering an extremely high level of quality of service.
+
+8
+00:00:58.380 --> 00:01:08.380
+If someone today has a mainframe, chances are they're running ZOS. And we're actually going to come back to this and talk more about ZOS later, but I want to talk about the other operating systems first.
+
+9
+00:01:08.380 --> 00:01:20.380
+First, there's Z-TPF, which stands for Z transaction processing facility, commonly used by companies dealing with high volumes of transactions that need to get handled in real time.
+
+10
+00:01:20.380 --> 00:01:31.380
+That means credit card processors, airline reservation systems, hotel and auto rental chains, Z-TPF is extremely tied to the world of travel and logistics.
+
+11
+00:01:31.380 --> 00:01:46.380
+ZVM is all about virtualization. Now, we mentioned ZVM briefly before the idea behind it is to provide guest operating systems running essentially within ZVM, and then they get access to all the resources that the host ZVM is running with.
+
+12
+00:01:46.380 --> 00:02:00.380
+Interesting thing about ZVM is that it is a type one hypervisor. So, instead of running it on top of another operating system and then using that to host the virtual machines, ZVM doesn't need another operating system to do its thing.
+
+13
+00:02:00.380 --> 00:02:11.380
+It does its own thing. That makes ZVM extremely efficient and valuable for testing and development. Any operating system that runs on the mainframe will run within ZVM.
+
+14
+00:02:11.380 --> 00:02:18.380
+So, if you need a whole bunch of systems, but don't want to use up your L-Pars, ZVM can do some pretty interesting things.
+
+15
+00:02:18.380 --> 00:02:35.380
+The other operating system IBM makes is called ZVSE. This is a lesser used operating system, but it's still very important for smaller companies who need something like ZOS, which can do transaction and batch processing, but don't need something that big or that complex.
+
+16
+00:02:35.380 --> 00:02:42.380
+Also don't need as many people to run as ZVSE instance, and that's appealing to smaller companies with fewer people.
+
+17
+00:02:42.380 --> 00:02:50.380
+And then there's Linux. The same Linux that runs on phones, watches, game consoles, toasters. Guess what? It runs on the mainframe too.
+
+18
+00:02:50.380 --> 00:02:57.380
+And it runs extremely well. And if you know Linux, then you know Linux on the mainframe. Everything looks pretty much the same.
+
+19
+00:02:57.380 --> 00:03:02.380
+If you're not familiar with Linux, it's an open source operating system that's used pretty much all over the place.
+
+20
+00:03:02.380 --> 00:03:08.380
+I remember when Linux first started showing up on the mainframe, people thought it was crazy. It was a crazy idea.
+
+21
+00:03:08.380 --> 00:03:15.380
+The idea of an operating system running on our beloved mainframe that was coded by a bunch of strangers on the internet.
+
+22
+00:03:15.380 --> 00:03:22.380
+I mean, you wanted to take this seriously? Well, that was like back in 2000. Another leap of faith in Linux is still running on the mainframe.
+
+23
+00:03:22.380 --> 00:03:29.380
+It's hugely popular. Lastly, KVM, or a kernel-based virtual machine, is an open source hypervisor.
+
+24
+00:03:29.380 --> 00:03:37.380
+Similar to ZVM, it's another type I hypervisor, meaning it doesn't require another operating system because it is an operating system.
+
+25
+00:03:37.380 --> 00:03:45.380
+People like it because it integrates with KVM running on other platforms, and it's used a lot for distributed workloads where you need a lot of something.
+
+26
+00:03:45.380 --> 00:03:53.380
+Because you can scale it out horizontally by adding more instances or up vertically by adding additional capacity on demand.
+
+27
+00:03:53.380 --> 00:03:57.380
+All right, back to the Z operating system, often just short into ZOS.
+
+28
+00:03:57.380 --> 00:04:04.380
+We're going to spend a lot of time talking about ZOS in this course because it is the premier mainframe operating system.
+
+29
+00:04:04.380 --> 00:04:13.380
+It's built specifically for the Z hardware. It offers continuous high volume operations with high security and stability.
+
+30
+00:04:13.380 --> 00:04:21.380
+ZOS excels at supporting a huge ecosystem of different workloads, supporting large numbers of different users at the same time.
+
+31
+00:04:21.380 --> 00:04:26.380
+It does all this while maintaining the highest quality of service for any operating system.
+
+32
+00:04:26.380 --> 00:04:35.380
+By better knowing the management functions of an operating system, we can better evaluate exactly what components of ZOS are responsible for what we're interested in.
+
+33
+00:04:35.380 --> 00:04:44.380
+The ZOS operating system is made up of components. Some of these components are base elements, which the operating system comes with and is configured with by default.
+
+34
+00:04:44.380 --> 00:04:47.380
+Other components are add-ons called features.
+
+35
+00:04:47.380 --> 00:04:53.380
+The OS doesn't necessarily need these to run, but you may run into them depending on your job role.
+
+36
+00:04:53.380 --> 00:04:57.380
+Now, I'll just tell you right up front, there's a lot of components.
+
+37
+00:04:57.380 --> 00:05:01.380
+Some of them will just breeze right through, no need to define what's essentially spelled out in the name.
+
+38
+00:05:01.380 --> 00:05:04.380
+Others, we're going to dive deeper into.
+
+39
+00:05:04.380 --> 00:05:07.380
+We're going to cover a lot of these in much greater detail later.
+
+40
+00:05:07.380 --> 00:05:09.380
+So, here we go.
+
+41
+00:05:09.380 --> 00:05:14.380
+To start off, we've got the transaction manager, which does basically what it's called.
+
+42
+00:05:14.380 --> 00:05:18.380
+It manages transactions across one or more resources.
+
+43
+00:05:18.380 --> 00:05:20.380
+Then there's databases.
+
+44
+00:05:20.380 --> 00:05:27.380
+The databases job is to keep data not only stored, but organized, so it can be easily found and updated later on.
+
+45
+00:05:27.380 --> 00:05:29.380
+All right, let's talk about batch jobs.
+
+46
+00:05:29.380 --> 00:05:32.380
+Some work doesn't need to happen in real time.
+
+47
+00:05:32.380 --> 00:05:38.380
+This could be because the systems are less busy later on in the day, or it could just be because of the nature of the data.
+
+48
+00:05:38.380 --> 00:05:46.380
+For example, a delivery logistics company loads its trucks at night so they can hit the roads bright and early in the morning when the drivers come in.
+
+49
+00:05:46.380 --> 00:05:53.380
+They might take all the data about what deliveries need to be made that day and process it all at once, so it's ready when the drivers come in.
+
+50
+00:05:53.380 --> 00:05:56.380
+And that's where you might see a batch job.
+
+51
+00:05:56.380 --> 00:05:58.380
+Then there's the security manager.
+
+52
+00:05:58.380 --> 00:06:01.380
+Make sure you can only get to resources if you're supposed to.
+
+53
+00:06:01.380 --> 00:06:08.380
+Crypto services, that allows for the data to be protected by being encrypted and then used by decrypting it.
+
+54
+00:06:08.380 --> 00:06:10.380
+There's end user interfaces.
+
+55
+00:06:10.380 --> 00:06:15.380
+Obviously, you need something to bridge that gap between the system and the people who are trying to use it.
+
+56
+00:06:15.380 --> 00:06:19.380
+And we use TSO, which stands for time sharing option.
+
+57
+00:06:19.380 --> 00:06:23.380
+That makes it possible for one system to have thousands of connected users.
+
+58
+00:06:23.380 --> 00:06:28.380
+So there's this concept on ZOS of a job, and you're going to hear that word a lot.
+
+59
+00:06:28.380 --> 00:06:34.380
+A job is like a program, but it's a program with a specific set of input and output.
+
+60
+00:06:34.380 --> 00:06:37.380
+So imagine you've got a payroll program, right?
+
+61
+00:06:37.380 --> 00:06:38.380
+It does the same thing.
+
+62
+00:06:38.380 --> 00:06:43.380
+It takes the number of hours somebody worked their wages and creates a sheet basically saying,
+
+63
+00:06:43.380 --> 00:06:46.380
+pay this person this much or maybe even cuts the checks for them.
+
+64
+00:06:46.380 --> 00:06:53.380
+So the program itself doesn't change from run to run, but it's got a different set of input and output each time.
+
+65
+00:06:53.380 --> 00:06:59.380
+So you're going to write how you want your job to run in something called the job control language or JCL.
+
+66
+00:06:59.380 --> 00:07:03.380
+And that gets submitted to the job entry subsystem, JES.
+
+67
+00:07:03.380 --> 00:07:05.380
+So you win me so far?
+
+68
+00:07:05.380 --> 00:07:06.380
+Good.
+
+69
+00:07:06.380 --> 00:07:12.380
+When the system gets around to running it, it processes the data and it puts every piece of output.
+
+70
+00:07:12.380 --> 00:07:15.380
+Good, bad, and different into the job output.
+
+71
+00:07:15.380 --> 00:07:18.380
+So you know exactly how your job ran.
+
+72
+00:07:18.380 --> 00:07:26.380
+When you use another component, the system display and search facility, thankfully shortened to SDSF to look at all of that output.
+
+73
+00:07:26.380 --> 00:07:35.380
+Now, as you can imagine, when it comes time to upgrade and manage software on a mainframe, it's kind of important that everything get managed and tracked.
+
+74
+00:07:35.380 --> 00:07:41.380
+Some software depends on other software to run, so to install, you have to also install what's called a prerequisite.
+
+75
+00:07:41.380 --> 00:07:46.380
+Sometimes you can't upgrade one piece of software without also upgrading another one.
+
+76
+00:07:46.380 --> 00:07:49.380
+So how do you keep all these dependencies straight?
+
+77
+00:07:49.380 --> 00:07:51.380
+Fortunately, you don't have to.
+
+78
+00:07:51.380 --> 00:07:56.380
+You have SMPE, the system modification program extended.
+
+79
+00:07:56.380 --> 00:07:59.380
+Performance is extremely important on the mainframe.
+
+80
+00:07:59.380 --> 00:08:02.380
+And it's not enough just to say, yep, everything's running really fast.
+
+81
+00:08:02.380 --> 00:08:03.380
+It's good, right?
+
+82
+00:08:03.380 --> 00:08:11.380
+You need to be able to say exactly how long the average transaction is running for, how long users are waiting for the response, all that kind of stuff.
+
+83
+00:08:11.380 --> 00:08:18.380
+On the mainframe, you'll use RMF or the resource measurement facility to keep tabs on how everything is being used.
+
+84
+00:08:18.380 --> 00:08:25.380
+This is kind of like the gauges in your car, but it also includes data gathered over time, so you can see trends and patterns.
+
+85
+00:08:25.380 --> 00:08:34.380
+Managing storage is important, and the mainframe uses DFSMS, the data facility storage management service, to manage what data goes where.
+
+86
+00:08:34.380 --> 00:08:40.380
+It also handles backups, migrations, copies, and all input-output management.
+
+87
+00:08:40.380 --> 00:08:45.380
+Something else that's fairly unique to the mainframe platform is workload manager.
+
+88
+00:08:45.380 --> 00:08:54.380
+Just like with other managers, it makes sure that when you're running multiple things at the same time on the same platform, they all get a fair slice of the system resources.
+
+89
+00:08:54.380 --> 00:08:57.380
+But the workload manager takes it a step further.
+
+90
+00:08:57.380 --> 00:09:00.380
+It's actually kind of backwards from what you might be used to.
+
+91
+00:09:00.380 --> 00:09:02.380
+You start by defining goals.
+
+92
+00:09:02.380 --> 00:09:07.380
+You say, whenever this type of transaction happens, it needs to finish in this amount of time.
+
+93
+00:09:07.380 --> 00:09:13.380
+Or maybe it's just this LPAR over here is extremely important. It gets priority over all the other LPARs.
+
+94
+00:09:13.380 --> 00:09:17.380
+So don't let anything they're doing slow down anything on this LPAR.
+
+95
+00:09:17.380 --> 00:09:19.380
+It's the most important one.
+
+96
+00:09:19.380 --> 00:09:22.380
+So when you set it up correctly, it's not a free-for-all.
+
+97
+00:09:22.380 --> 00:09:25.380
+It's a carefully controlled and managed environment.
+
+98
+00:09:25.380 --> 00:09:36.380
+TCPIP, or to be complete, SNA, TCPIP, which stands for Systems Network Architecture, Transmission Control Protocol, Internet Protocol.
+
+99
+00:09:36.380 --> 00:09:39.380
+You can see why we just say, SNA, TCPIP.
+
+100
+00:09:39.380 --> 00:09:44.380
+This is a component of ZOS, and it's where all the network communication lives.
+
+101
+00:09:44.380 --> 00:09:47.380
+That's all computer to computer, computer to internet.
+
+102
+00:09:47.380 --> 00:09:51.380
+Basically, anything network network gets used uses SNA, TCPIP.
+
+103
+00:09:51.380 --> 00:09:57.380
+Now, whenever anything happens on the mainframe, it's extremely important that there be a record of it happening.
+
+104
+00:09:57.380 --> 00:10:02.380
+The idea of a program writing out a diagnostic log isn't unique to the mainframe.
+
+105
+00:10:02.380 --> 00:10:09.380
+But because there's so much happening here, it's important that there be a standard format and a facility to keep it all straight.
+
+106
+00:10:09.380 --> 00:10:15.380
+Almost like a database for tracking events, that's SMF, the Systems Management Facility.
+
+107
+00:10:15.380 --> 00:10:21.380
+SMF comes in handy for diagnosing problems, auditing transactions, and for tracing process flows.
+
+108
+00:10:21.380 --> 00:10:26.380
+And last, but certainly not least, is USS, or UNIX system services.
+
+109
+00:10:26.380 --> 00:10:31.380
+You may not know this, but you can actually run UNIX programs within the ZOS environment.
+
+110
+00:10:31.380 --> 00:10:35.380
+ZOS has USS, which is a POSIX compliant environment.
+
+111
+00:10:35.380 --> 00:10:38.380
+So, you can run scripts, utilities, and tools.
+
+112
+00:10:38.380 --> 00:10:42.380
+It's not an operating system within ZOS, like a VM.
+
+113
+00:10:42.380 --> 00:10:44.380
+It's an environment.
+
+114
+00:10:44.380 --> 00:10:47.380
+So, that means a lot of the utilities are shared between them.
+
+115
+00:10:47.380 --> 00:10:51.380
+And you can even fire off the ZOS jobs from within a UNIX shell.
+
+116
+00:10:51.380 --> 00:10:55.380
+And those are the ZOS components.
+
+117
+00:10:55.380 --> 00:10:59.380
+It took a little while, but I think it was time well spent.

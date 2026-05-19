@@ -1,0 +1,508 @@
+{
+  "slug": "hmc-and-se",
+  "title": "HMC and SE",
+  "language": "en",
+  "duration": 313.02825,
+  "segments": [
+    {
+      "start": 3.38,
+      "end": 9.98,
+      "text": "So I said we'd come back to that SE thing with the keyboard screen and the servers the computer within a computer"
+    },
+    {
+      "start": 9.98,
+      "end": 17.62,
+      "text": "What's that there for that's the support element for the SE in order to get the mainframe all configured and ready to boot up"
+    },
+    {
+      "start": 17.62,
+      "end": 23.78,
+      "text": "The way we want it to and connected everything we need to talk to that takes a little bit of a setup and you do that set up"
+    },
+    {
+      "start": 24.1,
+      "end": 25.7,
+      "text": "Through the support element"
+    },
+    {
+      "start": 25.7,
+      "end": 29.38,
+      "text": "There's two SEs in there and that's just in case one of them fails"
+    },
+    {
+      "start": 29.38,
+      "end": 32.06,
+      "text": "No one wants to be locked out of their system now"
+    },
+    {
+      "start": 32.06,
+      "end": 37.54,
+      "text": "That's all cool, but imagine if every time you needed to do something you had to walk over to the data center"
+    },
+    {
+      "start": 37.9,
+      "end": 46.22,
+      "text": "Baj in hang out on the raised floor where it's all loud and cold and dark and stuff open the door slide out the SE and all that"
+    },
+    {
+      "start": 46.22,
+      "end": 48.22,
+      "text": "Just to type out a single command"
+    },
+    {
+      "start": 48.78,
+      "end": 57.34,
+      "text": "Luckily in addition to the SEs mainframes have this concept of the HMC or the hardware management console and these do four things"
+    },
+    {
+      "start": 57.66,
+      "end": 61.1,
+      "text": "One they let you access the SEs functions remotely"
+    },
+    {
+      "start": 61.18,
+      "end": 63.18,
+      "text": "So you don't have to walk out there anymore"
+    },
+    {
+      "start": 63.5,
+      "end": 68.38,
+      "text": "Two you can add multiple mainframes to a single HMC a hundred of them in fact"
+    },
+    {
+      "start": 68.78,
+      "end": 73.66,
+      "text": "So you can manage a whole bunch of mainframes from one HMC and that is pretty handy"
+    },
+    {
+      "start": 74.14,
+      "end": 77.58,
+      "text": "You can also add a single mainframe to multiple HMCs"
+    },
+    {
+      "start": 78.14,
+      "end": 79.42,
+      "text": "32 of them in fact"
+    },
+    {
+      "start": 79.66,
+      "end": 85.26,
+      "text": "So if you have one system that's shared by multiple departments they can all get HMC access"
+    },
+    {
+      "start": 85.98,
+      "end": 88.78,
+      "text": "For you can connect to the HMC remotely"
+    },
+    {
+      "start": 88.78,
+      "end": 93.66,
+      "text": "So while the SE is attached to the system and the HMC is running somewhere else"
+    },
+    {
+      "start": 93.66,
+      "end": 97.58,
+      "text": "You can also connect remotely as long as you have the correct network access"
+    },
+    {
+      "start": 97.9,
+      "end": 99.58,
+      "text": "Now for the remainder of this session"
+    },
+    {
+      "start": 99.58,
+      "end": 105.02,
+      "text": "I'm just going to be seeing HMC because that's typically how someone accesses those functions"
+    },
+    {
+      "start": 105.02,
+      "end": 107.9,
+      "text": "But know that pretty much anything I can do from the HMC"
+    },
+    {
+      "start": 107.9,
+      "end": 112.22,
+      "text": "I can do from the SE as well. It's just a whole lot easier just to say HMC"
+    },
+    {
+      "start": 112.22,
+      "end": 114.94,
+      "text": "So why would we need that kind of access?"
+    },
+    {
+      "start": 115.02,
+      "end": 121.26,
+      "text": "Well, the most common thing people use in HMC for is to stop, start, create and modify L-Pars"
+    },
+    {
+      "start": 121.26,
+      "end": 124.06,
+      "text": "You need to add another couple processors to an L-Pars"
+    },
+    {
+      "start": 124.06,
+      "end": 125.9,
+      "text": "You do that from the HMC"
+    },
+    {
+      "start": 125.9,
+      "end": 128.46,
+      "text": "When it changed the way a network card is configured"
+    },
+    {
+      "start": 128.46,
+      "end": 130.46,
+      "text": "You can do that for the HMC"
+    },
+    {
+      "start": 130.46,
+      "end": 134.78,
+      "text": "Let's say I'm having problems with a system and I want to get some data that might help me with troubleshooting"
+    },
+    {
+      "start": 135.58,
+      "end": 137.18,
+      "text": "Guess what? HMC"
+    },
+    {
+      "start": 138.06,
+      "end": 140.46,
+      "text": "What do I see when I log into an HMC?"
+    },
+    {
+      "start": 140.46,
+      "end": 143.42,
+      "text": "Well, I can take a look in a particular physical machine"
+    },
+    {
+      "start": 143.42,
+      "end": 145.34,
+      "text": "That's this view right here"
+    },
+    {
+      "start": 145.34,
+      "end": 147.66,
+      "text": "See you got the status is operating"
+    },
+    {
+      "start": 147.66,
+      "end": 149.9,
+      "text": "It's got a machine type model number"
+    },
+    {
+      "start": 149.9,
+      "end": 151.42,
+      "text": "It's also got a serial number"
+    },
+    {
+      "start": 151.42,
+      "end": 153.02,
+      "text": "It's also got this name over here"
+    },
+    {
+      "start": 153.02,
+      "end": 156.22,
+      "text": "So I can make sure it's a system that I want to be talking to"
+    },
+    {
+      "start": 156.22,
+      "end": 159.02,
+      "text": "If I go deeper, I can see all the L-Pars"
+    },
+    {
+      "start": 159.02,
+      "end": 161.66,
+      "text": "Those are the partitions right there for that system"
+    },
+    {
+      "start": 161.66,
+      "end": 163.98,
+      "text": "Looks like some of them are up, some of them are down"
+    },
+    {
+      "start": 163.98,
+      "end": 165.02,
+      "text": "That's all right"
+    },
+    {
+      "start": 165.02,
+      "end": 167.66,
+      "text": "And in this last tab over here, that's the topology"
+    },
+    {
+      "start": 167.66,
+      "end": 169.66,
+      "text": "That shows me how everything is connected"
+    },
+    {
+      "start": 169.66,
+      "end": 171.74,
+      "text": "You can see there's lots of stuff going on over here"
+    },
+    {
+      "start": 172.3,
+      "end": 176.86,
+      "text": "Another good use of the HMC is just telling me how my systems are doing"
+    },
+    {
+      "start": 176.86,
+      "end": 179.5,
+      "text": "So I can see right here there's a couple of exceptions"
+    },
+    {
+      "start": 179.5,
+      "end": 182.62,
+      "text": "And an exception is an unacceptable status"
+    },
+    {
+      "start": 182.62,
+      "end": 185.5,
+      "text": "And it could be a problem with an L-Pars or any other object"
+    },
+    {
+      "start": 185.5,
+      "end": 187.74,
+      "text": "Like a network or a crypto card"
+    },
+    {
+      "start": 187.74,
+      "end": 189.9,
+      "text": "These need to be checked out right away"
+    },
+    {
+      "start": 189.9,
+      "end": 191.98,
+      "text": "There's also a number of hardware messages"
+    },
+    {
+      "start": 191.98,
+      "end": 195.58,
+      "text": "Now a hardware message is just when some component saw something"
+    },
+    {
+      "start": 195.58,
+      "end": 197.26,
+      "text": "And it wants you to know about it"
+    },
+    {
+      "start": 197.34,
+      "end": 199.5,
+      "text": "But it's not currently stopping anything from working"
+    },
+    {
+      "start": 199.5,
+      "end": 200.54,
+      "text": "It's just letting you know"
+    },
+    {
+      "start": 201.02,
+      "end": 204.7,
+      "text": "For example, if a fiber cable got disconnected and then reconnected"
+    },
+    {
+      "start": 204.7,
+      "end": 206.38,
+      "text": "That would result in a hardware message"
+    },
+    {
+      "start": 206.38,
+      "end": 209.02,
+      "text": "Same thing if an L-Pars didn't shut down correctly"
+    },
+    {
+      "start": 209.02,
+      "end": 211.42,
+      "text": "Or an HMC somewhere lost connectivity"
+    },
+    {
+      "start": 211.42,
+      "end": 213.18,
+      "text": "That would result in a hardware message"
+    },
+    {
+      "start": 214.06,
+      "end": 215.74,
+      "text": "So what gets stored on the SC"
+    },
+    {
+      "start": 215.74,
+      "end": 219.18,
+      "text": "Well, it's got code that's going to get loaded onto the mainframe"
+    },
+    {
+      "start": 219.18,
+      "end": 222.14,
+      "text": "That's called licensed internal code or lick"
+    },
+    {
+      "start": 223.02,
+      "end": 223.82,
+      "text": "Yeah, really"
+    },
+    {
+      "start": 224.62,
+      "end": 227.42,
+      "text": "We've got logging and problem determination functions"
+    },
+    {
+      "start": 227.42,
+      "end": 228.86,
+      "text": "Which help into debugging issues"
+    },
+    {
+      "start": 229.5,
+      "end": 231.18,
+      "text": "Hardware systems definitions"
+    },
+    {
+      "start": 231.18,
+      "end": 235.1,
+      "text": "Which basically tell the mainframe how to get started up when it first boots up"
+    },
+    {
+      "start": 235.1,
+      "end": 236.54,
+      "text": "Then there's the IOCDS"
+    },
+    {
+      "start": 236.54,
+      "end": 239.26,
+      "text": "Which will definitely be talking about later on"
+    },
+    {
+      "start": 239.26,
+      "end": 242.78,
+      "text": "That tells the mainframe how to configure all of its I-O and its L-Pars"
+    },
+    {
+      "start": 243.42,
+      "end": 247.1,
+      "text": "There's also a battery operated clock that it uses to synchronize time"
+    },
+    {
+      "start": 247.1,
+      "end": 248.86,
+      "text": "Across all the components"
+    },
+    {
+      "start": 248.86,
+      "end": 250.22,
+      "text": "And ethernet adapters"
+    },
+    {
+      "start": 250.22,
+      "end": 252.94,
+      "text": "Because of course everything in the mainframe environment"
+    },
+    {
+      "start": 252.94,
+      "end": 255.18,
+      "text": "Generally is connected to other components"
+    },
+    {
+      "start": 255.18,
+      "end": 255.9,
+      "text": "So we need that"
+    },
+    {
+      "start": 256.7,
+      "end": 258.38,
+      "text": "And lastly you might be thinking"
+    },
+    {
+      "start": 258.38,
+      "end": 260.54,
+      "text": "So if anyone could log into the HMC"
+    },
+    {
+      "start": 260.54,
+      "end": 263.34,
+      "text": "They could probably mess up a whole bunch of stuff accidentally"
+    },
+    {
+      "start": 263.34,
+      "end": 264.06,
+      "text": "Right"
+    },
+    {
+      "start": 264.06,
+      "end": 264.94,
+      "text": "Well yes"
+    },
+    {
+      "start": 264.94,
+      "end": 269.42,
+      "text": "Which is why there are several accounts set up by default on the typical HMC"
+    },
+    {
+      "start": 269.42,
+      "end": 272.22,
+      "text": "And most people set up even more to partition access"
+    },
+    {
+      "start": 272.22,
+      "end": 273.82,
+      "text": "Off to those who really need it"
+    },
+    {
+      "start": 274.3,
+      "end": 277.02,
+      "text": "And just because you have access to some features"
+    },
+    {
+      "start": 277.02,
+      "end": 279.26,
+      "text": "Doesn't mean you have access to everything"
+    },
+    {
+      "start": 279.26,
+      "end": 281.58,
+      "text": "There are specific roles on the HMC"
+    },
+    {
+      "start": 281.58,
+      "end": 284.62,
+      "text": "roles like operator and advanced operator"
+    },
+    {
+      "start": 284.62,
+      "end": 288.46,
+      "text": "Systems programmer, access administrator and service representative"
+    },
+    {
+      "start": 288.94,
+      "end": 294.14,
+      "text": "Each one of these roles has a specific reason for needing specific access to the system"
+    },
+    {
+      "start": 294.14,
+      "end": 296.06,
+      "text": "So it's not an all or nothing kind of thing"
+    },
+    {
+      "start": 296.7,
+      "end": 298.94,
+      "text": "And that's the SE and the HMC"
+    },
+    {
+      "start": 298.94,
+      "end": 300.94,
+      "text": "The computers within your computer"
+    },
+    {
+      "start": 301.58,
+      "end": 303.34,
+      "text": "And within those computers"
+    },
+    {
+      "start": 303.34,
+      "end": 305.74,
+      "text": "There's actually no there's not that's it"
+    },
+    {
+      "start": 305.74,
+      "end": 307.74,
+      "text": "It's just the SE and the HMC"
+    }
+  ]
+}

@@ -1,0 +1,621 @@
+WEBVTT
+
+1
+00:00:03.310 --> 00:00:05.910
+All right, let's get talking about virtualization.
+
+2
+00:00:05.910 --> 00:00:08.750
+Virtualization is when things get really interesting
+
+3
+00:00:08.750 --> 00:00:09.590
+on the mainframe.
+
+4
+00:00:09.590 --> 00:00:13.510
+So you've got this machine that is physically very big.
+
+5
+00:00:13.510 --> 00:00:16.270
+The goal is always to make them smaller and smaller,
+
+6
+00:00:16.270 --> 00:00:19.230
+but a mainframe actually does have a ton of processors,
+
+7
+00:00:19.230 --> 00:00:20.870
+memory, and IO in it.
+
+8
+00:00:20.870 --> 00:00:22.870
+And it's got all the cooling and the power
+
+9
+00:00:22.870 --> 00:00:24.950
+and the network required to make it run.
+
+10
+00:00:24.950 --> 00:00:28.030
+So it's big, but that's a physical description.
+
+11
+00:00:28.030 --> 00:00:29.790
+Again, we're trying to draw this distinction
+
+12
+00:00:29.790 --> 00:00:32.790
+between physical and logical, right?
+
+13
+00:00:32.790 --> 00:00:34.150
+So you've got a mainframe.
+
+14
+00:00:34.150 --> 00:00:37.230
+You've got this big, empty, logical area.
+
+15
+00:00:37.230 --> 00:00:39.150
+We've defined all the physical stuff.
+
+16
+00:00:39.150 --> 00:00:42.350
+You've got all these processors, the storage, the IO adapter,
+
+17
+00:00:42.350 --> 00:00:44.710
+but not formed into anything yet.
+
+18
+00:00:44.710 --> 00:00:46.830
+So you start grabbing a couple of these processors.
+
+19
+00:00:46.830 --> 00:00:50.230
+There's a little bit of memory, some connectivity,
+
+20
+00:00:50.230 --> 00:00:52.310
+a couple of IO adapters.
+
+21
+00:00:52.310 --> 00:00:55.190
+You start squishing them all together and you say, OK,
+
+22
+00:00:55.190 --> 00:00:56.470
+this is a new system right here.
+
+23
+00:00:56.470 --> 00:00:59.990
+I've built a new system out of these physical components.
+
+24
+00:00:59.990 --> 00:01:02.150
+I've built a logical system here.
+
+25
+00:01:02.150 --> 00:01:05.150
+And for all intents and purposes, it is a computer.
+
+26
+00:01:05.150 --> 00:01:06.110
+You can start it up.
+
+27
+00:01:06.110 --> 00:01:07.510
+You can shut it down.
+
+28
+00:01:07.510 --> 00:01:08.830
+It runs an operating system.
+
+29
+00:01:08.830 --> 00:01:10.270
+It has a display.
+
+30
+00:01:10.270 --> 00:01:11.670
+Well, it's a virtual display.
+
+31
+00:01:11.670 --> 00:01:13.270
+You have to use some software to look at it,
+
+32
+00:01:13.270 --> 00:01:14.990
+but it's a computer.
+
+33
+00:01:14.990 --> 00:01:19.150
+And we call that a logical partition or an L-par.
+
+34
+00:01:19.150 --> 00:01:22.270
+So building an L-par, it's a lot like having this big,
+
+35
+00:01:22.270 --> 00:01:24.830
+plastic tub of building blocks, right?
+
+36
+00:01:24.830 --> 00:01:26.590
+It's nothing built specifically,
+
+37
+00:01:26.590 --> 00:01:28.110
+but you got all these resources here.
+
+38
+00:01:28.110 --> 00:01:30.030
+So you can grab some pieces and you start
+
+39
+00:01:30.030 --> 00:01:30.870
+sticking them together.
+
+40
+00:01:30.870 --> 00:01:32.910
+And look, I made a boat.
+
+41
+00:01:32.910 --> 00:01:34.510
+And I'd take some more over here,
+
+42
+00:01:34.510 --> 00:01:36.190
+start putting them together.
+
+43
+00:01:36.190 --> 00:01:38.270
+And I've made a house, right?
+
+44
+00:01:38.270 --> 00:01:39.070
+I can make a car.
+
+45
+00:01:39.070 --> 00:01:41.990
+And I can keep on going until I've run out of resources.
+
+46
+00:01:41.990 --> 00:01:44.710
+So I do the same thing with physical resources
+
+47
+00:01:44.710 --> 00:01:47.150
+on a mainframe to build these L-pars.
+
+48
+00:01:47.150 --> 00:01:50.350
+Say I've got 16 L-pars, all built on my mainframe.
+
+49
+00:01:50.350 --> 00:01:53.630
+And some of them are really big with a bunch of processors
+
+50
+00:01:53.630 --> 00:01:57.110
+and memory and IO, and some of them are really small,
+
+51
+00:01:57.110 --> 00:01:59.710
+just enough just to run a basic program.
+
+52
+00:01:59.750 --> 00:02:01.350
+Some have a ton of processors,
+
+53
+00:02:01.350 --> 00:02:03.030
+but not a lot of memory.
+
+54
+00:02:03.030 --> 00:02:04.950
+Some have very few processors,
+
+55
+00:02:04.950 --> 00:02:06.870
+but a ton of IO adapters.
+
+56
+00:02:06.870 --> 00:02:07.950
+And you can build them like that.
+
+57
+00:02:07.950 --> 00:02:11.430
+That's kind of the flexibility behind virtualization.
+
+58
+00:02:11.430 --> 00:02:13.990
+Physically, the mainframe looks the same before
+
+59
+00:02:13.990 --> 00:02:15.230
+and after you've done all that.
+
+60
+00:02:15.230 --> 00:02:18.630
+It's just sits there and does its job, it's a mainframe.
+
+61
+00:02:18.630 --> 00:02:22.510
+But logically, you've created 16 new systems.
+
+62
+00:02:22.510 --> 00:02:23.750
+And if you told somebody, hey,
+
+63
+00:02:23.750 --> 00:02:26.830
+check out my system, log into this system I created.
+
+64
+00:02:26.830 --> 00:02:28.230
+They wouldn't have any way of knowing
+
+65
+00:02:28.230 --> 00:02:30.750
+that it's an L-par, sitting next to a whole bunch
+
+66
+00:02:30.750 --> 00:02:33.750
+of other systems within one big physical system,
+
+67
+00:02:33.750 --> 00:02:37.110
+because it's its own computer, its own system.
+
+68
+00:02:37.110 --> 00:02:39.750
+You've got one big physical mainframe
+
+69
+00:02:39.750 --> 00:02:42.550
+and 16 logical servers.
+
+70
+00:02:42.550 --> 00:02:44.310
+I do wanna talk a little bit more
+
+71
+00:02:44.310 --> 00:02:46.470
+about resources on the mainframe,
+
+72
+00:02:46.470 --> 00:02:48.910
+particularly the processors.
+
+73
+00:02:48.910 --> 00:02:52.510
+There are a whole bunch of processor units, processors,
+
+74
+00:02:52.510 --> 00:02:55.190
+and a processor can behave in a couple different ways,
+
+75
+00:02:55.190 --> 00:02:57.270
+depending on how it's configured.
+
+76
+00:02:57.270 --> 00:02:59.230
+It can be a processor, just like the one
+
+77
+00:02:59.230 --> 00:03:01.150
+in a desktop computer or a laptop
+
+78
+00:03:01.150 --> 00:03:03.190
+where it runs the operating system
+
+79
+00:03:03.190 --> 00:03:04.990
+and helps with applications.
+
+80
+00:03:04.990 --> 00:03:08.470
+And that's called a CP or a central processor.
+
+81
+00:03:08.470 --> 00:03:12.990
+You can also have a system assist processor, SAP or SAP,
+
+82
+00:03:12.990 --> 00:03:16.390
+and an SAP helps link between the CP and the I-O.
+
+83
+00:03:16.390 --> 00:03:18.950
+So instead of the main processor having to worry
+
+84
+00:03:18.950 --> 00:03:20.670
+about shuffling data back and forth
+
+85
+00:03:20.670 --> 00:03:23.030
+and saying, oh, take this byte off of here
+
+86
+00:03:23.030 --> 00:03:24.310
+and move it over here.
+
+87
+00:03:24.310 --> 00:03:26.710
+The SAP processor handles all that stuff.
+
+88
+00:03:26.750 --> 00:03:29.190
+It speeds things up tremendously.
+
+89
+00:03:29.190 --> 00:03:32.150
+It lets the CP focus on the business application
+
+90
+00:03:32.150 --> 00:03:35.030
+that's running, not on the stuff in the background.
+
+91
+00:03:35.030 --> 00:03:37.710
+And then there's the IFL, the integrated facility
+
+92
+00:03:37.710 --> 00:03:40.430
+for Linux, which is a processor specifically
+
+93
+00:03:40.430 --> 00:03:42.670
+for running Linux on the mainframe.
+
+94
+00:03:42.670 --> 00:03:45.470
+Now you can run Linux on a CP processor,
+
+95
+00:03:45.470 --> 00:03:47.710
+a general purpose one, but the IFL
+
+96
+00:03:47.710 --> 00:03:50.390
+has special licensing associated with it.
+
+97
+00:03:50.390 --> 00:03:53.230
+So it's more cost-effective for running Linux.
+
+98
+00:03:53.230 --> 00:03:55.310
+And then lastly, there's zip processors.
+
+99
+00:03:55.310 --> 00:03:58.790
+That's Z-I-I-P. For certain workloads,
+
+100
+00:03:58.790 --> 00:04:00.390
+you can use these zip processors
+
+101
+00:04:00.390 --> 00:04:04.230
+to offload work to them, stuff like Java runs on zips.
+
+102
+00:04:04.230 --> 00:04:06.190
+And again, the purpose is to one,
+
+103
+00:04:06.190 --> 00:04:08.550
+let the main processor offload their work,
+
+104
+00:04:08.550 --> 00:04:12.030
+and two, enable more cost-effective option for workloads
+
+105
+00:04:12.030 --> 00:04:14.750
+where it might be hard to predict or contain them.
+
+106
+00:04:14.750 --> 00:04:17.110
+I mentioned earlier, the I-O adapters.
+
+107
+00:04:17.110 --> 00:04:19.710
+Now the mainframe has a lot of I-O adapters.
+
+108
+00:04:19.710 --> 00:04:21.830
+Each one of those wires you're seeing in this picture
+
+109
+00:04:21.830 --> 00:04:24.350
+right here goes up to an I-O adapter.
+
+110
+00:04:24.390 --> 00:04:25.870
+And there's even more on the back,
+
+111
+00:04:25.870 --> 00:04:27.750
+and even more on the other frame.
+
+112
+00:04:27.750 --> 00:04:29.230
+On the other end, those are connected
+
+113
+00:04:29.230 --> 00:04:32.550
+to disk storage devices, network adapters,
+
+114
+00:04:32.550 --> 00:04:36.630
+network attached storage, other mainframes, you name it.
+
+115
+00:04:36.630 --> 00:04:40.470
+We identify these I-O adapters as channel path identifiers
+
+116
+00:04:40.470 --> 00:04:41.990
+or chipids.
+
+117
+00:04:41.990 --> 00:04:45.270
+The chipid is associated with a physical port location,
+
+118
+00:04:45.270 --> 00:04:49.110
+also called a P-Chid for the physical channel ID,
+
+119
+00:04:49.110 --> 00:04:52.510
+and a logical subsystem that it's associated with.
+
+120
+00:04:52.510 --> 00:04:55.190
+The subsystem is the connection between the L-PAR
+
+121
+00:04:55.190 --> 00:04:57.710
+and the I-O devices, or other L-PARs
+
+122
+00:04:57.710 --> 00:05:00.190
+that it needs to communicate directly with.
+
+123
+00:05:00.190 --> 00:05:02.870
+You can put everything into one big subsystem,
+
+124
+00:05:02.870 --> 00:05:05.830
+or you can create a few logical subsystems within it.
+
+125
+00:05:05.830 --> 00:05:07.990
+So the chipid, which is the association
+
+126
+00:05:07.990 --> 00:05:11.110
+between the physical port location and the subsystem,
+
+127
+00:05:11.110 --> 00:05:14.110
+you can think about it just like being a line between the two,
+
+128
+00:05:14.110 --> 00:05:17.350
+can be dedicated fully to one L-PAR,
+
+129
+00:05:17.350 --> 00:05:19.470
+meaning it has full control of it,
+
+130
+00:05:19.470 --> 00:05:22.710
+or it can be shared between multiple L-PARs.
+
+131
+00:05:22.710 --> 00:05:26.070
+It can also be unshared and reconfigurable,
+
+132
+00:05:26.070 --> 00:05:28.710
+meaning that it can be switched from one L-PAR to another,
+
+133
+00:05:28.710 --> 00:05:32.230
+but only one at a time, since it's a logical connection.
+
+134
+00:05:32.230 --> 00:05:35.550
+And lastly, a chipid can also be configured as spanned,
+
+135
+00:05:35.550 --> 00:05:37.630
+which means that it's actually accessed
+
+136
+00:05:37.630 --> 00:05:41.430
+from partitions from multiple logical channel subsystems.
+
+137
+00:05:42.350 --> 00:05:44.110
+One last word about virtualization,
+
+138
+00:05:44.110 --> 00:05:47.150
+that we're gonna take a very logical and physical break.
+
+139
+00:05:47.150 --> 00:05:49.110
+In addition to hosting operating systems
+
+140
+00:05:49.110 --> 00:05:51.230
+within L-PARs, there's an operating system
+
+141
+00:05:51.230 --> 00:05:53.510
+that specializes in virtualization,
+
+142
+00:05:53.510 --> 00:05:56.710
+called ZVM, or virtual machine.
+
+143
+00:05:56.710 --> 00:05:59.350
+ZVM is a type one hypervisor,
+
+144
+00:05:59.350 --> 00:06:00.990
+meaning that it doesn't need to sit on top
+
+145
+00:06:00.990 --> 00:06:03.870
+of another operating system in order to do its thing.
+
+146
+00:06:03.870 --> 00:06:06.630
+And within ZVM, you can create hundreds,
+
+147
+00:06:06.630 --> 00:06:08.590
+thousands of virtual machines.
+
+148
+00:06:08.590 --> 00:06:12.430
+They all share the resources that the host ZVM system has.
+
+149
+00:06:12.430 --> 00:06:14.750
+And to the mainframe, it thinks it's just hosting
+
+150
+00:06:14.750 --> 00:06:17.070
+one big operating system, but within it,
+
+151
+00:06:17.070 --> 00:06:19.670
+you can run any number of operating systems,
+
+152
+00:06:19.670 --> 00:06:23.430
+anything that runs on the mainframe runs under ZVM,
+
+153
+00:06:23.430 --> 00:06:25.430
+including another ZVM.
+
+154
+00:06:25.430 --> 00:06:28.390
+So that's virtually everything I have to tell you
+
+155
+00:06:28.390 --> 00:06:30.790
+about virtualization on the mainframe.

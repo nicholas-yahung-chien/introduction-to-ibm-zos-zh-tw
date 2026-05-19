@@ -1,0 +1,173 @@
+WEBVTT
+
+1
+00:00:03.220 --> 00:00:08.580
+So, why use mainframes? Because no two businesses are alike, even competitors in the same
+
+2
+00:00:08.580 --> 00:00:14.100
+field, mainframes need to be open, adaptable, and ever evolving. And that's before we even
+
+3
+00:00:14.100 --> 00:00:19.100
+talk about the processing power or the system capacity. Because mainframes are built for
+
+4
+00:00:19.100 --> 00:00:23.140
+business, they need to support anything a business could possibly want as part of their
+
+5
+00:00:23.140 --> 00:00:27.940
+business model. When the first companies started using Linux, Linux became a supportive
+
+6
+00:00:27.940 --> 00:00:32.100
+operating system. When open source software and hybrid cloud models started becoming
+
+7
+00:00:32.100 --> 00:00:36.660
+part of the way work gets done, you started seeing APIs and cloud-ready solutions
+
+8
+00:00:36.660 --> 00:00:41.700
+appear on the mainframe. What I'm getting at here is that if it's important, you'll find
+
+9
+00:00:41.700 --> 00:00:46.660
+it here on the mainframe. So, for example, let's talk about Linux for a minute, because this
+
+10
+00:00:46.660 --> 00:00:52.860
+is a great example of something that runs really well on Z. Linux runs great on my rented
+
+11
+00:00:52.860 --> 00:00:57.660
+cloud instance. It runs great on the server under my desk. It even runs on my Raspberry
+
+12
+00:00:57.660 --> 00:01:02.060
+Pi. So, why do I want to run Linux on the mainframe? Is it going to run any better? Well,
+
+13
+00:01:02.460 --> 00:01:09.420
+what if I could make a Linux instance with 15 processors and a couple gigs of memory? And I
+
+14
+00:01:09.420 --> 00:01:15.020
+also wanted to access like 32 different storage area networks and a couple different network
+
+15
+00:01:15.020 --> 00:01:21.260
+VLANs. Well, I can get that big powerful Linux system, but I can also run that Linux with all
+
+16
+00:01:21.260 --> 00:01:26.540
+of its data being encrypted at all times through pervasive encryption. So, that's possible and
+
+17
+00:01:26.540 --> 00:01:31.660
+that's pretty cool. I could build five more of those same exact servers without needing
+
+18
+00:01:31.740 --> 00:01:37.340
+five times the physical resources because of virtualization. That's a huge bonus. I can even
+
+19
+00:01:37.340 --> 00:01:43.020
+bring up Linux Docker instances within the ZOS operating system where they can run right next to
+
+20
+00:01:43.020 --> 00:01:47.820
+ZOS applications. So, I don't need a full system image if there's just one specific application
+
+21
+00:01:47.820 --> 00:01:53.420
+I need. Part of the big reason for running things on the mainframe is consolidation. Now, companies
+
+22
+00:01:53.420 --> 00:01:58.460
+are always looking for ways to save money on operations. So, in addition to being able to bring
+
+23
+00:01:58.460 --> 00:02:04.460
+all of those compute resources like the CPU and memory into one big box, companies are also able
+
+24
+00:02:04.460 --> 00:02:10.540
+to consolidate things like power supplies, networking adapters, and cooling. Having one larger
+
+25
+00:02:10.540 --> 00:02:16.460
+efficient cooling unit in a mainframe is much better than having 300 individual CPU fans out
+
+26
+00:02:16.460 --> 00:02:22.300
+there. In business, you'll often find two major types of transactions happening. There's real-time
+
+27
+00:02:22.300 --> 00:02:27.420
+transactions. That's like stuff that is reactionary, event-based needs to happen right now. And
+
+28
+00:02:27.420 --> 00:02:32.380
+that stuff like swiping a credit card, making a purchase, changing your insurance policy,
+
+29
+00:02:32.380 --> 00:02:37.180
+that stuff needs to happen instantly. And then there's batch processes, which we've talked about
+
+30
+00:02:37.180 --> 00:02:41.340
+a little bit before, but that kind of summarizes changes and actions that have happened during a
+
+31
+00:02:41.340 --> 00:02:46.140
+period of time, like figuring out page checks or figuring out your phone bill for the month.
+
+32
+00:02:46.140 --> 00:02:51.660
+Those are batch processes. The mainframe excels in doing both from a performance,
+
+33
+00:02:51.660 --> 00:02:57.100
+security, and a data integrity point of view. Just to give an idea about how prevalent the
+
+34
+00:02:57.100 --> 00:03:03.180
+mainframe is and what a powerhouse it is in business. They power 68% of the world's production
+
+35
+00:03:03.180 --> 00:03:13.180
+workloads. 68%. That's more than half. It's quite a bit more than half. It's two-thirds.
+
+36
+00:03:13.180 --> 00:03:18.540
+It's more than two-thirds. So despite running two-thirds of the world's production workloads,
+
+37
+00:03:18.620 --> 00:03:27.820
+they take up only 6% of the total IT cost. Think about that. 6% to run 68%. That's, I mean,
+
+38
+00:03:27.820 --> 00:03:32.700
+okay, I'm a little bit biased, but I happen to think that even if I wasn't sitting in an IBM
+
+39
+00:03:32.700 --> 00:03:37.500
+studio right now, that would still impress me. And that's why I'm so excited you're here to learn
+
+40
+00:03:37.500 --> 00:03:41.980
+all about the IBM Z. You'll walk into a job interview and tell them you know parallel
+
+41
+00:03:41.980 --> 00:03:47.500
+cystplex, IODF configs. You put down on a resume that you know about ZOS components and how to
+
+42
+00:03:47.500 --> 00:03:52.300
+to manage mainframe security. You're putting yourself in a great place. I hope you're having
+
+43
+00:03:52.300 --> 00:03:57.500
+fun. I know I am because these skills are great ones to have.

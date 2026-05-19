@@ -1,0 +1,783 @@
+{
+  "slug": "virtualization",
+  "title": "Virtualization",
+  "language": "en",
+  "duration": 394.0890625,
+  "segments": [
+    {
+      "start": 3.31,
+      "end": 5.91,
+      "text": "All right, let's get talking about virtualization."
+    },
+    {
+      "start": 5.91,
+      "end": 8.75,
+      "text": "Virtualization is when things get really interesting"
+    },
+    {
+      "start": 8.75,
+      "end": 9.59,
+      "text": "on the mainframe."
+    },
+    {
+      "start": 9.59,
+      "end": 13.51,
+      "text": "So you've got this machine that is physically very big."
+    },
+    {
+      "start": 13.51,
+      "end": 16.27,
+      "text": "The goal is always to make them smaller and smaller,"
+    },
+    {
+      "start": 16.27,
+      "end": 19.23,
+      "text": "but a mainframe actually does have a ton of processors,"
+    },
+    {
+      "start": 19.23,
+      "end": 20.87,
+      "text": "memory, and IO in it."
+    },
+    {
+      "start": 20.87,
+      "end": 22.87,
+      "text": "And it's got all the cooling and the power"
+    },
+    {
+      "start": 22.87,
+      "end": 24.95,
+      "text": "and the network required to make it run."
+    },
+    {
+      "start": 24.95,
+      "end": 28.03,
+      "text": "So it's big, but that's a physical description."
+    },
+    {
+      "start": 28.03,
+      "end": 29.79,
+      "text": "Again, we're trying to draw this distinction"
+    },
+    {
+      "start": 29.79,
+      "end": 32.79,
+      "text": "between physical and logical, right?"
+    },
+    {
+      "start": 32.79,
+      "end": 34.15,
+      "text": "So you've got a mainframe."
+    },
+    {
+      "start": 34.15,
+      "end": 37.23,
+      "text": "You've got this big, empty, logical area."
+    },
+    {
+      "start": 37.23,
+      "end": 39.15,
+      "text": "We've defined all the physical stuff."
+    },
+    {
+      "start": 39.15,
+      "end": 42.35,
+      "text": "You've got all these processors, the storage, the IO adapter,"
+    },
+    {
+      "start": 42.35,
+      "end": 44.71,
+      "text": "but not formed into anything yet."
+    },
+    {
+      "start": 44.71,
+      "end": 46.83,
+      "text": "So you start grabbing a couple of these processors."
+    },
+    {
+      "start": 46.83,
+      "end": 50.23,
+      "text": "There's a little bit of memory, some connectivity,"
+    },
+    {
+      "start": 50.23,
+      "end": 52.31,
+      "text": "a couple of IO adapters."
+    },
+    {
+      "start": 52.31,
+      "end": 55.19,
+      "text": "You start squishing them all together and you say, OK,"
+    },
+    {
+      "start": 55.19,
+      "end": 56.47,
+      "text": "this is a new system right here."
+    },
+    {
+      "start": 56.47,
+      "end": 59.99,
+      "text": "I've built a new system out of these physical components."
+    },
+    {
+      "start": 59.99,
+      "end": 62.15,
+      "text": "I've built a logical system here."
+    },
+    {
+      "start": 62.15,
+      "end": 65.15,
+      "text": "And for all intents and purposes, it is a computer."
+    },
+    {
+      "start": 65.15,
+      "end": 66.11,
+      "text": "You can start it up."
+    },
+    {
+      "start": 66.11,
+      "end": 67.51,
+      "text": "You can shut it down."
+    },
+    {
+      "start": 67.51,
+      "end": 68.83,
+      "text": "It runs an operating system."
+    },
+    {
+      "start": 68.83,
+      "end": 70.27,
+      "text": "It has a display."
+    },
+    {
+      "start": 70.27,
+      "end": 71.67,
+      "text": "Well, it's a virtual display."
+    },
+    {
+      "start": 71.67,
+      "end": 73.27,
+      "text": "You have to use some software to look at it,"
+    },
+    {
+      "start": 73.27,
+      "end": 74.99,
+      "text": "but it's a computer."
+    },
+    {
+      "start": 74.99,
+      "end": 79.15,
+      "text": "And we call that a logical partition or an L-par."
+    },
+    {
+      "start": 79.15,
+      "end": 82.27,
+      "text": "So building an L-par, it's a lot like having this big,"
+    },
+    {
+      "start": 82.27,
+      "end": 84.83,
+      "text": "plastic tub of building blocks, right?"
+    },
+    {
+      "start": 84.83,
+      "end": 86.59,
+      "text": "It's nothing built specifically,"
+    },
+    {
+      "start": 86.59,
+      "end": 88.11,
+      "text": "but you got all these resources here."
+    },
+    {
+      "start": 88.11,
+      "end": 90.03,
+      "text": "So you can grab some pieces and you start"
+    },
+    {
+      "start": 90.03,
+      "end": 90.87,
+      "text": "sticking them together."
+    },
+    {
+      "start": 90.87,
+      "end": 92.91,
+      "text": "And look, I made a boat."
+    },
+    {
+      "start": 92.91,
+      "end": 94.51,
+      "text": "And I'd take some more over here,"
+    },
+    {
+      "start": 94.51,
+      "end": 96.19,
+      "text": "start putting them together."
+    },
+    {
+      "start": 96.19,
+      "end": 98.27,
+      "text": "And I've made a house, right?"
+    },
+    {
+      "start": 98.27,
+      "end": 99.07,
+      "text": "I can make a car."
+    },
+    {
+      "start": 99.07,
+      "end": 101.99,
+      "text": "And I can keep on going until I've run out of resources."
+    },
+    {
+      "start": 101.99,
+      "end": 104.71,
+      "text": "So I do the same thing with physical resources"
+    },
+    {
+      "start": 104.71,
+      "end": 107.15,
+      "text": "on a mainframe to build these L-pars."
+    },
+    {
+      "start": 107.15,
+      "end": 110.35,
+      "text": "Say I've got 16 L-pars, all built on my mainframe."
+    },
+    {
+      "start": 110.35,
+      "end": 113.63,
+      "text": "And some of them are really big with a bunch of processors"
+    },
+    {
+      "start": 113.63,
+      "end": 117.11,
+      "text": "and memory and IO, and some of them are really small,"
+    },
+    {
+      "start": 117.11,
+      "end": 119.71,
+      "text": "just enough just to run a basic program."
+    },
+    {
+      "start": 119.75,
+      "end": 121.35,
+      "text": "Some have a ton of processors,"
+    },
+    {
+      "start": 121.35,
+      "end": 123.03,
+      "text": "but not a lot of memory."
+    },
+    {
+      "start": 123.03,
+      "end": 124.95,
+      "text": "Some have very few processors,"
+    },
+    {
+      "start": 124.95,
+      "end": 126.87,
+      "text": "but a ton of IO adapters."
+    },
+    {
+      "start": 126.87,
+      "end": 127.95,
+      "text": "And you can build them like that."
+    },
+    {
+      "start": 127.95,
+      "end": 131.43,
+      "text": "That's kind of the flexibility behind virtualization."
+    },
+    {
+      "start": 131.43,
+      "end": 133.99,
+      "text": "Physically, the mainframe looks the same before"
+    },
+    {
+      "start": 133.99,
+      "end": 135.23,
+      "text": "and after you've done all that."
+    },
+    {
+      "start": 135.23,
+      "end": 138.63,
+      "text": "It's just sits there and does its job, it's a mainframe."
+    },
+    {
+      "start": 138.63,
+      "end": 142.51,
+      "text": "But logically, you've created 16 new systems."
+    },
+    {
+      "start": 142.51,
+      "end": 143.75,
+      "text": "And if you told somebody, hey,"
+    },
+    {
+      "start": 143.75,
+      "end": 146.83,
+      "text": "check out my system, log into this system I created."
+    },
+    {
+      "start": 146.83,
+      "end": 148.23,
+      "text": "They wouldn't have any way of knowing"
+    },
+    {
+      "start": 148.23,
+      "end": 150.75,
+      "text": "that it's an L-par, sitting next to a whole bunch"
+    },
+    {
+      "start": 150.75,
+      "end": 153.75,
+      "text": "of other systems within one big physical system,"
+    },
+    {
+      "start": 153.75,
+      "end": 157.11,
+      "text": "because it's its own computer, its own system."
+    },
+    {
+      "start": 157.11,
+      "end": 159.75,
+      "text": "You've got one big physical mainframe"
+    },
+    {
+      "start": 159.75,
+      "end": 162.55,
+      "text": "and 16 logical servers."
+    },
+    {
+      "start": 162.55,
+      "end": 164.31,
+      "text": "I do wanna talk a little bit more"
+    },
+    {
+      "start": 164.31,
+      "end": 166.47,
+      "text": "about resources on the mainframe,"
+    },
+    {
+      "start": 166.47,
+      "end": 168.91,
+      "text": "particularly the processors."
+    },
+    {
+      "start": 168.91,
+      "end": 172.51,
+      "text": "There are a whole bunch of processor units, processors,"
+    },
+    {
+      "start": 172.51,
+      "end": 175.19,
+      "text": "and a processor can behave in a couple different ways,"
+    },
+    {
+      "start": 175.19,
+      "end": 177.27,
+      "text": "depending on how it's configured."
+    },
+    {
+      "start": 177.27,
+      "end": 179.23,
+      "text": "It can be a processor, just like the one"
+    },
+    {
+      "start": 179.23,
+      "end": 181.15,
+      "text": "in a desktop computer or a laptop"
+    },
+    {
+      "start": 181.15,
+      "end": 183.19,
+      "text": "where it runs the operating system"
+    },
+    {
+      "start": 183.19,
+      "end": 184.99,
+      "text": "and helps with applications."
+    },
+    {
+      "start": 184.99,
+      "end": 188.47,
+      "text": "And that's called a CP or a central processor."
+    },
+    {
+      "start": 188.47,
+      "end": 192.99,
+      "text": "You can also have a system assist processor, SAP or SAP,"
+    },
+    {
+      "start": 192.99,
+      "end": 196.39,
+      "text": "and an SAP helps link between the CP and the I-O."
+    },
+    {
+      "start": 196.39,
+      "end": 198.95,
+      "text": "So instead of the main processor having to worry"
+    },
+    {
+      "start": 198.95,
+      "end": 200.67,
+      "text": "about shuffling data back and forth"
+    },
+    {
+      "start": 200.67,
+      "end": 203.03,
+      "text": "and saying, oh, take this byte off of here"
+    },
+    {
+      "start": 203.03,
+      "end": 204.31,
+      "text": "and move it over here."
+    },
+    {
+      "start": 204.31,
+      "end": 206.71,
+      "text": "The SAP processor handles all that stuff."
+    },
+    {
+      "start": 206.75,
+      "end": 209.19,
+      "text": "It speeds things up tremendously."
+    },
+    {
+      "start": 209.19,
+      "end": 212.15,
+      "text": "It lets the CP focus on the business application"
+    },
+    {
+      "start": 212.15,
+      "end": 215.03,
+      "text": "that's running, not on the stuff in the background."
+    },
+    {
+      "start": 215.03,
+      "end": 217.71,
+      "text": "And then there's the IFL, the integrated facility"
+    },
+    {
+      "start": 217.71,
+      "end": 220.43,
+      "text": "for Linux, which is a processor specifically"
+    },
+    {
+      "start": 220.43,
+      "end": 222.67,
+      "text": "for running Linux on the mainframe."
+    },
+    {
+      "start": 222.67,
+      "end": 225.47,
+      "text": "Now you can run Linux on a CP processor,"
+    },
+    {
+      "start": 225.47,
+      "end": 227.71,
+      "text": "a general purpose one, but the IFL"
+    },
+    {
+      "start": 227.71,
+      "end": 230.39,
+      "text": "has special licensing associated with it."
+    },
+    {
+      "start": 230.39,
+      "end": 233.23,
+      "text": "So it's more cost-effective for running Linux."
+    },
+    {
+      "start": 233.23,
+      "end": 235.31,
+      "text": "And then lastly, there's zip processors."
+    },
+    {
+      "start": 235.31,
+      "end": 238.79,
+      "text": "That's Z-I-I-P. For certain workloads,"
+    },
+    {
+      "start": 238.79,
+      "end": 240.39,
+      "text": "you can use these zip processors"
+    },
+    {
+      "start": 240.39,
+      "end": 244.23,
+      "text": "to offload work to them, stuff like Java runs on zips."
+    },
+    {
+      "start": 244.23,
+      "end": 246.19,
+      "text": "And again, the purpose is to one,"
+    },
+    {
+      "start": 246.19,
+      "end": 248.55,
+      "text": "let the main processor offload their work,"
+    },
+    {
+      "start": 248.55,
+      "end": 252.03,
+      "text": "and two, enable more cost-effective option for workloads"
+    },
+    {
+      "start": 252.03,
+      "end": 254.75,
+      "text": "where it might be hard to predict or contain them."
+    },
+    {
+      "start": 254.75,
+      "end": 257.11,
+      "text": "I mentioned earlier, the I-O adapters."
+    },
+    {
+      "start": 257.11,
+      "end": 259.71,
+      "text": "Now the mainframe has a lot of I-O adapters."
+    },
+    {
+      "start": 259.71,
+      "end": 261.83,
+      "text": "Each one of those wires you're seeing in this picture"
+    },
+    {
+      "start": 261.83,
+      "end": 264.35,
+      "text": "right here goes up to an I-O adapter."
+    },
+    {
+      "start": 264.39,
+      "end": 265.87,
+      "text": "And there's even more on the back,"
+    },
+    {
+      "start": 265.87,
+      "end": 267.75,
+      "text": "and even more on the other frame."
+    },
+    {
+      "start": 267.75,
+      "end": 269.23,
+      "text": "On the other end, those are connected"
+    },
+    {
+      "start": 269.23,
+      "end": 272.55,
+      "text": "to disk storage devices, network adapters,"
+    },
+    {
+      "start": 272.55,
+      "end": 276.63,
+      "text": "network attached storage, other mainframes, you name it."
+    },
+    {
+      "start": 276.63,
+      "end": 280.47,
+      "text": "We identify these I-O adapters as channel path identifiers"
+    },
+    {
+      "start": 280.47,
+      "end": 281.99,
+      "text": "or chipids."
+    },
+    {
+      "start": 281.99,
+      "end": 285.27,
+      "text": "The chipid is associated with a physical port location,"
+    },
+    {
+      "start": 285.27,
+      "end": 289.11,
+      "text": "also called a P-Chid for the physical channel ID,"
+    },
+    {
+      "start": 289.11,
+      "end": 292.51,
+      "text": "and a logical subsystem that it's associated with."
+    },
+    {
+      "start": 292.51,
+      "end": 295.19,
+      "text": "The subsystem is the connection between the L-PAR"
+    },
+    {
+      "start": 295.19,
+      "end": 297.71,
+      "text": "and the I-O devices, or other L-PARs"
+    },
+    {
+      "start": 297.71,
+      "end": 300.19,
+      "text": "that it needs to communicate directly with."
+    },
+    {
+      "start": 300.19,
+      "end": 302.87,
+      "text": "You can put everything into one big subsystem,"
+    },
+    {
+      "start": 302.87,
+      "end": 305.83,
+      "text": "or you can create a few logical subsystems within it."
+    },
+    {
+      "start": 305.83,
+      "end": 307.99,
+      "text": "So the chipid, which is the association"
+    },
+    {
+      "start": 307.99,
+      "end": 311.11,
+      "text": "between the physical port location and the subsystem,"
+    },
+    {
+      "start": 311.11,
+      "end": 314.11,
+      "text": "you can think about it just like being a line between the two,"
+    },
+    {
+      "start": 314.11,
+      "end": 317.35,
+      "text": "can be dedicated fully to one L-PAR,"
+    },
+    {
+      "start": 317.35,
+      "end": 319.47,
+      "text": "meaning it has full control of it,"
+    },
+    {
+      "start": 319.47,
+      "end": 322.71,
+      "text": "or it can be shared between multiple L-PARs."
+    },
+    {
+      "start": 322.71,
+      "end": 326.07,
+      "text": "It can also be unshared and reconfigurable,"
+    },
+    {
+      "start": 326.07,
+      "end": 328.71,
+      "text": "meaning that it can be switched from one L-PAR to another,"
+    },
+    {
+      "start": 328.71,
+      "end": 332.23,
+      "text": "but only one at a time, since it's a logical connection."
+    },
+    {
+      "start": 332.23,
+      "end": 335.55,
+      "text": "And lastly, a chipid can also be configured as spanned,"
+    },
+    {
+      "start": 335.55,
+      "end": 337.63,
+      "text": "which means that it's actually accessed"
+    },
+    {
+      "start": 337.63,
+      "end": 341.43,
+      "text": "from partitions from multiple logical channel subsystems."
+    },
+    {
+      "start": 342.35,
+      "end": 344.11,
+      "text": "One last word about virtualization,"
+    },
+    {
+      "start": 344.11,
+      "end": 347.15,
+      "text": "that we're gonna take a very logical and physical break."
+    },
+    {
+      "start": 347.15,
+      "end": 349.11,
+      "text": "In addition to hosting operating systems"
+    },
+    {
+      "start": 349.11,
+      "end": 351.23,
+      "text": "within L-PARs, there's an operating system"
+    },
+    {
+      "start": 351.23,
+      "end": 353.51,
+      "text": "that specializes in virtualization,"
+    },
+    {
+      "start": 353.51,
+      "end": 356.71,
+      "text": "called ZVM, or virtual machine."
+    },
+    {
+      "start": 356.71,
+      "end": 359.35,
+      "text": "ZVM is a type one hypervisor,"
+    },
+    {
+      "start": 359.35,
+      "end": 360.99,
+      "text": "meaning that it doesn't need to sit on top"
+    },
+    {
+      "start": 360.99,
+      "end": 363.87,
+      "text": "of another operating system in order to do its thing."
+    },
+    {
+      "start": 363.87,
+      "end": 366.63,
+      "text": "And within ZVM, you can create hundreds,"
+    },
+    {
+      "start": 366.63,
+      "end": 368.59,
+      "text": "thousands of virtual machines."
+    },
+    {
+      "start": 368.59,
+      "end": 372.43,
+      "text": "They all share the resources that the host ZVM system has."
+    },
+    {
+      "start": 372.43,
+      "end": 374.75,
+      "text": "And to the mainframe, it thinks it's just hosting"
+    },
+    {
+      "start": 374.75,
+      "end": 377.07,
+      "text": "one big operating system, but within it,"
+    },
+    {
+      "start": 377.07,
+      "end": 379.67,
+      "text": "you can run any number of operating systems,"
+    },
+    {
+      "start": 379.67,
+      "end": 383.43,
+      "text": "anything that runs on the mainframe runs under ZVM,"
+    },
+    {
+      "start": 383.43,
+      "end": 385.43,
+      "text": "including another ZVM."
+    },
+    {
+      "start": 385.43,
+      "end": 388.39,
+      "text": "So that's virtually everything I have to tell you"
+    },
+    {
+      "start": 388.39,
+      "end": 390.79,
+      "text": "about virtualization on the mainframe."
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "millicode",
+  "title": "Millicode",
+  "language": "en",
+  "duration": 123.2050625,
+  "segments": [
+    {
+      "start": 3.31,
+      "end": 8.67,
+      "text": "Hi, I'm Brunchandama. I'm a lead design engineer walking on Millicoat. So what is Millicoat?"
+    },
+    {
+      "start": 8.67,
+      "end": 18.27,
+      "text": "It basically is a form of microarchitecture that runs on IBMC. And by microarchitecture, I mean, there's a"
+    },
+    {
+      "start": 19.63,
+      "end": 20.99,
+      "text": "layer"
+    },
+    {
+      "start": 20.99,
+      "end": 26.19,
+      "text": "invisible layer between what we publish in the principles of operations and"
+    },
+    {
+      "start": 26.99,
+      "end": 29.67,
+      "text": "another layer which is a microarchitecture. And"
+    },
+    {
+      "start": 29.99,
+      "end": 36.55,
+      "text": "And the reason why we have that is because every generation of z, the microarchitecture changes."
+    },
+    {
+      "start": 36.55,
+      "end": 42.07,
+      "text": "However, what we publish in the principles of operation, that does not change. We add stuff,"
+    },
+    {
+      "start": 42.07,
+      "end": 47.19,
+      "text": "we don't remove stuff. We add new instructions, we don't remove instructions. So an instruction"
+    },
+    {
+      "start": 47.19,
+      "end": 53.59,
+      "text": "that we introduced 10 years ago, functionally it does the same thing, but microarchitecture,"
+    },
+    {
+      "start": 53.59,
+      "end": 59.11,
+      "text": "really how we get to that answer is very different. And in Millicoat, we make those changes so"
+    },
+    {
+      "start": 59.11,
+      "end": 63.11,
+      "text": "that the operating system or the user of the program doesn't have to make those changes."
+    },
+    {
+      "start": 63.91,
+      "end": 70.31,
+      "text": "In addition to the instruction set, the implemented instruction set on the principle of operations,"
+    },
+    {
+      "start": 70.31,
+      "end": 77.43,
+      "text": "Millicoat is also involved in a few other key aspects of IBMC. We do system initialization,"
+    },
+    {
+      "start": 77.43,
+      "end": 82.71,
+      "text": "which basically means you pull an on the system, going to the IML steps, initial machine load,"
+    },
+    {
+      "start": 82.79,
+      "end": 89.19,
+      "text": "that's IML. Millicoat is involved with virtualization. So you have a single resource, a system,"
+    },
+    {
+      "start": 89.19,
+      "end": 93.27,
+      "text": "and you're going to divide it up into logical partitions and run different operating systems"
+    },
+    {
+      "start": 93.27,
+      "end": 97.59,
+      "text": "in each partition. For that, to be possible, you need an instruction that's called"
+    },
+    {
+      "start": 98.47,
+      "end": 103.27,
+      "text": "psi or start interpretive execution, and that instruction is implemented in Millicoat."
+    },
+    {
+      "start": 103.27,
+      "end": 108.15,
+      "text": "So that's Millicoat in a nutshell. As you can see, the things that we do on the system is"
+    },
+    {
+      "start": 108.15,
+      "end": 115.19,
+      "text": "important, especially for recovery, for availability, and for serviceability. I've been enjoying"
+    },
+    {
+      "start": 115.19,
+      "end": 126.79,
+      "text": "my work in Millicoat, and it's been fun joining so far. Thank you."
+    }
+  ]
+}

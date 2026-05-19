@@ -1,0 +1,2954 @@
+{
+  "capturedAt": "2026-05-19T12:52:25.666Z",
+  "courseUrl": "https://learn.ibm.com/course/view.php?id=6815",
+  "courseTitle": "Confirm revalidation",
+  "sections": [
+    {
+      "title": "Course Overview",
+      "activities": [
+        {
+          "title": "Course Introduction",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96084"
+        }
+      ]
+    },
+    {
+      "title": "Mainframe Environment",
+      "activities": [
+        {
+          "title": "Computer Architecture",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95222"
+        },
+        {
+          "title": "Mainframe Architecture",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95223"
+        },
+        {
+          "title": "Virtualization",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95225"
+        },
+        {
+          "title": "What is an Operating System?",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96085"
+        },
+        {
+          "title": "Mainframe Operating Systems",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086"
+        },
+        {
+          "title": "Diving deeper into z/OS",
+          "type": "page",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96087"
+        },
+        {
+          "title": "Checkpoint 1",
+          "type": "quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088"
+        },
+        {
+          "title": "Your forum for comments, feedback, and questions on this section.",
+          "type": "forum",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119801"
+        }
+      ]
+    },
+    {
+      "title": "Mainframe Infrastructure",
+      "activities": [
+        {
+          "title": "Why use Mainframes?",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "title": "IBM Z components",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "title": "Mainframe Features",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "title": "IBM Z Configuration Setup",
+          "type": "page",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "title": "Millicode",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "title": "HMC and SE",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "title": "Sysplex",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "title": "A complete IBM Z Glossary of Terms",
+          "type": "page",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "title": "Checkpoint 2",
+          "type": "quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "title": "Let's talk!",
+          "type": "forum",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        }
+      ]
+    },
+    {
+      "title": "Mainframe Security",
+      "activities": [
+        {
+          "title": "z/OS Security",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "title": "Security Addendum",
+          "type": "hvp",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "title": "Transaction Level Security",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "title": "Crypto Express Key Management",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "title": "IOCDS",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "title": "Activation Profiles",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "title": "IPLing an Operating System",
+          "type": "video",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "title": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
+          "type": "page",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "title": "Checkpoint 3",
+          "type": "quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "title": "Your forum for comments, feedback, and questions on this section.",
+          "type": "forum",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        }
+      ]
+    },
+    {
+      "title": "Badge Quiz",
+      "activities": [
+        {
+          "title": "This quiz consists of 30 questions and requires a passing score of 24 correct answers. You are granted 2 attempts to pass the quiz, and will then need to wait 3 days before trying again. There are no limits on your total number of attempts.",
+          "type": "label",
+          "href": ""
+        },
+        {
+          "title": "Badge quiz",
+          "type": "quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=348797"
+        },
+        {
+          "title": "Successfully complete all threes courses in this Learning Journey to claim your IBM z/OS Mainframe Practitioner Certification badge:Introduction to IBM z/OS Mainframe (Course 1 of 3)Introduction to z/OS Commands and Panels on IBM Z (Course 2 of 3 )Introduction to System Programming on IBM Z (Course 3 of 3)After completing all 3 courses and corresponding badges, go here to earn the z/OS Mainframe Practitioner Certification badge:IBM z/OS Mainframe Practitioner Certification BadgeThank you for using the IBM TechXchange Training!",
+          "type": "label",
+          "href": ""
+        },
+        {
+          "title": "Congratulations! You have completed the requirements for this badge. You should receive an email from Credly momentarily with instructions for claiming your badge. Or, you may visit Credly.com to login and collect your badge!",
+          "type": "label",
+          "href": ""
+        },
+        {
+          "title": "Course completion certificate",
+          "type": "certificate",
+          "href": "https://learn.ibm.com/mod/certificate/view.php?id=348804"
+        },
+        {
+          "title": "Course survey",
+          "type": "questionnaire",
+          "href": "https://learn.ibm.com/mod/questionnaire/view.php?id=94257"
+        }
+      ]
+    },
+    {
+      "title": "Claim your Practitioner Badge",
+      "activities": [
+        {
+          "title": "Successfully complete all threes courses in this Learning Journey to claim your IBM z/OS Mainframe Practitioner Certification badge:Introduction to IBM z/OS Mainframe (Course 1 of 3)Introduction to z/OS Commands and Panels on IBM Z (Course 2 of 3 )Introduction to System Programming on IBM Z (Course 3 of 3)After completing all 3 courses and corresponding badges, go here to earn the z/OS Mainframe Practitioner certification badge:IBM z/OS Mainframe Practitioner Certification BadgeThank you for using the IBM TechXchange Training!",
+          "type": "label",
+          "href": ""
+        },
+        {
+          "title": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "type": "url",
+          "href": "https://learn.ibm.com/mod/url/view.php?id=350670"
+        }
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "section": "Mainframe Environment",
+      "type": "page",
+      "title": "Diving deeper into z/OS",
+      "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96087",
+      "markdown": "### Diving deeper into z/OS\n\nIBM releases a new version of z/OS every two years. Updating the z/OS on a system isn't trivial, and usually takes months of planning. Each z/OS brings new features to the Mainframe server, and just like with other devices, some of these features are only available on the latest hardware.\n\nI​t's a good time to review some of the technical documents that come with a new release of z/OS. You won't be tested on this, and please don't read too heavily into these documents, but they'll make for great references later on in your career.\n\nRead about z/OS Version 3.2\n\nLast modified: Wednesday, July 23, 2025, 3:02 PM",
+      "assets": [
+        {
+          "tag": "a",
+          "text": "Skip to main content",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#maincontent"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "← Back to Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "NCNicholas Chien",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my"
+        },
+        {
+          "tag": "a",
+          "text": "Profile",
+          "href": "https://learn.ibm.com/user/profile.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Preferences",
+          "href": "https://learn.ibm.com/user/preferences.php"
+        },
+        {
+          "tag": "a",
+          "text": "Log out",
+          "href": "https://learn.ibm.com/login/logout.php?sesskey=NXUL439QT3"
+        },
+        {
+          "tag": "a",
+          "text": "Back",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Next",
+          "href": "https://test.learn.ibm.com/mod/video/view.php?id=238657&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Introduction",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96084"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse2"
+        },
+        {
+          "tag": "a",
+          "text": "Computer Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95222"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95223"
+        },
+        {
+          "tag": "a",
+          "text": "Virtualization",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95225"
+        },
+        {
+          "tag": "a",
+          "text": "What is an Operating System?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96085"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Operating Systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086"
+        },
+        {
+          "tag": "a",
+          "text": "Diving deeper into z/OS",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96087"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 1",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119801"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse3"
+        },
+        {
+          "tag": "a",
+          "text": "Why use Mainframes?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z Configuration Setup",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "tag": "a",
+          "text": "HMC and SE",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "tag": "a",
+          "text": "Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "tag": "a",
+          "text": "A complete IBM Z Glossary of Terms",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "tag": "a",
+          "text": "Let's talk!",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse4"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "tag": "a",
+          "text": "Security Addendum",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "tag": "a",
+          "text": "Crypto Express Key Management",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "tag": "a",
+          "text": "IOCDS",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "tag": "a",
+          "text": "Activation Profiles",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "tag": "a",
+          "text": "IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse5"
+        },
+        {
+          "tag": "a",
+          "text": "Badge quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=348797"
+        },
+        {
+          "tag": "a",
+          "text": "Course completion certificate",
+          "href": "https://learn.ibm.com/mod/certificate/view.php?id=348804"
+        },
+        {
+          "tag": "a",
+          "text": "Course survey",
+          "href": "https://learn.ibm.com/mod/questionnaire/view.php?id=94257"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse6"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "href": "https://learn.ibm.com/mod/url/view.php?id=350670"
+        },
+        {
+          "tag": "a",
+          "text": "Skip Navigation",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#sb-3"
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my/"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Tags",
+          "href": "https://learn.ibm.com/tag/search.php"
+        },
+        {
+          "tag": "a",
+          "text": "Site announcements",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=15659"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Mainframe Practitioner cert",
+          "href": "https://learn.ibm.com/course/view.php?id=18718"
+        },
+        {
+          "tag": "a",
+          "text": "ADDI Essentials",
+          "href": "https://learn.ibm.com/course/view.php?id=7680"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Developer for z/OS(IDz) basics",
+          "href": "https://learn.ibm.com/course/view.php?id=5403"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-1"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-2"
+        },
+        {
+          "tag": "a",
+          "text": "Computer Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95222"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95223"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Virtualization",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95225"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "What is an Operating System?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96085"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Operating Systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Diving deeper into z/OS",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96087"
+        },
+        {
+          "tag": "img",
+          "text": "Page",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/page/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 1",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088"
+        },
+        {
+          "tag": "img",
+          "text": "Quiz",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/quiz/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions o...",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119801"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-3"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-4"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-5"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-6"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to System Programming on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7512"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to z/OS Commands and Panels on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7419"
+        },
+        {
+          "tag": "a",
+          "text": "COBOL Programming with VSCode",
+          "href": "https://learn.ibm.com/course/view.php?id=7552"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z Testing",
+          "href": "https://learn.ibm.com/course/view.php?id=11184"
+        },
+        {
+          "tag": "a",
+          "text": "IBM watsonx Code Assistant for Z Fundamentals",
+          "href": "https://learn.ibm.com/course/view.php?id=16401"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to PL/I",
+          "href": "https://learn.ibm.com/course/view.php?id=16105"
+        },
+        {
+          "tag": "a",
+          "text": "More...",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://www.learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy Statement",
+          "href": "https://www.learn.ibm.com/GeneralConsentDLP.html"
+        },
+        {
+          "tag": "a",
+          "text": "Read about z/OS Version 3.2",
+          "href": "https://www.ibm.com/docs/en/announcements/zos-32-unlocks-value-z17"
+        },
+        {
+          "tag": "a",
+          "text": "◄ Mainframe Operating Systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 1 ►",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Chevron up",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "href": "https://www.ibm.com/contact/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy",
+          "href": "http://www.ibm.com/privacy/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Terms of Use",
+          "href": "http://www.ibm.com/legal/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Accessibility",
+          "href": "http://www.ibm.com/accessibility/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Cookie preferences",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        }
+      ],
+      "hasH5P": true,
+      "htmlLength": 96775
+    },
+    {
+      "section": "Mainframe Infrastructure",
+      "type": "page",
+      "title": "IBM Z Configuration Setup",
+      "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96630",
+      "markdown": "### IBM Z Configuration Setup\n\nAttached is the quick reference guide on setting up and configuring an IBM Z server. While you won't be tested on this content, do take some time to familiarize yourself with the steps needed to plan out the install of a new server.\n\nRead about setup of the IBM z17 Here\n\nLast modified: Wednesday, July 23, 2025, 3:04 PM",
+      "assets": [
+        {
+          "tag": "a",
+          "text": "Skip to main content",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#maincontent"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "← Back to Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "NCNicholas Chien",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my"
+        },
+        {
+          "tag": "a",
+          "text": "Profile",
+          "href": "https://learn.ibm.com/user/profile.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Preferences",
+          "href": "https://learn.ibm.com/user/preferences.php"
+        },
+        {
+          "tag": "a",
+          "text": "Log out",
+          "href": "https://learn.ibm.com/login/logout.php?sesskey=NXUL439QT3"
+        },
+        {
+          "tag": "a",
+          "text": "Back",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Next",
+          "href": "https://test.learn.ibm.com/mod/video/view.php?id=238657&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Introduction",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96084"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse2"
+        },
+        {
+          "tag": "a",
+          "text": "Computer Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95222"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95223"
+        },
+        {
+          "tag": "a",
+          "text": "Virtualization",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95225"
+        },
+        {
+          "tag": "a",
+          "text": "What is an Operating System?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96085"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Operating Systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086"
+        },
+        {
+          "tag": "a",
+          "text": "Diving deeper into z/OS",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96087"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 1",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119801"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse3"
+        },
+        {
+          "tag": "a",
+          "text": "Why use Mainframes?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z Configuration Setup",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "tag": "a",
+          "text": "HMC and SE",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "tag": "a",
+          "text": "Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "tag": "a",
+          "text": "A complete IBM Z Glossary of Terms",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "tag": "a",
+          "text": "Let's talk!",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse4"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "tag": "a",
+          "text": "Security Addendum",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "tag": "a",
+          "text": "Crypto Express Key Management",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "tag": "a",
+          "text": "IOCDS",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "tag": "a",
+          "text": "Activation Profiles",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "tag": "a",
+          "text": "IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse5"
+        },
+        {
+          "tag": "a",
+          "text": "Badge quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=348797"
+        },
+        {
+          "tag": "a",
+          "text": "Course completion certificate",
+          "href": "https://learn.ibm.com/mod/certificate/view.php?id=348804"
+        },
+        {
+          "tag": "a",
+          "text": "Course survey",
+          "href": "https://learn.ibm.com/mod/questionnaire/view.php?id=94257"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse6"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "href": "https://learn.ibm.com/mod/url/view.php?id=350670"
+        },
+        {
+          "tag": "a",
+          "text": "Skip Navigation",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#sb-3"
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my/"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Tags",
+          "href": "https://learn.ibm.com/tag/search.php"
+        },
+        {
+          "tag": "a",
+          "text": "Site announcements",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=15659"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Mainframe Practitioner cert",
+          "href": "https://learn.ibm.com/course/view.php?id=18718"
+        },
+        {
+          "tag": "a",
+          "text": "ADDI Essentials",
+          "href": "https://learn.ibm.com/course/view.php?id=7680"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Developer for z/OS(IDz) basics",
+          "href": "https://learn.ibm.com/course/view.php?id=5403"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-1"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-2"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-3"
+        },
+        {
+          "tag": "a",
+          "text": "Why use Mainframes?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z Configuration Setup",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "tag": "img",
+          "text": "Page",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/page/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "HMC and SE",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "A complete IBM Z Glossary of Terms",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "tag": "img",
+          "text": "Page",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/page/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "tag": "img",
+          "text": "Quiz",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/quiz/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Let's talk!",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-4"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-5"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-6"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to System Programming on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7512"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to z/OS Commands and Panels on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7419"
+        },
+        {
+          "tag": "a",
+          "text": "COBOL Programming with VSCode",
+          "href": "https://learn.ibm.com/course/view.php?id=7552"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z Testing",
+          "href": "https://learn.ibm.com/course/view.php?id=11184"
+        },
+        {
+          "tag": "a",
+          "text": "IBM watsonx Code Assistant for Z Fundamentals",
+          "href": "https://learn.ibm.com/course/view.php?id=16401"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to PL/I",
+          "href": "https://learn.ibm.com/course/view.php?id=16105"
+        },
+        {
+          "tag": "a",
+          "text": "More...",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://www.learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy Statement",
+          "href": "https://www.learn.ibm.com/GeneralConsentDLP.html"
+        },
+        {
+          "tag": "a",
+          "text": "Read about setup of the IBM z17 Here",
+          "href": "https://www.redbooks.ibm.com/redpieces/pdfs/sg248581.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "◄ Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode ►",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Chevron up",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "href": "https://www.ibm.com/contact/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy",
+          "href": "http://www.ibm.com/privacy/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Terms of Use",
+          "href": "http://www.ibm.com/legal/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Accessibility",
+          "href": "http://www.ibm.com/accessibility/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Cookie preferences",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        }
+      ],
+      "hasH5P": true,
+      "htmlLength": 98891
+    },
+    {
+      "section": "Mainframe Infrastructure",
+      "type": "page",
+      "title": "A complete IBM Z Glossary of Terms",
+      "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96632",
+      "markdown": "### A complete IBM Z Glossary of Terms\n\nFor many, IBM Z is a brand new computing environment, and with that comes a lot of new terms. Have a look! This can be a handy guide to heave open while going further in this course! Have it around, just in case you're asked questions at the end of this week, or get into trouble with acronyms.\n\nLast modified: Thursday, March 5, 2020, 1:14 PM",
+      "assets": [
+        {
+          "tag": "a",
+          "text": "Skip to main content",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#maincontent"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "← Back to Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "NCNicholas Chien",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my"
+        },
+        {
+          "tag": "a",
+          "text": "Profile",
+          "href": "https://learn.ibm.com/user/profile.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Preferences",
+          "href": "https://learn.ibm.com/user/preferences.php"
+        },
+        {
+          "tag": "a",
+          "text": "Log out",
+          "href": "https://learn.ibm.com/login/logout.php?sesskey=NXUL439QT3"
+        },
+        {
+          "tag": "a",
+          "text": "Back",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Next",
+          "href": "https://test.learn.ibm.com/mod/video/view.php?id=238657&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Introduction",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96084"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse2"
+        },
+        {
+          "tag": "a",
+          "text": "Computer Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95222"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95223"
+        },
+        {
+          "tag": "a",
+          "text": "Virtualization",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95225"
+        },
+        {
+          "tag": "a",
+          "text": "What is an Operating System?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96085"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Operating Systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086"
+        },
+        {
+          "tag": "a",
+          "text": "Diving deeper into z/OS",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96087"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 1",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119801"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse3"
+        },
+        {
+          "tag": "a",
+          "text": "Why use Mainframes?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z Configuration Setup",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "tag": "a",
+          "text": "HMC and SE",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "tag": "a",
+          "text": "Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "tag": "a",
+          "text": "A complete IBM Z Glossary of Terms",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "tag": "a",
+          "text": "Let's talk!",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse4"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "tag": "a",
+          "text": "Security Addendum",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "tag": "a",
+          "text": "Crypto Express Key Management",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "tag": "a",
+          "text": "IOCDS",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "tag": "a",
+          "text": "Activation Profiles",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "tag": "a",
+          "text": "IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse5"
+        },
+        {
+          "tag": "a",
+          "text": "Badge quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=348797"
+        },
+        {
+          "tag": "a",
+          "text": "Course completion certificate",
+          "href": "https://learn.ibm.com/mod/certificate/view.php?id=348804"
+        },
+        {
+          "tag": "a",
+          "text": "Course survey",
+          "href": "https://learn.ibm.com/mod/questionnaire/view.php?id=94257"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse6"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "href": "https://learn.ibm.com/mod/url/view.php?id=350670"
+        },
+        {
+          "tag": "a",
+          "text": "Skip Navigation",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#sb-3"
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my/"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Tags",
+          "href": "https://learn.ibm.com/tag/search.php"
+        },
+        {
+          "tag": "a",
+          "text": "Site announcements",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=15659"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Mainframe Practitioner cert",
+          "href": "https://learn.ibm.com/course/view.php?id=18718"
+        },
+        {
+          "tag": "a",
+          "text": "ADDI Essentials",
+          "href": "https://learn.ibm.com/course/view.php?id=7680"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Developer for z/OS(IDz) basics",
+          "href": "https://learn.ibm.com/course/view.php?id=5403"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-1"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-2"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-3"
+        },
+        {
+          "tag": "a",
+          "text": "Why use Mainframes?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z Configuration Setup",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "tag": "img",
+          "text": "Page",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/page/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "HMC and SE",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "A complete IBM Z Glossary of Terms",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "tag": "img",
+          "text": "Page",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/page/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "tag": "img",
+          "text": "Quiz",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/quiz/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Let's talk!",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-4"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-5"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-6"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to System Programming on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7512"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to z/OS Commands and Panels on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7419"
+        },
+        {
+          "tag": "a",
+          "text": "COBOL Programming with VSCode",
+          "href": "https://learn.ibm.com/course/view.php?id=7552"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z Testing",
+          "href": "https://learn.ibm.com/course/view.php?id=11184"
+        },
+        {
+          "tag": "a",
+          "text": "IBM watsonx Code Assistant for Z Fundamentals",
+          "href": "https://learn.ibm.com/course/view.php?id=16401"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to PL/I",
+          "href": "https://learn.ibm.com/course/view.php?id=16105"
+        },
+        {
+          "tag": "a",
+          "text": "More...",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://www.learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy Statement",
+          "href": "https://www.learn.ibm.com/GeneralConsentDLP.html"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/pluginfile.php/765845/mod_page/content/1/uxQcaqjNEem5YwqUxVF09g_b1b736c38bb74d78bc73b1fe47a1d572_IBM-Z-Glossary-of-Terms.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/pluginfile.php/765845/mod_page/content/1/uxQcaqjNEem5YwqUxVF09g_b1b736c38bb74d78bc73b1fe47a1d572_IBM-Z-Glossary-of-Terms.pdf"
+        },
+        {
+          "tag": "iframe",
+          "text": "",
+          "href": "https://learn.ibm.com/pluginfile.php/765845/mod_page/content/1/uxQcaqjNEem5YwqUxVF09g_b1b736c38bb74d78bc73b1fe47a1d572_IBM-Z-Glossary-of-Terms.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "◄ Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2 ►",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Chevron up",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "href": "https://www.ibm.com/contact/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy",
+          "href": "http://www.ibm.com/privacy/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Terms of Use",
+          "href": "http://www.ibm.com/legal/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Accessibility",
+          "href": "http://www.ibm.com/accessibility/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Cookie preferences",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        }
+      ],
+      "hasH5P": true,
+      "htmlLength": 100553
+    },
+    {
+      "section": "Mainframe Security",
+      "type": "hvp",
+      "title": "Security Addendum",
+      "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=129741",
+      "markdown": "",
+      "assets": [
+        {
+          "tag": "a",
+          "text": "Skip to main content",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#maincontent"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "← Back to Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "NCNicholas Chien",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my"
+        },
+        {
+          "tag": "a",
+          "text": "Profile",
+          "href": "https://learn.ibm.com/user/profile.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Preferences",
+          "href": "https://learn.ibm.com/user/preferences.php"
+        },
+        {
+          "tag": "a",
+          "text": "Log out",
+          "href": "https://learn.ibm.com/login/logout.php?sesskey=NXUL439QT3"
+        },
+        {
+          "tag": "a",
+          "text": "Back",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Next",
+          "href": "https://test.learn.ibm.com/mod/video/view.php?id=238657&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Introduction",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96084"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse2"
+        },
+        {
+          "tag": "a",
+          "text": "Computer Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95222"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95223"
+        },
+        {
+          "tag": "a",
+          "text": "Virtualization",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95225"
+        },
+        {
+          "tag": "a",
+          "text": "What is an Operating System?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96085"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Operating Systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086"
+        },
+        {
+          "tag": "a",
+          "text": "Diving deeper into z/OS",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96087"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 1",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119801"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse3"
+        },
+        {
+          "tag": "a",
+          "text": "Why use Mainframes?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z Configuration Setup",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "tag": "a",
+          "text": "HMC and SE",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "tag": "a",
+          "text": "Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "tag": "a",
+          "text": "A complete IBM Z Glossary of Terms",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "tag": "a",
+          "text": "Let's talk!",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse4"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "tag": "a",
+          "text": "Security Addendum",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "tag": "a",
+          "text": "Crypto Express Key Management",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "tag": "a",
+          "text": "IOCDS",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "tag": "a",
+          "text": "Activation Profiles",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "tag": "a",
+          "text": "IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse5"
+        },
+        {
+          "tag": "a",
+          "text": "Badge quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=348797"
+        },
+        {
+          "tag": "a",
+          "text": "Course completion certificate",
+          "href": "https://learn.ibm.com/mod/certificate/view.php?id=348804"
+        },
+        {
+          "tag": "a",
+          "text": "Course survey",
+          "href": "https://learn.ibm.com/mod/questionnaire/view.php?id=94257"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse6"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "href": "https://learn.ibm.com/mod/url/view.php?id=350670"
+        },
+        {
+          "tag": "a",
+          "text": "Skip Navigation",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#sb-3"
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my/"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Tags",
+          "href": "https://learn.ibm.com/tag/search.php"
+        },
+        {
+          "tag": "a",
+          "text": "Site announcements",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=15659"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Mainframe Practitioner cert",
+          "href": "https://learn.ibm.com/course/view.php?id=18718"
+        },
+        {
+          "tag": "a",
+          "text": "ADDI Essentials",
+          "href": "https://learn.ibm.com/course/view.php?id=7680"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Developer for z/OS(IDz) basics",
+          "href": "https://learn.ibm.com/course/view.php?id=5403"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-1"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-2"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-3"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-4"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Security Addendum",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "tag": "img",
+          "text": "Interactive Content",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/hvp/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Crypto Express Key Management",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IOCDS",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Activation Profiles",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS MVS System Initialization Logic Initial Progr...",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "tag": "img",
+          "text": "Page",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/page/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "tag": "img",
+          "text": "Quiz",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/quiz/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions o...",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-5"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-6"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to System Programming on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7512"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to z/OS Commands and Panels on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7419"
+        },
+        {
+          "tag": "a",
+          "text": "COBOL Programming with VSCode",
+          "href": "https://learn.ibm.com/course/view.php?id=7552"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z Testing",
+          "href": "https://learn.ibm.com/course/view.php?id=11184"
+        },
+        {
+          "tag": "a",
+          "text": "IBM watsonx Code Assistant for Z Fundamentals",
+          "href": "https://learn.ibm.com/course/view.php?id=16401"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to PL/I",
+          "href": "https://learn.ibm.com/course/view.php?id=16105"
+        },
+        {
+          "tag": "a",
+          "text": "More...",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://www.learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy Statement",
+          "href": "https://www.learn.ibm.com/GeneralConsentDLP.html"
+        },
+        {
+          "tag": "iframe",
+          "text": "Security Addendum",
+          "href": "about:blank"
+        },
+        {
+          "tag": "a",
+          "text": "◄ z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security ►",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Chevron up",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "href": "https://www.ibm.com/contact/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy",
+          "href": "http://www.ibm.com/privacy/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Terms of Use",
+          "href": "http://www.ibm.com/legal/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Accessibility",
+          "href": "http://www.ibm.com/accessibility/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Cookie preferences",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        }
+      ],
+      "hasH5P": true,
+      "htmlLength": 119354
+    },
+    {
+      "section": "Mainframe Security",
+      "type": "page",
+      "title": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
+      "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96731",
+      "markdown": "### z/OS MVS System Initialization Logic Initial Program Load (IPL)\n\nWhile you won't be tested on this, have a look at the IPL Logical Flow for V2 of z/OS. If this is something you're interested in, it can be really advantageous to know it before your job interview in an IBM z/OS field.\n\nLast modified: Thursday, March 5, 2020, 1:36 PM",
+      "assets": [
+        {
+          "tag": "a",
+          "text": "Skip to main content",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#maincontent"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "← Back to Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "NCNicholas Chien",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my"
+        },
+        {
+          "tag": "a",
+          "text": "Profile",
+          "href": "https://learn.ibm.com/user/profile.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Preferences",
+          "href": "https://learn.ibm.com/user/preferences.php"
+        },
+        {
+          "tag": "a",
+          "text": "Log out",
+          "href": "https://learn.ibm.com/login/logout.php?sesskey=NXUL439QT3"
+        },
+        {
+          "tag": "a",
+          "text": "Back",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Next",
+          "href": "https://test.learn.ibm.com/mod/video/view.php?id=238657&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse1"
+        },
+        {
+          "tag": "a",
+          "text": "Course Introduction",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96084"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse2"
+        },
+        {
+          "tag": "a",
+          "text": "Computer Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95222"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Architecture",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95223"
+        },
+        {
+          "tag": "a",
+          "text": "Virtualization",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=95225"
+        },
+        {
+          "tag": "a",
+          "text": "What is an Operating System?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96085"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Operating Systems",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96086"
+        },
+        {
+          "tag": "a",
+          "text": "Diving deeper into z/OS",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96087"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 1",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=96088"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119801"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse3"
+        },
+        {
+          "tag": "a",
+          "text": "Why use Mainframes?",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96231"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z components",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96232"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Features",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96233"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Z Configuration Setup",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96630"
+        },
+        {
+          "tag": "a",
+          "text": "Millicode",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96594"
+        },
+        {
+          "tag": "a",
+          "text": "HMC and SE",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96597"
+        },
+        {
+          "tag": "a",
+          "text": "Sysplex",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96599"
+        },
+        {
+          "tag": "a",
+          "text": "A complete IBM Z Glossary of Terms",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96632"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 2",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101250"
+        },
+        {
+          "tag": "a",
+          "text": "Let's talk!",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=129585"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse4"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "tag": "a",
+          "text": "Security Addendum",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "tag": "a",
+          "text": "Crypto Express Key Management",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "tag": "a",
+          "text": "IOCDS",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "tag": "a",
+          "text": "Activation Profiles",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "tag": "a",
+          "text": "IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions on this section.",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse5"
+        },
+        {
+          "tag": "a",
+          "text": "Badge quiz",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=348797"
+        },
+        {
+          "tag": "a",
+          "text": "Course completion certificate",
+          "href": "https://learn.ibm.com/mod/certificate/view.php?id=348804"
+        },
+        {
+          "tag": "a",
+          "text": "Course survey",
+          "href": "https://learn.ibm.com/mod/questionnaire/view.php?id=94257"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#collapse6"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z/OS Mainframe Practitioner Certification Badge",
+          "href": "https://learn.ibm.com/mod/url/view.php?id=350670"
+        },
+        {
+          "tag": "a",
+          "text": "Skip Navigation",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#sb-3"
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "href": "https://learn.ibm.com/"
+        },
+        {
+          "tag": "a",
+          "text": "My Enrollments",
+          "href": "https://learn.ibm.com/my/"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Tags",
+          "href": "https://learn.ibm.com/tag/search.php"
+        },
+        {
+          "tag": "a",
+          "text": "Site announcements",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=15659"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "My courses",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Mainframe Practitioner cert",
+          "href": "https://learn.ibm.com/course/view.php?id=18718"
+        },
+        {
+          "tag": "a",
+          "text": "ADDI Essentials",
+          "href": "https://learn.ibm.com/course/view.php?id=7680"
+        },
+        {
+          "tag": "a",
+          "text": "IBM Developer for z/OS(IDz) basics",
+          "href": "https://learn.ibm.com/course/view.php?id=5403"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to IBM z/OS",
+          "href": "https://learn.ibm.com/course/view.php?id=6815"
+        },
+        {
+          "tag": "a",
+          "text": "Course Overview",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-1"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Environment",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-2"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Infrastructure",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-3"
+        },
+        {
+          "tag": "a",
+          "text": "Mainframe Security",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-4"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96601"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Security Addendum",
+          "href": "https://learn.ibm.com/mod/hvp/view.php?id=129741"
+        },
+        {
+          "tag": "img",
+          "text": "Interactive Content",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/hvp/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Transaction Level Security",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96603"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Crypto Express Key Management",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96608"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IOCDS",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96610"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Activation Profiles",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96611"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613"
+        },
+        {
+          "tag": "img",
+          "text": "Video",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/video/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "z/OS MVS System Initialization Logic Initial Progr...",
+          "href": "https://learn.ibm.com/mod/page/view.php?id=96731"
+        },
+        {
+          "tag": "img",
+          "text": "Page",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/page/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251"
+        },
+        {
+          "tag": "img",
+          "text": "Quiz",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/quiz/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Your forum for comments, feedback, and questions o...",
+          "href": "https://learn.ibm.com/mod/forum/view.php?id=119803"
+        },
+        {
+          "tag": "img",
+          "text": "Forum",
+          "href": "https://learn.ibm.com/theme/image.php/dlpcarbon/forum/1777972031/monologo"
+        },
+        {
+          "tag": "a",
+          "text": "Badge Quiz",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-5"
+        },
+        {
+          "tag": "a",
+          "text": "Claim your Practitioner Badge",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#section-6"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to System Programming on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7512"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to z/OS Commands and Panels on IBM Z",
+          "href": "https://learn.ibm.com/course/view.php?id=7419"
+        },
+        {
+          "tag": "a",
+          "text": "COBOL Programming with VSCode",
+          "href": "https://learn.ibm.com/course/view.php?id=7552"
+        },
+        {
+          "tag": "a",
+          "text": "IBM z Testing",
+          "href": "https://learn.ibm.com/course/view.php?id=11184"
+        },
+        {
+          "tag": "a",
+          "text": "IBM watsonx Code Assistant for Z Fundamentals",
+          "href": "https://learn.ibm.com/course/view.php?id=16401"
+        },
+        {
+          "tag": "a",
+          "text": "Introduction to PL/I",
+          "href": "https://learn.ibm.com/course/view.php?id=16105"
+        },
+        {
+          "tag": "a",
+          "text": "More...",
+          "href": "https://learn.ibm.com/my/courses.php"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://www.learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy Statement",
+          "href": "https://www.learn.ibm.com/GeneralConsentDLP.html"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/pluginfile.php/765986/mod_page/content/1/WVP_fs5gEemXFQqkMWIiQg_68054bc67579495bb1143c282e67ea5a_PRS3699-IPL-Logic-Flow-V2.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "",
+          "href": "https://learn.ibm.com/pluginfile.php/765986/mod_page/content/1/WVP_fs5gEemXFQqkMWIiQg_68054bc67579495bb1143c282e67ea5a_PRS3699-IPL-Logic-Flow-V2.pdf"
+        },
+        {
+          "tag": "iframe",
+          "text": "",
+          "href": "https://learn.ibm.com/pluginfile.php/765986/mod_page/content/1/WVP_fs5gEemXFQqkMWIiQg_68054bc67579495bb1143c282e67ea5a_PRS3699-IPL-Logic-Flow-V2.pdf"
+        },
+        {
+          "tag": "a",
+          "text": "◄ IPLing an Operating System",
+          "href": "https://learn.ibm.com/mod/video/view.php?id=96613&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Checkpoint 3 ►",
+          "href": "https://learn.ibm.com/mod/quiz/view.php?id=101251&forceview=1"
+        },
+        {
+          "tag": "a",
+          "text": "Chevron up",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "href": "https://www.ibm.com/contact/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Support",
+          "href": "https://learn.ibm.com/local/staticpage/view.php?page=Support"
+        },
+        {
+          "tag": "a",
+          "text": "Privacy",
+          "href": "http://www.ibm.com/privacy/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Terms of Use",
+          "href": "http://www.ibm.com/legal/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Accessibility",
+          "href": "http://www.ibm.com/accessibility/us/en/"
+        },
+        {
+          "tag": "a",
+          "text": "Cookie preferences",
+          "href": "https://learn.ibm.com/course/view.php?id=6815#"
+        }
+      ],
+      "hasH5P": true,
+      "htmlLength": 100490
+    }
+  ]
+}

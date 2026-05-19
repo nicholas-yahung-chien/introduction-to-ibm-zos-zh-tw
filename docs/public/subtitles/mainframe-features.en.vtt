@@ -1,0 +1,401 @@
+WEBVTT
+
+1
+00:00:04.850 --> 00:00:07.850
+The mainframe is an ever-evolving platform.
+
+2
+00:00:07.850 --> 00:00:10.850
+It's one of the reasons we get to come back and re-record this video.
+
+3
+00:00:10.850 --> 00:00:13.850
+New features are constantly being developed,
+
+4
+00:00:13.850 --> 00:00:15.850
+existing components are getting upgrades,
+
+5
+00:00:15.850 --> 00:00:19.850
+and its capabilities are always being extended to meet the world's business demands.
+
+6
+00:00:19.850 --> 00:00:23.850
+As it evolves, the mainframe continues to gain unique capabilities
+
+7
+00:00:23.850 --> 00:00:25.850
+that you won't find anywhere else.
+
+8
+00:00:25.850 --> 00:00:29.850
+And last time, Jeff stood here and talked about the brand-new Z14
+
+9
+00:00:29.850 --> 00:00:31.850
+and ZOS version 2 release 2.
+
+10
+00:00:31.850 --> 00:00:37.850
+Today, a Z17 with ZOS 3.2 is the new hotness.
+
+11
+00:00:37.850 --> 00:00:39.850
+Point is, new is relative,
+
+12
+00:00:39.850 --> 00:00:42.850
+so we're going to talk about some new things,
+
+13
+00:00:42.850 --> 00:00:45.850
+but just understand, as long as time keeps doing its thing,
+
+14
+00:00:45.850 --> 00:00:48.850
+there will always be new new things.
+
+15
+00:00:48.850 --> 00:00:51.850
+There's three new things I really want to focus in on.
+
+16
+00:00:51.850 --> 00:00:55.850
+Of course, the ability to process AI models on the Tellum 2
+
+17
+00:00:55.850 --> 00:00:57.850
+and the Spire chip are huge.
+
+18
+00:00:57.850 --> 00:01:00.850
+And AI runs throughout everything on the system,
+
+19
+00:01:00.850 --> 00:01:02.850
+so let's look at some of the other highlights.
+
+20
+00:01:02.850 --> 00:01:05.850
+Let's start with IBM Concert for Z.
+
+21
+00:01:05.850 --> 00:01:09.850
+The job of an operator is to keep things running and stay invisible.
+
+22
+00:01:09.850 --> 00:01:11.850
+If people are thinking about the operator,
+
+23
+00:01:11.850 --> 00:01:13.850
+it's usually because something's going wrong,
+
+24
+00:01:13.850 --> 00:01:16.850
+so staying ahead of those situations is a good strategy.
+
+25
+00:01:16.850 --> 00:01:20.850
+IBM Concert for Z brings key performance indicators and metrics
+
+26
+00:01:20.850 --> 00:01:22.850
+to a single pane of glass.
+
+27
+00:01:22.850 --> 00:01:25.850
+So not just CPU and memory and events,
+
+28
+00:01:25.850 --> 00:01:28.850
+but the relationships between applications and resources.
+
+29
+00:01:28.850 --> 00:01:30.850
+So you won't just see what's happening,
+
+30
+00:01:30.850 --> 00:01:33.850
+you'll be able to detect trends before they become problems.
+
+31
+00:01:33.850 --> 00:01:37.850
+And then, once we see something we know we need to act on,
+
+32
+00:01:37.850 --> 00:01:40.850
+not only is there an integrated command console,
+
+33
+00:01:40.850 --> 00:01:45.850
+there's AI-driven root cause detection and built-in recommendations,
+
+34
+00:01:45.850 --> 00:01:46.850
+which is great.
+
+35
+00:01:46.850 --> 00:01:49.850
+You get to start with a heads-up in a series of recommendations.
+
+36
+00:01:49.850 --> 00:01:52.850
+And of course, I'm not jealous at all of this.
+
+37
+00:01:52.850 --> 00:01:54.850
+I'm happy for you.
+
+38
+00:01:54.850 --> 00:01:55.850
+Really.
+
+39
+00:01:55.850 --> 00:01:57.850
+It's not about me.
+
+40
+00:01:57.850 --> 00:01:59.850
+It's not about me.
+
+41
+00:01:59.850 --> 00:02:00.850
+Let's move on.
+
+42
+00:02:00.850 --> 00:02:02.850
+How about quantum-safe cryptography?
+
+43
+00:02:02.850 --> 00:02:04.850
+In the world of data,
+
+44
+00:02:04.850 --> 00:02:07.850
+there's not very much these days that travels out over a network
+
+45
+00:02:07.850 --> 00:02:10.850
+or between entities without being encrypted at one end
+
+46
+00:02:10.850 --> 00:02:12.850
+before being decrypted at the other.
+
+47
+00:02:12.850 --> 00:02:15.850
+This is done by using a series of public and private keys.
+
+48
+00:02:15.850 --> 00:02:19.850
+Those same keys are used to authenticate our communications.
+
+49
+00:02:19.850 --> 00:02:23.850
+The entire public-private key ecosystem relies on two things.
+
+50
+00:02:23.850 --> 00:02:27.850
+Those private keys remaining private and the encryption being so strong
+
+51
+00:02:27.850 --> 00:02:32.850
+that even if someone did manage to intercept a few packets of data,
+
+52
+00:02:32.850 --> 00:02:34.850
+they wouldn't be able to peek inside.
+
+53
+00:02:34.850 --> 00:02:36.850
+Here's the problem.
+
+54
+00:02:36.850 --> 00:02:40.850
+Today's sophisticated hackers are out there gathering that encrypted data,
+
+55
+00:02:40.850 --> 00:02:45.850
+knowing that it may only be a few years before they get their hands on the tools to decrypt it.
+
+56
+00:02:45.850 --> 00:02:46.850
+They're playing the long game here.
+
+57
+00:02:46.850 --> 00:02:49.850
+And you may have heard figures about how it would take thousands
+
+58
+00:02:49.850 --> 00:02:52.850
+or even millions of years to crack a properly encrypted key.
+
+59
+00:02:52.850 --> 00:02:56.850
+But most of those figures are based on classical computing methods.
+
+60
+00:02:56.850 --> 00:03:00.850
+Shores algorithm, a method for finding prime factors of an integer
+
+61
+00:03:00.850 --> 00:03:04.850
+is a good example of something that runs very slowly on today's computers,
+
+62
+00:03:04.850 --> 00:03:09.850
+but could be greatly accelerated once quantum computing advances in several areas.
+
+63
+00:03:09.850 --> 00:03:13.850
+Long story short, the technology we consider ultra secure today
+
+64
+00:03:13.850 --> 00:03:16.850
+could fall apart in the face of quantum computing,
+
+65
+00:03:16.850 --> 00:03:20.850
+which is why quantum-safe cryptography on IBM Z provides not only
+
+66
+00:03:20.850 --> 00:03:25.850
+algorithms and key exchange mechanisms with this emerging threat in mind.
+
+67
+00:03:25.850 --> 00:03:29.850
+It also provides the tools to analyze your environment for potential exposures,
+
+68
+00:03:29.850 --> 00:03:32.850
+facilitate the rollout of quantum-safe algorithms,
+
+69
+00:03:32.850 --> 00:03:36.850
+and ensure keys are rotated and managed based on policy.
+
+70
+00:03:36.850 --> 00:03:40.850
+Those tools include the ZOS encryption readiness toolkit,
+
+71
+00:03:40.850 --> 00:03:44.850
+ZERT, application discovery and delivery intelligence,
+
+72
+00:03:44.850 --> 00:03:47.850
+ADDI, and unified key orchestrator.
+
+73
+00:03:47.850 --> 00:03:50.850
+There's also something you really ought to be aware of,
+
+74
+00:03:50.850 --> 00:03:54.850
+which is still fairly new, called system recovery boost.
+
+75
+00:03:54.850 --> 00:03:56.850
+This is a favorite of mine.
+
+76
+00:03:56.850 --> 00:03:58.850
+So your typical mainframe is meant to be used.
+
+77
+00:03:58.850 --> 00:04:02.850
+It's built with a capacity in mind, and any time it's not running applications,
+
+78
+00:04:02.850 --> 00:04:04.850
+it's costing someone money.
+
+79
+00:04:04.850 --> 00:04:08.850
+So it's important to keep those windows as brief as possible.
+
+80
+00:04:08.850 --> 00:04:12.850
+Now, let me also say that most IBM Z environments
+
+81
+00:04:12.850 --> 00:04:16.850
+will have multiple L-Pars across multiple physical systems and assist blocks,
+
+82
+00:04:16.850 --> 00:04:19.850
+so they can do what's called a rolling IPL.
+
+83
+00:04:19.850 --> 00:04:24.850
+So we're working on these two systems, and then these two systems,
+
+84
+00:04:24.850 --> 00:04:27.850
+and when we work on these last two systems,
+
+85
+00:04:27.850 --> 00:04:32.850
+everything's got maintenance, and we always had at least six systems ready to go.
+
+86
+00:04:32.850 --> 00:04:36.850
+But even then, we don't want to spend all day doing these rolling IPLs,
+
+87
+00:04:36.850 --> 00:04:41.850
+and we also want to spend as little time with a decreased pool of systems as possible.
+
+88
+00:04:41.850 --> 00:04:44.850
+That's where system recovery boost comes in.
+
+89
+00:04:44.850 --> 00:04:48.850
+During what is called the boost period, the system is allowed to use processors,
+
+90
+00:04:48.850 --> 00:04:52.850
+which are typically off limits, reserved for specialty workloads,
+
+91
+00:04:52.850 --> 00:04:56.850
+in order to get everything running at full capacity again as quickly as possible.
+
+92
+00:04:56.850 --> 00:04:59.850
+That's the technology part of this.
+
+93
+00:04:59.850 --> 00:05:02.850
+The other part that makes the people with the calculators happy,
+
+94
+00:05:02.850 --> 00:05:07.850
+is that during the boost period, all that extra power doesn't increase software licensing costs.
+
+95
+00:05:07.850 --> 00:05:10.850
+It's just there to help shorten that window.
+
+96
+00:05:10.850 --> 00:05:14.850
+The features we just went through are interesting and exciting to me right now.
+
+97
+00:05:14.850 --> 00:05:18.850
+The real important lesson here is to stay up to date.
+
+98
+00:05:18.850 --> 00:05:22.850
+IBM.com slash Z will give you the latest on software, hardware,
+
+99
+00:05:22.850 --> 00:05:25.850
+design, security, services, everything.
+
+100
+00:05:25.850 --> 00:05:29.850
+So don't stop with what we've covered. Keep going, keep learning.

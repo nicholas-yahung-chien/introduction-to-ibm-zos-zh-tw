@@ -1,0 +1,363 @@
+{
+  "slug": "transaction-level-security",
+  "title": "Transaction Level Security",
+  "language": "en",
+  "duration": 299.8160625,
+  "segments": [
+    {
+      "start": 3.47,
+      "end": 7.27,
+      "text": "So, the mainframe handles a whole lot of transactions."
+    },
+    {
+      "start": 7.27,
+      "end": 9.95,
+      "text": "And it's important that they be fast and accurate."
+    },
+    {
+      "start": 9.95,
+      "end": 15.39,
+      "text": "But it's also extremely important that the data for these transactions be safe and secure."
+    },
+    {
+      "start": 15.39,
+      "end": 20.07,
+      "text": "Safe to say, in today's information economy, a large-scale data breach is one of the"
+    },
+    {
+      "start": 20.07,
+      "end": 22.63,
+      "text": "worst things that can happen."
+    },
+    {
+      "start": 22.63,
+      "end": 28.15,
+      "text": "So how do we make sure that the data in these transactions is kept safe from prying eyes?"
+    },
+    {
+      "start": 28.15,
+      "end": 31.39,
+      "text": "One of the most commonly used practices is encryption."
+    },
+    {
+      "start": 31.39,
+      "end": 37.31,
+      "text": "Basically scrambling data in such a way we can control who is able to de-scramble it."
+    },
+    {
+      "start": 37.31,
+      "end": 41.43,
+      "text": "There are a number of encryption algorithms and practices we can use to handle the encryption"
+    },
+    {
+      "start": 41.43,
+      "end": 46.91,
+      "text": "and decryption of data, but it all comes down to controlling who has the keys."
+    },
+    {
+      "start": 46.91,
+      "end": 50.11,
+      "text": "In cryptography, a key is just a series of characters."
+    },
+    {
+      "start": 50.11,
+      "end": 53.83,
+      "text": "How many characters generally depends on the strength of the encryption."
+    },
+    {
+      "start": 53.83,
+      "end": 58.67,
+      "text": "If my key is only three bits with each bit, either being a one or a zero, there's"
+    },
+    {
+      "start": 58.67,
+      "end": 62.19,
+      "text": "only eight possible ways we can flip those bits."
+    },
+    {
+      "start": 62.19,
+      "end": 64.87,
+      "text": "So not much of a key at all."
+    },
+    {
+      "start": 64.87,
+      "end": 68.67,
+      "text": "Every time you add a bit, you double the amount of possible combinations someone would"
+    },
+    {
+      "start": 68.67,
+      "end": 69.99,
+      "text": "have to guess."
+    },
+    {
+      "start": 69.99,
+      "end": 77.91,
+      "text": "So four bits gets you to 16, five bits gets you to 32, fast-forward to 64 bits, and you've"
+    },
+    {
+      "start": 77.91,
+      "end": 81.07,
+      "text": "got billions of possible combinations."
+    },
+    {
+      "start": 81.07,
+      "end": 85.23,
+      "text": "But even that's guessable with enough time and dedicated resources."
+    },
+    {
+      "start": 85.23,
+      "end": 91.47,
+      "text": "So for very important data, you'll often see 256 bit and higher levels of encryption."
+    },
+    {
+      "start": 91.47,
+      "end": 95.67,
+      "text": "And those keys will get refreshed from time to time just to minimize the possibility"
+    },
+    {
+      "start": 95.67,
+      "end": 98.75,
+      "text": "of them getting figured out and exploited."
+    },
+    {
+      "start": 98.75,
+      "end": 103.87,
+      "text": "One of the most basic forms of securing data is what's called symmetric encryption."
+    },
+    {
+      "start": 103.87,
+      "end": 107.95,
+      "text": "In this method, there's a key that both encrypts and decrypts data."
+    },
+    {
+      "start": 107.95,
+      "end": 112.39,
+      "text": "And you give a copy of that key to anyone who has a need to access the data."
+    },
+    {
+      "start": 112.39,
+      "end": 116.59,
+      "text": "It works, but it's difficult to scale up while keeping it secure, and you also have to"
+    },
+    {
+      "start": 116.59,
+      "end": 120.03,
+      "text": "distribute those keys to all the intended users."
+    },
+    {
+      "start": 120.03,
+      "end": 123.11,
+      "text": "This is where public key cryptography comes in."
+    },
+    {
+      "start": 123.11,
+      "end": 128.43,
+      "text": "In public key cryptography, there are two keys, a public key and a private key."
+    },
+    {
+      "start": 128.43,
+      "end": 133.15,
+      "text": "And their mathematically linked in such a way that the public key can be used to encrypt"
+    },
+    {
+      "start": 133.15,
+      "end": 138.91,
+      "text": "a message, and only the private key that's linked to that public key can decrypt it."
+    },
+    {
+      "start": 138.91,
+      "end": 142.35,
+      "text": "So I can give out my public key to pretty much anyone."
+    },
+    {
+      "start": 142.35,
+      "end": 147.31,
+      "text": "They can't use that to figure out my private key, and all it means is they can encrypt"
+    },
+    {
+      "start": 147.31,
+      "end": 151.31,
+      "text": "a message in such a way that only I can decrypt it."
+    },
+    {
+      "start": 151.31,
+      "end": 155.35,
+      "text": "And if I want to send a message to my friend, and I want to make sure no one else can decrypt"
+    },
+    {
+      "start": 155.35,
+      "end": 160.23,
+      "text": "it, I can encrypt it with their public key, so they can decrypt it with their private"
+    },
+    {
+      "start": 160.23,
+      "end": 161.83,
+      "text": "key."
+    },
+    {
+      "start": 161.83,
+      "end": 163.87,
+      "text": "Pop quiz time."
+    },
+    {
+      "start": 163.87,
+      "end": 164.87,
+      "text": "You got that?"
+    },
+    {
+      "start": 164.87,
+      "end": 165.87,
+      "text": "Good."
+    },
+    {
+      "start": 165.87,
+      "end": 170.31,
+      "text": "Now, public and private keys can be used for some other pretty interesting things, like"
+    },
+    {
+      "start": 170.31,
+      "end": 175.51,
+      "text": "signing documents and creating hashes for data, which reveal if any of the data has been"
+    },
+    {
+      "start": 175.51,
+      "end": 177.15,
+      "text": "tampered with."
+    },
+    {
+      "start": 177.15,
+      "end": 182.23,
+      "text": "Both of these are incredibly important functions of cryptography and used extensively"
+    },
+    {
+      "start": 182.23,
+      "end": 183.83,
+      "text": "in business."
+    },
+    {
+      "start": 183.83,
+      "end": 189.19,
+      "text": "This whole idea of public and private key infrastructure only works if private keys are"
+    },
+    {
+      "start": 189.19,
+      "end": 191.11,
+      "text": "kept private."
+    },
+    {
+      "start": 191.11,
+      "end": 194.39,
+      "text": "That is key."
+    },
+    {
+      "start": 194.39,
+      "end": 195.39,
+      "text": "Guys?"
+    },
+    {
+      "start": 195.39,
+      "end": 203.95,
+      "text": "Key?"
+    },
+    {
+      "start": 203.95,
+      "end": 211.87,
+      "text": "The IBMZ has dedicated facilities and hardware to enable, accelerate, and further secure"
+    },
+    {
+      "start": 211.87,
+      "end": 214.23,
+      "text": "these cryptographic functions."
+    },
+    {
+      "start": 214.23,
+      "end": 220.35,
+      "text": "For starters, there's CPACF, the CP Assist for cryptographic functions."
+    },
+    {
+      "start": 220.35,
+      "end": 225.71,
+      "text": "This is a functionality provided on the processors specifically built largely around symmetric"
+    },
+    {
+      "start": 225.71,
+      "end": 227.39,
+      "text": "key functions."
+    },
+    {
+      "start": 227.39,
+      "end": 233.15,
+      "text": "And can greatly speed up things like VPN, SSL, and data storing applications."
+    },
+    {
+      "start": 233.15,
+      "end": 236.63,
+      "text": "There's also the Crypto Express PCIe card."
+    },
+    {
+      "start": 236.63,
+      "end": 241.19,
+      "text": "This is a dedicated card that handles more advanced cryptographic functions."
+    },
+    {
+      "start": 241.19,
+      "end": 245.95,
+      "text": "By offloading cryptographic work to specialize software and hardware, we were able to keep"
+    },
+    {
+      "start": 245.95,
+      "end": 251.91,
+      "text": "our keys safe while still making encryption, decryption, and other cryptographic capabilities"
+    },
+    {
+      "start": 251.91,
+      "end": 256.15,
+      "text": "readily available to all aspects of Z data processing."
+    },
+    {
+      "start": 256.15,
+      "end": 262.35,
+      "text": "And I do mean all aspects, because starting with the Z14 version of the IBMZ mainframe,"
+    },
+    {
+      "start": 262.35,
+      "end": 267.51,
+      "text": "there's a feature called pervasive encryption, which lets us more easily keep data encrypted"
+    },
+    {
+      "start": 267.51,
+      "end": 271.67,
+      "text": "while still allowing us and others to manage that data."
+    },
+    {
+      "start": 271.67,
+      "end": 275.79,
+      "text": "That way, it only needs to be decrypted at the moment it's actually needed, minimizing"
+    },
+    {
+      "start": 275.79,
+      "end": 281.87,
+      "text": "the possibility of confidential data being seen by people who shouldn't have access."
+    },
+    {
+      "start": 281.87,
+      "end": 286.95,
+      "text": "This feature gets a lot of its functionality from CPACF and Crypto Express."
+    },
+    {
+      "start": 286.95,
+      "end": 290.67,
+      "text": "There are some other important and interesting considerations when it comes to crypto"
+    },
+    {
+      "start": 290.67,
+      "end": 291.99,
+      "text": "and practice."
+    },
+    {
+      "start": 291.99,
+      "end": 295.63,
+      "text": "In the next video, you'll hear a little bit more about that from my buddy, Mark."
+    }
+  ]
+}

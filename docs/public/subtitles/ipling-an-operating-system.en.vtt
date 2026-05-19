@@ -1,0 +1,201 @@
+WEBVTT
+
+1
+00:00:03.250 --> 00:00:09.250
+Let's talk about IPLs because it's more than just flashing up a welcome to ZOS splash screen
+
+2
+00:00:09.250 --> 00:00:12.250
+and then suddenly you're ready to run enterprise workloads.
+
+3
+00:00:12.250 --> 00:00:18.250
+An initial program load is technically the act of loading a copy of the operating system,
+
+4
+00:00:18.250 --> 00:00:25.250
+typically from DASD into the processor's main storage area and running it or executing it.
+
+5
+00:00:25.250 --> 00:00:31.250
+That disk that you point an L part to for it to IPL off of has what's called a bootstrap module
+
+6
+00:00:31.250 --> 00:00:34.250
+at cylinder zero track zero.
+
+7
+00:00:34.250 --> 00:00:40.250
+What that means is literally the first bit of data the OS sees when it reads off of it.
+
+8
+00:00:40.250 --> 00:00:44.250
+The bootstrap module is loaded into real memory at address zero.
+
+9
+00:00:44.250 --> 00:00:50.250
+That's the first available memory slot that the L part has access to and then control is passed to it.
+
+10
+00:00:50.250 --> 00:00:53.250
+The bootstrap isn't the main operating system.
+
+11
+00:00:53.250 --> 00:00:59.250
+It's just enough to assemble the pieces and information needed to bring up the full operating system.
+
+12
+00:00:59.250 --> 00:01:03.250
+So the bootstrap reads the IPL control program.
+
+13
+00:01:03.250 --> 00:01:10.250
+That's the IEA IPL zero zero, also known as the IPL text and passes control to that.
+
+14
+00:01:10.250 --> 00:01:12.250
+More on that in a bit.
+
+15
+00:01:12.250 --> 00:01:18.250
+This in turn starts the more complex tasks of loading the full operating system and bringing that up.
+
+16
+00:01:18.250 --> 00:01:24.250
+On its way up the OS looks for what's called a load parameter, which consists of eight characters.
+
+17
+00:01:24.250 --> 00:01:30.250
+And this is a nice and compact way of telling the L part how we want it to IPL.
+
+18
+00:01:30.250 --> 00:01:35.250
+The first four characters are the device number of the IODF device.
+
+19
+00:01:35.250 --> 00:01:39.250
+That's what contains all the hardware and software configuration for the system.
+
+20
+00:01:39.250 --> 00:01:45.250
+Characters five and six contain the load member more on that in a bit as well.
+
+21
+00:01:45.250 --> 00:01:51.250
+The seventh position indicates what messages and prompts should be displayed at IPL time.
+
+22
+00:01:51.250 --> 00:01:57.250
+And in the last position way at the end is the IEA and you see zero member.
+
+23
+00:01:57.250 --> 00:02:00.250
+Usually pronounced IEA new zero.
+
+24
+00:02:00.250 --> 00:02:03.250
+Guess what? More on that in a bit too.
+
+25
+00:02:03.250 --> 00:02:08.250
+During IPL the system will begin looking for the information it needs to fully come up.
+
+26
+00:02:08.250 --> 00:02:11.250
+First thing to look for is the load xx member.
+
+27
+00:02:11.250 --> 00:02:15.250
+This tells us some vital information about the system.
+
+28
+00:02:15.250 --> 00:02:28.250
+So the IPL resource initialization module, IRIM, first attempts to locate the load xx member in the cis0.IPL param data set.
+
+29
+00:02:28.250 --> 00:02:31.250
+This is just a data set where the load xx member is kept.
+
+30
+00:02:31.250 --> 00:02:34.250
+It's actually not labeled as load xx.
+
+31
+00:02:34.250 --> 00:02:44.250
+That's just the common way of saying it could be load zero zero or load zero one or whatever we told it look for in characters five and six of the load parameter.
+
+32
+00:02:44.250 --> 00:02:54.250
+If it's not there it'll look in cis1.IPL param and then in cis2.IPL param and all the way up to cis9.IPL param.
+
+33
+00:02:54.250 --> 00:03:00.250
+If it cannot find the load xx member the system will enter a non restartable weight state.
+
+34
+00:03:00.250 --> 00:03:06.250
+The IPL was not successful and trying it again won't help until we fix something.
+
+35
+00:03:06.250 --> 00:03:13.250
+If the cis dot whatever IPL param couldn't be found on the IODF volume the search continues.
+
+36
+00:03:13.250 --> 00:03:18.250
+And it will check in the cis1.parmli data set of the IODF volume.
+
+37
+00:03:18.250 --> 00:03:22.250
+By the way of volume is just a logical dasd disk.
+
+38
+00:03:22.250 --> 00:03:24.250
+You can imagine it like a disk drive here.
+
+39
+00:03:24.250 --> 00:03:32.250
+Anyway, if it can't find it there it'll look in cis1.parmli on another volume called the cis res volume.
+
+40
+00:03:32.250 --> 00:03:36.250
+And if I can't find it there then we're done.
+
+41
+00:03:36.250 --> 00:03:38.250
+The IPL was unsuccessful.
+
+42
+00:03:38.250 --> 00:03:46.250
+For a full breakdown of that search process at IPL time there is a great document included in the notes for this lesson.
+
+43
+00:03:46.250 --> 00:03:52.250
+But the short version of this is that the IPL system needs to find its load xx member.
+
+44
+00:03:52.250 --> 00:03:59.250
+And once it finds it it'll be opened and then it will have all the information it needs including the nucleus suffix,
+
+45
+00:03:59.250 --> 00:04:05.250
+the master catalog name and the suffix of the IEA cis xx members.
+
+46
+00:04:05.250 --> 00:04:10.250
+Now we mentioned a couple of things in there without going into full detail.
+
+47
+00:04:10.250 --> 00:04:15.250
+Once you get a hands-on system and you start looking at those members and checking out those screens
+
+48
+00:04:15.250 --> 00:04:20.250
+you'll get a better picture for what type of data is in them and how they all fit together.
+
+49
+00:04:20.250 --> 00:04:24.250
+These are all just a couple of ways that systems can start up.
+
+50
+00:04:24.250 --> 00:04:32.250
+And as you can see it's important that all the pieces be set up and in the right place when we want to bring up or IPL and outpar.

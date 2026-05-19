@@ -1,0 +1,229 @@
+WEBVTT
+
+1
+00:00:03.310 --> 00:00:07.310
+Security, as you can imagine, is incredibly important on Z.
+
+2
+00:00:07.310 --> 00:00:10.310
+If I can't keep my data away from hackers, I'm toast.
+
+3
+00:00:10.310 --> 00:00:13.310
+Nobody would ever trust my environment with their applications.
+
+4
+00:00:13.310 --> 00:00:16.310
+Security is actually a three-sided system.
+
+5
+00:00:16.310 --> 00:00:18.310
+There's the confidentiality aspect.
+
+6
+00:00:18.310 --> 00:00:21.310
+That part limits the access people have to resources.
+
+7
+00:00:21.310 --> 00:00:24.310
+And by resources, that's not just files.
+
+8
+00:00:24.310 --> 00:00:27.310
+It's also devices, system access, applications,
+
+9
+00:00:27.310 --> 00:00:31.310
+and every resource needs to be controlled from a security angle.
+
+10
+00:00:31.310 --> 00:00:33.310
+Then there's availability.
+
+11
+00:00:33.310 --> 00:00:38.310
+Technically, the world's most secure system is one that nobody can even do anything with.
+
+12
+00:00:38.310 --> 00:00:40.310
+But what's the point of that, right?
+
+13
+00:00:40.310 --> 00:00:44.310
+I have to make those resources available to the people who should have access to them.
+
+14
+00:00:44.310 --> 00:00:46.310
+And that's availability.
+
+15
+00:00:46.310 --> 00:00:48.310
+The third aspect is integrity.
+
+16
+00:00:48.310 --> 00:00:52.310
+Being able to verify that the data being accessed hasn't been messed around with.
+
+17
+00:00:52.310 --> 00:00:57.310
+This is not only for data-like financial records, but also for applications.
+
+18
+00:00:57.310 --> 00:01:01.310
+How can I be sure the program about to run hasn't been altered by a hacker
+
+19
+00:01:01.310 --> 00:01:04.310
+to move a whole bunch of money from my account into theirs?
+
+20
+00:01:04.310 --> 00:01:09.310
+If you have all three of these things, you've got the makings of a pretty good security model.
+
+21
+00:01:09.310 --> 00:01:13.310
+When a user or a program goes to access something, here's what happens.
+
+22
+00:01:13.310 --> 00:01:17.310
+And it's kind of important to remember that what it's accessing is a resource.
+
+23
+00:01:17.310 --> 00:01:19.310
+So that could be a data set.
+
+24
+00:01:19.310 --> 00:01:21.310
+It could be a disk storage system.
+
+25
+00:01:21.310 --> 00:01:22.310
+It could be a program.
+
+26
+00:01:22.310 --> 00:01:23.310
+It could be a terminal.
+
+27
+00:01:23.310 --> 00:01:24.310
+It could be anything.
+
+28
+00:01:24.310 --> 00:01:28.310
+So what happens first is the user makes a request.
+
+29
+00:01:28.310 --> 00:01:30.310
+It says, I want to do this thing.
+
+30
+00:01:30.310 --> 00:01:33.310
+And it makes a request to the resource manager.
+
+31
+00:01:33.310 --> 00:01:38.310
+Now, the resource manager is ultimately what makes the connection or doesn't make the connection
+
+32
+00:01:38.310 --> 00:01:41.310
+between the requesting user and the resource at once to get.
+
+33
+00:01:41.310 --> 00:01:43.310
+So it needs to make a decision.
+
+34
+00:01:43.310 --> 00:01:48.310
+It's going to make a request to SAP the system authorization facility.
+
+35
+00:01:48.310 --> 00:01:53.310
+That acts as a router, which routes the request to the right system to make that decision.
+
+36
+00:01:53.310 --> 00:01:56.310
+In this case, let's just say we're using RACF.
+
+37
+00:01:56.310 --> 00:01:59.310
+RACF stands for the resource access control facility.
+
+38
+00:01:59.310 --> 00:02:05.310
+RACF is going to go through its database and look for any records it has about that resource and that user.
+
+39
+00:02:05.310 --> 00:02:09.310
+And it can come back and say, yeah, that user can access that.
+
+40
+00:02:09.310 --> 00:02:11.310
+Or it might come back and say, you know what?
+
+41
+00:02:11.310 --> 00:02:14.310
+It says right here, they're not supposed to have access to them.
+
+42
+00:02:14.310 --> 00:02:16.310
+Don't make that connection.
+
+43
+00:02:16.310 --> 00:02:18.310
+Or it can actually come back and say, you know what?
+
+44
+00:02:18.310 --> 00:02:20.310
+I don't know anything about either of those things.
+
+45
+00:02:20.310 --> 00:02:23.310
+So it's up to you resource manager.
+
+46
+00:02:23.310 --> 00:02:29.310
+Ultimately, the resource manager is going to say yes or no to the user and make that connection or not.
+
+47
+00:02:29.310 --> 00:02:35.310
+Something that makes this possible is the 4767 cryptographic co-processor.
+
+48
+00:02:35.310 --> 00:02:44.310
+This is a hardware security module, HSM, that improves security by performing a lot of cryptographic functions on its specialized hardware.
+
+49
+00:02:44.310 --> 00:02:47.310
+On Z, that's the crypto express.
+
+50
+00:02:47.310 --> 00:02:51.310
+It's one of those PCIe cards that lives in the I-O section of the frame.
+
+51
+00:02:51.310 --> 00:02:58.310
+This card supports the federal information processing standard, FIPs, which are the US government security standard.
+
+52
+00:02:58.310 --> 00:03:03.310
+And it supports security level 4, which is the highest level of security.
+
+53
+00:03:03.310 --> 00:03:10.310
+At this level, the physical security mechanisms provide a complete envelope of protection around the cryptographic module.
+
+54
+00:03:10.310 --> 00:03:23.310
+So if someone were to pull a heist where they broke into a data center with their masks on and they tiptoe over to the main frame and they gently slide out the HSM, throw it in their bag and jump in the getaway helicopter.
+
+55
+00:03:23.310 --> 00:03:30.310
+The card would detect that it's being tampered with and delete all the sensitive information on it, including those keys.
+
+56
+00:03:30.310 --> 00:03:37.310
+Hammers, screwdrivers, electrical probes, stethoscopes, they're not getting anything important out of that card.
+
+57
+00:03:37.310 --> 00:03:41.310
+All of this helps create the most secure computing environment around.

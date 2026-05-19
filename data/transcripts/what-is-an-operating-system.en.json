@@ -1,0 +1,283 @@
+{
+  "slug": "what-is-an-operating-system",
+  "title": "What is an Operating System?",
+  "language": "en",
+  "duration": 288.554375,
+  "segments": [
+    {
+      "start": 3.28,
+      "end": 9.32,
+      "text": "What is an operating system? It's a good question. We've been talking a lot about operating systems"
+    },
+    {
+      "start": 9.32,
+      "end": 15.24,
+      "text": "We never really actually defined what one is and you might not have actually given a much thought to what an operating system is"
+    },
+    {
+      "start": 15.4,
+      "end": 20.4,
+      "text": "Even though you kind of know what one is you have one on your phone your computer your game console"
+    },
+    {
+      "start": 20.96,
+      "end": 27.6,
+      "text": "An operating system or an OS is a collection of programs that manages the internal workings of the computer"
+    },
+    {
+      "start": 27.76,
+      "end": 31.16,
+      "text": "So when a program wants to write data of then retrieve it later"
+    },
+    {
+      "start": 31.16,
+      "end": 37.44,
+      "text": "The OS ensures that the application is able to do so as quickly easily and safely as possible"
+    },
+    {
+      "start": 37.84,
+      "end": 45.08,
+      "text": "An operating system has a number of management functions process management security management file management"
+    },
+    {
+      "start": 45.48,
+      "end": 49.08,
+      "text": "communications management resource management and memory management"
+    },
+    {
+      "start": 49.28,
+      "end": 53.36,
+      "text": "The way all these work together is really what makes up the heart of the OS"
+    },
+    {
+      "start": 53.84,
+      "end": 61.2,
+      "text": "Typically applications running on an operating system interface with the operating system through a simplified series of interfaces called"
+    },
+    {
+      "start": 61.4,
+      "end": 62.72,
+      "text": "API's or"
+    },
+    {
+      "start": 62.72,
+      "end": 64.72,
+      "text": "Application programming interfaces"
+    },
+    {
+      "start": 65.04,
+      "end": 71.16,
+      "text": "Let's get into one of those functions process management typically a process can be in one of five states"
+    },
+    {
+      "start": 71.56,
+      "end": 79.72,
+      "text": "New ready running waiting and terminated in the new state the process is in the stage of being created"
+    },
+    {
+      "start": 79.72,
+      "end": 84.72,
+      "text": "It's being built in the ready state the process is ready. It's waiting for pickup"
+    },
+    {
+      "start": 84.72,
+      "end": 90.68,
+      "text": "But the CPU is busy doing something else in the running state the CPU has grabbed that process"
+    },
+    {
+      "start": 90.68,
+      "end": 93.24,
+      "text": "It's picked it up and it's actively working with it"
+    },
+    {
+      "start": 93.72,
+      "end": 99.56,
+      "text": "Okay, now the waiting state. This is where it gets a little bit interesting a process typically doesn't just start and end"
+    },
+    {
+      "start": 99.56,
+      "end": 104.1,
+      "text": "All by itself it might need to read some data prompt the user for some input"
+    },
+    {
+      "start": 104.1,
+      "end": 109.68,
+      "text": "Or it might have to kick off a couple sub processes and while it's doing that while it's waiting for them to fit"
+    },
+    {
+      "start": 109.68,
+      "end": 113.82,
+      "text": "Finish the process can be put into a wait state and when it's in a wait state"
+    },
+    {
+      "start": 113.82,
+      "end": 120.12,
+      "text": "It's it's waiting and finally when the process is accomplished its task and there's nothing else for it to do"
+    },
+    {
+      "start": 120.12,
+      "end": 122.12,
+      "text": "It goes into the terminated state"
+    },
+    {
+      "start": 122.72,
+      "end": 125.12,
+      "text": "So you can see the general flow of things here"
+    },
+    {
+      "start": 125.12,
+      "end": 131.16,
+      "text": "It starts out new and then it goes into ready and then it goes into running from there"
+    },
+    {
+      "start": 131.16,
+      "end": 136.16,
+      "text": "It either goes into the terminated state which says it's done for one reason or another"
+    },
+    {
+      "start": 136.16,
+      "end": 141.16,
+      "text": "It either did everything it needed to do or something else happened or it goes back to ready"
+    },
+    {
+      "start": 141.48,
+      "end": 145.24,
+      "text": "There are two ways it can go back to ready the first is in the case of a wait"
+    },
+    {
+      "start": 145.6,
+      "end": 152.16,
+      "text": "Where it's waiting for more data user input or for another process to finish or if the CPU is like hey"
+    },
+    {
+      "start": 152.16,
+      "end": 154.56,
+      "text": "I know you're really busy and you're trying to do your stuff"
+    },
+    {
+      "start": 154.56,
+      "end": 157.24,
+      "text": "I've got a bunch of other programs try to do something too"
+    },
+    {
+      "start": 157.24,
+      "end": 163.8,
+      "text": "So I'll be right back and that's called an interrupt and interrupt is just that it kind of it interrupts the process"
+    },
+    {
+      "start": 163.8,
+      "end": 171.2,
+      "text": "And says sit right here be patient go into a ready state and I'll come back and get you and finish you when I have time to do that"
+    },
+    {
+      "start": 171.72,
+      "end": 178.92,
+      "text": "That's the only way that a computer can work on multiple programs at the same time now a process can go back and forth between"
+    },
+    {
+      "start": 178.92,
+      "end": 181.88,
+      "text": "Running and ready a whole bunch of times before it completes"
+    },
+    {
+      "start": 182.24,
+      "end": 187.36,
+      "text": "That's a good thing because if programs could only run in a straight line from ready to finished"
+    },
+    {
+      "start": 187.64,
+      "end": 190.72,
+      "text": "We wouldn't be able to run more than one program at a time on a computer"
+    },
+    {
+      "start": 191.32,
+      "end": 193.32,
+      "text": "Then there's security management"
+    },
+    {
+      "start": 193.32,
+      "end": 199.88,
+      "text": "Obviously security very very important on a mainframe because we're dealing with the world's most important financial data"
+    },
+    {
+      "start": 200.08,
+      "end": 205.6,
+      "text": "Health records personal records so security very important. We're going to talk more about that later"
+    },
+    {
+      "start": 206.08,
+      "end": 213.68,
+      "text": "Up next file management on the Z we try to offload as much of the work away from the application to the OS as possible"
+    },
+    {
+      "start": 213.68,
+      "end": 218.4,
+      "text": "So rather than making the application keep track of where everything was stored and where to get later"
+    },
+    {
+      "start": 218.68,
+      "end": 220.88,
+      "text": "We let the file management handle that"
+    },
+    {
+      "start": 222.04,
+      "end": 228.52,
+      "text": "Communications management takes care of all the network communications very very important and then there's the resource management"
+    },
+    {
+      "start": 228.52,
+      "end": 232.52,
+      "text": "This makes sure that all of the programs running on the system played nicely with one another"
+    },
+    {
+      "start": 232.72,
+      "end": 235.88,
+      "text": "It looks at everything competing for the same resources like"
+    },
+    {
+      "start": 236.28,
+      "end": 242.16,
+      "text": "CPU memory network disk and it makes sure everyone kind of gets a fair spot at those resources"
+    },
+    {
+      "start": 242.8,
+      "end": 246.6,
+      "text": "resource management is the cornerstone of modern computing and"
+    },
+    {
+      "start": 247.16,
+      "end": 252.12,
+      "text": "Lastly, there's memory management. We're going to get into this in much greater detail later on"
+    },
+    {
+      "start": 252.12,
+      "end": 254.72,
+      "text": "But suffice to say on the mainframe"
+    },
+    {
+      "start": 254.72,
+      "end": 261.64,
+      "text": "We want our applications to run as quickly and efficiently as possible and one way of doing that is by abstracting all the"
+    },
+    {
+      "start": 261.84,
+      "end": 270.4,
+      "text": "Complexities of memory management away from the developer and their applications and handling them in the memory management function and there you have it"
+    },
+    {
+      "start": 270.4,
+      "end": 273.52,
+      "text": "That's your six management functions of an operating system now"
+    },
+    {
+      "start": 273.68,
+      "end": 277.84,
+      "text": "Some of them might have seen obvious while others might not seem all that vital"
+    },
+    {
+      "start": 277.92,
+      "end": 284.48,
+      "text": "But I tell you what you take away any one of them and you'd have a really hard time getting anything done on a modern operating system"
+    }
+  ]
+}

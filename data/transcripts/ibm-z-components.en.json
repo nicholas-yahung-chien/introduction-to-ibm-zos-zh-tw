@@ -1,0 +1,228 @@
+{
+  "slug": "ibm-z-components",
+  "title": "IBM Z components",
+  "language": "en",
+  "duration": 417.216125,
+  "segments": [
+    {
+      "start": 4.27,
+      "end": 15.27,
+      "text": "I hope everyone got their permission slip signed because today, we're going on a little field trip over to the raised floor with one of our favorite people, everyone say hi to Chris."
+    },
+    {
+      "start": 15.27,
+      "end": 21.27,
+      "text": "And we're out here to say hi to one of our favorite systems, the IBM Z17."
+    },
+    {
+      "start": 21.27,
+      "end": 27.27,
+      "text": "You might not have a Z17, you might have something a little older or a little newer by the time you watch this."
+    },
+    {
+      "start": 28.27,
+      "end": 30.27,
+      "text": "But more or less, the parts are the same."
+    },
+    {
+      "start": 30.27,
+      "end": 38.27,
+      "text": "They might be rotated, placed in slightly different locations, but typically a mainframe lives in one or more racks like this."
+    },
+    {
+      "start": 38.27,
+      "end": 43.27,
+      "text": "And it can be kind of viewed in terms of its processors, its IO and its supporting infrastructure."
+    },
+    {
+      "start": 43.27,
+      "end": 52.27,
+      "text": "Let's start with the CPC drawers and we call them drawers because they pull open like a drawer and a nightstand like this."
+    },
+    {
+      "start": 52.27,
+      "end": 63.27,
+      "text": "is where you find all the main processors and memory. It's important to keep all that centrally located and connected because a short connection means faster access."
+    },
+    {
+      "start": 63.27,
+      "end": 72.27,
+      "text": "On a system with four CPC drawers, you can have up to 208 processors in up to 64 terabytes of memory."
+    },
+    {
+      "start": 72.27,
+      "end": 77.27,
+      "text": "The power situation on one of these things is mighty impressive."
+    },
+    {
+      "start": 77.27,
+      "end": 89.27,
+      "text": "There's multiple power supply units, points of load, voltage regulator modules and processor power control cards, which feature sensors for pressure, temperature and humidity."
+    },
+    {
+      "start": 89.27,
+      "end": 96.27,
+      "text": "Part of the reason for all that tech is that we're performing a lot of important work here, but it's also important to have redundancy."
+    },
+    {
+      "start": 96.27,
+      "end": 105.27,
+      "text": "A lot of times these components are N plus two redundant, meaning that two of them can fail and the system will still have enough spares to keep going."
+    },
+    {
+      "start": 105.27,
+      "end": 115.27,
+      "text": "But get this, this system adds an 11% boost in single thread performance over the Z16 while using 17% less power."
+    },
+    {
+      "start": 115.27,
+      "end": 118.27,
+      "text": "That's a truly important statistic right there."
+    },
+    {
+      "start": 118.27,
+      "end": 128.27,
+      "text": "The CPC drawers also have something called a PCIe fan out, which is a fancy way of saying a whole bunch of cables coming out to connect to IO devices."
+    },
+    {
+      "start": 128.27,
+      "end": 138.27,
+      "text": "This is an example of where they connect to. This is a PCIe IO drawer, a fully loaded Z17 can have up to 12 of these."
+    },
+    {
+      "start": 138.27,
+      "end": 146.27,
+      "text": "Each one of these has 16 slots for things like networking, cryptography, storage and system-to-system communication."
+    },
+    {
+      "start": 146.27,
+      "end": 157.27,
+      "text": "The processors at the heart of all of this, their IBM tell them two processors. These are five nanometer technology with 43 billion transistors each."
+    },
+    {
+      "start": 157.27,
+      "end": 169.27,
+      "text": "Those are the processors that are going to be running the operating systems, the applications, the workloads, but they also have a special DPU or data processing unit for things like crypto and AI."
+    },
+    {
+      "start": 169.27,
+      "end": 178.27,
+      "text": "But the fun doesn't stop there. The spire is a new PCIe device with 32 AI accelerators similar to the ones on the tell them two."
+    },
+    {
+      "start": 178.27,
+      "end": 192.27,
+      "text": "So if you're running large language models or AI infused workloads in fraud detection and don't want that work running on your main processors, the spire might be a good fit for some of those empty slots in your PCIe drawers."
+    },
+    {
+      "start": 192.27,
+      "end": 205.27,
+      "text": "A hardware is impressive, but if you've ever built your own PC, you're likely already familiar with a lot of this terminology. You might even be saying, alright, so it's a big PC and well, yes, and no."
+    },
+    {
+      "start": 205.27,
+      "end": 221.27,
+      "text": "Mostly no. It's a system built specifically for secure high transaction business applications. You've probably seen a PC built for gaming, a PC built for office use or a PC designed for recording and editing, audio and video."
+    },
+    {
+      "start": 221.27,
+      "end": 234.27,
+      "text": "Aside by side, each PC will be specked out with something that makes it excel in that area, an amazing video card, super fast storage and a ton of RAM, a printer."
+    },
+    {
+      "start": 234.27,
+      "end": 244.27,
+      "text": "But at their core, they're still running the same operating system on the same type of processor, which has a middle of the road set of instructions that it can perform."
+    },
+    {
+      "start": 244.27,
+      "end": 255.27,
+      "text": "A system like this isn't just specked for business applications, it's designed and built from the ground up specifically for those secure high transaction business applications."
+    },
+    {
+      "start": 255.27,
+      "end": 265.27,
+      "text": "A hardware we're looking at and all of the firmware, millicoat, OS code and applications loaded onto it. You guessed it, really good at running business applications."
+    },
+    {
+      "start": 265.27,
+      "end": 273.27,
+      "text": "So don't look for an IBM Z port of Skyrim anytime soon. There's not even a place to plug in a display because it doesn't need one. Why would it?"
+    },
+    {
+      "start": 273.27,
+      "end": 287.98,
+      "text": "Yeah, you don't need to actually go out and be next to a machine unless you're physically replacing a part or posing for stock video footage."
+    },
+    {
+      "start": 287.98,
+      "end": 297.98,
+      "text": "But what about when you need to reboot or reconfigure something? Well, that requires special access and that sort of management is handled by these two systems right up here."
+    },
+    {
+      "start": 297.98,
+      "end": 306.98,
+      "text": "Well, technically one of these systems, the second one is there as a backup, but anyway, this is a hardware management appliance or HMA."
+    },
+    {
+      "start": 306.98,
+      "end": 314.98,
+      "text": "It runs the hardware management console as well as the support element features more commonly referred to as the HMC and SE."
+    },
+    {
+      "start": 314.98,
+      "end": 318.98,
+      "text": "I'll be the first to admit, that was a whole lot of letters right there."
+    },
+    {
+      "start": 318.98,
+      "end": 328.98,
+      "text": "All you need to know is the no actual customer applications or workloads are getting run on these things. They exist just so people can log into them and manage the systems."
+    },
+    {
+      "start": 328.98,
+      "end": 339.98,
+      "text": "So that way, if there's a network express card set up for these two lpars, but we also want it to connect to these other lpars, we can use the HMC to make those changes."
+    },
+    {
+      "start": 339.98,
+      "end": 344.98,
+      "text": "That's the beauty of virtualization and enterprise systems right there."
+    },
+    {
+      "start": 344.98,
+      "end": 356.98,
+      "text": "Of course, we don't want just anyone going in and messing with devices, so who gets that type of access is strictly controlled and enforced with SSO and multi factor authentication."
+    },
+    {
+      "start": 356.98,
+      "end": 367.98,
+      "text": "For certain operations like taking down a system, you can even set it up that two authorized users need to approve the operation. Yeah, I told you, we take this stuff seriously."
+    },
+    {
+      "start": 367.98,
+      "end": 377.98,
+      "text": "If you're into hardware, there are mainframe jobs for people who deal primarily with cabling, reconfiguring, upgrading and management of these systems behind the scenes."
+    },
+    {
+      "start": 377.98,
+      "end": 385.98,
+      "text": "And just remember, this ties into the whole rest of the data center. So it's not like a unique island unto itself."
+    },
+    {
+      "start": 385.98,
+      "end": 392.98,
+      "text": "Just add power, storage, some networking, like any other system you'd expect to see out here, you're pretty much ready to go."
+    },
+    {
+      "start": 392.98,
+      "end": 403.98,
+      "text": "So, even if you never actually get to see the system you're working on, rest assured, it was built to perform and protect with some pretty amazing hardware and software design."
+    },
+    {
+      "start": 403.98,
+      "end": 412.98,
+      "text": "Everyone say, thank you, Chris, goodbye, Chris, everyone say, thank you, Z17, goodbye, Z17."
+    }
+  ]
+}

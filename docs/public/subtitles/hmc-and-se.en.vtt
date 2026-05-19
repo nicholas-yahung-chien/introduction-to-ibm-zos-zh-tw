@@ -1,0 +1,401 @@
+WEBVTT
+
+1
+00:00:03.380 --> 00:00:09.980
+So I said we'd come back to that SE thing with the keyboard screen and the servers the computer within a computer
+
+2
+00:00:09.980 --> 00:00:17.620
+What's that there for that's the support element for the SE in order to get the mainframe all configured and ready to boot up
+
+3
+00:00:17.620 --> 00:00:23.780
+The way we want it to and connected everything we need to talk to that takes a little bit of a setup and you do that set up
+
+4
+00:00:24.100 --> 00:00:25.700
+Through the support element
+
+5
+00:00:25.700 --> 00:00:29.380
+There's two SEs in there and that's just in case one of them fails
+
+6
+00:00:29.380 --> 00:00:32.060
+No one wants to be locked out of their system now
+
+7
+00:00:32.060 --> 00:00:37.540
+That's all cool, but imagine if every time you needed to do something you had to walk over to the data center
+
+8
+00:00:37.900 --> 00:00:46.220
+Baj in hang out on the raised floor where it's all loud and cold and dark and stuff open the door slide out the SE and all that
+
+9
+00:00:46.220 --> 00:00:48.220
+Just to type out a single command
+
+10
+00:00:48.780 --> 00:00:57.340
+Luckily in addition to the SEs mainframes have this concept of the HMC or the hardware management console and these do four things
+
+11
+00:00:57.660 --> 00:01:01.100
+One they let you access the SEs functions remotely
+
+12
+00:01:01.180 --> 00:01:03.180
+So you don't have to walk out there anymore
+
+13
+00:01:03.500 --> 00:01:08.380
+Two you can add multiple mainframes to a single HMC a hundred of them in fact
+
+14
+00:01:08.780 --> 00:01:13.660
+So you can manage a whole bunch of mainframes from one HMC and that is pretty handy
+
+15
+00:01:14.140 --> 00:01:17.580
+You can also add a single mainframe to multiple HMCs
+
+16
+00:01:18.140 --> 00:01:19.420
+32 of them in fact
+
+17
+00:01:19.660 --> 00:01:25.260
+So if you have one system that's shared by multiple departments they can all get HMC access
+
+18
+00:01:25.980 --> 00:01:28.780
+For you can connect to the HMC remotely
+
+19
+00:01:28.780 --> 00:01:33.660
+So while the SE is attached to the system and the HMC is running somewhere else
+
+20
+00:01:33.660 --> 00:01:37.580
+You can also connect remotely as long as you have the correct network access
+
+21
+00:01:37.900 --> 00:01:39.580
+Now for the remainder of this session
+
+22
+00:01:39.580 --> 00:01:45.020
+I'm just going to be seeing HMC because that's typically how someone accesses those functions
+
+23
+00:01:45.020 --> 00:01:47.900
+But know that pretty much anything I can do from the HMC
+
+24
+00:01:47.900 --> 00:01:52.220
+I can do from the SE as well. It's just a whole lot easier just to say HMC
+
+25
+00:01:52.220 --> 00:01:54.940
+So why would we need that kind of access?
+
+26
+00:01:55.020 --> 00:02:01.260
+Well, the most common thing people use in HMC for is to stop, start, create and modify L-Pars
+
+27
+00:02:01.260 --> 00:02:04.060
+You need to add another couple processors to an L-Pars
+
+28
+00:02:04.060 --> 00:02:05.900
+You do that from the HMC
+
+29
+00:02:05.900 --> 00:02:08.460
+When it changed the way a network card is configured
+
+30
+00:02:08.460 --> 00:02:10.460
+You can do that for the HMC
+
+31
+00:02:10.460 --> 00:02:14.780
+Let's say I'm having problems with a system and I want to get some data that might help me with troubleshooting
+
+32
+00:02:15.580 --> 00:02:17.180
+Guess what? HMC
+
+33
+00:02:18.060 --> 00:02:20.460
+What do I see when I log into an HMC?
+
+34
+00:02:20.460 --> 00:02:23.420
+Well, I can take a look in a particular physical machine
+
+35
+00:02:23.420 --> 00:02:25.340
+That's this view right here
+
+36
+00:02:25.340 --> 00:02:27.660
+See you got the status is operating
+
+37
+00:02:27.660 --> 00:02:29.900
+It's got a machine type model number
+
+38
+00:02:29.900 --> 00:02:31.420
+It's also got a serial number
+
+39
+00:02:31.420 --> 00:02:33.020
+It's also got this name over here
+
+40
+00:02:33.020 --> 00:02:36.220
+So I can make sure it's a system that I want to be talking to
+
+41
+00:02:36.220 --> 00:02:39.020
+If I go deeper, I can see all the L-Pars
+
+42
+00:02:39.020 --> 00:02:41.660
+Those are the partitions right there for that system
+
+43
+00:02:41.660 --> 00:02:43.980
+Looks like some of them are up, some of them are down
+
+44
+00:02:43.980 --> 00:02:45.020
+That's all right
+
+45
+00:02:45.020 --> 00:02:47.660
+And in this last tab over here, that's the topology
+
+46
+00:02:47.660 --> 00:02:49.660
+That shows me how everything is connected
+
+47
+00:02:49.660 --> 00:02:51.740
+You can see there's lots of stuff going on over here
+
+48
+00:02:52.300 --> 00:02:56.860
+Another good use of the HMC is just telling me how my systems are doing
+
+49
+00:02:56.860 --> 00:02:59.500
+So I can see right here there's a couple of exceptions
+
+50
+00:02:59.500 --> 00:03:02.620
+And an exception is an unacceptable status
+
+51
+00:03:02.620 --> 00:03:05.500
+And it could be a problem with an L-Pars or any other object
+
+52
+00:03:05.500 --> 00:03:07.740
+Like a network or a crypto card
+
+53
+00:03:07.740 --> 00:03:09.900
+These need to be checked out right away
+
+54
+00:03:09.900 --> 00:03:11.980
+There's also a number of hardware messages
+
+55
+00:03:11.980 --> 00:03:15.580
+Now a hardware message is just when some component saw something
+
+56
+00:03:15.580 --> 00:03:17.260
+And it wants you to know about it
+
+57
+00:03:17.340 --> 00:03:19.500
+But it's not currently stopping anything from working
+
+58
+00:03:19.500 --> 00:03:20.540
+It's just letting you know
+
+59
+00:03:21.020 --> 00:03:24.700
+For example, if a fiber cable got disconnected and then reconnected
+
+60
+00:03:24.700 --> 00:03:26.380
+That would result in a hardware message
+
+61
+00:03:26.380 --> 00:03:29.020
+Same thing if an L-Pars didn't shut down correctly
+
+62
+00:03:29.020 --> 00:03:31.420
+Or an HMC somewhere lost connectivity
+
+63
+00:03:31.420 --> 00:03:33.180
+That would result in a hardware message
+
+64
+00:03:34.060 --> 00:03:35.740
+So what gets stored on the SC
+
+65
+00:03:35.740 --> 00:03:39.180
+Well, it's got code that's going to get loaded onto the mainframe
+
+66
+00:03:39.180 --> 00:03:42.140
+That's called licensed internal code or lick
+
+67
+00:03:43.020 --> 00:03:43.820
+Yeah, really
+
+68
+00:03:44.620 --> 00:03:47.420
+We've got logging and problem determination functions
+
+69
+00:03:47.420 --> 00:03:48.860
+Which help into debugging issues
+
+70
+00:03:49.500 --> 00:03:51.180
+Hardware systems definitions
+
+71
+00:03:51.180 --> 00:03:55.100
+Which basically tell the mainframe how to get started up when it first boots up
+
+72
+00:03:55.100 --> 00:03:56.540
+Then there's the IOCDS
+
+73
+00:03:56.540 --> 00:03:59.260
+Which will definitely be talking about later on
+
+74
+00:03:59.260 --> 00:04:02.780
+That tells the mainframe how to configure all of its I-O and its L-Pars
+
+75
+00:04:03.420 --> 00:04:07.100
+There's also a battery operated clock that it uses to synchronize time
+
+76
+00:04:07.100 --> 00:04:08.860
+Across all the components
+
+77
+00:04:08.860 --> 00:04:10.220
+And ethernet adapters
+
+78
+00:04:10.220 --> 00:04:12.940
+Because of course everything in the mainframe environment
+
+79
+00:04:12.940 --> 00:04:15.180
+Generally is connected to other components
+
+80
+00:04:15.180 --> 00:04:15.900
+So we need that
+
+81
+00:04:16.700 --> 00:04:18.380
+And lastly you might be thinking
+
+82
+00:04:18.380 --> 00:04:20.540
+So if anyone could log into the HMC
+
+83
+00:04:20.540 --> 00:04:23.340
+They could probably mess up a whole bunch of stuff accidentally
+
+84
+00:04:23.340 --> 00:04:24.060
+Right
+
+85
+00:04:24.060 --> 00:04:24.940
+Well yes
+
+86
+00:04:24.940 --> 00:04:29.420
+Which is why there are several accounts set up by default on the typical HMC
+
+87
+00:04:29.420 --> 00:04:32.220
+And most people set up even more to partition access
+
+88
+00:04:32.220 --> 00:04:33.820
+Off to those who really need it
+
+89
+00:04:34.300 --> 00:04:37.020
+And just because you have access to some features
+
+90
+00:04:37.020 --> 00:04:39.260
+Doesn't mean you have access to everything
+
+91
+00:04:39.260 --> 00:04:41.580
+There are specific roles on the HMC
+
+92
+00:04:41.580 --> 00:04:44.620
+roles like operator and advanced operator
+
+93
+00:04:44.620 --> 00:04:48.460
+Systems programmer, access administrator and service representative
+
+94
+00:04:48.940 --> 00:04:54.140
+Each one of these roles has a specific reason for needing specific access to the system
+
+95
+00:04:54.140 --> 00:04:56.060
+So it's not an all or nothing kind of thing
+
+96
+00:04:56.700 --> 00:04:58.940
+And that's the SE and the HMC
+
+97
+00:04:58.940 --> 00:05:00.940
+The computers within your computer
+
+98
+00:05:01.580 --> 00:05:03.340
+And within those computers
+
+99
+00:05:03.340 --> 00:05:05.740
+There's actually no there's not that's it
+
+100
+00:05:05.740 --> 00:05:07.740
+It's just the SE and the HMC

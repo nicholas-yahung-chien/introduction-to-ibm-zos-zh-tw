@@ -1,0 +1,657 @@
+WEBVTT
+
+1
+00:00:03.310 --> 00:00:09.210
+So earlier when we were talking about the parts of the mainframe, we looked at where the CPU and the processors are, right?
+
+2
+00:00:09.210 --> 00:00:15.910
+And that's called the CPC or central processor complex. We also saw where all the IO adapters are.
+
+3
+00:00:16.410 --> 00:00:18.410
+Did you wonder at all where all the hard drives are?
+
+4
+00:00:19.010 --> 00:00:27.110
+In a mainframe environment, disk storage is handled by something called direct access storage devices, commonly called DASDI.
+
+5
+00:00:27.110 --> 00:00:34.110
+These are big, almost mainframe sized units, stuff full of hard drives, both mechanical and solid state.
+
+6
+00:00:34.110 --> 00:00:44.110
+They can provide the disk storage for mainframe. They can actually provide disk storage for many mainframes, and many DASDI can be connected to a single mainframe.
+
+7
+00:00:44.110 --> 00:00:47.110
+So you can see there's lots of ways to connect these things.
+
+8
+00:00:47.110 --> 00:00:56.110
+In order to make these connections to devices like DASDI and others, we need to define the logical paths through the physical connections, so it all works.
+
+9
+00:00:56.110 --> 00:01:08.110
+Things are better when they work, right? The iOS CDS, which stands for the input-output configuration dataset, represents the connection between the resources and the systems that use them.
+
+10
+00:01:08.110 --> 00:01:14.110
+Resources are things like channels, icons, switches, control units, and other devices.
+
+11
+00:01:14.110 --> 00:01:22.110
+Basically, anything outside of the mainframe that we want to connect to, and the stuff inside the mainframe that we're going to use to connect to it.
+
+12
+00:01:22.110 --> 00:01:30.110
+So when you define an IO configuration, you provide the physical as well as the logical information about those resources.
+
+13
+00:01:30.110 --> 00:01:35.110
+In the mainframe, there's an input-output subsystem, or IO subsystem.
+
+14
+00:01:35.110 --> 00:01:42.110
+Now this controls the channel operations. That requires the information about the hardware IO configuration.
+
+15
+00:01:42.110 --> 00:01:49.110
+To define this, we use a program called the input-output configuration program, or IOCP.
+
+16
+00:01:49.110 --> 00:01:57.110
+The IOCDS is built through a series of statements. You build it brick by brick, and once you build it, the IOCDS gets stored on the SEs.
+
+17
+00:01:57.110 --> 00:02:03.110
+Those are those computers within the computer, and then those are picked up when the system gets powered on.
+
+18
+00:02:03.110 --> 00:02:10.110
+To use IOCP to build an IOCDS, you need to know about four things, and we're going to find them here.
+
+19
+00:02:10.110 --> 00:02:16.110
+First, you need to know what the L-Pars or partitions are that you want to work with. That's easy enough.
+
+20
+00:02:16.110 --> 00:02:21.110
+We've been working with those for a while now. Then you need to know about the channels.
+
+21
+00:02:21.110 --> 00:02:26.110
+Channels are the links between the L-Pars and the physical ports on the IO cards.
+
+22
+00:02:26.110 --> 00:02:30.110
+So we've got channel paths. Each one has an ID.
+
+23
+00:02:30.110 --> 00:02:34.110
+C-H-P-I-D, pronounced as Chippet.
+
+24
+00:02:34.110 --> 00:02:39.110
+We're defining a logical connection on there with the Chippet, and the channel path
+
+25
+00:02:39.110 --> 00:02:44.110
+exits the mainframe on the physical ID, or a P-Chid.
+
+26
+00:02:44.110 --> 00:02:49.110
+Control units are attached to channel paths, and they're what actually drives the device we're connecting to.
+
+27
+00:02:49.110 --> 00:02:55.110
+Having a dedicated control unit that is really good at handling devices like disk or tape,
+
+28
+00:02:55.110 --> 00:03:00.110
+means the mainframe operating system doesn't have to worry about all those deep down details.
+
+29
+00:03:00.110 --> 00:03:02.110
+That's a good thing.
+
+30
+00:03:02.110 --> 00:03:04.110
+And finally, there's the input-output device.
+
+31
+00:03:04.110 --> 00:03:09.110
+The thing we're actually trying to talk to, which the controlling unit is tasked with controlling.
+
+32
+00:03:09.110 --> 00:03:13.110
+If you know those four things, you're ready to start building an I-O-C-D-S.
+
+33
+00:03:13.110 --> 00:03:15.110
+So let's take a look at those statements.
+
+34
+00:03:15.110 --> 00:03:18.110
+There's five I-O-C-P statements.
+
+35
+00:03:18.110 --> 00:03:23.110
+ID, resource, chippet, control unit, and I-O device.
+
+36
+00:03:23.110 --> 00:03:28.110
+ID is optional, but it helps in organizing so you can find things easier later on.
+
+37
+00:03:28.110 --> 00:03:31.110
+You can also set the name of the local systems, the machine limits,
+
+38
+00:03:31.110 --> 00:03:34.110
+and the rules to be enforced by the I-O-C-P.
+
+39
+00:03:34.110 --> 00:03:37.110
+It comes first and can only be defined once.
+
+40
+00:03:37.110 --> 00:03:41.110
+Up next is resource, and this one is required.
+
+41
+00:03:41.110 --> 00:03:45.110
+It defines the L-par names, or if you're sharing channels between L-pars,
+
+42
+00:03:45.110 --> 00:03:51.110
+you can also define what's called a multiple image facility image ID, or myth ID.
+
+43
+00:03:51.110 --> 00:03:56.110
+So let me talk a little bit about the logical channel subsystems, or L-C-S-S.
+
+44
+00:03:56.110 --> 00:04:01.110
+The channel subsystem is the world that all of the channels live in, right?
+
+45
+00:04:01.110 --> 00:04:06.110
+The logical channel subsystem is a way of getting even more capacity for those chippets,
+
+46
+00:04:06.110 --> 00:04:10.110
+because now we have four logical worlds for them to live in.
+
+47
+00:04:10.110 --> 00:04:13.110
+Because we can create up to four of those logical channel subsystems,
+
+48
+00:04:13.110 --> 00:04:16.110
+we get four times the amount of chippets.
+
+49
+00:04:16.110 --> 00:04:20.110
+This just gives us a whole lot more options for how we can partition our resources.
+
+50
+00:04:20.110 --> 00:04:24.110
+You can also use this area to define a few dynamic options,
+
+51
+00:04:24.110 --> 00:04:26.110
+which we won't get into here.
+
+52
+00:04:26.110 --> 00:04:30.110
+Now, you get one resource statement, and it needs to come right after the ID statement,
+
+53
+00:04:30.110 --> 00:04:32.110
+if you have one.
+
+54
+00:04:32.110 --> 00:04:36.110
+It includes every logical partition in the configuration.
+
+55
+00:04:36.110 --> 00:04:38.110
+Up next is Chippet.
+
+56
+00:04:38.110 --> 00:04:41.110
+The Chippet statement defines all the channels on the system.
+
+57
+00:04:41.110 --> 00:04:46.110
+These are the logical connections between the L-par and the physical P-shit.
+
+58
+00:04:46.110 --> 00:04:51.110
+It defines whether that channel is dedicated, shared, reconfigurable, or spanned.
+
+59
+00:04:51.110 --> 00:04:55.110
+And if you're connected to Fycon switch, it also handles the assignments as well.
+
+60
+00:04:55.110 --> 00:04:59.110
+It also determines the availability of chippets to L-pars.
+
+61
+00:04:59.110 --> 00:05:04.110
+These go in after the resource and before the next two types of statements.
+
+62
+00:05:04.110 --> 00:05:06.110
+Number four is the control unit.
+
+63
+00:05:06.110 --> 00:05:12.110
+Now, this is another optional statement, but you need it if you need to connect to a device through a control unit.
+
+64
+00:05:12.110 --> 00:05:14.110
+And it describes three things.
+
+65
+00:05:14.110 --> 00:05:17.110
+First, the characteristics of the control unit.
+
+66
+00:05:17.110 --> 00:05:25.110
+It also defines the channel paths that the control unit is attached to, and the unit addresses that the control unit recognizes.
+
+67
+00:05:25.110 --> 00:05:32.110
+So basically, how I'm going to connect to the control unit, what it is I'm trying to connect to, that channel path I'm using to connect to it,
+
+68
+00:05:32.110 --> 00:05:35.110
+and how many unit addresses we're identifying.
+
+69
+00:05:35.110 --> 00:05:37.110
+Lastly, there's the I-O device.
+
+70
+00:05:37.110 --> 00:05:42.110
+Now, this is another optional statement, but you need it if you actually want to talk to something.
+
+71
+00:05:42.110 --> 00:05:45.110
+You need to have, first, the I-O device number.
+
+72
+00:05:45.110 --> 00:05:51.110
+You also need the device characteristics and the control units to which the device is assigned.
+
+73
+00:05:51.110 --> 00:05:55.110
+Now, this is all fairly abstract at this point, and it's one thing to talk about it.
+
+74
+00:05:55.110 --> 00:05:59.110
+Let's see what it actually happens once we start defining things with these statements.
+
+75
+00:05:59.110 --> 00:06:06.110
+What we're going to be doing with the following five statements is building a connection between an L-par through a chippet,
+
+76
+00:06:06.110 --> 00:06:12.110
+out a p-tude through a phi-con unit, and out to a 3390-DASD unit.
+
+77
+00:06:12.110 --> 00:06:14.110
+We'll start with the ID statement.
+
+78
+00:06:14.110 --> 00:06:18.110
+The symbol and everything else in the brackets is optional.
+
+79
+00:06:18.110 --> 00:06:21.110
+The ID here says this is an ID statement.
+
+80
+00:06:21.110 --> 00:06:25.110
+Message one here has the identifier of the I-O-C-D-S.
+
+81
+00:06:25.110 --> 00:06:31.110
+This also gets printed out on the first line of the heading of the I-O-C-P configuration reports.
+
+82
+00:06:31.110 --> 00:06:34.110
+It makes it easier to identify it.
+
+83
+00:06:34.110 --> 00:06:41.110
+Message two here has information on when it was updated, which is a pretty good idea to have that kind of stuff in there.
+
+84
+00:06:41.110 --> 00:06:44.110
+And you see that X all the way on the right side there?
+
+85
+00:06:44.110 --> 00:06:48.110
+That means that this line is continued on the line below it.
+
+86
+00:06:48.110 --> 00:06:54.110
+System specifies the machine limits and rules that I-O-C-P enforces for verification,
+
+87
+00:06:54.110 --> 00:06:58.110
+and there's also this L system and T-O-K.
+
+88
+00:06:58.110 --> 00:07:02.110
+These are enclosed in braces, which means that they represent alternative items.
+
+89
+00:07:02.110 --> 00:07:04.110
+So, they're optional.
+
+90
+00:07:04.110 --> 00:07:09.110
+And because we already defined system, we don't have to also define these other two.
+
+91
+00:07:09.110 --> 00:07:14.110
+Here's an example of a resource statement, which again identifies resources.
+
+92
+00:07:14.110 --> 00:07:18.110
+So, first we've got the partition, or part as it's labeled in here,
+
+93
+00:07:18.110 --> 00:07:22.110
+which defines the channel's subsystem ID or CSS.
+
+94
+00:07:22.110 --> 00:07:26.110
+Then we've got the MIF ID, which is used for sharing chippets between L-Pars.
+
+95
+00:07:26.110 --> 00:07:31.110
+Now, we're not doing that here, so it's not in our example, but that's where you would put it.
+
+96
+00:07:31.110 --> 00:07:34.110
+And then we have three L-Pars defined here.
+
+97
+00:07:34.110 --> 00:07:38.110
+L-P-1, L-P-2, and L-P-3.
+
+98
+00:07:38.110 --> 00:07:42.110
+You'll see that L-P-1 was assigned an image ID of two.
+
+99
+00:07:42.110 --> 00:07:45.110
+L-P-3 has an image ID of five.
+
+100
+00:07:45.110 --> 00:07:50.110
+And because we didn't specify one for L-P-2, it will be assigned one arbitrarily.
+
+101
+00:07:50.110 --> 00:07:52.110
+Here's the chippet statement.
+
+102
+00:07:52.110 --> 00:07:58.110
+We start out by defining channel path ID-35 in channel subsystem-1.
+
+103
+00:07:58.110 --> 00:08:04.110
+For the card port associated with physical channel, that's P-Chid ID-100.
+
+104
+00:08:04.110 --> 00:08:08.110
+We can tell it's a ficon card by the type, Equaling FC.
+
+105
+00:08:08.110 --> 00:08:12.110
+And it's shared between logical partitions L-P-1 and L-P-2.
+
+106
+00:08:12.110 --> 00:08:14.110
+Remember those from earlier?
+
+107
+00:08:14.110 --> 00:08:16.110
+It's all starting to come together, right?
+
+108
+00:08:16.110 --> 00:08:20.110
+And we can also see that this is associated with switch three E-Z.
+
+109
+00:08:20.110 --> 00:08:22.110
+Up next is Control Unit.
+
+110
+00:08:22.110 --> 00:08:26.110
+Now, what you're looking at here is the assignment of Control Unit,
+
+111
+00:08:26.110 --> 00:08:34.110
+number 26 Baker-0 to an IBM storage controller type 3990.
+
+112
+00:08:34.110 --> 00:08:39.110
+And the link address of E-Z-0 coming out of the ficon switch.
+
+113
+00:08:39.110 --> 00:08:43.110
+And on the main frame side, that's connected to channel path 35.
+
+114
+00:08:43.110 --> 00:08:46.110
+It also defines a logical address of one.
+
+115
+00:08:46.110 --> 00:08:51.110
+And this gives us the unit addresses of zero zero through zero fox.
+
+116
+00:08:51.110 --> 00:08:55.110
+Translate zero fox from hex to decimal, that's 15.
+
+117
+00:08:55.110 --> 00:09:00.110
+So we get 16 addresses from this statement because we start counting from zero.
+
+118
+00:09:00.110 --> 00:09:04.110
+So now we've defined all we need to know about the Control Unit.
+
+119
+00:09:04.110 --> 00:09:05.110
+One more.
+
+120
+00:09:05.110 --> 00:09:07.110
+Let's take a look at the I-O device statement.
+
+121
+00:09:07.110 --> 00:09:10.110
+So here it is, just so you know what it is.
+
+122
+00:09:10.110 --> 00:09:15.110
+This defines 16 device numbers, starting with address 8100.
+
+123
+00:09:15.110 --> 00:09:21.110
+This part right here assigns devices to Control Unit, number 26 Baker-0,
+
+124
+00:09:21.110 --> 00:09:23.110
+on an IBM 3990.
+
+125
+00:09:23.110 --> 00:09:29.110
+That 3990 Control Unit manages the device, which is a 3390.
+
+126
+00:09:29.110 --> 00:09:32.110
+So two very similar numbers.
+
+127
+00:09:32.110 --> 00:09:36.110
+And you would absolutely not be the first person in the world to mix them up.
+
+128
+00:09:36.110 --> 00:09:38.110
+In fact, you'd be in pretty good company.
+
+129
+00:09:38.110 --> 00:09:40.110
+Hi, I'm Jeff Bisty.
+
+130
+00:09:40.110 --> 00:09:42.110
+I believe we've met.
+
+131
+00:09:42.110 --> 00:09:47.110
+Lastly, it assigns a channel subsystem to L-Pars 1, 2, and 3.
+
+132
+00:09:47.110 --> 00:09:51.110
+This is what the L-Pars are actually going to use to connect to the channels.
+
+133
+00:09:51.110 --> 00:09:54.110
+So what do we actually just do?
+
+134
+00:09:54.110 --> 00:09:59.110
+We've got chip at 35, which is associated with P-CID 100.
+
+135
+00:09:59.110 --> 00:10:02.110
+And we know it's a 5-con channel, right?
+
+136
+00:10:02.110 --> 00:10:06.110
+We've also defined this 5-con switch with an address of 3EZ.
+
+137
+00:10:06.110 --> 00:10:11.110
+We've also defined the switch is connected to chip at 35 on the main frame side,
+
+138
+00:10:11.110 --> 00:10:15.110
+and it exits on link EZ-0.
+
+139
+00:10:16.110 --> 00:10:20.110
+And then it connects to the DS8886 DASDY.
+
+140
+00:10:20.110 --> 00:10:22.110
+Whole lot disks in there.
+
+141
+00:10:22.110 --> 00:10:24.110
+It's got to control unit inside of it.
+
+142
+00:10:24.110 --> 00:10:28.110
+That's the 3990 we defined in the last two statements.
+
+143
+00:10:28.110 --> 00:10:33.110
+And we're connecting to Control Unit number 26 Baker-0,
+
+144
+00:10:33.110 --> 00:10:39.110
+and it's giving us addresses 8100 through 8100 Fox.
+
+145
+00:10:39.110 --> 00:10:41.110
+That was exhausting.
+
+146
+00:10:41.110 --> 00:10:42.110
+I know.
+
+147
+00:10:42.110 --> 00:10:44.110
+It wasn't exactly plug and play.
+
+148
+00:10:44.110 --> 00:10:47.110
+But the reason we basically define every little thing
+
+149
+00:10:47.110 --> 00:10:51.110
+and how every little thing connects to every other little thing
+
+150
+00:10:51.110 --> 00:10:54.110
+is because there needs to be absolutely no two ways
+
+151
+00:10:54.110 --> 00:10:57.110
+of interpreting these definitions.
+
+152
+00:10:57.110 --> 00:10:59.110
+It's also actually kind of nice,
+
+153
+00:10:59.110 --> 00:11:02.110
+because in this document, in this series of statements,
+
+154
+00:11:02.110 --> 00:11:05.110
+the entire IO ecosystem is defined.
+
+155
+00:11:05.110 --> 00:11:09.110
+So you can read through one of these and get an extremely clear picture
+
+156
+00:11:09.110 --> 00:11:11.110
+of how your addresses are defined,
+
+157
+00:11:11.110 --> 00:11:14.110
+what they're connected to, which L parts get access to them,
+
+158
+00:11:14.110 --> 00:11:17.110
+everything you could possibly want to know about your devices.
+
+159
+00:11:17.110 --> 00:11:19.110
+And it's not easy at first.
+
+160
+00:11:19.110 --> 00:11:20.110
+Trust me.
+
+161
+00:11:20.110 --> 00:11:22.110
+I know we just hit you with a lot,
+
+162
+00:11:22.110 --> 00:11:26.110
+but this is just one of those things where you get to walk into a job interview and say,
+
+163
+00:11:26.110 --> 00:11:31.110
+yeah, I was just building a practice IODF config based on an online mainframe course I was taking,
+
+164
+00:11:31.110 --> 00:11:34.110
+and that's going to earn you some major points.

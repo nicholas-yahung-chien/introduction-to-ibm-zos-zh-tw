@@ -1,0 +1,24 @@
+{
+  "name": "introduction-to-ibm-zos-zh-tw",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --host 127.0.0.1",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs --host 127.0.0.1",
+    "capture:course": "node scripts/capture-course.mjs",
+    "download:videos": "node scripts/download-kaltura-videos.mjs",
+    "glossary:import": "node scripts/import-glossary.mjs",
+    "subtitles:transcribe": "python scripts/transcribe_videos.py",
+    "subtitles:translate": "python scripts/translate_subtitles_openai.py",
+    "subtitles:translate:local": "python scripts/translate_subtitles_local.py",
+    "subtitles:check": "node scripts/check-subtitles.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {}
+}

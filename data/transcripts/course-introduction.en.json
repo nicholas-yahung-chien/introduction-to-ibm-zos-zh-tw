@@ -1,0 +1,293 @@
+{
+  "slug": "course-introduction",
+  "title": "Course Introduction",
+  "language": "en",
+  "duration": 261.712125,
+  "segments": [
+    {
+      "start": 4.46,
+      "end": 11.12,
+      "text": "Hello there, we are so glad you're taking this course and we think you're gonna have all a whole lot of fun work in your way through it"
+    },
+    {
+      "start": 11.12,
+      "end": 13.02,
+      "text": "No matter what brought you here"
+    },
+    {
+      "start": 13.02,
+      "end": 17.66,
+      "text": "Whether this is your first time exploring a computer platform where you're 9th or 12th"
+    },
+    {
+      "start": 17.66,
+      "end": 26.54,
+      "text": "The mainframe environment is all of IT in one place and a career here will keep you engaged learning and current in all of it"
+    },
+    {
+      "start": 26.54,
+      "end": 32.22,
+      "text": "And don't worry if you've never seen logged into or even thought all that much about mainframes before"
+    },
+    {
+      "start": 32.62,
+      "end": 37.02,
+      "text": "We assume you're here to get started and that's where we'll begin"
+    },
+    {
+      "start": 37.02,
+      "end": 41.18,
+      "text": "This course is everything I wish someone had sat me down and explained to me"
+    },
+    {
+      "start": 41.18,
+      "end": 48.06,
+      "text": "Back when I first got started back in the early 2000s and a lot has changed since then"
+    },
+    {
+      "start": 48.06,
+      "end": 51.26,
+      "text": "And a lot has changed since the first time this course came out"
+    },
+    {
+      "start": 51.26,
+      "end": 55.18,
+      "text": "Which is why I'm back with my pal Mackenzie. Hi Mackenzie"
+    },
+    {
+      "start": 55.18,
+      "end": 55.74,
+      "text": "Hey Jeff"
+    },
+    {
+      "start": 55.74,
+      "end": 56.54,
+      "text": "How's it going?"
+    },
+    {
+      "start": 56.54,
+      "end": 60.54,
+      "text": "We're gonna go in and freshen up a couple of the videos to bring them up to date"
+    },
+    {
+      "start": 60.54,
+      "end": 64.86,
+      "text": "We want to talk about some new features new hardware and new approaches to problem-solving"
+    },
+    {
+      "start": 65.42,
+      "end": 70.14,
+      "text": "We're so glad you're here to learn because now more than ever it's all about transactions"
+    },
+    {
+      "start": 70.54,
+      "end": 79.9,
+      "text": "Massive massive amounts of secure transactions for stuff like paychecks health care insurance your phone your credit card your bank account the internet"
+    },
+    {
+      "start": 80.54,
+      "end": 83.18,
+      "text": "And those are transactions that are powered by these systems"
+    },
+    {
+      "start": 83.66,
+      "end": 88.54,
+      "text": "The hardware and software behind it all is expected to always be available"
+    },
+    {
+      "start": 89.02,
+      "end": 95.5,
+      "text": "Ready to react and scale to whatever the world throws at it all that while protecting the data at the heart of it all"
+    },
+    {
+      "start": 95.9,
+      "end": 100.86,
+      "text": "If you're new to all this you literally couldn't pick a better time to get started"
+    },
+    {
+      "start": 101.02,
+      "end": 105.42,
+      "text": "There's so much going on we're in an era of specialized AI processors"
+    },
+    {
+      "start": 105.58,
+      "end": 110.06,
+      "text": "They will let us do things nobody ever thought was possible just a few years ago"
+    },
+    {
+      "start": 110.86,
+      "end": 114.22,
+      "text": "So we'll build up to the big fancy application level stuff"
+    },
+    {
+      "start": 114.22,
+      "end": 119.82,
+      "text": "But we'll also make sure to start with the real fundamentals because once we've got those everything"
+    },
+    {
+      "start": 119.82,
+      "end": 122.54,
+      "text": "We build on top of that. We'll just lock into place"
+    },
+    {
+      "start": 123.1,
+      "end": 128.22,
+      "text": "The best thing is we're going to be teaching you skills that will absolutely differentiate you from others"
+    },
+    {
+      "start": 128.7,
+      "end": 131.1,
+      "text": "You'll be able to put these skills to use from day one"
+    },
+    {
+      "start": 131.58,
+      "end": 133.82,
+      "text": "So when you get brought in for a job interview"
+    },
+    {
+      "start": 133.82,
+      "end": 136.86,
+      "text": "You'll have the confidence of not just knowing the technology"
+    },
+    {
+      "start": 136.86,
+      "end": 140.62,
+      "text": "But understanding how that technology comes together to form solutions"
+    },
+    {
+      "start": 140.94,
+      "end": 146.06,
+      "text": "That right there is what builds confidence. Oh, yeah, and you know, it's going to make you feel really confident"
+    },
+    {
+      "start": 146.06,
+      "end": 153.34,
+      "text": "How about logging into a real live system with your own ID? I'm not talking about a simulation or animated screenshots"
+    },
+    {
+      "start": 154.06,
+      "end": 155.42,
+      "text": "We're going in"
+    },
+    {
+      "start": 155.58,
+      "end": 159.26,
+      "text": "But before we do that we've got just two favors to ask of you"
+    },
+    {
+      "start": 160.06,
+      "end": 162.46,
+      "text": "One grab a pen and some paper"
+    },
+    {
+      "start": 163.5,
+      "end": 169.18,
+      "text": "Or your favorite notes app and just keep it handy for any time you hear something that catches your attention"
+    },
+    {
+      "start": 169.58,
+      "end": 170.94,
+      "text": "No need to go much deeper"
+    },
+    {
+      "start": 170.94,
+      "end": 175.98,
+      "text": "Just literally make a note of anything that you wished you had some more information about"
+    },
+    {
+      "start": 175.98,
+      "end": 177.5,
+      "text": "Because when we're all done"
+    },
+    {
+      "start": 177.5,
+      "end": 180.94,
+      "text": "You'll have a good list of areas that you might want to focus on"
+    },
+    {
+      "start": 180.94,
+      "end": 185.26,
+      "text": "Either for follow-up education or for your career in mainframe systems"
+    },
+    {
+      "start": 185.26,
+      "end": 190.38,
+      "text": "And a good next step might be to find people who work in those areas and give them a follow"
+    },
+    {
+      "start": 191.18,
+      "end": 193.82,
+      "text": "We also ask that you set aside time"
+    },
+    {
+      "start": 194.54,
+      "end": 197.1,
+      "text": "Not just to watch the videos and pass the quizzes"
+    },
+    {
+      "start": 197.18,
+      "end": 200.3,
+      "text": "But to reflect on what we're talking about to occasionally"
+    },
+    {
+      "start": 200.94,
+      "end": 204.46,
+      "text": "Literally hit pause and ask yourself did I really get that?"
+    },
+    {
+      "start": 205.18,
+      "end": 210.62,
+      "text": "Sometimes getting up and walking around a little bit is the physical activity that helps us contextualize things"
+    },
+    {
+      "start": 210.7,
+      "end": 212.7,
+      "text": "After getting hit with a wave of new information"
+    },
+    {
+      "start": 213.74,
+      "end": 220.54,
+      "text": "Taking the time and respecting your time to learn and understand whether you're doing this by yourself or with others is key"
+    },
+    {
+      "start": 221.18,
+      "end": 224.54,
+      "text": "If you try to rush through and only focus on passing the quizzes"
+    },
+    {
+      "start": 224.54,
+      "end": 228.7,
+      "text": "You won't get that lasting knowledge which is needed to put it all in context"
+    },
+    {
+      "start": 228.7,
+      "end": 231.66,
+      "text": "There's a reason we get to present this course to you"
+    },
+    {
+      "start": 232.3,
+      "end": 236.86,
+      "text": "Like this and there's a reason we aren't just picking up a manual and reading it to you"
+    },
+    {
+      "start": 236.86,
+      "end": 239.82,
+      "text": "We're putting it into easily understandable terms"
+    },
+    {
+      "start": 239.82,
+      "end": 245.82,
+      "text": "We're picking our words very carefully and making sure you're fully on board before moving on to the next thing"
+    },
+    {
+      "start": 245.82,
+      "end": 249.66,
+      "text": "Because in Z everything is interconnected"
+    },
+    {
+      "start": 249.66,
+      "end": 256.46,
+      "text": "So get comfy, give your arms a stretch and let's get going. There's a whole lot to cover"
+    }
+  ]
+}

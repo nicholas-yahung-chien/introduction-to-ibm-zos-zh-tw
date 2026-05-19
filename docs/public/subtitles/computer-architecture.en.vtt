@@ -1,0 +1,825 @@
+WEBVTT
+
+1
+00:00:03.540 --> 00:00:06.260
+All right, let's talk about computer architecture.
+
+2
+00:00:06.260 --> 00:00:08.500
+Now, what is computer architecture?
+
+3
+00:00:08.500 --> 00:00:10.700
+You've probably heard about architecture before
+
+4
+00:00:10.700 --> 00:00:12.580
+when people are talking about skyscrapers
+
+5
+00:00:12.580 --> 00:00:15.460
+and hospitals and museums and stuff like that.
+
+6
+00:00:15.460 --> 00:00:19.180
+Well, computer architecture is actually pretty simple.
+
+7
+00:00:19.180 --> 00:00:20.820
+There's lots of different kinds of buildings,
+
+8
+00:00:20.820 --> 00:00:22.300
+lots of different kinds of computers,
+
+9
+00:00:22.300 --> 00:00:24.340
+and you wouldn't architect a home
+
+10
+00:00:24.340 --> 00:00:27.100
+the same way you wouldn't architect a car wash,
+
+11
+00:00:27.100 --> 00:00:28.500
+and you wouldn't architect a museum,
+
+12
+00:00:28.500 --> 00:00:30.860
+the same way you do our restaurant.
+
+13
+00:00:30.860 --> 00:00:32.460
+Well, there's different types of computers.
+
+14
+00:00:32.460 --> 00:00:34.660
+You wouldn't architect them exactly the same either
+
+15
+00:00:34.660 --> 00:00:37.180
+because each one has its own specific set of needs
+
+16
+00:00:37.180 --> 00:00:39.540
+and purposes, just like the buildings.
+
+17
+00:00:39.540 --> 00:00:42.620
+So, there's certain things you need to take into consideration
+
+18
+00:00:42.620 --> 00:00:45.460
+when thinking about computer architecture.
+
+19
+00:00:45.460 --> 00:00:47.900
+It's these set of rules and methods
+
+20
+00:00:47.900 --> 00:00:50.540
+that describe the functionality, organization,
+
+21
+00:00:50.540 --> 00:00:53.140
+and implementation of the computer system.
+
+22
+00:00:53.140 --> 00:00:55.740
+Now, this includes hardware, software,
+
+23
+00:00:55.740 --> 00:00:58.420
+and everything in between and all around it.
+
+24
+00:00:58.420 --> 00:01:00.100
+Let's talk about hardware.
+
+25
+00:01:00.100 --> 00:01:01.340
+When we talk about hardware,
+
+26
+00:01:01.340 --> 00:01:04.380
+we're talking about the stuff you can physically see and touch.
+
+27
+00:01:04.380 --> 00:01:08.260
+Stuff like CPUs, memory, hard drives, network cards,
+
+28
+00:01:08.260 --> 00:01:11.260
+IO adapters, the graphical processing unit,
+
+29
+00:01:11.260 --> 00:01:12.660
+all that kind of stuff.
+
+30
+00:01:12.660 --> 00:01:14.860
+The stuff that you can pick up, take a look at
+
+31
+00:01:14.860 --> 00:01:17.020
+and shove back into the computer.
+
+32
+00:01:17.020 --> 00:01:18.420
+Don't shove it back into the computer.
+
+33
+00:01:18.420 --> 00:01:19.580
+Place it gently.
+
+34
+00:01:19.580 --> 00:01:20.740
+We're talking about software.
+
+35
+00:01:20.740 --> 00:01:22.100
+That's the stuff that we can't see.
+
+36
+00:01:22.100 --> 00:01:24.980
+That stuff like programs that are written in code,
+
+37
+00:01:24.980 --> 00:01:28.460
+operating systems, built-in programs like Notepad,
+
+38
+00:01:28.460 --> 00:01:30.500
+applications you're right, libraries,
+
+39
+00:01:30.540 --> 00:01:33.620
+ones you download, tools, utilities, programs,
+
+40
+00:01:33.620 --> 00:01:35.100
+all sorts of stuff.
+
+41
+00:01:35.100 --> 00:01:36.980
+And you can think about the operating system
+
+42
+00:01:36.980 --> 00:01:38.740
+as the primary program,
+
+43
+00:01:38.740 --> 00:01:40.780
+and everything else just goes through it.
+
+44
+00:01:40.780 --> 00:01:43.380
+So there are instances when you're gonna write software
+
+45
+00:01:43.380 --> 00:01:45.820
+that sits directly on top of the hardware
+
+46
+00:01:45.820 --> 00:01:47.380
+that doesn't use the operating system.
+
+47
+00:01:47.380 --> 00:01:49.540
+Those do exist, but most of the time,
+
+48
+00:01:49.540 --> 00:01:51.460
+the operating system is there in the middle,
+
+49
+00:01:51.460 --> 00:01:54.020
+making sure not only this stuff is easier to write,
+
+50
+00:01:54.020 --> 00:01:56.140
+but that it's gonna run safer as well.
+
+51
+00:01:56.140 --> 00:01:57.620
+All right, let's get into these computer
+
+52
+00:01:57.620 --> 00:01:59.300
+architecture components.
+
+53
+00:01:59.300 --> 00:02:01.780
+Earlier I talked about how architecture computer
+
+54
+00:02:01.780 --> 00:02:04.220
+is a lot like the architecture of a building.
+
+55
+00:02:04.220 --> 00:02:06.540
+Lots of different buildings, lots of different computers.
+
+56
+00:02:06.540 --> 00:02:10.100
+Now a building typically has a couple of things in common.
+
+57
+00:02:10.100 --> 00:02:13.260
+It's got walls, it's got a roof, got floor,
+
+58
+00:02:13.260 --> 00:02:15.860
+hallway, it probably has an electrical system,
+
+59
+00:02:15.860 --> 00:02:18.260
+probably plumbing, windows, doors.
+
+60
+00:02:18.260 --> 00:02:20.780
+You can see there's a lot of stuff to think about there.
+
+61
+00:02:20.780 --> 00:02:24.100
+In computer architecture, you've got a series of components.
+
+62
+00:02:24.100 --> 00:02:26.740
+And the architecture is all about how they are designed
+
+63
+00:02:26.740 --> 00:02:29.020
+to work well with another and fit together
+
+64
+00:02:29.020 --> 00:02:32.660
+so that it performs as a bank or as a museum again.
+
+65
+00:02:32.660 --> 00:02:35.980
+And we can kind of see this in computer architecture as well.
+
+66
+00:02:35.980 --> 00:02:38.020
+And there's this split between the hardware
+
+67
+00:02:38.020 --> 00:02:39.460
+and the software side.
+
+68
+00:02:39.460 --> 00:02:41.900
+So let's start with software design.
+
+69
+00:02:41.900 --> 00:02:44.260
+Software design includes the compiler,
+
+70
+00:02:44.260 --> 00:02:47.780
+firmware, operating system, applications.
+
+71
+00:02:47.780 --> 00:02:50.580
+The hardware design includes physical, circuit,
+
+72
+00:02:50.580 --> 00:02:53.260
+digital design, data path control,
+
+73
+00:02:53.260 --> 00:02:56.980
+instruction set procedures, and IO systems.
+
+74
+00:02:56.980 --> 00:02:59.100
+Let's start by talking about the software.
+
+75
+00:02:59.100 --> 00:03:01.380
+Now, you can generally split software
+
+76
+00:03:01.380 --> 00:03:02.900
+into two distinct flavors.
+
+77
+00:03:02.900 --> 00:03:06.620
+There is application software and the system software.
+
+78
+00:03:06.620 --> 00:03:09.940
+Application software is what you generally call an app,
+
+79
+00:03:09.940 --> 00:03:11.660
+short for application.
+
+80
+00:03:11.660 --> 00:03:14.140
+You start it, it runs, it does its thing.
+
+81
+00:03:14.140 --> 00:03:15.900
+And when it's done and you don't need it anymore,
+
+82
+00:03:15.900 --> 00:03:17.940
+you just stop it and it goes away.
+
+83
+00:03:17.940 --> 00:03:20.060
+It generally interacts with you,
+
+84
+00:03:20.060 --> 00:03:22.300
+or maybe another user or a file,
+
+85
+00:03:22.300 --> 00:03:25.020
+but it typically sits on top of the operating system.
+
+86
+00:03:25.060 --> 00:03:27.300
+And it's going to use the operating system
+
+87
+00:03:27.300 --> 00:03:30.060
+to get the data it needs, to access memory,
+
+88
+00:03:30.060 --> 00:03:33.580
+to talk to the network, all that kind of stuff.
+
+89
+00:03:33.580 --> 00:03:36.020
+Now, system software is the code that runs
+
+90
+00:03:36.020 --> 00:03:38.620
+as part of the operating system, generally.
+
+91
+00:03:38.620 --> 00:03:39.860
+Without the system software,
+
+92
+00:03:39.860 --> 00:03:42.780
+you wouldn't be able to run any sort of application software.
+
+93
+00:03:42.780 --> 00:03:45.620
+Because generally, it's the application software
+
+94
+00:03:45.620 --> 00:03:49.180
+telling the system software what it wants.
+
+95
+00:03:49.180 --> 00:03:50.900
+And then there's firmware.
+
+96
+00:03:50.900 --> 00:03:54.140
+Firmware generally gets written to read-only memory.
+
+97
+00:03:54.180 --> 00:03:56.220
+And it comes from the factory associated
+
+98
+00:03:56.220 --> 00:03:57.420
+with that piece of hardware.
+
+99
+00:03:57.420 --> 00:03:58.660
+And you're not going to change it
+
+100
+00:03:58.660 --> 00:04:01.020
+unless there's like a problem that needs to get fixed,
+
+101
+00:04:01.020 --> 00:04:02.540
+or there's a new feature coming out.
+
+102
+00:04:02.540 --> 00:04:04.820
+You can upgrade the firmware to get that.
+
+103
+00:04:04.820 --> 00:04:07.140
+The firmware provides a common set of methods
+
+104
+00:04:07.140 --> 00:04:10.620
+for doing things, that the operating system is going to use.
+
+105
+00:04:10.620 --> 00:04:13.500
+Let's take a step back and see what we have so far, right?
+
+106
+00:04:13.500 --> 00:04:15.180
+Because we've talked about a lot of stuff.
+
+107
+00:04:15.180 --> 00:04:16.940
+We have the application software.
+
+108
+00:04:16.940 --> 00:04:18.900
+That's the app, right?
+
+109
+00:04:18.900 --> 00:04:21.260
+And that sits on top of the operating system,
+
+110
+00:04:21.260 --> 00:04:22.900
+the system software.
+
+111
+00:04:22.900 --> 00:04:25.300
+But there's actually a step before that,
+
+112
+00:04:25.300 --> 00:04:27.340
+because you have to build the application.
+
+113
+00:04:27.340 --> 00:04:30.100
+So you're right the application in software language,
+
+114
+00:04:30.100 --> 00:04:33.300
+like Java, C++, something like that.
+
+115
+00:04:33.300 --> 00:04:35.180
+Now, I can write some code,
+
+116
+00:04:35.180 --> 00:04:36.500
+and you can probably take a look at it
+
+117
+00:04:36.500 --> 00:04:38.380
+and see what I'm trying to do.
+
+118
+00:04:38.380 --> 00:04:41.060
+The computer itself doesn't understand this yet
+
+119
+00:04:41.060 --> 00:04:43.900
+until we run it through something called a compiler.
+
+120
+00:04:43.900 --> 00:04:45.660
+A compiler takes source code,
+
+121
+00:04:45.660 --> 00:04:47.220
+which is the stuff that I write,
+
+122
+00:04:47.220 --> 00:04:50.220
+and then compiles it into something machine can run.
+
+123
+00:04:50.220 --> 00:04:52.020
+That's called object code.
+
+124
+00:04:52.020 --> 00:04:53.580
+And it's a one-way direction.
+
+125
+00:04:53.580 --> 00:04:56.100
+You can't take object code and then break it apart
+
+126
+00:04:56.100 --> 00:04:57.540
+into its source code.
+
+127
+00:04:57.540 --> 00:04:58.700
+It's kind of like bake in a cake.
+
+128
+00:04:58.700 --> 00:05:01.540
+You can't take a cake and turn it back into its ingredients.
+
+129
+00:05:01.540 --> 00:05:03.940
+It's the kind of the finished product there.
+
+130
+00:05:03.940 --> 00:05:07.580
+So that's how you make an application, or a cake.
+
+131
+00:05:07.580 --> 00:05:09.700
+Okay, so we've got our compiler,
+
+132
+00:05:09.700 --> 00:05:11.100
+we've got an application,
+
+133
+00:05:11.100 --> 00:05:13.020
+we've got the operating system.
+
+134
+00:05:13.020 --> 00:05:16.260
+And then before that, before it actually hits the hardware,
+
+135
+00:05:16.260 --> 00:05:18.300
+we've got something called the instruction set,
+
+136
+00:05:18.300 --> 00:05:20.700
+which is part of the instruction set architecture,
+
+137
+00:05:20.740 --> 00:05:23.220
+another aspect of computer architecture.
+
+138
+00:05:23.220 --> 00:05:25.060
+And this is ultimately what bridges the gap
+
+139
+00:05:25.060 --> 00:05:27.340
+between the software and the hardware.
+
+140
+00:05:27.340 --> 00:05:29.420
+The instruction set is basically everything
+
+141
+00:05:29.420 --> 00:05:32.420
+that the computer's processor is capable of doing.
+
+142
+00:05:32.420 --> 00:05:34.540
+It lists out every single function it can do.
+
+143
+00:05:34.540 --> 00:05:36.700
+I can compare these two numbers together,
+
+144
+00:05:36.700 --> 00:05:37.940
+tell you which one's greater,
+
+145
+00:05:37.940 --> 00:05:40.380
+or if they're equal, add these two numbers together,
+
+146
+00:05:40.380 --> 00:05:42.980
+store this data over here, move this data over there.
+
+147
+00:05:42.980 --> 00:05:44.380
+It's nothing too fancy,
+
+148
+00:05:44.380 --> 00:05:46.540
+but these are the small building blocks
+
+149
+00:05:46.540 --> 00:05:50.020
+that you can use to make these higher level fancy applications
+
+150
+00:05:50.100 --> 00:05:51.100
+from.
+
+151
+00:05:51.100 --> 00:05:53.860
+Now, ultimately everything we're doing right now
+
+152
+00:05:53.860 --> 00:05:56.380
+is so that we can get something onto the processor.
+
+153
+00:05:56.380 --> 00:05:59.420
+So the processor can run this application, right?
+
+154
+00:05:59.420 --> 00:06:01.340
+That's why we're doing all this stuff.
+
+155
+00:06:01.340 --> 00:06:02.940
+You've probably seen a processor too,
+
+156
+00:06:02.940 --> 00:06:03.820
+you're thinking about this,
+
+157
+00:06:03.820 --> 00:06:07.140
+it's a square chip thing with a whole bunch of metal
+
+158
+00:06:07.140 --> 00:06:08.780
+pins on the bottom of it.
+
+159
+00:06:08.780 --> 00:06:10.980
+Well, those metal pins aren't just for traction,
+
+160
+00:06:10.980 --> 00:06:13.620
+they're there because they hook into the motherboard
+
+161
+00:06:13.620 --> 00:06:15.660
+or the back plane of the computer,
+
+162
+00:06:15.660 --> 00:06:18.620
+and we have to send electrical impulses through it.
+
+163
+00:06:18.620 --> 00:06:19.740
+That's how we tell the chip,
+
+164
+00:06:19.740 --> 00:06:22.180
+or the processor, what we want it to do,
+
+165
+00:06:22.180 --> 00:06:23.620
+and then we want to get the answer
+
+166
+00:06:23.620 --> 00:06:25.660
+of what those two numbers added together are.
+
+167
+00:06:25.660 --> 00:06:27.300
+We have to do a read, so we know
+
+168
+00:06:27.300 --> 00:06:30.100
+we have to know which pins to read from, right?
+
+169
+00:06:30.100 --> 00:06:31.980
+There's a whole lot of stuff to understand there,
+
+170
+00:06:31.980 --> 00:06:35.220
+and that's all documented in the instruction set.
+
+171
+00:06:35.220 --> 00:06:38.860
+Now, you can picture a calculator as a type of computer.
+
+172
+00:06:38.860 --> 00:06:40.540
+A phone is a type of computer,
+
+173
+00:06:40.540 --> 00:06:42.780
+a supercomputer is a type of computer.
+
+174
+00:06:42.780 --> 00:06:44.660
+Three different types of computers,
+
+175
+00:06:44.660 --> 00:06:46.500
+three different architectures,
+
+176
+00:06:46.500 --> 00:06:48.820
+three different instruction sets, right?
+
+177
+00:06:48.820 --> 00:06:51.380
+So we need to ultimately need a compiler
+
+178
+00:06:51.380 --> 00:06:53.540
+for each one of those, right?
+
+179
+00:06:53.540 --> 00:06:55.460
+The blueprints for all that are contained
+
+180
+00:06:55.460 --> 00:06:56.780
+within the instruction set,
+
+181
+00:06:56.780 --> 00:06:59.980
+and part of the instruction set architecture.
+
+182
+00:06:59.980 --> 00:07:02.900
+Even a very simple couple lines of code program,
+
+183
+00:07:02.900 --> 00:07:05.140
+like add these things together,
+
+184
+00:07:05.140 --> 00:07:07.300
+it has to take quite a journey to get from something
+
+185
+00:07:07.300 --> 00:07:08.700
+that I can describe to something
+
+186
+00:07:08.700 --> 00:07:11.780
+that can be represented electronically on a CPU.
+
+187
+00:07:11.780 --> 00:07:14.020
+And then there's a whole other area of physical design
+
+188
+00:07:14.020 --> 00:07:17.260
+that describes building the logic gates and physical chips.
+
+189
+00:07:17.260 --> 00:07:18.980
+That falls under digital design,
+
+190
+00:07:18.980 --> 00:07:22.300
+circuit implementation, and physical implementation.
+
+191
+00:07:22.300 --> 00:07:24.220
+And believe me, that goes off pretty far
+
+192
+00:07:24.220 --> 00:07:25.580
+in its own direction.
+
+193
+00:07:25.580 --> 00:07:26.580
+We've covered a lot here,
+
+194
+00:07:26.580 --> 00:07:29.340
+from stuff you can see to stuff you run,
+
+195
+00:07:29.340 --> 00:07:31.700
+to stuff you're right, to stuff that you,
+
+196
+00:07:31.700 --> 00:07:33.500
+stuff that you just kind of have to trust that it's there
+
+197
+00:07:33.500 --> 00:07:36.300
+because there's no way a computer would work without it.
+
+198
+00:07:36.300 --> 00:07:38.700
+And there's definitely a near infinite number of ways
+
+199
+00:07:38.700 --> 00:07:40.460
+you could architect a computer.
+
+200
+00:07:40.460 --> 00:07:42.420
+Hopefully the computer you're using right now
+
+201
+00:07:42.420 --> 00:07:44.340
+was built for a specific purpose,
+
+202
+00:07:44.340 --> 00:07:46.340
+and it does it really, really well.
+
+203
+00:07:46.340 --> 00:07:48.460
+In the next lesson, we're gonna talk about a computer
+
+204
+00:07:48.460 --> 00:07:50.100
+that's been architected specifically
+
+205
+00:07:50.100 --> 00:07:51.820
+to run business transactions.
+
+206
+00:07:51.820 --> 00:07:53.140
+And that's the IBM Z.

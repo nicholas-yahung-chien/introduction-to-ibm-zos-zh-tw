@@ -1,0 +1,543 @@
+{
+  "slug": "sysplex",
+  "title": "Sysplex",
+  "language": "en",
+  "duration": 391.952875,
+  "segments": [
+    {
+      "start": 3.47,
+      "end": 8.67,
+      "text": "Ask a bunch of main framers what makes their platform so powerful, and there's a good chance"
+    },
+    {
+      "start": 8.67,
+      "end": 12.47,
+      "text": "a good number of them will tell you it's Sysplex."
+    },
+    {
+      "start": 12.47,
+      "end": 17.71,
+      "text": "Simply put, Sysplex is a way of making multiple systems work together as a team, and this"
+    },
+    {
+      "start": 17.71,
+      "end": 23.03,
+      "text": "can be L-Pars on one physical box, or it can be spread out across many."
+    },
+    {
+      "start": 23.03,
+      "end": 27.11,
+      "text": "Before we get into exactly how it does this, we first have to define a couple of basic"
+    },
+    {
+      "start": 27.11,
+      "end": 28.11,
+      "text": "concepts."
+    },
+    {
+      "start": 28.11,
+      "end": 32.27,
+      "text": "First, there's STP, the server-time protocol."
+    },
+    {
+      "start": 32.27,
+      "end": 37.35,
+      "text": "Systems need to be an exact agreement about time, like exact agreement."
+    },
+    {
+      "start": 37.35,
+      "end": 41.43,
+      "text": "And that kind of makes sense if you've got multiple systems writing to the same file,"
+    },
+    {
+      "start": 41.43,
+      "end": 45.15,
+      "text": "milliseconds apart, and you're trying to figure out which one got to that piece of"
+    },
+    {
+      "start": 45.15,
+      "end": 46.55,
+      "text": "data first."
+    },
+    {
+      "start": 46.55,
+      "end": 50.19,
+      "text": "Having your watch is synchronized is kind of important."
+    },
+    {
+      "start": 50.19,
+      "end": 53.87,
+      "text": "Then there's GRS, the global resource serialization."
+    },
+    {
+      "start": 53.87,
+      "end": 58.67,
+      "text": "This allows for multiple systems to access the same resources concurrently, serializing"
+    },
+    {
+      "start": 58.67,
+      "end": 62.11,
+      "text": "where necessary to ensure exclusive access."
+    },
+    {
+      "start": 62.11,
+      "end": 65.31,
+      "text": "Without GRS, you have quite a mess."
+    },
+    {
+      "start": 65.31,
+      "end": 66.31,
+      "text": "That's a handy rhyme."
+    },
+    {
+      "start": 66.31,
+      "end": 71.11,
+      "text": "You should remember that, in case you're tested on it later."
+    },
+    {
+      "start": 71.11,
+      "end": 73.55,
+      "text": "XCF, the cross coupling facility."
+    },
+    {
+      "start": 73.55,
+      "end": 77.59,
+      "text": "This manages communication between applications and Sysplex."
+    },
+    {
+      "start": 77.59,
+      "end": 81.63,
+      "text": "This also lets you be logged into one system, and issue commands on behalf of another"
+    },
+    {
+      "start": 81.63,
+      "end": 84.07,
+      "text": "system in that Sysplex."
+    },
+    {
+      "start": 84.07,
+      "end": 88.83,
+      "text": "This right here is what lets the Sysplex communicate as a whole."
+    },
+    {
+      "start": 88.83,
+      "end": 90.87,
+      "text": "Next up, the coupling links."
+    },
+    {
+      "start": 90.87,
+      "end": 93.19,
+      "text": "These connect L-Pars to processors."
+    },
+    {
+      "start": 93.19,
+      "end": 97.39,
+      "text": "Without these accessing memory on different physical systems, would have to run through"
+    },
+    {
+      "start": 97.39,
+      "end": 99.27,
+      "text": "one of those L-Pars."
+    },
+    {
+      "start": 99.27,
+      "end": 104.51,
+      "text": "And these allow direct memory access communications between Sysplex memory and the memory"
+    },
+    {
+      "start": 104.51,
+      "end": 106.03,
+      "text": "of an attached system."
+    },
+    {
+      "start": 106.03,
+      "end": 109.55,
+      "text": "Finally, there's the CDS, the couple data set."
+    },
+    {
+      "start": 109.55,
+      "end": 113.15,
+      "text": "So imagine you've got a bunch of people working on the same job."
+    },
+    {
+      "start": 113.15,
+      "end": 116.83,
+      "text": "Let's just say they're tallying up the numbers of different colored candies they're"
+    },
+    {
+      "start": 116.83,
+      "end": 120.63,
+      "text": "getting from various bags of candies."
+    },
+    {
+      "start": 120.63,
+      "end": 121.63,
+      "text": "Bags of candies."
+    },
+    {
+      "start": 121.63,
+      "end": 126.63,
+      "text": "Anyway, they're all working together to get one final result, which means they're all working"
+    },
+    {
+      "start": 126.63,
+      "end": 128.63,
+      "text": "on the same set of data."
+    },
+    {
+      "start": 128.63,
+      "end": 133.31,
+      "text": "Now in order to coordinate this operation, so someone doesn't accidentally overwrite someone"
+    },
+    {
+      "start": 133.31,
+      "end": 137.71,
+      "text": "else's work, there needs to be an additional file that keeps track of who is currently"
+    },
+    {
+      "start": 137.71,
+      "end": 139.23,
+      "text": "working on a resource."
+    },
+    {
+      "start": 139.23,
+      "end": 141.87,
+      "text": "So everyone knows how to wait their turn."
+    },
+    {
+      "start": 141.87,
+      "end": 143.43,
+      "text": "That's the CDS."
+    },
+    {
+      "start": 143.43,
+      "end": 147.99,
+      "text": "These parts are super important when you're talking about Sysplex, because without them,"
+    },
+    {
+      "start": 147.99,
+      "end": 150.43,
+      "text": "you've just got another distributed environment."
+    },
+    {
+      "start": 150.43,
+      "end": 155.47,
+      "text": "Those memory links, the tightly coupled resources, and of course being an absolute lock"
+    },
+    {
+      "start": 155.47,
+      "end": 158.75,
+      "text": "step on time is the only way this will all work."
+    },
+    {
+      "start": 158.75,
+      "end": 162.83,
+      "text": "We talked a little bit earlier about WLM, the workload manager."
+    },
+    {
+      "start": 162.83,
+      "end": 166.99,
+      "text": "It's the component that makes sure that high priority work gets run quickly and that"
+    },
+    {
+      "start": 166.99,
+      "end": 168.99,
+      "text": "all of our targets are met."
+    },
+    {
+      "start": 169.07,
+      "end": 173.95,
+      "text": "WLM makes quite a bit of use of Sysplex to help balance things out."
+    },
+    {
+      "start": 173.95,
+      "end": 177.75,
+      "text": "So if that discussion earlier about performance tuning on the mainframe was interesting"
+    },
+    {
+      "start": 177.75,
+      "end": 182.39,
+      "text": "to you, Sysplex is something you want to pay close attention to."
+    },
+    {
+      "start": 182.39,
+      "end": 187.23,
+      "text": "Sysplex is, at its core, a bunch of ZOS operating systems working together."
+    },
+    {
+      "start": 187.23,
+      "end": 192.75,
+      "text": "They're able to cooperatively use hardware, software, and components to achieve a high availability"
+    },
+    {
+      "start": 192.75,
+      "end": 195.27,
+      "text": "workload processing environment."
+    },
+    {
+      "start": 195.31,
+      "end": 199.83,
+      "text": "This gets us back to the whole physical logical discussion, and when you have systems"
+    },
+    {
+      "start": 199.83,
+      "end": 203.83,
+      "text": "in a Sysplex, when you're talking about how they're going to handle the work, you essentially"
+    },
+    {
+      "start": 203.83,
+      "end": 206.39,
+      "text": "have one entity that is running the work."
+    },
+    {
+      "start": 206.39,
+      "end": 208.07,
+      "text": "It's the Sysplex."
+    },
+    {
+      "start": 208.07,
+      "end": 212.63,
+      "text": "Even though you know that you've got multiple physical mainframes and within those multiple"
+    },
+    {
+      "start": 212.63,
+      "end": 218.47,
+      "text": "logical L-Pars, you'll often hear people just refer to it all collectively as the Sysplex"
+    },
+    {
+      "start": 218.47,
+      "end": 220.99,
+      "text": "or just the Plex."
+    },
+    {
+      "start": 220.99,
+      "end": 223.71,
+      "text": "Let's talk about those Sysplex configurations."
+    },
+    {
+      "start": 223.71,
+      "end": 226.87,
+      "text": "There's three main ways you can configure a Sysplex."
+    },
+    {
+      "start": 226.87,
+      "end": 228.43,
+      "text": "Now, bit of a riddle."
+    },
+    {
+      "start": 228.43,
+      "end": 233.67,
+      "text": "If you've got a Sysplex with only one L-Par in it, is it really a Sysplex?"
+    },
+    {
+      "start": 233.67,
+      "end": 236.35,
+      "text": "The answer is yes, and it's called a monoplex."
+    },
+    {
+      "start": 236.35,
+      "end": 240.63,
+      "text": "Now, you'll often see a monoplex in testing and staging situations."
+    },
+    {
+      "start": 240.63,
+      "end": 246.03,
+      "text": "But beyond that, it doesn't really buy you any additional performance or functionality."
+    },
+    {
+      "start": 246.03,
+      "end": 248.79,
+      "text": "Then there's this concept of a base Sysplex."
+    },
+    {
+      "start": 248.79,
+      "end": 253.03,
+      "text": "In this configuration, every system has a connection to every other system."
+    },
+    {
+      "start": 253.07,
+      "end": 256.87,
+      "text": "And they all know about each other and they all agree to do work together."
+    },
+    {
+      "start": 256.87,
+      "end": 259.75,
+      "text": "It's almost like they started a little band."
+    },
+    {
+      "start": 259.75,
+      "end": 263.63,
+      "text": "The most common form of a Sysplex, though, is the parallel Sysplex."
+    },
+    {
+      "start": 263.63,
+      "end": 268.31,
+      "text": "In this configuration, instead of needing every system connected to every other system,"
+    },
+    {
+      "start": 268.31,
+      "end": 271.03,
+      "text": "we have this concept of a coupling facility."
+    },
+    {
+      "start": 271.03,
+      "end": 273.83,
+      "text": "This is a special type of L-Par that you bring up."
+    },
+    {
+      "start": 273.83,
+      "end": 277.79,
+      "text": "And typically, you have backups of it on other mainframes, too."
+    },
+    {
+      "start": 277.79,
+      "end": 281.75,
+      "text": "In a parallel Sysplex, the coupling facility handles all the complexities and"
+    },
+    {
+      "start": 281.75,
+      "end": 284.91,
+      "text": "overhead of those systems working together."
+    },
+    {
+      "start": 284.91,
+      "end": 291.11,
+      "text": "So you can have up to 32 ZOS images and up to 32 physical mainframes."
+    },
+    {
+      "start": 291.11,
+      "end": 297.31,
+      "text": "That would mean one L-Par on each mainframe hooked into a 32-way Sysplex."
+    },
+    {
+      "start": 297.31,
+      "end": 299.71,
+      "text": "Now, most systems aren't scaled out that way."
+    },
+    {
+      "start": 299.71,
+      "end": 302.59,
+      "text": "But if you need to, you could do it."
+    },
+    {
+      "start": 302.59,
+      "end": 304.95,
+      "text": "Now, a word about availability."
+    },
+    {
+      "start": 304.95,
+      "end": 309.19,
+      "text": "You might hear people say that a mainframe environment hasn't gone down in decades."
+    },
+    {
+      "start": 309.19,
+      "end": 313.67,
+      "text": "But how is that possible, and that's the running on 20-year-old hardware and software?"
+    },
+    {
+      "start": 313.67,
+      "end": 317.91,
+      "text": "Well, one of the neat things about being an Sysplex is you can do what's called a rolling"
+    },
+    {
+      "start": 317.91,
+      "end": 319.15,
+      "text": "IPL."
+    },
+    {
+      "start": 319.15,
+      "end": 324.03,
+      "text": "An IPL is just booting up an operating system, and a parallel Sysplex doesn't require"
+    },
+    {
+      "start": 324.03,
+      "end": 329.15,
+      "text": "all the systems in it to be up in order to function, just enough to keep it running."
+    },
+    {
+      "start": 329.15,
+      "end": 335.55,
+      "text": "So if I've got 16 L-Pars in my Sysplex, we're just saying, I can bring down four of them,"
+    },
+    {
+      "start": 335.55,
+      "end": 339.51,
+      "text": "help date the operating systems on them, and then bring them back up and put them into"
+    },
+    {
+      "start": 339.51,
+      "end": 340.99,
+      "text": "the plex."
+    },
+    {
+      "start": 340.99,
+      "end": 344.15,
+      "text": "L-Pars got upgraded, and the plex stayed up."
+    },
+    {
+      "start": 344.15,
+      "end": 348.87,
+      "text": "I can even do this with physical systems as long as some of the members are running elsewhere"
+    },
+    {
+      "start": 348.87,
+      "end": 350.39,
+      "text": "in another mainframe."
+    },
+    {
+      "start": 350.39,
+      "end": 353.23,
+      "text": "So let's go back to those 16 L-Pars."
+    },
+    {
+      "start": 353.23,
+      "end": 357.07,
+      "text": "Say they're spread out across four mainframes, just as an example."
+    },
+    {
+      "start": 357.07,
+      "end": 360.87,
+      "text": "And we want to upgrade one of those mainframes to a shiny brand new one."
+    },
+    {
+      "start": 360.87,
+      "end": 365.75,
+      "text": "We bring down the four L-Pars on that system that we want to replace, physically swap"
+    },
+    {
+      "start": 365.75,
+      "end": 370.39,
+      "text": "it out with a new one, cable it up, configure it the way we want to, power it back on,"
+    },
+    {
+      "start": 370.39,
+      "end": 376.31,
+      "text": "IPL, or boot up those four systems on the new hardware, very them back into the plex,"
+    },
+    {
+      "start": 376.31,
+      "end": 377.59,
+      "text": "and we're good to go."
+    },
+    {
+      "start": 377.59,
+      "end": 380.11,
+      "text": "The plex never went down."
+    },
+    {
+      "start": 380.11,
+      "end": 384.07,
+      "text": "That is some pretty amazing stuff, and you can see why so many people would tell you it's"
+    },
+    {
+      "start": 384.07,
+      "end": 385.71,
+      "text": "their favorite feature."
+    },
+    {
+      "start": 385.71,
+      "end": 387.71,
+      "text": "Although it's hard to pick just one, isn't it?"
+    }
+  ]
+}

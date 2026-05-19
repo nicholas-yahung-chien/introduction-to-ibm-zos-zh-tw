@@ -1,0 +1,225 @@
+WEBVTT
+
+1
+00:00:03.600 --> 00:00:08.680
+It's important to realize that there is no one version of the mainframe, but rather
+
+2
+00:00:08.680 --> 00:00:13.240
+a series of computers that all adhere to the mainframe architecture.
+
+3
+00:00:13.240 --> 00:00:17.560
+By taking this course, you're learning all about the core fundamentals of the mainframe
+
+4
+00:00:17.560 --> 00:00:19.280
+architecture.
+
+5
+00:00:19.280 --> 00:00:23.520
+Like all other computers, the mainframe has memory, and you've probably seen memory
+
+6
+00:00:23.520 --> 00:00:24.520
+models before.
+
+7
+00:00:24.520 --> 00:00:28.680
+They're in laptops, phones, and the mainframe.
+
+8
+00:00:28.680 --> 00:00:32.800
+Applications and operating systems need memory, but there's only so much real physical
+
+9
+00:00:32.800 --> 00:00:34.800
+memory to go around.
+
+10
+00:00:34.800 --> 00:00:39.720
+Even on a fully loaded system, applications are always hungry for more, and sometimes
+
+11
+00:00:39.720 --> 00:00:45.360
+it makes sense to move some of that data from real memory out to auxiliary storage, sometimes
+
+12
+00:00:45.360 --> 00:00:47.160
+called virtual memory.
+
+13
+00:00:47.160 --> 00:00:52.320
+Of course, if that data is needed for fast or access later on, it can be moved back
+
+14
+00:00:52.320 --> 00:00:54.160
+into real memory.
+
+15
+00:00:54.160 --> 00:01:00.360
+On the mainframe, auxiliary or just aux storage is kept on direct access storage devices,
+
+16
+00:01:00.360 --> 00:01:02.160
+also known as Dazzdy.
+
+17
+00:01:02.160 --> 00:01:06.200
+These are full of hard drives, which can be either disk or solid state.
+
+18
+00:01:06.200 --> 00:01:11.240
+No matter how fast the drives are, they're still nowhere near as fast as real memory.
+
+19
+00:01:11.240 --> 00:01:15.680
+So the mainframe has to make a decision about where that data should be kept.
+
+20
+00:01:15.680 --> 00:01:20.600
+However, part of the mainframe architecture is based on this tight relationship between
+
+21
+00:01:20.600 --> 00:01:23.800
+real memory and aux storage.
+
+22
+00:01:23.800 --> 00:01:29.480
+It's for that reason that memory on the mainframe is usually just referred to as storage.
+
+23
+00:01:29.480 --> 00:01:33.080
+So when you hear storage, just know that we're talking about something that includes
+
+24
+00:01:33.080 --> 00:01:36.600
+both on-chip memory and aux storage.
+
+25
+00:01:36.600 --> 00:01:42.720
+Because the way the architecture works to the application running, it's all just storage.
+
+26
+00:01:42.720 --> 00:01:47.880
+So when an application comes along and says it needs a whole bunch of memory, all these components
+
+27
+00:01:47.880 --> 00:01:52.920
+work together so the application can carry on, like it has this nearly unlimited amount
+
+28
+00:01:52.920 --> 00:01:58.760
+of memory, when in fact all the complexities are being handled behind the scenes.
+
+29
+00:01:58.800 --> 00:02:02.360
+In ZOS, the mainframe operating system, we're going to be spending most of our time
+
+30
+00:02:02.360 --> 00:02:04.080
+talking about here.
+
+31
+00:02:04.080 --> 00:02:08.560
+Users and applications have access to their own individual address space.
+
+32
+00:02:08.560 --> 00:02:14.320
+An address space is simply a map of storage that is made available to users and applications.
+
+33
+00:02:14.320 --> 00:02:18.800
+The range of the address space goes all the way up to 16 exabytes.
+
+34
+00:02:18.800 --> 00:02:22.440
+And an exabyte is a unit that comes after petabytes.
+
+35
+00:02:22.440 --> 00:02:24.960
+So that's a lot of space.
+
+36
+00:02:24.960 --> 00:02:28.720
+And by giving an application an address space, it's basically saying, yes,
+
+37
+00:02:28.720 --> 00:02:33.080
+store your data anywhere you'd like in here, I'll manage it all for you.
+
+38
+00:02:33.080 --> 00:02:37.640
+And once it's up and running, ZOS will periodically check on that memory to see if some
+
+39
+00:02:37.640 --> 00:02:40.280
+of it can actually be migrated.
+
+40
+00:02:40.280 --> 00:02:45.600
+In ZOS, memory is placed into four kilobyte chunks called pages.
+
+41
+00:02:45.600 --> 00:02:51.400
+When that memory is in central storage on real memory, it occupies what's called a frame.
+
+42
+00:02:51.400 --> 00:02:55.440
+And when it's moved out to aux storage, it takes up a slot.
+
+43
+00:02:55.440 --> 00:03:01.080
+When the OS decides to move a slot to a frame or a frame to a slot, that's called paging.
+
+44
+00:03:01.080 --> 00:03:05.000
+And we like for paging to happen as little as possible on the mainframe.
+
+45
+00:03:05.000 --> 00:03:09.160
+Hopefully the OS identifies the right frames to page out the slots.
+
+46
+00:03:09.160 --> 00:03:13.680
+And they don't have to be page back in because that paging back and forth is a fairly
+
+47
+00:03:13.680 --> 00:03:15.720
+complex procedure.
+
+48
+00:03:15.720 --> 00:03:20.160
+All of these changes are kept track of in a series of tables maintained by the operating
+
+49
+00:03:20.160 --> 00:03:21.440
+system.
+
+50
+00:03:21.440 --> 00:03:26.640
+In a well-tuned system with adequate real storage, memory gets paged out once and most
+
+51
+00:03:26.640 --> 00:03:28.320
+of it stays there.
+
+52
+00:03:28.320 --> 00:03:32.320
+The concept of virtual memory is certainly not unique to the mainframe.
+
+53
+00:03:32.320 --> 00:03:37.320
+But the way in which it handles its virtual memory, you can see it's something pretty special.
+
+54
+00:03:37.320 --> 00:03:42.360
+The most current generation of the mainframe architecture is known as the Z architecture.
+
+55
+00:03:42.360 --> 00:03:46.520
+And it includes not only the hardware found in the mainframe, but the mainframe operating
+
+56
+00:03:46.520 --> 00:03:49.720
+systems, which are built to take advantage of the hardware's features.

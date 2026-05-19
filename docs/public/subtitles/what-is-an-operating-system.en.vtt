@@ -1,0 +1,221 @@
+WEBVTT
+
+1
+00:00:03.280 --> 00:00:09.320
+What is an operating system? It's a good question. We've been talking a lot about operating systems
+
+2
+00:00:09.320 --> 00:00:15.240
+We never really actually defined what one is and you might not have actually given a much thought to what an operating system is
+
+3
+00:00:15.400 --> 00:00:20.400
+Even though you kind of know what one is you have one on your phone your computer your game console
+
+4
+00:00:20.960 --> 00:00:27.600
+An operating system or an OS is a collection of programs that manages the internal workings of the computer
+
+5
+00:00:27.760 --> 00:00:31.160
+So when a program wants to write data of then retrieve it later
+
+6
+00:00:31.160 --> 00:00:37.440
+The OS ensures that the application is able to do so as quickly easily and safely as possible
+
+7
+00:00:37.840 --> 00:00:45.080
+An operating system has a number of management functions process management security management file management
+
+8
+00:00:45.480 --> 00:00:49.080
+communications management resource management and memory management
+
+9
+00:00:49.280 --> 00:00:53.360
+The way all these work together is really what makes up the heart of the OS
+
+10
+00:00:53.840 --> 00:01:01.200
+Typically applications running on an operating system interface with the operating system through a simplified series of interfaces called
+
+11
+00:01:01.400 --> 00:01:02.720
+API's or
+
+12
+00:01:02.720 --> 00:01:04.720
+Application programming interfaces
+
+13
+00:01:05.040 --> 00:01:11.160
+Let's get into one of those functions process management typically a process can be in one of five states
+
+14
+00:01:11.560 --> 00:01:19.720
+New ready running waiting and terminated in the new state the process is in the stage of being created
+
+15
+00:01:19.720 --> 00:01:24.720
+It's being built in the ready state the process is ready. It's waiting for pickup
+
+16
+00:01:24.720 --> 00:01:30.680
+But the CPU is busy doing something else in the running state the CPU has grabbed that process
+
+17
+00:01:30.680 --> 00:01:33.240
+It's picked it up and it's actively working with it
+
+18
+00:01:33.720 --> 00:01:39.560
+Okay, now the waiting state. This is where it gets a little bit interesting a process typically doesn't just start and end
+
+19
+00:01:39.560 --> 00:01:44.100
+All by itself it might need to read some data prompt the user for some input
+
+20
+00:01:44.100 --> 00:01:49.680
+Or it might have to kick off a couple sub processes and while it's doing that while it's waiting for them to fit
+
+21
+00:01:49.680 --> 00:01:53.820
+Finish the process can be put into a wait state and when it's in a wait state
+
+22
+00:01:53.820 --> 00:02:00.120
+It's it's waiting and finally when the process is accomplished its task and there's nothing else for it to do
+
+23
+00:02:00.120 --> 00:02:02.120
+It goes into the terminated state
+
+24
+00:02:02.720 --> 00:02:05.120
+So you can see the general flow of things here
+
+25
+00:02:05.120 --> 00:02:11.160
+It starts out new and then it goes into ready and then it goes into running from there
+
+26
+00:02:11.160 --> 00:02:16.160
+It either goes into the terminated state which says it's done for one reason or another
+
+27
+00:02:16.160 --> 00:02:21.160
+It either did everything it needed to do or something else happened or it goes back to ready
+
+28
+00:02:21.480 --> 00:02:25.240
+There are two ways it can go back to ready the first is in the case of a wait
+
+29
+00:02:25.600 --> 00:02:32.160
+Where it's waiting for more data user input or for another process to finish or if the CPU is like hey
+
+30
+00:02:32.160 --> 00:02:34.560
+I know you're really busy and you're trying to do your stuff
+
+31
+00:02:34.560 --> 00:02:37.240
+I've got a bunch of other programs try to do something too
+
+32
+00:02:37.240 --> 00:02:43.800
+So I'll be right back and that's called an interrupt and interrupt is just that it kind of it interrupts the process
+
+33
+00:02:43.800 --> 00:02:51.200
+And says sit right here be patient go into a ready state and I'll come back and get you and finish you when I have time to do that
+
+34
+00:02:51.720 --> 00:02:58.920
+That's the only way that a computer can work on multiple programs at the same time now a process can go back and forth between
+
+35
+00:02:58.920 --> 00:03:01.880
+Running and ready a whole bunch of times before it completes
+
+36
+00:03:02.240 --> 00:03:07.360
+That's a good thing because if programs could only run in a straight line from ready to finished
+
+37
+00:03:07.640 --> 00:03:10.720
+We wouldn't be able to run more than one program at a time on a computer
+
+38
+00:03:11.320 --> 00:03:13.320
+Then there's security management
+
+39
+00:03:13.320 --> 00:03:19.880
+Obviously security very very important on a mainframe because we're dealing with the world's most important financial data
+
+40
+00:03:20.080 --> 00:03:25.600
+Health records personal records so security very important. We're going to talk more about that later
+
+41
+00:03:26.080 --> 00:03:33.680
+Up next file management on the Z we try to offload as much of the work away from the application to the OS as possible
+
+42
+00:03:33.680 --> 00:03:38.400
+So rather than making the application keep track of where everything was stored and where to get later
+
+43
+00:03:38.680 --> 00:03:40.880
+We let the file management handle that
+
+44
+00:03:42.040 --> 00:03:48.520
+Communications management takes care of all the network communications very very important and then there's the resource management
+
+45
+00:03:48.520 --> 00:03:52.520
+This makes sure that all of the programs running on the system played nicely with one another
+
+46
+00:03:52.720 --> 00:03:55.880
+It looks at everything competing for the same resources like
+
+47
+00:03:56.280 --> 00:04:02.160
+CPU memory network disk and it makes sure everyone kind of gets a fair spot at those resources
+
+48
+00:04:02.800 --> 00:04:06.600
+resource management is the cornerstone of modern computing and
+
+49
+00:04:07.160 --> 00:04:12.120
+Lastly, there's memory management. We're going to get into this in much greater detail later on
+
+50
+00:04:12.120 --> 00:04:14.720
+But suffice to say on the mainframe
+
+51
+00:04:14.720 --> 00:04:21.640
+We want our applications to run as quickly and efficiently as possible and one way of doing that is by abstracting all the
+
+52
+00:04:21.840 --> 00:04:30.400
+Complexities of memory management away from the developer and their applications and handling them in the memory management function and there you have it
+
+53
+00:04:30.400 --> 00:04:33.520
+That's your six management functions of an operating system now
+
+54
+00:04:33.680 --> 00:04:37.840
+Some of them might have seen obvious while others might not seem all that vital
+
+55
+00:04:37.920 --> 00:04:44.480
+But I tell you what you take away any one of them and you'd have a really hard time getting anything done on a modern operating system

@@ -1,0 +1,258 @@
+{
+  "slug": "ipling-an-operating-system",
+  "title": "IPLing an Operating System",
+  "language": "en",
+  "duration": 276.1316875,
+  "segments": [
+    {
+      "start": 3.25,
+      "end": 9.25,
+      "text": "Let's talk about IPLs because it's more than just flashing up a welcome to ZOS splash screen"
+    },
+    {
+      "start": 9.25,
+      "end": 12.25,
+      "text": "and then suddenly you're ready to run enterprise workloads."
+    },
+    {
+      "start": 12.25,
+      "end": 18.25,
+      "text": "An initial program load is technically the act of loading a copy of the operating system,"
+    },
+    {
+      "start": 18.25,
+      "end": 25.25,
+      "text": "typically from DASD into the processor's main storage area and running it or executing it."
+    },
+    {
+      "start": 25.25,
+      "end": 31.25,
+      "text": "That disk that you point an L part to for it to IPL off of has what's called a bootstrap module"
+    },
+    {
+      "start": 31.25,
+      "end": 34.25,
+      "text": "at cylinder zero track zero."
+    },
+    {
+      "start": 34.25,
+      "end": 40.25,
+      "text": "What that means is literally the first bit of data the OS sees when it reads off of it."
+    },
+    {
+      "start": 40.25,
+      "end": 44.25,
+      "text": "The bootstrap module is loaded into real memory at address zero."
+    },
+    {
+      "start": 44.25,
+      "end": 50.25,
+      "text": "That's the first available memory slot that the L part has access to and then control is passed to it."
+    },
+    {
+      "start": 50.25,
+      "end": 53.25,
+      "text": "The bootstrap isn't the main operating system."
+    },
+    {
+      "start": 53.25,
+      "end": 59.25,
+      "text": "It's just enough to assemble the pieces and information needed to bring up the full operating system."
+    },
+    {
+      "start": 59.25,
+      "end": 63.25,
+      "text": "So the bootstrap reads the IPL control program."
+    },
+    {
+      "start": 63.25,
+      "end": 70.25,
+      "text": "That's the IEA IPL zero zero, also known as the IPL text and passes control to that."
+    },
+    {
+      "start": 70.25,
+      "end": 72.25,
+      "text": "More on that in a bit."
+    },
+    {
+      "start": 72.25,
+      "end": 78.25,
+      "text": "This in turn starts the more complex tasks of loading the full operating system and bringing that up."
+    },
+    {
+      "start": 78.25,
+      "end": 84.25,
+      "text": "On its way up the OS looks for what's called a load parameter, which consists of eight characters."
+    },
+    {
+      "start": 84.25,
+      "end": 90.25,
+      "text": "And this is a nice and compact way of telling the L part how we want it to IPL."
+    },
+    {
+      "start": 90.25,
+      "end": 95.25,
+      "text": "The first four characters are the device number of the IODF device."
+    },
+    {
+      "start": 95.25,
+      "end": 99.25,
+      "text": "That's what contains all the hardware and software configuration for the system."
+    },
+    {
+      "start": 99.25,
+      "end": 105.25,
+      "text": "Characters five and six contain the load member more on that in a bit as well."
+    },
+    {
+      "start": 105.25,
+      "end": 111.25,
+      "text": "The seventh position indicates what messages and prompts should be displayed at IPL time."
+    },
+    {
+      "start": 111.25,
+      "end": 117.25,
+      "text": "And in the last position way at the end is the IEA and you see zero member."
+    },
+    {
+      "start": 117.25,
+      "end": 120.25,
+      "text": "Usually pronounced IEA new zero."
+    },
+    {
+      "start": 120.25,
+      "end": 123.25,
+      "text": "Guess what? More on that in a bit too."
+    },
+    {
+      "start": 123.25,
+      "end": 128.25,
+      "text": "During IPL the system will begin looking for the information it needs to fully come up."
+    },
+    {
+      "start": 128.25,
+      "end": 131.25,
+      "text": "First thing to look for is the load xx member."
+    },
+    {
+      "start": 131.25,
+      "end": 135.25,
+      "text": "This tells us some vital information about the system."
+    },
+    {
+      "start": 135.25,
+      "end": 148.25,
+      "text": "So the IPL resource initialization module, IRIM, first attempts to locate the load xx member in the cis0.IPL param data set."
+    },
+    {
+      "start": 148.25,
+      "end": 151.25,
+      "text": "This is just a data set where the load xx member is kept."
+    },
+    {
+      "start": 151.25,
+      "end": 154.25,
+      "text": "It's actually not labeled as load xx."
+    },
+    {
+      "start": 154.25,
+      "end": 164.25,
+      "text": "That's just the common way of saying it could be load zero zero or load zero one or whatever we told it look for in characters five and six of the load parameter."
+    },
+    {
+      "start": 164.25,
+      "end": 174.25,
+      "text": "If it's not there it'll look in cis1.IPL param and then in cis2.IPL param and all the way up to cis9.IPL param."
+    },
+    {
+      "start": 174.25,
+      "end": 180.25,
+      "text": "If it cannot find the load xx member the system will enter a non restartable weight state."
+    },
+    {
+      "start": 180.25,
+      "end": 186.25,
+      "text": "The IPL was not successful and trying it again won't help until we fix something."
+    },
+    {
+      "start": 186.25,
+      "end": 193.25,
+      "text": "If the cis dot whatever IPL param couldn't be found on the IODF volume the search continues."
+    },
+    {
+      "start": 193.25,
+      "end": 198.25,
+      "text": "And it will check in the cis1.parmli data set of the IODF volume."
+    },
+    {
+      "start": 198.25,
+      "end": 202.25,
+      "text": "By the way of volume is just a logical dasd disk."
+    },
+    {
+      "start": 202.25,
+      "end": 204.25,
+      "text": "You can imagine it like a disk drive here."
+    },
+    {
+      "start": 204.25,
+      "end": 212.25,
+      "text": "Anyway, if it can't find it there it'll look in cis1.parmli on another volume called the cis res volume."
+    },
+    {
+      "start": 212.25,
+      "end": 216.25,
+      "text": "And if I can't find it there then we're done."
+    },
+    {
+      "start": 216.25,
+      "end": 218.25,
+      "text": "The IPL was unsuccessful."
+    },
+    {
+      "start": 218.25,
+      "end": 226.25,
+      "text": "For a full breakdown of that search process at IPL time there is a great document included in the notes for this lesson."
+    },
+    {
+      "start": 226.25,
+      "end": 232.25,
+      "text": "But the short version of this is that the IPL system needs to find its load xx member."
+    },
+    {
+      "start": 232.25,
+      "end": 239.25,
+      "text": "And once it finds it it'll be opened and then it will have all the information it needs including the nucleus suffix,"
+    },
+    {
+      "start": 239.25,
+      "end": 245.25,
+      "text": "the master catalog name and the suffix of the IEA cis xx members."
+    },
+    {
+      "start": 245.25,
+      "end": 250.25,
+      "text": "Now we mentioned a couple of things in there without going into full detail."
+    },
+    {
+      "start": 250.25,
+      "end": 255.25,
+      "text": "Once you get a hands-on system and you start looking at those members and checking out those screens"
+    },
+    {
+      "start": 255.25,
+      "end": 260.25,
+      "text": "you'll get a better picture for what type of data is in them and how they all fit together."
+    },
+    {
+      "start": 260.25,
+      "end": 264.25,
+      "text": "These are all just a couple of ways that systems can start up."
+    },
+    {
+      "start": 264.25,
+      "end": 272.25,
+      "text": "And as you can see it's important that all the pieces be set up and in the right place when we want to bring up or IPL and outpar."
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+WEBVTT
+
+1
+00:00:03.310 --> 00:00:08.650
+activation profiles. What the heck is an activation profile? I mean I know
+
+2
+00:00:08.650 --> 00:00:13.170
+those two words mean and I can kind of take a guess but between all of the
+
+3
+00:00:13.170 --> 00:00:18.270
+physical and logical and virtual and associations you know my head is still
+
+4
+00:00:18.270 --> 00:00:22.190
+spinning a little bit from all that IOCDS stuff. Maybe it's best we start with
+
+5
+00:00:22.190 --> 00:00:27.150
+some solid definitions. Now you're gonna hear me talking a lot about the CPC.
+
+6
+00:00:27.150 --> 00:00:31.990
+That stands for the central processor complex and it's the area of the main
+
+7
+00:00:31.990 --> 00:00:35.750
+frame where all the processors and memory live. Now the activation
+
+8
+00:00:35.750 --> 00:00:40.130
+profiles contain configuration information about the CPC and all of its
+
+9
+00:00:40.130 --> 00:00:44.030
+l-pars as well as information about the operating systems that we want to
+
+10
+00:00:44.030 --> 00:00:48.630
+run on them. That activation profile information gets stored on the
+
+11
+00:00:48.630 --> 00:00:54.470
+SE's the computers within the computer and when you use the HMC or the SE to
+
+12
+00:00:54.470 --> 00:01:00.350
+boot up or IPL and l-par it's going to read from the activation profile to see
+
+13
+00:01:00.350 --> 00:01:04.750
+exactly what it's supposed to do. I want to draw a clear distinction
+
+14
+00:01:04.750 --> 00:01:12.750
+between two terms that people often mix up. IPL and POR. An IPL is an initial
+
+15
+00:01:12.750 --> 00:01:17.830
+program load. It's what happens when an l-par gets its operating system loaded
+
+16
+00:01:17.830 --> 00:01:24.110
+into its memory, enough that it can start starting up. And a POR or power-on
+
+17
+00:01:24.110 --> 00:01:29.950
+reset is when the IOCDS gets loaded from the SE's into the hardware systems
+
+18
+00:01:29.950 --> 00:01:36.030
+area or HSA. And it creates all those logical paths we defined earlier. Doing a
+
+19
+00:01:36.030 --> 00:01:40.590
+POR means stopping everything that is currently running on all of the l-pars
+
+20
+00:01:40.590 --> 00:01:45.630
+and taking everything down. So PORs are typically something that is planned far in
+
+21
+00:01:45.630 --> 00:01:51.110
+advance to minimize the effect of that downtime. Now there are four types of
+
+22
+00:01:51.110 --> 00:01:55.430
+activation profiles. There's the reset profile. This determines how the
+
+23
+00:01:55.470 --> 00:01:59.990
+licensed internal code will be loaded and how much central and expanded
+
+24
+00:01:59.990 --> 00:02:05.430
+storage it will get. Then there's the image profile. Each l-par has an image
+
+25
+00:02:05.430 --> 00:02:10.190
+profile. This defines the l-par parameters like how many processes it'll get,
+
+26
+00:02:10.190 --> 00:02:14.750
+also how much memory it'll get. It'll also spell out if those processes are
+
+27
+00:02:14.750 --> 00:02:19.390
+dedicated to that l-par or if they're shared with others. Next up is the load
+
+28
+00:02:19.390 --> 00:02:24.230
+profile. This is needed to determine the channel addresses of the device that
+
+29
+00:02:24.230 --> 00:02:28.990
+the operating system is going to be loaded from. And then last up is the group
+
+30
+00:02:28.990 --> 00:02:33.110
+profile. This is a way of grouping objects so you don't have to change in
+
+31
+00:02:33.110 --> 00:02:37.430
+objects activation profile every time you want to activate it. These aren't
+
+32
+00:02:37.430 --> 00:02:41.830
+necessary but with a large number of objects, grouping can make managing them
+
+33
+00:02:41.830 --> 00:02:47.390
+slightly easier. During the activation of a reset activation profile, if the
+
+34
+00:02:47.390 --> 00:02:52.190
+mainframe is powered off, it'll begin powering up all of its components. Next,
+
+35
+00:02:52.190 --> 00:02:57.030
+the IOCDS gets loaded into the hardware storage area and all of those logical
+
+36
+00:02:57.030 --> 00:03:01.670
+definitions start getting made. It's coming to life here. The sub-channels, which the
+
+37
+00:03:01.670 --> 00:03:05.990
+l-par is used to communicate over those channels, start coming online, and we
+
+38
+00:03:05.990 --> 00:03:09.870
+start getting our l-pars and chippids and all the logical connections between
+
+39
+00:03:09.870 --> 00:03:15.270
+them. And that's all for the reset profile. Then the activation profile gets
+
+40
+00:03:15.270 --> 00:03:18.990
+loaded. And there's one of these for each l-par. This brings online the
+
+41
+00:03:18.990 --> 00:03:24.030
+processors and the storage to find for each l-par. And finally, we get to the
+
+42
+00:03:24.030 --> 00:03:28.470
+load profile. This means the l-par is starting to get its operating system and
+
+43
+00:03:28.470 --> 00:03:34.230
+it's coming online. It's ready to rock. So we've just gone all the way from P-O-R to
+
+44
+00:03:34.230 --> 00:03:39.990
+I-P-L. In the next section, we'll take a closer look at that I-P-L process. I know.
+
+45
+00:03:39.990 --> 00:03:41.390
+You're hoping I'd say that.

@@ -1,0 +1,132 @@
+:root {
+  --vp-c-brand-1: #0f62fe;
+  --vp-c-brand-2: #0043ce;
+  --vp-c-brand-3: #4589ff;
+  --vp-c-bg-alt: #f4f4f4;
+  --vp-c-text-1: #161616;
+  --vp-font-family-base: 'IBM Plex Sans', 'Noto Sans TC', system-ui, sans-serif;
+  --vp-font-family-mono: 'IBM Plex Mono', 'Cascadia Code', ui-monospace, monospace;
+}
+
+.dark {
+  --vp-c-bg: #161616;
+  --vp-c-bg-alt: #262626;
+  --vp-c-text-1: #f4f4f4;
+}
+
+.VPHome {
+  --vp-home-hero-name-color: #0f62fe;
+  --vp-home-hero-image-background-image: none;
+}
+
+.course-dashboard {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+  gap: 32px;
+  align-items: start;
+  margin: 28px 0 40px;
+}
+
+.course-lede {
+  border-left: 4px solid var(--vp-c-brand-1);
+  padding-left: 20px;
+  font-size: 1.08rem;
+  line-height: 1.7;
+}
+
+.course-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.course-stat {
+  min-height: 92px;
+  padding: 16px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+}
+
+.course-stat strong {
+  display: block;
+  color: var(--vp-c-brand-1);
+  font-size: 1.8rem;
+  line-height: 1.1;
+}
+
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.lesson-card {
+  border: 1px solid var(--vp-c-divider);
+  padding: 18px;
+  background: var(--vp-c-bg);
+}
+
+.lesson-card h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.lesson-card p {
+  margin-bottom: 0;
+}
+
+.video-lesson {
+  margin: 24px 0 32px;
+}
+
+.video-lesson video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #161616;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.video-lesson__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 0.86rem;
+  color: var(--vp-c-text-2);
+}
+
+.video-lesson__tag {
+  border: 1px solid var(--vp-c-divider);
+  padding: 3px 8px;
+}
+
+.manifest-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.manifest-table th,
+.manifest-table td {
+  border-bottom: 1px solid var(--vp-c-divider);
+  padding: 10px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.manifest-table th {
+  font-weight: 650;
+  color: var(--vp-c-text-1);
+}
+
+@media (max-width: 760px) {
+  .course-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .course-stats {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -1,0 +1,828 @@
+{
+  "slug": "iocds",
+  "title": "IOCDS",
+  "language": "en",
+  "duration": 698.2936875,
+  "segments": [
+    {
+      "start": 3.31,
+      "end": 9.21,
+      "text": "So earlier when we were talking about the parts of the mainframe, we looked at where the CPU and the processors are, right?"
+    },
+    {
+      "start": 9.21,
+      "end": 15.91,
+      "text": "And that's called the CPC or central processor complex. We also saw where all the IO adapters are."
+    },
+    {
+      "start": 16.41,
+      "end": 18.41,
+      "text": "Did you wonder at all where all the hard drives are?"
+    },
+    {
+      "start": 19.01,
+      "end": 27.11,
+      "text": "In a mainframe environment, disk storage is handled by something called direct access storage devices, commonly called DASDI."
+    },
+    {
+      "start": 27.11,
+      "end": 34.11,
+      "text": "These are big, almost mainframe sized units, stuff full of hard drives, both mechanical and solid state."
+    },
+    {
+      "start": 34.11,
+      "end": 44.11,
+      "text": "They can provide the disk storage for mainframe. They can actually provide disk storage for many mainframes, and many DASDI can be connected to a single mainframe."
+    },
+    {
+      "start": 44.11,
+      "end": 47.11,
+      "text": "So you can see there's lots of ways to connect these things."
+    },
+    {
+      "start": 47.11,
+      "end": 56.11,
+      "text": "In order to make these connections to devices like DASDI and others, we need to define the logical paths through the physical connections, so it all works."
+    },
+    {
+      "start": 56.11,
+      "end": 68.11,
+      "text": "Things are better when they work, right? The iOS CDS, which stands for the input-output configuration dataset, represents the connection between the resources and the systems that use them."
+    },
+    {
+      "start": 68.11,
+      "end": 74.11,
+      "text": "Resources are things like channels, icons, switches, control units, and other devices."
+    },
+    {
+      "start": 74.11,
+      "end": 82.11,
+      "text": "Basically, anything outside of the mainframe that we want to connect to, and the stuff inside the mainframe that we're going to use to connect to it."
+    },
+    {
+      "start": 82.11,
+      "end": 90.11,
+      "text": "So when you define an IO configuration, you provide the physical as well as the logical information about those resources."
+    },
+    {
+      "start": 90.11,
+      "end": 95.11,
+      "text": "In the mainframe, there's an input-output subsystem, or IO subsystem."
+    },
+    {
+      "start": 95.11,
+      "end": 102.11,
+      "text": "Now this controls the channel operations. That requires the information about the hardware IO configuration."
+    },
+    {
+      "start": 102.11,
+      "end": 109.11,
+      "text": "To define this, we use a program called the input-output configuration program, or IOCP."
+    },
+    {
+      "start": 109.11,
+      "end": 117.11,
+      "text": "The IOCDS is built through a series of statements. You build it brick by brick, and once you build it, the IOCDS gets stored on the SEs."
+    },
+    {
+      "start": 117.11,
+      "end": 123.11,
+      "text": "Those are those computers within the computer, and then those are picked up when the system gets powered on."
+    },
+    {
+      "start": 123.11,
+      "end": 130.11,
+      "text": "To use IOCP to build an IOCDS, you need to know about four things, and we're going to find them here."
+    },
+    {
+      "start": 130.11,
+      "end": 136.11,
+      "text": "First, you need to know what the L-Pars or partitions are that you want to work with. That's easy enough."
+    },
+    {
+      "start": 136.11,
+      "end": 141.11,
+      "text": "We've been working with those for a while now. Then you need to know about the channels."
+    },
+    {
+      "start": 141.11,
+      "end": 146.11,
+      "text": "Channels are the links between the L-Pars and the physical ports on the IO cards."
+    },
+    {
+      "start": 146.11,
+      "end": 150.11,
+      "text": "So we've got channel paths. Each one has an ID."
+    },
+    {
+      "start": 150.11,
+      "end": 154.11,
+      "text": "C-H-P-I-D, pronounced as Chippet."
+    },
+    {
+      "start": 154.11,
+      "end": 159.11,
+      "text": "We're defining a logical connection on there with the Chippet, and the channel path"
+    },
+    {
+      "start": 159.11,
+      "end": 164.11,
+      "text": "exits the mainframe on the physical ID, or a P-Chid."
+    },
+    {
+      "start": 164.11,
+      "end": 169.11,
+      "text": "Control units are attached to channel paths, and they're what actually drives the device we're connecting to."
+    },
+    {
+      "start": 169.11,
+      "end": 175.11,
+      "text": "Having a dedicated control unit that is really good at handling devices like disk or tape,"
+    },
+    {
+      "start": 175.11,
+      "end": 180.11,
+      "text": "means the mainframe operating system doesn't have to worry about all those deep down details."
+    },
+    {
+      "start": 180.11,
+      "end": 182.11,
+      "text": "That's a good thing."
+    },
+    {
+      "start": 182.11,
+      "end": 184.11,
+      "text": "And finally, there's the input-output device."
+    },
+    {
+      "start": 184.11,
+      "end": 189.11,
+      "text": "The thing we're actually trying to talk to, which the controlling unit is tasked with controlling."
+    },
+    {
+      "start": 189.11,
+      "end": 193.11,
+      "text": "If you know those four things, you're ready to start building an I-O-C-D-S."
+    },
+    {
+      "start": 193.11,
+      "end": 195.11,
+      "text": "So let's take a look at those statements."
+    },
+    {
+      "start": 195.11,
+      "end": 198.11,
+      "text": "There's five I-O-C-P statements."
+    },
+    {
+      "start": 198.11,
+      "end": 203.11,
+      "text": "ID, resource, chippet, control unit, and I-O device."
+    },
+    {
+      "start": 203.11,
+      "end": 208.11,
+      "text": "ID is optional, but it helps in organizing so you can find things easier later on."
+    },
+    {
+      "start": 208.11,
+      "end": 211.11,
+      "text": "You can also set the name of the local systems, the machine limits,"
+    },
+    {
+      "start": 211.11,
+      "end": 214.11,
+      "text": "and the rules to be enforced by the I-O-C-P."
+    },
+    {
+      "start": 214.11,
+      "end": 217.11,
+      "text": "It comes first and can only be defined once."
+    },
+    {
+      "start": 217.11,
+      "end": 221.11,
+      "text": "Up next is resource, and this one is required."
+    },
+    {
+      "start": 221.11,
+      "end": 225.11,
+      "text": "It defines the L-par names, or if you're sharing channels between L-pars,"
+    },
+    {
+      "start": 225.11,
+      "end": 231.11,
+      "text": "you can also define what's called a multiple image facility image ID, or myth ID."
+    },
+    {
+      "start": 231.11,
+      "end": 236.11,
+      "text": "So let me talk a little bit about the logical channel subsystems, or L-C-S-S."
+    },
+    {
+      "start": 236.11,
+      "end": 241.11,
+      "text": "The channel subsystem is the world that all of the channels live in, right?"
+    },
+    {
+      "start": 241.11,
+      "end": 246.11,
+      "text": "The logical channel subsystem is a way of getting even more capacity for those chippets,"
+    },
+    {
+      "start": 246.11,
+      "end": 250.11,
+      "text": "because now we have four logical worlds for them to live in."
+    },
+    {
+      "start": 250.11,
+      "end": 253.11,
+      "text": "Because we can create up to four of those logical channel subsystems,"
+    },
+    {
+      "start": 253.11,
+      "end": 256.11,
+      "text": "we get four times the amount of chippets."
+    },
+    {
+      "start": 256.11,
+      "end": 260.11,
+      "text": "This just gives us a whole lot more options for how we can partition our resources."
+    },
+    {
+      "start": 260.11,
+      "end": 264.11,
+      "text": "You can also use this area to define a few dynamic options,"
+    },
+    {
+      "start": 264.11,
+      "end": 266.11,
+      "text": "which we won't get into here."
+    },
+    {
+      "start": 266.11,
+      "end": 270.11,
+      "text": "Now, you get one resource statement, and it needs to come right after the ID statement,"
+    },
+    {
+      "start": 270.11,
+      "end": 272.11,
+      "text": "if you have one."
+    },
+    {
+      "start": 272.11,
+      "end": 276.11,
+      "text": "It includes every logical partition in the configuration."
+    },
+    {
+      "start": 276.11,
+      "end": 278.11,
+      "text": "Up next is Chippet."
+    },
+    {
+      "start": 278.11,
+      "end": 281.11,
+      "text": "The Chippet statement defines all the channels on the system."
+    },
+    {
+      "start": 281.11,
+      "end": 286.11,
+      "text": "These are the logical connections between the L-par and the physical P-shit."
+    },
+    {
+      "start": 286.11,
+      "end": 291.11,
+      "text": "It defines whether that channel is dedicated, shared, reconfigurable, or spanned."
+    },
+    {
+      "start": 291.11,
+      "end": 295.11,
+      "text": "And if you're connected to Fycon switch, it also handles the assignments as well."
+    },
+    {
+      "start": 295.11,
+      "end": 299.11,
+      "text": "It also determines the availability of chippets to L-pars."
+    },
+    {
+      "start": 299.11,
+      "end": 304.11,
+      "text": "These go in after the resource and before the next two types of statements."
+    },
+    {
+      "start": 304.11,
+      "end": 306.11,
+      "text": "Number four is the control unit."
+    },
+    {
+      "start": 306.11,
+      "end": 312.11,
+      "text": "Now, this is another optional statement, but you need it if you need to connect to a device through a control unit."
+    },
+    {
+      "start": 312.11,
+      "end": 314.11,
+      "text": "And it describes three things."
+    },
+    {
+      "start": 314.11,
+      "end": 317.11,
+      "text": "First, the characteristics of the control unit."
+    },
+    {
+      "start": 317.11,
+      "end": 325.11,
+      "text": "It also defines the channel paths that the control unit is attached to, and the unit addresses that the control unit recognizes."
+    },
+    {
+      "start": 325.11,
+      "end": 332.11,
+      "text": "So basically, how I'm going to connect to the control unit, what it is I'm trying to connect to, that channel path I'm using to connect to it,"
+    },
+    {
+      "start": 332.11,
+      "end": 335.11,
+      "text": "and how many unit addresses we're identifying."
+    },
+    {
+      "start": 335.11,
+      "end": 337.11,
+      "text": "Lastly, there's the I-O device."
+    },
+    {
+      "start": 337.11,
+      "end": 342.11,
+      "text": "Now, this is another optional statement, but you need it if you actually want to talk to something."
+    },
+    {
+      "start": 342.11,
+      "end": 345.11,
+      "text": "You need to have, first, the I-O device number."
+    },
+    {
+      "start": 345.11,
+      "end": 351.11,
+      "text": "You also need the device characteristics and the control units to which the device is assigned."
+    },
+    {
+      "start": 351.11,
+      "end": 355.11,
+      "text": "Now, this is all fairly abstract at this point, and it's one thing to talk about it."
+    },
+    {
+      "start": 355.11,
+      "end": 359.11,
+      "text": "Let's see what it actually happens once we start defining things with these statements."
+    },
+    {
+      "start": 359.11,
+      "end": 366.11,
+      "text": "What we're going to be doing with the following five statements is building a connection between an L-par through a chippet,"
+    },
+    {
+      "start": 366.11,
+      "end": 372.11,
+      "text": "out a p-tude through a phi-con unit, and out to a 3390-DASD unit."
+    },
+    {
+      "start": 372.11,
+      "end": 374.11,
+      "text": "We'll start with the ID statement."
+    },
+    {
+      "start": 374.11,
+      "end": 378.11,
+      "text": "The symbol and everything else in the brackets is optional."
+    },
+    {
+      "start": 378.11,
+      "end": 381.11,
+      "text": "The ID here says this is an ID statement."
+    },
+    {
+      "start": 381.11,
+      "end": 385.11,
+      "text": "Message one here has the identifier of the I-O-C-D-S."
+    },
+    {
+      "start": 385.11,
+      "end": 391.11,
+      "text": "This also gets printed out on the first line of the heading of the I-O-C-P configuration reports."
+    },
+    {
+      "start": 391.11,
+      "end": 394.11,
+      "text": "It makes it easier to identify it."
+    },
+    {
+      "start": 394.11,
+      "end": 401.11,
+      "text": "Message two here has information on when it was updated, which is a pretty good idea to have that kind of stuff in there."
+    },
+    {
+      "start": 401.11,
+      "end": 404.11,
+      "text": "And you see that X all the way on the right side there?"
+    },
+    {
+      "start": 404.11,
+      "end": 408.11,
+      "text": "That means that this line is continued on the line below it."
+    },
+    {
+      "start": 408.11,
+      "end": 414.11,
+      "text": "System specifies the machine limits and rules that I-O-C-P enforces for verification,"
+    },
+    {
+      "start": 414.11,
+      "end": 418.11,
+      "text": "and there's also this L system and T-O-K."
+    },
+    {
+      "start": 418.11,
+      "end": 422.11,
+      "text": "These are enclosed in braces, which means that they represent alternative items."
+    },
+    {
+      "start": 422.11,
+      "end": 424.11,
+      "text": "So, they're optional."
+    },
+    {
+      "start": 424.11,
+      "end": 429.11,
+      "text": "And because we already defined system, we don't have to also define these other two."
+    },
+    {
+      "start": 429.11,
+      "end": 434.11,
+      "text": "Here's an example of a resource statement, which again identifies resources."
+    },
+    {
+      "start": 434.11,
+      "end": 438.11,
+      "text": "So, first we've got the partition, or part as it's labeled in here,"
+    },
+    {
+      "start": 438.11,
+      "end": 442.11,
+      "text": "which defines the channel's subsystem ID or CSS."
+    },
+    {
+      "start": 442.11,
+      "end": 446.11,
+      "text": "Then we've got the MIF ID, which is used for sharing chippets between L-Pars."
+    },
+    {
+      "start": 446.11,
+      "end": 451.11,
+      "text": "Now, we're not doing that here, so it's not in our example, but that's where you would put it."
+    },
+    {
+      "start": 451.11,
+      "end": 454.11,
+      "text": "And then we have three L-Pars defined here."
+    },
+    {
+      "start": 454.11,
+      "end": 458.11,
+      "text": "L-P-1, L-P-2, and L-P-3."
+    },
+    {
+      "start": 458.11,
+      "end": 462.11,
+      "text": "You'll see that L-P-1 was assigned an image ID of two."
+    },
+    {
+      "start": 462.11,
+      "end": 465.11,
+      "text": "L-P-3 has an image ID of five."
+    },
+    {
+      "start": 465.11,
+      "end": 470.11,
+      "text": "And because we didn't specify one for L-P-2, it will be assigned one arbitrarily."
+    },
+    {
+      "start": 470.11,
+      "end": 472.11,
+      "text": "Here's the chippet statement."
+    },
+    {
+      "start": 472.11,
+      "end": 478.11,
+      "text": "We start out by defining channel path ID-35 in channel subsystem-1."
+    },
+    {
+      "start": 478.11,
+      "end": 484.11,
+      "text": "For the card port associated with physical channel, that's P-Chid ID-100."
+    },
+    {
+      "start": 484.11,
+      "end": 488.11,
+      "text": "We can tell it's a ficon card by the type, Equaling FC."
+    },
+    {
+      "start": 488.11,
+      "end": 492.11,
+      "text": "And it's shared between logical partitions L-P-1 and L-P-2."
+    },
+    {
+      "start": 492.11,
+      "end": 494.11,
+      "text": "Remember those from earlier?"
+    },
+    {
+      "start": 494.11,
+      "end": 496.11,
+      "text": "It's all starting to come together, right?"
+    },
+    {
+      "start": 496.11,
+      "end": 500.11,
+      "text": "And we can also see that this is associated with switch three E-Z."
+    },
+    {
+      "start": 500.11,
+      "end": 502.11,
+      "text": "Up next is Control Unit."
+    },
+    {
+      "start": 502.11,
+      "end": 506.11,
+      "text": "Now, what you're looking at here is the assignment of Control Unit,"
+    },
+    {
+      "start": 506.11,
+      "end": 514.11,
+      "text": "number 26 Baker-0 to an IBM storage controller type 3990."
+    },
+    {
+      "start": 514.11,
+      "end": 519.11,
+      "text": "And the link address of E-Z-0 coming out of the ficon switch."
+    },
+    {
+      "start": 519.11,
+      "end": 523.11,
+      "text": "And on the main frame side, that's connected to channel path 35."
+    },
+    {
+      "start": 523.11,
+      "end": 526.11,
+      "text": "It also defines a logical address of one."
+    },
+    {
+      "start": 526.11,
+      "end": 531.11,
+      "text": "And this gives us the unit addresses of zero zero through zero fox."
+    },
+    {
+      "start": 531.11,
+      "end": 535.11,
+      "text": "Translate zero fox from hex to decimal, that's 15."
+    },
+    {
+      "start": 535.11,
+      "end": 540.11,
+      "text": "So we get 16 addresses from this statement because we start counting from zero."
+    },
+    {
+      "start": 540.11,
+      "end": 544.11,
+      "text": "So now we've defined all we need to know about the Control Unit."
+    },
+    {
+      "start": 544.11,
+      "end": 545.11,
+      "text": "One more."
+    },
+    {
+      "start": 545.11,
+      "end": 547.11,
+      "text": "Let's take a look at the I-O device statement."
+    },
+    {
+      "start": 547.11,
+      "end": 550.11,
+      "text": "So here it is, just so you know what it is."
+    },
+    {
+      "start": 550.11,
+      "end": 555.11,
+      "text": "This defines 16 device numbers, starting with address 8100."
+    },
+    {
+      "start": 555.11,
+      "end": 561.11,
+      "text": "This part right here assigns devices to Control Unit, number 26 Baker-0,"
+    },
+    {
+      "start": 561.11,
+      "end": 563.11,
+      "text": "on an IBM 3990."
+    },
+    {
+      "start": 563.11,
+      "end": 569.11,
+      "text": "That 3990 Control Unit manages the device, which is a 3390."
+    },
+    {
+      "start": 569.11,
+      "end": 572.11,
+      "text": "So two very similar numbers."
+    },
+    {
+      "start": 572.11,
+      "end": 576.11,
+      "text": "And you would absolutely not be the first person in the world to mix them up."
+    },
+    {
+      "start": 576.11,
+      "end": 578.11,
+      "text": "In fact, you'd be in pretty good company."
+    },
+    {
+      "start": 578.11,
+      "end": 580.11,
+      "text": "Hi, I'm Jeff Bisty."
+    },
+    {
+      "start": 580.11,
+      "end": 582.11,
+      "text": "I believe we've met."
+    },
+    {
+      "start": 582.11,
+      "end": 587.11,
+      "text": "Lastly, it assigns a channel subsystem to L-Pars 1, 2, and 3."
+    },
+    {
+      "start": 587.11,
+      "end": 591.11,
+      "text": "This is what the L-Pars are actually going to use to connect to the channels."
+    },
+    {
+      "start": 591.11,
+      "end": 594.11,
+      "text": "So what do we actually just do?"
+    },
+    {
+      "start": 594.11,
+      "end": 599.11,
+      "text": "We've got chip at 35, which is associated with P-CID 100."
+    },
+    {
+      "start": 599.11,
+      "end": 602.11,
+      "text": "And we know it's a 5-con channel, right?"
+    },
+    {
+      "start": 602.11,
+      "end": 606.11,
+      "text": "We've also defined this 5-con switch with an address of 3EZ."
+    },
+    {
+      "start": 606.11,
+      "end": 611.11,
+      "text": "We've also defined the switch is connected to chip at 35 on the main frame side,"
+    },
+    {
+      "start": 611.11,
+      "end": 615.11,
+      "text": "and it exits on link EZ-0."
+    },
+    {
+      "start": 616.11,
+      "end": 620.11,
+      "text": "And then it connects to the DS8886 DASDY."
+    },
+    {
+      "start": 620.11,
+      "end": 622.11,
+      "text": "Whole lot disks in there."
+    },
+    {
+      "start": 622.11,
+      "end": 624.11,
+      "text": "It's got to control unit inside of it."
+    },
+    {
+      "start": 624.11,
+      "end": 628.11,
+      "text": "That's the 3990 we defined in the last two statements."
+    },
+    {
+      "start": 628.11,
+      "end": 633.11,
+      "text": "And we're connecting to Control Unit number 26 Baker-0,"
+    },
+    {
+      "start": 633.11,
+      "end": 639.11,
+      "text": "and it's giving us addresses 8100 through 8100 Fox."
+    },
+    {
+      "start": 639.11,
+      "end": 641.11,
+      "text": "That was exhausting."
+    },
+    {
+      "start": 641.11,
+      "end": 642.11,
+      "text": "I know."
+    },
+    {
+      "start": 642.11,
+      "end": 644.11,
+      "text": "It wasn't exactly plug and play."
+    },
+    {
+      "start": 644.11,
+      "end": 647.11,
+      "text": "But the reason we basically define every little thing"
+    },
+    {
+      "start": 647.11,
+      "end": 651.11,
+      "text": "and how every little thing connects to every other little thing"
+    },
+    {
+      "start": 651.11,
+      "end": 654.11,
+      "text": "is because there needs to be absolutely no two ways"
+    },
+    {
+      "start": 654.11,
+      "end": 657.11,
+      "text": "of interpreting these definitions."
+    },
+    {
+      "start": 657.11,
+      "end": 659.11,
+      "text": "It's also actually kind of nice,"
+    },
+    {
+      "start": 659.11,
+      "end": 662.11,
+      "text": "because in this document, in this series of statements,"
+    },
+    {
+      "start": 662.11,
+      "end": 665.11,
+      "text": "the entire IO ecosystem is defined."
+    },
+    {
+      "start": 665.11,
+      "end": 669.11,
+      "text": "So you can read through one of these and get an extremely clear picture"
+    },
+    {
+      "start": 669.11,
+      "end": 671.11,
+      "text": "of how your addresses are defined,"
+    },
+    {
+      "start": 671.11,
+      "end": 674.11,
+      "text": "what they're connected to, which L parts get access to them,"
+    },
+    {
+      "start": 674.11,
+      "end": 677.11,
+      "text": "everything you could possibly want to know about your devices."
+    },
+    {
+      "start": 677.11,
+      "end": 679.11,
+      "text": "And it's not easy at first."
+    },
+    {
+      "start": 679.11,
+      "end": 680.11,
+      "text": "Trust me."
+    },
+    {
+      "start": 680.11,
+      "end": 682.11,
+      "text": "I know we just hit you with a lot,"
+    },
+    {
+      "start": 682.11,
+      "end": 686.11,
+      "text": "but this is just one of those things where you get to walk into a job interview and say,"
+    },
+    {
+      "start": 686.11,
+      "end": 691.11,
+      "text": "yeah, I was just building a practice IODF config based on an online mainframe course I was taking,"
+    },
+    {
+      "start": 691.11,
+      "end": 694.11,
+      "text": "and that's going to earn you some major points."
+    }
+  ]
+}

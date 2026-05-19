@@ -1,0 +1,1038 @@
+{
+  "slug": "computer-architecture",
+  "title": "Computer Architecture",
+  "language": "en",
+  "duration": 476.4038125,
+  "segments": [
+    {
+      "start": 3.54,
+      "end": 6.26,
+      "text": "All right, let's talk about computer architecture."
+    },
+    {
+      "start": 6.26,
+      "end": 8.5,
+      "text": "Now, what is computer architecture?"
+    },
+    {
+      "start": 8.5,
+      "end": 10.7,
+      "text": "You've probably heard about architecture before"
+    },
+    {
+      "start": 10.7,
+      "end": 12.58,
+      "text": "when people are talking about skyscrapers"
+    },
+    {
+      "start": 12.58,
+      "end": 15.46,
+      "text": "and hospitals and museums and stuff like that."
+    },
+    {
+      "start": 15.46,
+      "end": 19.18,
+      "text": "Well, computer architecture is actually pretty simple."
+    },
+    {
+      "start": 19.18,
+      "end": 20.82,
+      "text": "There's lots of different kinds of buildings,"
+    },
+    {
+      "start": 20.82,
+      "end": 22.3,
+      "text": "lots of different kinds of computers,"
+    },
+    {
+      "start": 22.3,
+      "end": 24.34,
+      "text": "and you wouldn't architect a home"
+    },
+    {
+      "start": 24.34,
+      "end": 27.1,
+      "text": "the same way you wouldn't architect a car wash,"
+    },
+    {
+      "start": 27.1,
+      "end": 28.5,
+      "text": "and you wouldn't architect a museum,"
+    },
+    {
+      "start": 28.5,
+      "end": 30.86,
+      "text": "the same way you do our restaurant."
+    },
+    {
+      "start": 30.86,
+      "end": 32.46,
+      "text": "Well, there's different types of computers."
+    },
+    {
+      "start": 32.46,
+      "end": 34.66,
+      "text": "You wouldn't architect them exactly the same either"
+    },
+    {
+      "start": 34.66,
+      "end": 37.18,
+      "text": "because each one has its own specific set of needs"
+    },
+    {
+      "start": 37.18,
+      "end": 39.54,
+      "text": "and purposes, just like the buildings."
+    },
+    {
+      "start": 39.54,
+      "end": 42.62,
+      "text": "So, there's certain things you need to take into consideration"
+    },
+    {
+      "start": 42.62,
+      "end": 45.46,
+      "text": "when thinking about computer architecture."
+    },
+    {
+      "start": 45.46,
+      "end": 47.9,
+      "text": "It's these set of rules and methods"
+    },
+    {
+      "start": 47.9,
+      "end": 50.54,
+      "text": "that describe the functionality, organization,"
+    },
+    {
+      "start": 50.54,
+      "end": 53.14,
+      "text": "and implementation of the computer system."
+    },
+    {
+      "start": 53.14,
+      "end": 55.74,
+      "text": "Now, this includes hardware, software,"
+    },
+    {
+      "start": 55.74,
+      "end": 58.42,
+      "text": "and everything in between and all around it."
+    },
+    {
+      "start": 58.42,
+      "end": 60.1,
+      "text": "Let's talk about hardware."
+    },
+    {
+      "start": 60.1,
+      "end": 61.34,
+      "text": "When we talk about hardware,"
+    },
+    {
+      "start": 61.34,
+      "end": 64.38,
+      "text": "we're talking about the stuff you can physically see and touch."
+    },
+    {
+      "start": 64.38,
+      "end": 68.26,
+      "text": "Stuff like CPUs, memory, hard drives, network cards,"
+    },
+    {
+      "start": 68.26,
+      "end": 71.26,
+      "text": "IO adapters, the graphical processing unit,"
+    },
+    {
+      "start": 71.26,
+      "end": 72.66,
+      "text": "all that kind of stuff."
+    },
+    {
+      "start": 72.66,
+      "end": 74.86,
+      "text": "The stuff that you can pick up, take a look at"
+    },
+    {
+      "start": 74.86,
+      "end": 77.02,
+      "text": "and shove back into the computer."
+    },
+    {
+      "start": 77.02,
+      "end": 78.42,
+      "text": "Don't shove it back into the computer."
+    },
+    {
+      "start": 78.42,
+      "end": 79.58,
+      "text": "Place it gently."
+    },
+    {
+      "start": 79.58,
+      "end": 80.74,
+      "text": "We're talking about software."
+    },
+    {
+      "start": 80.74,
+      "end": 82.1,
+      "text": "That's the stuff that we can't see."
+    },
+    {
+      "start": 82.1,
+      "end": 84.98,
+      "text": "That stuff like programs that are written in code,"
+    },
+    {
+      "start": 84.98,
+      "end": 88.46,
+      "text": "operating systems, built-in programs like Notepad,"
+    },
+    {
+      "start": 88.46,
+      "end": 90.5,
+      "text": "applications you're right, libraries,"
+    },
+    {
+      "start": 90.54,
+      "end": 93.62,
+      "text": "ones you download, tools, utilities, programs,"
+    },
+    {
+      "start": 93.62,
+      "end": 95.1,
+      "text": "all sorts of stuff."
+    },
+    {
+      "start": 95.1,
+      "end": 96.98,
+      "text": "And you can think about the operating system"
+    },
+    {
+      "start": 96.98,
+      "end": 98.74,
+      "text": "as the primary program,"
+    },
+    {
+      "start": 98.74,
+      "end": 100.78,
+      "text": "and everything else just goes through it."
+    },
+    {
+      "start": 100.78,
+      "end": 103.38,
+      "text": "So there are instances when you're gonna write software"
+    },
+    {
+      "start": 103.38,
+      "end": 105.82,
+      "text": "that sits directly on top of the hardware"
+    },
+    {
+      "start": 105.82,
+      "end": 107.38,
+      "text": "that doesn't use the operating system."
+    },
+    {
+      "start": 107.38,
+      "end": 109.54,
+      "text": "Those do exist, but most of the time,"
+    },
+    {
+      "start": 109.54,
+      "end": 111.46,
+      "text": "the operating system is there in the middle,"
+    },
+    {
+      "start": 111.46,
+      "end": 114.02,
+      "text": "making sure not only this stuff is easier to write,"
+    },
+    {
+      "start": 114.02,
+      "end": 116.14,
+      "text": "but that it's gonna run safer as well."
+    },
+    {
+      "start": 116.14,
+      "end": 117.62,
+      "text": "All right, let's get into these computer"
+    },
+    {
+      "start": 117.62,
+      "end": 119.3,
+      "text": "architecture components."
+    },
+    {
+      "start": 119.3,
+      "end": 121.78,
+      "text": "Earlier I talked about how architecture computer"
+    },
+    {
+      "start": 121.78,
+      "end": 124.22,
+      "text": "is a lot like the architecture of a building."
+    },
+    {
+      "start": 124.22,
+      "end": 126.54,
+      "text": "Lots of different buildings, lots of different computers."
+    },
+    {
+      "start": 126.54,
+      "end": 130.1,
+      "text": "Now a building typically has a couple of things in common."
+    },
+    {
+      "start": 130.1,
+      "end": 133.26,
+      "text": "It's got walls, it's got a roof, got floor,"
+    },
+    {
+      "start": 133.26,
+      "end": 135.86,
+      "text": "hallway, it probably has an electrical system,"
+    },
+    {
+      "start": 135.86,
+      "end": 138.26,
+      "text": "probably plumbing, windows, doors."
+    },
+    {
+      "start": 138.26,
+      "end": 140.78,
+      "text": "You can see there's a lot of stuff to think about there."
+    },
+    {
+      "start": 140.78,
+      "end": 144.1,
+      "text": "In computer architecture, you've got a series of components."
+    },
+    {
+      "start": 144.1,
+      "end": 146.74,
+      "text": "And the architecture is all about how they are designed"
+    },
+    {
+      "start": 146.74,
+      "end": 149.02,
+      "text": "to work well with another and fit together"
+    },
+    {
+      "start": 149.02,
+      "end": 152.66,
+      "text": "so that it performs as a bank or as a museum again."
+    },
+    {
+      "start": 152.66,
+      "end": 155.98,
+      "text": "And we can kind of see this in computer architecture as well."
+    },
+    {
+      "start": 155.98,
+      "end": 158.02,
+      "text": "And there's this split between the hardware"
+    },
+    {
+      "start": 158.02,
+      "end": 159.46,
+      "text": "and the software side."
+    },
+    {
+      "start": 159.46,
+      "end": 161.9,
+      "text": "So let's start with software design."
+    },
+    {
+      "start": 161.9,
+      "end": 164.26,
+      "text": "Software design includes the compiler,"
+    },
+    {
+      "start": 164.26,
+      "end": 167.78,
+      "text": "firmware, operating system, applications."
+    },
+    {
+      "start": 167.78,
+      "end": 170.58,
+      "text": "The hardware design includes physical, circuit,"
+    },
+    {
+      "start": 170.58,
+      "end": 173.26,
+      "text": "digital design, data path control,"
+    },
+    {
+      "start": 173.26,
+      "end": 176.98,
+      "text": "instruction set procedures, and IO systems."
+    },
+    {
+      "start": 176.98,
+      "end": 179.1,
+      "text": "Let's start by talking about the software."
+    },
+    {
+      "start": 179.1,
+      "end": 181.38,
+      "text": "Now, you can generally split software"
+    },
+    {
+      "start": 181.38,
+      "end": 182.9,
+      "text": "into two distinct flavors."
+    },
+    {
+      "start": 182.9,
+      "end": 186.62,
+      "text": "There is application software and the system software."
+    },
+    {
+      "start": 186.62,
+      "end": 189.94,
+      "text": "Application software is what you generally call an app,"
+    },
+    {
+      "start": 189.94,
+      "end": 191.66,
+      "text": "short for application."
+    },
+    {
+      "start": 191.66,
+      "end": 194.14,
+      "text": "You start it, it runs, it does its thing."
+    },
+    {
+      "start": 194.14,
+      "end": 195.9,
+      "text": "And when it's done and you don't need it anymore,"
+    },
+    {
+      "start": 195.9,
+      "end": 197.94,
+      "text": "you just stop it and it goes away."
+    },
+    {
+      "start": 197.94,
+      "end": 200.06,
+      "text": "It generally interacts with you,"
+    },
+    {
+      "start": 200.06,
+      "end": 202.3,
+      "text": "or maybe another user or a file,"
+    },
+    {
+      "start": 202.3,
+      "end": 205.02,
+      "text": "but it typically sits on top of the operating system."
+    },
+    {
+      "start": 205.06,
+      "end": 207.3,
+      "text": "And it's going to use the operating system"
+    },
+    {
+      "start": 207.3,
+      "end": 210.06,
+      "text": "to get the data it needs, to access memory,"
+    },
+    {
+      "start": 210.06,
+      "end": 213.58,
+      "text": "to talk to the network, all that kind of stuff."
+    },
+    {
+      "start": 213.58,
+      "end": 216.02,
+      "text": "Now, system software is the code that runs"
+    },
+    {
+      "start": 216.02,
+      "end": 218.62,
+      "text": "as part of the operating system, generally."
+    },
+    {
+      "start": 218.62,
+      "end": 219.86,
+      "text": "Without the system software,"
+    },
+    {
+      "start": 219.86,
+      "end": 222.78,
+      "text": "you wouldn't be able to run any sort of application software."
+    },
+    {
+      "start": 222.78,
+      "end": 225.62,
+      "text": "Because generally, it's the application software"
+    },
+    {
+      "start": 225.62,
+      "end": 229.18,
+      "text": "telling the system software what it wants."
+    },
+    {
+      "start": 229.18,
+      "end": 230.9,
+      "text": "And then there's firmware."
+    },
+    {
+      "start": 230.9,
+      "end": 234.14,
+      "text": "Firmware generally gets written to read-only memory."
+    },
+    {
+      "start": 234.18,
+      "end": 236.22,
+      "text": "And it comes from the factory associated"
+    },
+    {
+      "start": 236.22,
+      "end": 237.42,
+      "text": "with that piece of hardware."
+    },
+    {
+      "start": 237.42,
+      "end": 238.66,
+      "text": "And you're not going to change it"
+    },
+    {
+      "start": 238.66,
+      "end": 241.02,
+      "text": "unless there's like a problem that needs to get fixed,"
+    },
+    {
+      "start": 241.02,
+      "end": 242.54,
+      "text": "or there's a new feature coming out."
+    },
+    {
+      "start": 242.54,
+      "end": 244.82,
+      "text": "You can upgrade the firmware to get that."
+    },
+    {
+      "start": 244.82,
+      "end": 247.14,
+      "text": "The firmware provides a common set of methods"
+    },
+    {
+      "start": 247.14,
+      "end": 250.62,
+      "text": "for doing things, that the operating system is going to use."
+    },
+    {
+      "start": 250.62,
+      "end": 253.5,
+      "text": "Let's take a step back and see what we have so far, right?"
+    },
+    {
+      "start": 253.5,
+      "end": 255.18,
+      "text": "Because we've talked about a lot of stuff."
+    },
+    {
+      "start": 255.18,
+      "end": 256.94,
+      "text": "We have the application software."
+    },
+    {
+      "start": 256.94,
+      "end": 258.9,
+      "text": "That's the app, right?"
+    },
+    {
+      "start": 258.9,
+      "end": 261.26,
+      "text": "And that sits on top of the operating system,"
+    },
+    {
+      "start": 261.26,
+      "end": 262.9,
+      "text": "the system software."
+    },
+    {
+      "start": 262.9,
+      "end": 265.3,
+      "text": "But there's actually a step before that,"
+    },
+    {
+      "start": 265.3,
+      "end": 267.34,
+      "text": "because you have to build the application."
+    },
+    {
+      "start": 267.34,
+      "end": 270.1,
+      "text": "So you're right the application in software language,"
+    },
+    {
+      "start": 270.1,
+      "end": 273.3,
+      "text": "like Java, C++, something like that."
+    },
+    {
+      "start": 273.3,
+      "end": 275.18,
+      "text": "Now, I can write some code,"
+    },
+    {
+      "start": 275.18,
+      "end": 276.5,
+      "text": "and you can probably take a look at it"
+    },
+    {
+      "start": 276.5,
+      "end": 278.38,
+      "text": "and see what I'm trying to do."
+    },
+    {
+      "start": 278.38,
+      "end": 281.06,
+      "text": "The computer itself doesn't understand this yet"
+    },
+    {
+      "start": 281.06,
+      "end": 283.9,
+      "text": "until we run it through something called a compiler."
+    },
+    {
+      "start": 283.9,
+      "end": 285.66,
+      "text": "A compiler takes source code,"
+    },
+    {
+      "start": 285.66,
+      "end": 287.22,
+      "text": "which is the stuff that I write,"
+    },
+    {
+      "start": 287.22,
+      "end": 290.22,
+      "text": "and then compiles it into something machine can run."
+    },
+    {
+      "start": 290.22,
+      "end": 292.02,
+      "text": "That's called object code."
+    },
+    {
+      "start": 292.02,
+      "end": 293.58,
+      "text": "And it's a one-way direction."
+    },
+    {
+      "start": 293.58,
+      "end": 296.1,
+      "text": "You can't take object code and then break it apart"
+    },
+    {
+      "start": 296.1,
+      "end": 297.54,
+      "text": "into its source code."
+    },
+    {
+      "start": 297.54,
+      "end": 298.7,
+      "text": "It's kind of like bake in a cake."
+    },
+    {
+      "start": 298.7,
+      "end": 301.54,
+      "text": "You can't take a cake and turn it back into its ingredients."
+    },
+    {
+      "start": 301.54,
+      "end": 303.94,
+      "text": "It's the kind of the finished product there."
+    },
+    {
+      "start": 303.94,
+      "end": 307.58,
+      "text": "So that's how you make an application, or a cake."
+    },
+    {
+      "start": 307.58,
+      "end": 309.7,
+      "text": "Okay, so we've got our compiler,"
+    },
+    {
+      "start": 309.7,
+      "end": 311.1,
+      "text": "we've got an application,"
+    },
+    {
+      "start": 311.1,
+      "end": 313.02,
+      "text": "we've got the operating system."
+    },
+    {
+      "start": 313.02,
+      "end": 316.26,
+      "text": "And then before that, before it actually hits the hardware,"
+    },
+    {
+      "start": 316.26,
+      "end": 318.3,
+      "text": "we've got something called the instruction set,"
+    },
+    {
+      "start": 318.3,
+      "end": 320.7,
+      "text": "which is part of the instruction set architecture,"
+    },
+    {
+      "start": 320.74,
+      "end": 323.22,
+      "text": "another aspect of computer architecture."
+    },
+    {
+      "start": 323.22,
+      "end": 325.06,
+      "text": "And this is ultimately what bridges the gap"
+    },
+    {
+      "start": 325.06,
+      "end": 327.34,
+      "text": "between the software and the hardware."
+    },
+    {
+      "start": 327.34,
+      "end": 329.42,
+      "text": "The instruction set is basically everything"
+    },
+    {
+      "start": 329.42,
+      "end": 332.42,
+      "text": "that the computer's processor is capable of doing."
+    },
+    {
+      "start": 332.42,
+      "end": 334.54,
+      "text": "It lists out every single function it can do."
+    },
+    {
+      "start": 334.54,
+      "end": 336.7,
+      "text": "I can compare these two numbers together,"
+    },
+    {
+      "start": 336.7,
+      "end": 337.94,
+      "text": "tell you which one's greater,"
+    },
+    {
+      "start": 337.94,
+      "end": 340.38,
+      "text": "or if they're equal, add these two numbers together,"
+    },
+    {
+      "start": 340.38,
+      "end": 342.98,
+      "text": "store this data over here, move this data over there."
+    },
+    {
+      "start": 342.98,
+      "end": 344.38,
+      "text": "It's nothing too fancy,"
+    },
+    {
+      "start": 344.38,
+      "end": 346.54,
+      "text": "but these are the small building blocks"
+    },
+    {
+      "start": 346.54,
+      "end": 350.02,
+      "text": "that you can use to make these higher level fancy applications"
+    },
+    {
+      "start": 350.1,
+      "end": 351.1,
+      "text": "from."
+    },
+    {
+      "start": 351.1,
+      "end": 353.86,
+      "text": "Now, ultimately everything we're doing right now"
+    },
+    {
+      "start": 353.86,
+      "end": 356.38,
+      "text": "is so that we can get something onto the processor."
+    },
+    {
+      "start": 356.38,
+      "end": 359.42,
+      "text": "So the processor can run this application, right?"
+    },
+    {
+      "start": 359.42,
+      "end": 361.34,
+      "text": "That's why we're doing all this stuff."
+    },
+    {
+      "start": 361.34,
+      "end": 362.94,
+      "text": "You've probably seen a processor too,"
+    },
+    {
+      "start": 362.94,
+      "end": 363.82,
+      "text": "you're thinking about this,"
+    },
+    {
+      "start": 363.82,
+      "end": 367.14,
+      "text": "it's a square chip thing with a whole bunch of metal"
+    },
+    {
+      "start": 367.14,
+      "end": 368.78,
+      "text": "pins on the bottom of it."
+    },
+    {
+      "start": 368.78,
+      "end": 370.98,
+      "text": "Well, those metal pins aren't just for traction,"
+    },
+    {
+      "start": 370.98,
+      "end": 373.62,
+      "text": "they're there because they hook into the motherboard"
+    },
+    {
+      "start": 373.62,
+      "end": 375.66,
+      "text": "or the back plane of the computer,"
+    },
+    {
+      "start": 375.66,
+      "end": 378.62,
+      "text": "and we have to send electrical impulses through it."
+    },
+    {
+      "start": 378.62,
+      "end": 379.74,
+      "text": "That's how we tell the chip,"
+    },
+    {
+      "start": 379.74,
+      "end": 382.18,
+      "text": "or the processor, what we want it to do,"
+    },
+    {
+      "start": 382.18,
+      "end": 383.62,
+      "text": "and then we want to get the answer"
+    },
+    {
+      "start": 383.62,
+      "end": 385.66,
+      "text": "of what those two numbers added together are."
+    },
+    {
+      "start": 385.66,
+      "end": 387.3,
+      "text": "We have to do a read, so we know"
+    },
+    {
+      "start": 387.3,
+      "end": 390.1,
+      "text": "we have to know which pins to read from, right?"
+    },
+    {
+      "start": 390.1,
+      "end": 391.98,
+      "text": "There's a whole lot of stuff to understand there,"
+    },
+    {
+      "start": 391.98,
+      "end": 395.22,
+      "text": "and that's all documented in the instruction set."
+    },
+    {
+      "start": 395.22,
+      "end": 398.86,
+      "text": "Now, you can picture a calculator as a type of computer."
+    },
+    {
+      "start": 398.86,
+      "end": 400.54,
+      "text": "A phone is a type of computer,"
+    },
+    {
+      "start": 400.54,
+      "end": 402.78,
+      "text": "a supercomputer is a type of computer."
+    },
+    {
+      "start": 402.78,
+      "end": 404.66,
+      "text": "Three different types of computers,"
+    },
+    {
+      "start": 404.66,
+      "end": 406.5,
+      "text": "three different architectures,"
+    },
+    {
+      "start": 406.5,
+      "end": 408.82,
+      "text": "three different instruction sets, right?"
+    },
+    {
+      "start": 408.82,
+      "end": 411.38,
+      "text": "So we need to ultimately need a compiler"
+    },
+    {
+      "start": 411.38,
+      "end": 413.54,
+      "text": "for each one of those, right?"
+    },
+    {
+      "start": 413.54,
+      "end": 415.46,
+      "text": "The blueprints for all that are contained"
+    },
+    {
+      "start": 415.46,
+      "end": 416.78,
+      "text": "within the instruction set,"
+    },
+    {
+      "start": 416.78,
+      "end": 419.98,
+      "text": "and part of the instruction set architecture."
+    },
+    {
+      "start": 419.98,
+      "end": 422.9,
+      "text": "Even a very simple couple lines of code program,"
+    },
+    {
+      "start": 422.9,
+      "end": 425.14,
+      "text": "like add these things together,"
+    },
+    {
+      "start": 425.14,
+      "end": 427.3,
+      "text": "it has to take quite a journey to get from something"
+    },
+    {
+      "start": 427.3,
+      "end": 428.7,
+      "text": "that I can describe to something"
+    },
+    {
+      "start": 428.7,
+      "end": 431.78,
+      "text": "that can be represented electronically on a CPU."
+    },
+    {
+      "start": 431.78,
+      "end": 434.02,
+      "text": "And then there's a whole other area of physical design"
+    },
+    {
+      "start": 434.02,
+      "end": 437.26,
+      "text": "that describes building the logic gates and physical chips."
+    },
+    {
+      "start": 437.26,
+      "end": 438.98,
+      "text": "That falls under digital design,"
+    },
+    {
+      "start": 438.98,
+      "end": 442.3,
+      "text": "circuit implementation, and physical implementation."
+    },
+    {
+      "start": 442.3,
+      "end": 444.22,
+      "text": "And believe me, that goes off pretty far"
+    },
+    {
+      "start": 444.22,
+      "end": 445.58,
+      "text": "in its own direction."
+    },
+    {
+      "start": 445.58,
+      "end": 446.58,
+      "text": "We've covered a lot here,"
+    },
+    {
+      "start": 446.58,
+      "end": 449.34,
+      "text": "from stuff you can see to stuff you run,"
+    },
+    {
+      "start": 449.34,
+      "end": 451.7,
+      "text": "to stuff you're right, to stuff that you,"
+    },
+    {
+      "start": 451.7,
+      "end": 453.5,
+      "text": "stuff that you just kind of have to trust that it's there"
+    },
+    {
+      "start": 453.5,
+      "end": 456.3,
+      "text": "because there's no way a computer would work without it."
+    },
+    {
+      "start": 456.3,
+      "end": 458.7,
+      "text": "And there's definitely a near infinite number of ways"
+    },
+    {
+      "start": 458.7,
+      "end": 460.46,
+      "text": "you could architect a computer."
+    },
+    {
+      "start": 460.46,
+      "end": 462.42,
+      "text": "Hopefully the computer you're using right now"
+    },
+    {
+      "start": 462.42,
+      "end": 464.34,
+      "text": "was built for a specific purpose,"
+    },
+    {
+      "start": 464.34,
+      "end": 466.34,
+      "text": "and it does it really, really well."
+    },
+    {
+      "start": 466.34,
+      "end": 468.46,
+      "text": "In the next lesson, we're gonna talk about a computer"
+    },
+    {
+      "start": 468.46,
+      "end": 470.1,
+      "text": "that's been architected specifically"
+    },
+    {
+      "start": 470.1,
+      "end": 471.82,
+      "text": "to run business transactions."
+    },
+    {
+      "start": 471.82,
+      "end": 473.14,
+      "text": "And that's the IBM Z."
+    }
+  ]
+}

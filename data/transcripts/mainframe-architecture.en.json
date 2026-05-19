@@ -1,0 +1,288 @@
+{
+  "slug": "mainframe-architecture",
+  "title": "Mainframe Architecture",
+  "language": "en",
+  "duration": 233.708875,
+  "segments": [
+    {
+      "start": 3.6,
+      "end": 8.68,
+      "text": "It's important to realize that there is no one version of the mainframe, but rather"
+    },
+    {
+      "start": 8.68,
+      "end": 13.24,
+      "text": "a series of computers that all adhere to the mainframe architecture."
+    },
+    {
+      "start": 13.24,
+      "end": 17.56,
+      "text": "By taking this course, you're learning all about the core fundamentals of the mainframe"
+    },
+    {
+      "start": 17.56,
+      "end": 19.28,
+      "text": "architecture."
+    },
+    {
+      "start": 19.28,
+      "end": 23.52,
+      "text": "Like all other computers, the mainframe has memory, and you've probably seen memory"
+    },
+    {
+      "start": 23.52,
+      "end": 24.52,
+      "text": "models before."
+    },
+    {
+      "start": 24.52,
+      "end": 28.68,
+      "text": "They're in laptops, phones, and the mainframe."
+    },
+    {
+      "start": 28.68,
+      "end": 32.8,
+      "text": "Applications and operating systems need memory, but there's only so much real physical"
+    },
+    {
+      "start": 32.8,
+      "end": 34.8,
+      "text": "memory to go around."
+    },
+    {
+      "start": 34.8,
+      "end": 39.72,
+      "text": "Even on a fully loaded system, applications are always hungry for more, and sometimes"
+    },
+    {
+      "start": 39.72,
+      "end": 45.36,
+      "text": "it makes sense to move some of that data from real memory out to auxiliary storage, sometimes"
+    },
+    {
+      "start": 45.36,
+      "end": 47.16,
+      "text": "called virtual memory."
+    },
+    {
+      "start": 47.16,
+      "end": 52.32,
+      "text": "Of course, if that data is needed for fast or access later on, it can be moved back"
+    },
+    {
+      "start": 52.32,
+      "end": 54.16,
+      "text": "into real memory."
+    },
+    {
+      "start": 54.16,
+      "end": 60.36,
+      "text": "On the mainframe, auxiliary or just aux storage is kept on direct access storage devices,"
+    },
+    {
+      "start": 60.36,
+      "end": 62.16,
+      "text": "also known as Dazzdy."
+    },
+    {
+      "start": 62.16,
+      "end": 66.2,
+      "text": "These are full of hard drives, which can be either disk or solid state."
+    },
+    {
+      "start": 66.2,
+      "end": 71.24,
+      "text": "No matter how fast the drives are, they're still nowhere near as fast as real memory."
+    },
+    {
+      "start": 71.24,
+      "end": 75.68,
+      "text": "So the mainframe has to make a decision about where that data should be kept."
+    },
+    {
+      "start": 75.68,
+      "end": 80.6,
+      "text": "However, part of the mainframe architecture is based on this tight relationship between"
+    },
+    {
+      "start": 80.6,
+      "end": 83.8,
+      "text": "real memory and aux storage."
+    },
+    {
+      "start": 83.8,
+      "end": 89.48,
+      "text": "It's for that reason that memory on the mainframe is usually just referred to as storage."
+    },
+    {
+      "start": 89.48,
+      "end": 93.08,
+      "text": "So when you hear storage, just know that we're talking about something that includes"
+    },
+    {
+      "start": 93.08,
+      "end": 96.6,
+      "text": "both on-chip memory and aux storage."
+    },
+    {
+      "start": 96.6,
+      "end": 102.72,
+      "text": "Because the way the architecture works to the application running, it's all just storage."
+    },
+    {
+      "start": 102.72,
+      "end": 107.88,
+      "text": "So when an application comes along and says it needs a whole bunch of memory, all these components"
+    },
+    {
+      "start": 107.88,
+      "end": 112.92,
+      "text": "work together so the application can carry on, like it has this nearly unlimited amount"
+    },
+    {
+      "start": 112.92,
+      "end": 118.76,
+      "text": "of memory, when in fact all the complexities are being handled behind the scenes."
+    },
+    {
+      "start": 118.8,
+      "end": 122.36,
+      "text": "In ZOS, the mainframe operating system, we're going to be spending most of our time"
+    },
+    {
+      "start": 122.36,
+      "end": 124.08,
+      "text": "talking about here."
+    },
+    {
+      "start": 124.08,
+      "end": 128.56,
+      "text": "Users and applications have access to their own individual address space."
+    },
+    {
+      "start": 128.56,
+      "end": 134.32,
+      "text": "An address space is simply a map of storage that is made available to users and applications."
+    },
+    {
+      "start": 134.32,
+      "end": 138.8,
+      "text": "The range of the address space goes all the way up to 16 exabytes."
+    },
+    {
+      "start": 138.8,
+      "end": 142.44,
+      "text": "And an exabyte is a unit that comes after petabytes."
+    },
+    {
+      "start": 142.44,
+      "end": 144.96,
+      "text": "So that's a lot of space."
+    },
+    {
+      "start": 144.96,
+      "end": 148.72,
+      "text": "And by giving an application an address space, it's basically saying, yes,"
+    },
+    {
+      "start": 148.72,
+      "end": 153.08,
+      "text": "store your data anywhere you'd like in here, I'll manage it all for you."
+    },
+    {
+      "start": 153.08,
+      "end": 157.64,
+      "text": "And once it's up and running, ZOS will periodically check on that memory to see if some"
+    },
+    {
+      "start": 157.64,
+      "end": 160.28,
+      "text": "of it can actually be migrated."
+    },
+    {
+      "start": 160.28,
+      "end": 165.6,
+      "text": "In ZOS, memory is placed into four kilobyte chunks called pages."
+    },
+    {
+      "start": 165.6,
+      "end": 171.4,
+      "text": "When that memory is in central storage on real memory, it occupies what's called a frame."
+    },
+    {
+      "start": 171.4,
+      "end": 175.44,
+      "text": "And when it's moved out to aux storage, it takes up a slot."
+    },
+    {
+      "start": 175.44,
+      "end": 181.08,
+      "text": "When the OS decides to move a slot to a frame or a frame to a slot, that's called paging."
+    },
+    {
+      "start": 181.08,
+      "end": 185.0,
+      "text": "And we like for paging to happen as little as possible on the mainframe."
+    },
+    {
+      "start": 185.0,
+      "end": 189.16,
+      "text": "Hopefully the OS identifies the right frames to page out the slots."
+    },
+    {
+      "start": 189.16,
+      "end": 193.68,
+      "text": "And they don't have to be page back in because that paging back and forth is a fairly"
+    },
+    {
+      "start": 193.68,
+      "end": 195.72,
+      "text": "complex procedure."
+    },
+    {
+      "start": 195.72,
+      "end": 200.16,
+      "text": "All of these changes are kept track of in a series of tables maintained by the operating"
+    },
+    {
+      "start": 200.16,
+      "end": 201.44,
+      "text": "system."
+    },
+    {
+      "start": 201.44,
+      "end": 206.64,
+      "text": "In a well-tuned system with adequate real storage, memory gets paged out once and most"
+    },
+    {
+      "start": 206.64,
+      "end": 208.32,
+      "text": "of it stays there."
+    },
+    {
+      "start": 208.32,
+      "end": 212.32,
+      "text": "The concept of virtual memory is certainly not unique to the mainframe."
+    },
+    {
+      "start": 212.32,
+      "end": 217.32,
+      "text": "But the way in which it handles its virtual memory, you can see it's something pretty special."
+    },
+    {
+      "start": 217.32,
+      "end": 222.36,
+      "text": "The most current generation of the mainframe architecture is known as the Z architecture."
+    },
+    {
+      "start": 222.36,
+      "end": 226.52,
+      "text": "And it includes not only the hardware found in the mainframe, but the mainframe operating"
+    },
+    {
+      "start": 226.52,
+      "end": 229.72,
+      "text": "systems, which are built to take advantage of the hardware's features."
+    }
+  ]
+}

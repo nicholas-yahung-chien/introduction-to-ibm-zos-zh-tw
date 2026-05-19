@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:03.060 --> 00:00:07.060
+Hi, I'm Mark Nelson from the RACF Development Team in Poughkeepsie, New York, and we just
+
+2
+00:00:07.060 --> 00:00:10.060
+heard Jeff talk about the crypto express card in some of its features.
+
+3
+00:00:10.060 --> 00:00:15.060
+I'd like to talk about one thing in particular about the crypto express card, and that is
+
+4
+00:00:15.060 --> 00:00:18.060
+something called secured keys versus protected keys.
+
+5
+00:00:18.060 --> 00:00:23.060
+Now, when you're using a key, the most important thing you have is keeping that key secure,
+
+6
+00:00:23.060 --> 00:00:27.060
+private, known only to those people who need to have access to the key.
+
+7
+00:00:27.060 --> 00:00:31.060
+When you've put a key into the crypto express card, you can put a key in there in a
+
+8
+00:00:31.060 --> 00:00:36.060
+manner such that it will never, ever, ever leave that card in the clear, ever.
+
+9
+00:00:36.060 --> 00:00:38.060
+We call that a secured key.
+
+10
+00:00:38.060 --> 00:00:42.060
+When you're doing cryptographic operations, however, you might want to have the key in storage
+
+11
+00:00:42.060 --> 00:00:43.060
+for performance reasons.
+
+12
+00:00:43.060 --> 00:00:45.060
+We'll call that a clear key.
+
+13
+00:00:45.060 --> 00:00:48.060
+The concept of the clear key doesn't mean that everybody can read it.
+
+14
+00:00:48.060 --> 00:00:52.060
+It might be in fetch protected storage that only trusted and authorized people within
+
+15
+00:00:52.060 --> 00:00:54.060
+the ZOS environment can access.
+
+16
+00:00:54.060 --> 00:00:59.060
+But nonetheless, it's still in storage in the clear, and that represents a bit of risk.
+
+17
+00:00:59.060 --> 00:01:04.060
+With the crypto express card and something called protected keys, you can get the best of both worlds.
+
+18
+00:01:04.060 --> 00:01:10.060
+The concept here is that the key that exists in the crypto express card can be wrapped with a
+
+19
+00:01:10.060 --> 00:01:15.060
+transport key or an L-par specific key, sometimes called it a femoral key, although I hate that word.
+
+20
+00:01:15.060 --> 00:01:21.060
+But the concept is you can take that wrapped key, transport it over to the ZOS environment,
+
+21
+00:01:21.060 --> 00:01:26.060
+where it can be used by the CPACF, the central processor assist for cryptographic function.
+
+22
+00:01:26.060 --> 00:01:32.060
+That is the high-performance cryptographic engine that exists for every central processor in an IBM Z environment.
+
+23
+00:01:32.060 --> 00:01:39.060
+Now, ZOS can't read that key, but what it can do is pass that wrapped key to the CPACF.
+
+24
+00:01:39.060 --> 00:01:45.060
+The CPACF can use the key that was used to wrap it, which is available to it because it's the hypervisor.
+
+25
+00:01:45.060 --> 00:01:52.060
+And then CPACF can do very, very high-performance cryptographic encryption and decryption using that key.
+
+26
+00:01:52.060 --> 00:01:54.060
+It's really the best of both worlds.

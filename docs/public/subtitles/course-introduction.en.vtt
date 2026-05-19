@@ -1,0 +1,229 @@
+WEBVTT
+
+1
+00:00:04.460 --> 00:00:11.120
+Hello there, we are so glad you're taking this course and we think you're gonna have all a whole lot of fun work in your way through it
+
+2
+00:00:11.120 --> 00:00:13.020
+No matter what brought you here
+
+3
+00:00:13.020 --> 00:00:17.660
+Whether this is your first time exploring a computer platform where you're 9th or 12th
+
+4
+00:00:17.660 --> 00:00:26.540
+The mainframe environment is all of IT in one place and a career here will keep you engaged learning and current in all of it
+
+5
+00:00:26.540 --> 00:00:32.220
+And don't worry if you've never seen logged into or even thought all that much about mainframes before
+
+6
+00:00:32.620 --> 00:00:37.020
+We assume you're here to get started and that's where we'll begin
+
+7
+00:00:37.020 --> 00:00:41.180
+This course is everything I wish someone had sat me down and explained to me
+
+8
+00:00:41.180 --> 00:00:48.060
+Back when I first got started back in the early 2000s and a lot has changed since then
+
+9
+00:00:48.060 --> 00:00:51.260
+And a lot has changed since the first time this course came out
+
+10
+00:00:51.260 --> 00:00:55.180
+Which is why I'm back with my pal Mackenzie. Hi Mackenzie
+
+11
+00:00:55.180 --> 00:00:55.740
+Hey Jeff
+
+12
+00:00:55.740 --> 00:00:56.540
+How's it going?
+
+13
+00:00:56.540 --> 00:01:00.540
+We're gonna go in and freshen up a couple of the videos to bring them up to date
+
+14
+00:01:00.540 --> 00:01:04.860
+We want to talk about some new features new hardware and new approaches to problem-solving
+
+15
+00:01:05.420 --> 00:01:10.140
+We're so glad you're here to learn because now more than ever it's all about transactions
+
+16
+00:01:10.540 --> 00:01:19.900
+Massive massive amounts of secure transactions for stuff like paychecks health care insurance your phone your credit card your bank account the internet
+
+17
+00:01:20.540 --> 00:01:23.180
+And those are transactions that are powered by these systems
+
+18
+00:01:23.660 --> 00:01:28.540
+The hardware and software behind it all is expected to always be available
+
+19
+00:01:29.020 --> 00:01:35.500
+Ready to react and scale to whatever the world throws at it all that while protecting the data at the heart of it all
+
+20
+00:01:35.900 --> 00:01:40.860
+If you're new to all this you literally couldn't pick a better time to get started
+
+21
+00:01:41.020 --> 00:01:45.420
+There's so much going on we're in an era of specialized AI processors
+
+22
+00:01:45.580 --> 00:01:50.060
+They will let us do things nobody ever thought was possible just a few years ago
+
+23
+00:01:50.860 --> 00:01:54.220
+So we'll build up to the big fancy application level stuff
+
+24
+00:01:54.220 --> 00:01:59.820
+But we'll also make sure to start with the real fundamentals because once we've got those everything
+
+25
+00:01:59.820 --> 00:02:02.540
+We build on top of that. We'll just lock into place
+
+26
+00:02:03.100 --> 00:02:08.220
+The best thing is we're going to be teaching you skills that will absolutely differentiate you from others
+
+27
+00:02:08.700 --> 00:02:11.100
+You'll be able to put these skills to use from day one
+
+28
+00:02:11.580 --> 00:02:13.820
+So when you get brought in for a job interview
+
+29
+00:02:13.820 --> 00:02:16.860
+You'll have the confidence of not just knowing the technology
+
+30
+00:02:16.860 --> 00:02:20.620
+But understanding how that technology comes together to form solutions
+
+31
+00:02:20.940 --> 00:02:26.060
+That right there is what builds confidence. Oh, yeah, and you know, it's going to make you feel really confident
+
+32
+00:02:26.060 --> 00:02:33.340
+How about logging into a real live system with your own ID? I'm not talking about a simulation or animated screenshots
+
+33
+00:02:34.060 --> 00:02:35.420
+We're going in
+
+34
+00:02:35.580 --> 00:02:39.260
+But before we do that we've got just two favors to ask of you
+
+35
+00:02:40.060 --> 00:02:42.460
+One grab a pen and some paper
+
+36
+00:02:43.500 --> 00:02:49.180
+Or your favorite notes app and just keep it handy for any time you hear something that catches your attention
+
+37
+00:02:49.580 --> 00:02:50.940
+No need to go much deeper
+
+38
+00:02:50.940 --> 00:02:55.980
+Just literally make a note of anything that you wished you had some more information about
+
+39
+00:02:55.980 --> 00:02:57.500
+Because when we're all done
+
+40
+00:02:57.500 --> 00:03:00.940
+You'll have a good list of areas that you might want to focus on
+
+41
+00:03:00.940 --> 00:03:05.260
+Either for follow-up education or for your career in mainframe systems
+
+42
+00:03:05.260 --> 00:03:10.380
+And a good next step might be to find people who work in those areas and give them a follow
+
+43
+00:03:11.180 --> 00:03:13.820
+We also ask that you set aside time
+
+44
+00:03:14.540 --> 00:03:17.100
+Not just to watch the videos and pass the quizzes
+
+45
+00:03:17.180 --> 00:03:20.300
+But to reflect on what we're talking about to occasionally
+
+46
+00:03:20.940 --> 00:03:24.460
+Literally hit pause and ask yourself did I really get that?
+
+47
+00:03:25.180 --> 00:03:30.620
+Sometimes getting up and walking around a little bit is the physical activity that helps us contextualize things
+
+48
+00:03:30.700 --> 00:03:32.700
+After getting hit with a wave of new information
+
+49
+00:03:33.740 --> 00:03:40.540
+Taking the time and respecting your time to learn and understand whether you're doing this by yourself or with others is key
+
+50
+00:03:41.180 --> 00:03:44.540
+If you try to rush through and only focus on passing the quizzes
+
+51
+00:03:44.540 --> 00:03:48.700
+You won't get that lasting knowledge which is needed to put it all in context
+
+52
+00:03:48.700 --> 00:03:51.660
+There's a reason we get to present this course to you
+
+53
+00:03:52.300 --> 00:03:56.860
+Like this and there's a reason we aren't just picking up a manual and reading it to you
+
+54
+00:03:56.860 --> 00:03:59.820
+We're putting it into easily understandable terms
+
+55
+00:03:59.820 --> 00:04:05.820
+We're picking our words very carefully and making sure you're fully on board before moving on to the next thing
+
+56
+00:04:05.820 --> 00:04:09.660
+Because in Z everything is interconnected
+
+57
+00:04:09.660 --> 00:04:16.460
+So get comfy, give your arms a stretch and let's get going. There's a whole lot to cover

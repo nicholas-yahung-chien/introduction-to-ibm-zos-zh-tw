@@ -1,0 +1,177 @@
+WEBVTT
+
+1
+00:00:04.270 --> 00:00:15.270
+I hope everyone got their permission slip signed because today, we're going on a little field trip over to the raised floor with one of our favorite people, everyone say hi to Chris.
+
+2
+00:00:15.270 --> 00:00:21.270
+And we're out here to say hi to one of our favorite systems, the IBM Z17.
+
+3
+00:00:21.270 --> 00:00:27.270
+You might not have a Z17, you might have something a little older or a little newer by the time you watch this.
+
+4
+00:00:28.270 --> 00:00:30.270
+But more or less, the parts are the same.
+
+5
+00:00:30.270 --> 00:00:38.270
+They might be rotated, placed in slightly different locations, but typically a mainframe lives in one or more racks like this.
+
+6
+00:00:38.270 --> 00:00:43.270
+And it can be kind of viewed in terms of its processors, its IO and its supporting infrastructure.
+
+7
+00:00:43.270 --> 00:00:52.270
+Let's start with the CPC drawers and we call them drawers because they pull open like a drawer and a nightstand like this.
+
+8
+00:00:52.270 --> 00:01:03.270
+is where you find all the main processors and memory. It's important to keep all that centrally located and connected because a short connection means faster access.
+
+9
+00:01:03.270 --> 00:01:12.270
+On a system with four CPC drawers, you can have up to 208 processors in up to 64 terabytes of memory.
+
+10
+00:01:12.270 --> 00:01:17.270
+The power situation on one of these things is mighty impressive.
+
+11
+00:01:17.270 --> 00:01:29.270
+There's multiple power supply units, points of load, voltage regulator modules and processor power control cards, which feature sensors for pressure, temperature and humidity.
+
+12
+00:01:29.270 --> 00:01:36.270
+Part of the reason for all that tech is that we're performing a lot of important work here, but it's also important to have redundancy.
+
+13
+00:01:36.270 --> 00:01:45.270
+A lot of times these components are N plus two redundant, meaning that two of them can fail and the system will still have enough spares to keep going.
+
+14
+00:01:45.270 --> 00:01:55.270
+But get this, this system adds an 11% boost in single thread performance over the Z16 while using 17% less power.
+
+15
+00:01:55.270 --> 00:01:58.270
+That's a truly important statistic right there.
+
+16
+00:01:58.270 --> 00:02:08.270
+The CPC drawers also have something called a PCIe fan out, which is a fancy way of saying a whole bunch of cables coming out to connect to IO devices.
+
+17
+00:02:08.270 --> 00:02:18.270
+This is an example of where they connect to. This is a PCIe IO drawer, a fully loaded Z17 can have up to 12 of these.
+
+18
+00:02:18.270 --> 00:02:26.270
+Each one of these has 16 slots for things like networking, cryptography, storage and system-to-system communication.
+
+19
+00:02:26.270 --> 00:02:37.270
+The processors at the heart of all of this, their IBM tell them two processors. These are five nanometer technology with 43 billion transistors each.
+
+20
+00:02:37.270 --> 00:02:49.270
+Those are the processors that are going to be running the operating systems, the applications, the workloads, but they also have a special DPU or data processing unit for things like crypto and AI.
+
+21
+00:02:49.270 --> 00:02:58.270
+But the fun doesn't stop there. The spire is a new PCIe device with 32 AI accelerators similar to the ones on the tell them two.
+
+22
+00:02:58.270 --> 00:03:12.270
+So if you're running large language models or AI infused workloads in fraud detection and don't want that work running on your main processors, the spire might be a good fit for some of those empty slots in your PCIe drawers.
+
+23
+00:03:12.270 --> 00:03:25.270
+A hardware is impressive, but if you've ever built your own PC, you're likely already familiar with a lot of this terminology. You might even be saying, alright, so it's a big PC and well, yes, and no.
+
+24
+00:03:25.270 --> 00:03:41.270
+Mostly no. It's a system built specifically for secure high transaction business applications. You've probably seen a PC built for gaming, a PC built for office use or a PC designed for recording and editing, audio and video.
+
+25
+00:03:41.270 --> 00:03:54.270
+Aside by side, each PC will be specked out with something that makes it excel in that area, an amazing video card, super fast storage and a ton of RAM, a printer.
+
+26
+00:03:54.270 --> 00:04:04.270
+But at their core, they're still running the same operating system on the same type of processor, which has a middle of the road set of instructions that it can perform.
+
+27
+00:04:04.270 --> 00:04:15.270
+A system like this isn't just specked for business applications, it's designed and built from the ground up specifically for those secure high transaction business applications.
+
+28
+00:04:15.270 --> 00:04:25.270
+A hardware we're looking at and all of the firmware, millicoat, OS code and applications loaded onto it. You guessed it, really good at running business applications.
+
+29
+00:04:25.270 --> 00:04:33.270
+So don't look for an IBM Z port of Skyrim anytime soon. There's not even a place to plug in a display because it doesn't need one. Why would it?
+
+30
+00:04:33.270 --> 00:04:47.980
+Yeah, you don't need to actually go out and be next to a machine unless you're physically replacing a part or posing for stock video footage.
+
+31
+00:04:47.980 --> 00:04:57.980
+But what about when you need to reboot or reconfigure something? Well, that requires special access and that sort of management is handled by these two systems right up here.
+
+32
+00:04:57.980 --> 00:05:06.980
+Well, technically one of these systems, the second one is there as a backup, but anyway, this is a hardware management appliance or HMA.
+
+33
+00:05:06.980 --> 00:05:14.980
+It runs the hardware management console as well as the support element features more commonly referred to as the HMC and SE.
+
+34
+00:05:14.980 --> 00:05:18.980
+I'll be the first to admit, that was a whole lot of letters right there.
+
+35
+00:05:18.980 --> 00:05:28.980
+All you need to know is the no actual customer applications or workloads are getting run on these things. They exist just so people can log into them and manage the systems.
+
+36
+00:05:28.980 --> 00:05:39.980
+So that way, if there's a network express card set up for these two lpars, but we also want it to connect to these other lpars, we can use the HMC to make those changes.
+
+37
+00:05:39.980 --> 00:05:44.980
+That's the beauty of virtualization and enterprise systems right there.
+
+38
+00:05:44.980 --> 00:05:56.980
+Of course, we don't want just anyone going in and messing with devices, so who gets that type of access is strictly controlled and enforced with SSO and multi factor authentication.
+
+39
+00:05:56.980 --> 00:06:07.980
+For certain operations like taking down a system, you can even set it up that two authorized users need to approve the operation. Yeah, I told you, we take this stuff seriously.
+
+40
+00:06:07.980 --> 00:06:17.980
+If you're into hardware, there are mainframe jobs for people who deal primarily with cabling, reconfiguring, upgrading and management of these systems behind the scenes.
+
+41
+00:06:17.980 --> 00:06:25.980
+And just remember, this ties into the whole rest of the data center. So it's not like a unique island unto itself.
+
+42
+00:06:25.980 --> 00:06:32.980
+Just add power, storage, some networking, like any other system you'd expect to see out here, you're pretty much ready to go.
+
+43
+00:06:32.980 --> 00:06:43.980
+So, even if you never actually get to see the system you're working on, rest assured, it was built to perform and protect with some pretty amazing hardware and software design.
+
+44
+00:06:43.980 --> 00:06:52.980
+Everyone say, thank you, Chris, goodbye, Chris, everyone say, thank you, Z17, goodbye, Z17.
