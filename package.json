@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vitepress dev docs --host 127.0.0.1",
     "build": "vitepress build docs",
+    "build:github": "cross-env VITEPRESS_BASE=/introduction-to-ibm-zos-zh-tw/ vitepress build docs",
+    "build:cloudflare": "cross-env VITEPRESS_BASE=/ vitepress build docs",
     "preview": "vitepress preview docs --host 127.0.0.1",
+    "deploy:cloudflare": "npm run build:cloudflare && npx wrangler pages deploy docs/.vitepress/dist --project-name introduction-to-ibm-zos-zh-tw --branch main",
     "capture:course": "node scripts/capture-course.mjs",
     "download:videos": "node scripts/download-kaltura-videos.mjs",
     "generate:hls": "node scripts/generate-hls.mjs",
@@ -21,5 +24,8 @@
     "hls.js": "^1.6.16",
     "vitepress": "^1.6.4",
     "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
   }
 }

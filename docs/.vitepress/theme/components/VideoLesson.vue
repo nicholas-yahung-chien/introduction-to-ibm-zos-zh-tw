@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { withBase } from 'vitepress'
 
 const props = defineProps<{
   title: string
@@ -11,15 +12,41 @@ const props = defineProps<{
 }>()
 
 const mediaVersion = 'hls-f6d6b21'
-const versionedVideoSrc = props.videoSrc
-  ? `${props.videoSrc}${props.videoSrc.includes('?') ? '&' : '?'}v=${mediaVersion}`
-  : undefined
+const mediaBaseUrl = import.meta.env.VITE_MEDIA_BASE_URL?.replace(/\/$/, '')
+
+function appendVersion(src: string) {
+  return `${src}${src.includes('?') ? '&' : '?'}v=${mediaVersion}`
+}
+
+function isAbsoluteUrl(src: string) {
+  return /^https?:\/\//i.test(src)
+}
+
+function siteAsset(src: string) {
+  return isAbsoluteUrl(src) ? src : withBase(src)
+}
+
+function mediaAsset(src: string) {
+  if (isAbsoluteUrl(src)) return src
+  return mediaBaseUrl ? `${mediaBaseUrl}${src.startsWith('/') ? src : `/${src}`}` : siteAsset(src)
+}
+
+const versionedVideoSrc = computed(() => {
+  if (!props.videoSrc) return undefined
+  return appendVersion(mediaAsset(props.videoSrc))
+})
+
+const subtitleTrackSrc = computed(() => {
+  if (!props.subtitleSrc) return undefined
+  return siteAsset(props.subtitleSrc)
+})
 
 const videoRef = ref<HTMLVideoElement>()
 const hlsSrc = computed(() => {
   if (!props.videoSrc) return undefined
   const source = props.videoSrc.split('?')[0]
-  return `${source.replace('/media/', '/hls/').replace(/\.mp4$/, '/index.m3u8')}?v=${mediaVersion}`
+  const playlist = source.replace('/media/', '/hls/').replace(/\.mp4$/, '/index.m3u8')
+  return appendVersion(mediaAsset(playlist))
 })
 
 let hls: { destroy: () => void } | undefined
@@ -38,8 +65,8 @@ onMounted(async () => {
     hls = new Hls()
     hls.loadSource(hlsSrc.value)
     hls.attachMedia(video)
-  } else if (versionedVideoSrc) {
-    video.src = versionedVideoSrc
+  } else if (versionedVideoSrc.value) {
+    video.src = versionedVideoSrc.value
   }
 })
 
@@ -57,7 +84,7 @@ onBeforeUnmount(() => {
         kind="subtitles"
         srclang="zh-Hant-TW"
         label="繁體中文（台灣）"
-        :src="subtitleSrc"
+        :src="subtitleTrackSrc"
         default
       >
       你的瀏覽器不支援 HTML5 video。

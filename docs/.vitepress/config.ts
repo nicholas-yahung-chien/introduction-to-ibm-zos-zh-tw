@@ -1,11 +1,17 @@
 import { defineConfig } from 'vitepress'
 
+function normalizeBase(base: string | undefined) {
+  if (!base) return '/introduction-to-ibm-zos-zh-tw/'
+  const withLeadingSlash = base.startsWith('/') ? base : `/${base}`
+  return withLeadingSlash.endsWith('/') ? withLeadingSlash : `${withLeadingSlash}/`
+}
+
 export default defineConfig({
   title: 'Introduction to IBM z/OS',
   description: 'IBM z/OS 入門課程繁體中文化版本',
   lang: 'zh-Hant-TW',
   cleanUrls: true,
-  base: '/introduction-to-ibm-zos-zh-tw/',
+  base: normalizeBase(process.env.VITEPRESS_BASE),
   head: [
     ['meta', { name: 'theme-color', content: '#0f62fe' }],
     ['meta', { property: 'og:title', content: 'Introduction to IBM z/OS 繁體中文化課程' }],
@@ -52,4 +58,3 @@ export default defineConfig({
     }
   }
 })
-
