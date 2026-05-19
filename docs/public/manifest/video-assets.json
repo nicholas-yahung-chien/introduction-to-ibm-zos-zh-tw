@@ -15,7 +15,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_ru7q9spi/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_ru7q9spi/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_ru7q9spi/flavorId/1_3cztliav/format/url/protocol/https/a.mp4",
-    "audioUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_ru7q9spi/flavorId/1_yxsiordi/format/url/protocol/https/a.mp4"
+    "audioUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_ru7q9spi/flavorId/1_yxsiordi/format/url/protocol/https/a.mp4",
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_ru7q9spi/format/applehttp/protocol/https/flavorIds/1_3cztliav/a.m3u8"
   },
   {
     "slug": "computer-architecture",
@@ -31,7 +32,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_vb8qf96d/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_vb8qf96d/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_vb8qf96d/flavorId/1_kgxcdx39/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_vb8qf96d/format/applehttp/protocol/https/flavorIds/1_kgxcdx39/a.m3u8"
   },
   {
     "slug": "mainframe-architecture",
@@ -47,7 +49,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_7e45b5a8/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_7e45b5a8/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_7e45b5a8/flavorId/1_q3shncu3/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_7e45b5a8/format/applehttp/protocol/https/flavorIds/1_q3shncu3/a.m3u8"
   },
   {
     "slug": "virtualization",
@@ -63,7 +66,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1fl2qymd/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1fl2qymd/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1fl2qymd/flavorId/1_83lz1d1d/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1fl2qymd/format/applehttp/protocol/https/flavorIds/1_83lz1d1d/a.m3u8"
   },
   {
     "slug": "what-is-an-operating-system",
@@ -79,7 +83,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_jicvw3wr/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_jicvw3wr/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_jicvw3wr/flavorId/1_ip7hjgt5/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_jicvw3wr/format/applehttp/protocol/https/flavorIds/1_ip7hjgt5/a.m3u8"
   },
   {
     "slug": "mainframe-operating-systems",
@@ -95,7 +100,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_q1drndng/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_q1drndng/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_q1drndng/flavorId/1_twn28fjx/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_q1drndng/format/applehttp/protocol/https/flavorIds/1_twn28fjx/a.m3u8"
   },
   {
     "slug": "why-use-mainframes",
@@ -111,7 +117,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_rqvsd0rw/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_rqvsd0rw/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_rqvsd0rw/flavorId/1_w33vg34n/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_rqvsd0rw/format/applehttp/protocol/https/flavorIds/1_w33vg34n/a.m3u8"
   },
   {
     "slug": "ibm-z-components",
@@ -129,7 +136,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_j4rkx3qu/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_j4rkx3qu/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_j4rkx3qu/flavorId/1_8wauxpza/format/url/protocol/https/a.mp4",
-    "audioUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_j4rkx3qu/flavorId/1_dp921vz3/format/url/protocol/https/a.mp4"
+    "audioUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_j4rkx3qu/flavorId/1_dp921vz3/format/url/protocol/https/a.mp4",
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_j4rkx3qu/format/applehttp/protocol/https/flavorIds/1_8wauxpza/a.m3u8"
   },
   {
     "slug": "mainframe-features",
@@ -147,7 +155,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1v889967/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1v889967/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1v889967/flavorId/1_1jyw68nw/format/url/protocol/https/a.mp4",
-    "audioUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1v889967/flavorId/1_tfzkv2sv/format/url/protocol/https/a.mp4"
+    "audioUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1v889967/flavorId/1_tfzkv2sv/format/url/protocol/https/a.mp4",
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1v889967/format/applehttp/protocol/https/flavorIds/1_1jyw68nw/a.m3u8"
   },
   {
     "slug": "millicode",
@@ -163,7 +172,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_lwog53qm/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_lwog53qm/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_lwog53qm/flavorId/1_enajo5ct/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_lwog53qm/format/applehttp/protocol/https/flavorIds/1_enajo5ct/a.m3u8"
   },
   {
     "slug": "hmc-and-se",
@@ -179,7 +189,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_6kwwnujx/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_6kwwnujx/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_6kwwnujx/flavorId/1_cyp49prd/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_6kwwnujx/format/applehttp/protocol/https/flavorIds/1_cyp49prd/a.m3u8"
   },
   {
     "slug": "sysplex",
@@ -195,7 +206,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_0umo87q5/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_0umo87q5/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_0umo87q5/flavorId/1_1xthdh0p/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_0umo87q5/format/applehttp/protocol/https/flavorIds/1_1xthdh0p/a.m3u8"
   },
   {
     "slug": "zos-security",
@@ -211,7 +223,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_b3hd3sa0/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_b3hd3sa0/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_b3hd3sa0/flavorId/1_k9hmsupt/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_b3hd3sa0/format/applehttp/protocol/https/flavorIds/1_k9hmsupt/a.m3u8"
   },
   {
     "slug": "transaction-level-security",
@@ -227,7 +240,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1ndlj8bd/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1ndlj8bd/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1ndlj8bd/flavorId/1_8nkg34o3/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_1ndlj8bd/format/applehttp/protocol/https/flavorIds/1_8nkg34o3/a.m3u8"
   },
   {
     "slug": "crypto-express-key-management",
@@ -243,7 +257,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_52mzshqn/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_52mzshqn/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_52mzshqn/flavorId/1_z4vfqo6f/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_52mzshqn/format/applehttp/protocol/https/flavorIds/1_z4vfqo6f/a.m3u8"
   },
   {
     "slug": "iocds",
@@ -259,7 +274,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_5hs3mb8z/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_5hs3mb8z/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_5hs3mb8z/flavorId/1_lx1pcn5f/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_5hs3mb8z/format/applehttp/protocol/https/flavorIds/1_lx1pcn5f/a.m3u8"
   },
   {
     "slug": "activation-profiles",
@@ -275,7 +291,8 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_hchvg5wh/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_hchvg5wh/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_hchvg5wh/flavorId/1_rkabadvt/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_hchvg5wh/format/applehttp/protocol/https/flavorIds/1_rkabadvt/a.m3u8"
   },
   {
     "slug": "ipling-an-operating-system",
@@ -291,6 +308,7 @@
     "downloadUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_c1w1vq9x/format/download/protocol/https/flavorParamIds/0",
     "dataUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_c1w1vq9x/format/url/protocol/https",
     "videoUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_c1w1vq9x/flavorId/1_uoy0gqv6/format/url/protocol/https/a.mp4",
-    "audioUrl": null
+    "audioUrl": null,
+    "hlsUrl": "https://cdnapisec.kaltura.com/p/1773841/sp/177384100/playManifest/entryId/1_c1w1vq9x/format/applehttp/protocol/https/flavorIds/1_uoy0gqv6/a.m3u8"
   }
 ]

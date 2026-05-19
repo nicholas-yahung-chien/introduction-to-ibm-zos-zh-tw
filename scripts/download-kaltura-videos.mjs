@@ -70,6 +70,10 @@ function flavorUrl(partnerId, entryId, flavorId) {
   return `https://cdnapisec.kaltura.com/p/${partnerId}/sp/${partnerId}00/playManifest/entryId/${entryId}/flavorId/${flavorId}/format/url/protocol/https/a.mp4`
 }
 
+function hlsUrl(partnerId, entryId, flavorId) {
+  return `https://cdnapisec.kaltura.com/p/${partnerId}/sp/${partnerId}00/playManifest/entryId/${entryId}/format/applehttp/protocol/https/flavorIds/${flavorId}/a.m3u8`
+}
+
 async function getVideoInfo(video) {
   const { partnerId, uiconfId, entryId } = video.kaltura
   const embedUrl = `https://cdnapisec.kaltura.com/p/${partnerId}/sp/${partnerId}00/embedIframeJs/uiconf_id/${uiconfId}/partner_id/${partnerId}?iframeembed=true&playerId=kaltura_player&entry_id=${entryId}&flashvars[localizationCode]=en`
@@ -98,7 +102,8 @@ async function getVideoInfo(video) {
     downloadUrl,
     dataUrl: packageData?.entryResult?.meta?.dataUrl,
     videoUrl: flavor ? flavorUrl(partnerId, entryId, flavor.id) : null,
-    audioUrl: audioFlavor ? flavorUrl(partnerId, entryId, audioFlavor.id) : null
+    audioUrl: audioFlavor ? flavorUrl(partnerId, entryId, audioFlavor.id) : null,
+    hlsUrl: flavor ? hlsUrl(partnerId, entryId, flavor.id) : null
   }
 }
 
@@ -170,22 +175,47 @@ async function downloadWithYtDlp(video, outputPath) {
   })
 }
 
+async function downloadWithFfmpegHls(info, sourceUrl, outputPath) {
+  await new Promise((resolve, reject) => {
+    const ffmpeg = spawn('ffmpeg', [
+      '-y',
+      '-hide_banner',
+      '-loglevel',
+      'warning',
+      '-headers',
+      `Referer: ${sourceUrl}\r\nUser-Agent: Mozilla/5.0\r\n`,
+      '-i',
+      info.hlsUrl,
+      '-map',
+      '0:v:0',
+      '-map',
+      '0:a:0',
+      '-c',
+      'copy',
+      '-movflags',
+      '+faststart',
+      outputPath
+    ], { stdio: 'inherit' })
+    ffmpeg.on('error', reject)
+    ffmpeg.on('exit', (code) => {
+      if (code === 0) resolve()
+      else reject(new Error(`ffmpeg exited with ${code}`))
+    })
+  })
+}
+
 const assets = []
 for (const video of videos) {
   const info = await getVideoInfo(video)
   assets.push(info)
   const target = path.join(mediaDir, `${video.slug}.mp4`)
   console.log(`${dryRun ? '[dry-run] ' : ''}${video.slug}: ${info.width || '?'}x${info.height || '?'} ${info.duration || '?'}s`)
-  if (!dryRun && info.videoUrl && info.audioUrl) {
+  if (!dryRun && info.hlsUrl) {
     if (!force) {
       console.log('  pass --force to download media files; leaving manifest only')
       continue
     }
-    const videoTemp = path.join(tempDir, `${video.slug}.video.mp4`)
-    const audioTemp = path.join(tempDir, `${video.slug}.audio.mp4`)
-    await downloadFile(info.videoUrl, videoTemp, video.sourceUrl)
-    await downloadFile(info.audioUrl, audioTemp, video.sourceUrl)
-    await mergeAudioVideo(videoTemp, audioTemp, target)
+    await downloadWithFfmpegHls(info, video.sourceUrl, target)
     console.log(`  wrote ${path.relative(root, target)}`)
   } else if (!dryRun && info.videoUrl) {
     if (!force) {
