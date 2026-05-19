@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   title: string
   videoSrc?: string
   poster?: string
@@ -7,12 +7,17 @@ defineProps<{
   entryId?: string
   sourceUrl?: string
 }>()
+
+const mediaVersion = 'hls-6e63f37'
+const versionedVideoSrc = props.videoSrc
+  ? `${props.videoSrc}${props.videoSrc.includes('?') ? '&' : '?'}v=${mediaVersion}`
+  : undefined
 </script>
 
 <template>
   <figure class="video-lesson">
     <video controls preload="metadata" :poster="poster">
-      <source v-if="videoSrc" :src="videoSrc" type="video/mp4">
+      <source v-if="versionedVideoSrc" :src="versionedVideoSrc" type="video/mp4">
       <track
         v-if="subtitleSrc"
         kind="subtitles"
@@ -34,4 +39,3 @@ defineProps<{
     </figcaption>
   </figure>
 </template>
-
