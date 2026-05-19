@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+
 const props = defineProps<{
   title: string
   videoSrc?: string
@@ -8,15 +10,47 @@ const props = defineProps<{
   sourceUrl?: string
 }>()
 
-const mediaVersion = 'hls-6e63f37'
+const mediaVersion = 'hls-f6d6b21'
 const versionedVideoSrc = props.videoSrc
   ? `${props.videoSrc}${props.videoSrc.includes('?') ? '&' : '?'}v=${mediaVersion}`
   : undefined
+
+const videoRef = ref<HTMLVideoElement>()
+const hlsSrc = computed(() => {
+  if (!props.videoSrc) return undefined
+  const source = props.videoSrc.split('?')[0]
+  return `${source.replace('/media/', '/hls/').replace(/\.mp4$/, '/index.m3u8')}?v=${mediaVersion}`
+})
+
+let hls: { destroy: () => void } | undefined
+
+onMounted(async () => {
+  const video = videoRef.value
+  if (!video || !hlsSrc.value) return
+
+  if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = hlsSrc.value
+    return
+  }
+
+  const { default: Hls } = await import('hls.js')
+  if (Hls.isSupported()) {
+    hls = new Hls()
+    hls.loadSource(hlsSrc.value)
+    hls.attachMedia(video)
+  } else if (versionedVideoSrc) {
+    video.src = versionedVideoSrc
+  }
+})
+
+onBeforeUnmount(() => {
+  hls?.destroy()
+})
 </script>
 
 <template>
   <figure class="video-lesson">
-    <video controls preload="metadata" :poster="poster">
+    <video ref="videoRef" controls preload="metadata" :poster="poster">
       <source v-if="versionedVideoSrc" :src="versionedVideoSrc" type="video/mp4">
       <track
         v-if="subtitleSrc"
