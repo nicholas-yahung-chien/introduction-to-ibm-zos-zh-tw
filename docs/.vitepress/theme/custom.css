@@ -215,6 +215,10 @@
   color: var(--vp-c-text-1);
 }
 
+.manifest-table a {
+  font-weight: 650;
+}
+
 @media (max-width: 760px) {
   .course-dashboard {
     grid-template-columns: 1fr;

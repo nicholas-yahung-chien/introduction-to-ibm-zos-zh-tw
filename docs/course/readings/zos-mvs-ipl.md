@@ -2,7 +2,7 @@
 
 > 來源活動：https://learn.ibm.com/mod/page/view.php?id=96731
 
-本閱讀頁補充 z/OS MVS 系統初始化邏輯與 IPL 流程。原始課程說明這部分不屬於測驗重點，但若學習者未來要進入 IBM z/OS 相關工作，先理解 IPL logical flow 會很有幫助。
+本閱讀頁補充 z/OS MVS 系統初始化邏輯與 IPL 流程。若學習者未來要進入 IBM z/OS 相關工作，先理解 IPL logical flow 會很有幫助。
 
 ## 學習重點
 

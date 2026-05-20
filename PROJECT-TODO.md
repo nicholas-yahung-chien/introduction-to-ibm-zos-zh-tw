@@ -8,6 +8,15 @@ This file is for project planning only. It should not be linked from the public 
 - Keep public learner pages focused on course content. Avoid publishing implementation notes, deployment notes, scope tradeoffs, or internal TODO text in `docs/`.
 - Exclude forum, certificate, survey, badge claim, and other Moodle workflow features from the static learner experience.
 
+## First Edition Acceptance Checklist
+
+- Public pages should provide learner-facing orientation, unit goals, suggested viewing order, and completion checks.
+- Main course pages should avoid project planning language and should not mention quiz or lab exclusions.
+- Video pages should keep lazy loading enabled so multiple videos on one page do not immediately consume bandwidth.
+- Each video should have a Traditional Chinese subtitle track and a lesson summary.
+- Reading pages should summarize the source activity and explain how learners should use the reference.
+- Before publishing a content update, run the site build, subtitle checks, and a quick public-page text hygiene scan.
+
 ## Future Scope
 
 - Question banks are confirmed as future scope, but not part of the first edition.
