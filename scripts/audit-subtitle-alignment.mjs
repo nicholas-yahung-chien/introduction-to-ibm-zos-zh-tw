@@ -67,8 +67,9 @@ function visualLength(text) {
 
 function normalizedText(text) {
   return text
+    .normalize('NFKC')
     .toLocaleLowerCase()
-    .replace(/[\s，。！？、,.!?;；:："'“”‘’()（）-]/g, '')
+    .replace(/[\p{P}\p{S}\s]/gu, '')
 }
 
 function jaccardLike(a, b) {
@@ -81,7 +82,7 @@ function jaccardLike(a, b) {
 }
 
 function sentenceEndCount(text) {
-  return (text.match(/[。！？.!?]/g) || []).length
+  return (text.match(/[\u3002\uff01\uff1f!?]/g) || []).length
 }
 
 function punctuationOnly(text) {
@@ -169,26 +170,28 @@ for (const video of videos) {
     const zhLength = visualLength(zhCue.text)
     const enLength = visualLength(enCue.text)
     const charsPerSecond = zhCue.duration > 0 ? zhLength / zhCue.duration : 0
-    if (zhLength > 34 || charsPerSecond > 11) {
+    if (charsPerSecond > 11 || (zhLength > 42 && charsPerSecond > 5.5) || zhLength > 64) {
       addIssue(issues, 'medium', 'long_zh_cue', video, zhCue, `ZH length ${zhLength}; ${charsPerSecond.toFixed(1)} chars/sec`, enCue)
     }
     if (enLength > 12 && zhLength <= 2) {
       addIssue(issues, 'medium', 'suspiciously_short_zh_cue', video, zhCue, `EN length ${enLength}; ZH length ${zhLength}`, enCue)
     }
-    if (sentenceEndCount(zhCue.text) >= 2 && zhCue.duration < 4) {
+    if (sentenceEndCount(zhCue.text) >= 2 && zhCue.duration < 4 && sentenceEndCount(zhCue.text) > sentenceEndCount(enCue.text)) {
       addIssue(issues, 'medium', 'possibly_merged_zh_cue', video, zhCue, 'Chinese cue has multiple sentence endings in a short time window', enCue)
     }
 
     const previous = zhCues[index - 1]
     const next = zhCues[index + 1]
-    if (previous && jaccardLike(previous.text, zhCue.text) >= 0.72) {
+    const previousEn = enCues[index - 1]
+    const nextEn = enCues[index + 1]
+    if (previous && jaccardLike(previous.text, zhCue.text) >= 0.72 && (!previousEn || jaccardLike(previousEn.text, enCue.text) < 0.72)) {
       addIssue(issues, 'medium', 'near_duplicate_previous_zh_cue', video, zhCue, `Similar to previous cue ${previous.id}`, enCue)
     }
-    if (next && jaccardLike(next.text, zhCue.text) >= 0.72) {
+    if (next && jaccardLike(next.text, zhCue.text) >= 0.72 && (!nextEn || jaccardLike(nextEn.text, enCue.text) < 0.72)) {
       addIssue(issues, 'low', 'near_duplicate_next_zh_cue', video, zhCue, `Similar to next cue ${next.id}`, enCue)
     }
 
-    const startsWithPunctuation = /^[，。！？、,.!?;；:：]/u.test(zhCue.text)
+    const startsWithPunctuation = /^[\p{P}\p{S}]/u.test(zhCue.text)
     if (startsWithPunctuation) {
       addIssue(issues, 'medium', 'starts_with_punctuation', video, zhCue, 'Chinese cue starts with punctuation', enCue)
     }
