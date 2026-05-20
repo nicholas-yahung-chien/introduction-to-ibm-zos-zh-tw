@@ -8,7 +8,7 @@ const outputDir = path.join(root, 'data', 'subtitle-audit')
 
 const videos = manifest.sections.flatMap((section) =>
   section.activities
-    .filter((activity) => activity.type === 'video' && activity.includeInFirstEdition)
+    .filter((activity) => activity.type === 'video' && activity.includeInFirstEdition !== false)
     .map((activity) => ({
       section: section.titleZh,
       slug: activity.slug,

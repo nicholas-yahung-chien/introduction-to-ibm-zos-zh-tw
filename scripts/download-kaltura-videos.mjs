@@ -13,7 +13,7 @@ const dryRun = process.argv.includes('--dry-run')
 const force = process.argv.includes('--force')
 
 const videos = manifest.sections.flatMap((section) => section.activities
-  .filter((activity) => activity.type === 'video' && activity.includeInFirstEdition)
+  .filter((activity) => activity.type === 'video' && activity.includeInFirstEdition !== false)
   .map((activity) => ({ section: section.slug, ...activity })))
 
 function extractKalturaPackage(html) {

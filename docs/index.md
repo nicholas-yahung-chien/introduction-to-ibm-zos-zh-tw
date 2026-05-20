@@ -13,10 +13,9 @@ hero:
       link: /videos/
 features:
   - title: 18 支影片
-    details: 以授權 MP4 搭配 zh-Hant-TW WebVTT 字幕，適合靜態網站與 GitHub Pages。
+    details: 課程影片搭配 zh-Hant-TW WebVTT 字幕與繁體中文學習摘要。
   - title: 台灣用語
     details: 以 IBM Z 詞彙表為基礎，補上課程一致的繁體中文譯名與審稿狀態。
-  - title: 可審核來源
-    details: 保留 Learn activity URL、Kaltura entry ID 與素材處理 manifest。
+  - title: 學習脈絡
+    details: 從大型主機環境、基礎架構、安全到 IPL 流程，循序建立 z/OS 入門概念。
 ---
-

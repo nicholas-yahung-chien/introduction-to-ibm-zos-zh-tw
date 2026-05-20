@@ -4,7 +4,6 @@ import { findDebugPage, evaluateInPage } from './cdp-client.mjs'
 
 const root = process.cwd()
 const outputDir = path.join(root, 'data', 'captured')
-const publicManifestDir = path.join(root, 'docs', 'public', 'manifest')
 
 const expression = String.raw`(async () => {
   const clean = (value) => (value || '').replace(/\s+/g, ' ').trim()
@@ -98,13 +97,11 @@ const expression = String.raw`(async () => {
 })()`
 
 await mkdir(outputDir, { recursive: true })
-await mkdir(publicManifestDir, { recursive: true })
 
 const page = await findDebugPage((candidate) => candidate.url.includes('learn.ibm.com/course/view.php?id=6815'))
 const capture = await evaluateInPage(page, expression)
 
 await writeFile(path.join(outputDir, 'course-capture.json'), JSON.stringify(capture, null, 2), 'utf8')
-await writeFile(path.join(publicManifestDir, 'course-capture.json'), JSON.stringify(capture, null, 2), 'utf8')
 
 for (const pageCapture of capture.pages) {
   const slug = pageCapture.sourceUrl.match(/id=(\d+)/)?.[1] || pageCapture.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')
@@ -113,4 +110,4 @@ for (const pageCapture of capture.pages) {
 }
 
 console.log(`Captured ${capture.sections.length} sections and ${capture.pages.length} page/H5P activities.`)
-console.log(`Wrote ${path.relative(root, outputDir)} and ${path.relative(root, publicManifestDir)}.`)
+console.log(`Wrote ${path.relative(root, outputDir)}.`)

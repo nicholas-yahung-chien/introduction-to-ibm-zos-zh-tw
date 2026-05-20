@@ -5,18 +5,11 @@ const sections = manifest.sections
 
 const typeLabels: Record<string, string> = {
   video: '影片',
-  page: '閱讀頁',
-  quiz: '題庫',
-  hvp: '互動 / Lab',
-  lab: 'Lab'
+  page: '閱讀頁'
 }
 
 function typeLabel(type: string) {
   return typeLabels[type] || type
-}
-
-function statusLabel(includeInFirstEdition: boolean) {
-  return includeInFirstEdition ? '第一版納入' : '後續版本'
 }
 </script>
 
@@ -27,7 +20,6 @@ function statusLabel(includeInFirstEdition: boolean) {
         <th>單元</th>
         <th>活動</th>
         <th>類型</th>
-        <th>範圍</th>
       </tr>
     </thead>
     <tbody>
@@ -39,7 +31,6 @@ function statusLabel(includeInFirstEdition: boolean) {
             <small>{{ activity.title }}</small>
           </td>
           <td>{{ typeLabel(activity.type) }}</td>
-          <td>{{ statusLabel(activity.includeInFirstEdition) }}</td>
         </tr>
       </template>
     </tbody>

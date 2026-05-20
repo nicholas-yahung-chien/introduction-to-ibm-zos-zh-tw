@@ -1,12 +1,10 @@
-# 授權備註
+# 授權資訊
 
-本頁摘要專案根目錄的授權與公開前審核要求。
+本教材整理自 IBM Learn 課程 `Introduction to IBM z/OS / DL10999G`，作為台灣繁體中文化學習版本。
 
 - 課程來源：IBM Learn `Introduction to IBM z/OS / DL10999G`
-- 第一版納入影片、中文字幕、繁體中文摘要、靜態閱讀頁與詞彙表
-- 題庫確認納入後續版本規劃，但第一版不公開 checkpoint quiz、badge quiz 或答案內容
-- Lab 實作、H5P 互動內容、forum、certificate、survey、badge claim 不納入第一版
-- 影片以 IBM 授權範圍內下載的 MP4 搭配 WebVTT 字幕發布
-- 正式公開前需完成 IBM 台灣授權與用語審核
+- 課程網址：https://learn.ibm.com/course/view.php?id=6815
+- 影片搭配 `zh-Hant-TW` WebVTT 字幕提供
+- 詞彙表與教材用語以 IBM Z 相關術語為基礎整理
 
-詳見專案根目錄 `LICENSE-NOTES.md`。
+授權與使用範圍請依 IBM 課程授權與內部審核結果為準。

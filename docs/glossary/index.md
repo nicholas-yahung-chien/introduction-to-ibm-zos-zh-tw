@@ -1,6 +1,6 @@
 # IBM Z 詞彙表
 
-本區匯入自本機 `zOSv3R1-migration-planning/docs/01-concepts/ibm-z-glossary`，並保留原始繁體中文解釋。
+本區整理 IBM Z 與 z/OS 學習過程中常見的英文術語與繁體中文解釋。
 
 ## 依字母查詢
 
@@ -29,4 +29,3 @@
 - [W](./w)
 - [X](./x)
 - [Z](./z)
-

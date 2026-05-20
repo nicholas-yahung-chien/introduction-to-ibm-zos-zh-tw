@@ -23,7 +23,7 @@ export default defineConfig({
       { text: '課程', link: '/course/' },
       { text: '影片', link: '/videos/' },
       { text: '詞彙表', link: '/glossary/' },
-      { text: '授權備註', link: '/license-notes' }
+      { text: '授權資訊', link: '/license-notes' }
     ],
     sidebar: [
       {
@@ -42,7 +42,7 @@ export default defineConfig({
           { text: '影片總覽', link: '/videos/' },
           { text: '詞彙表', link: '/glossary/' },
           { text: '審稿清單', link: '/glossary/review' },
-          { text: '授權備註', link: '/license-notes' }
+          { text: '授權資訊', link: '/license-notes' }
         ]
       }
     ],

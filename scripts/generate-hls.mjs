@@ -9,7 +9,7 @@ const hlsRoot = path.join(root, 'docs', 'public', 'hls')
 const force = process.argv.includes('--force')
 
 const videos = manifest.sections.flatMap((section) => section.activities
-  .filter((activity) => activity.type === 'video' && activity.includeInFirstEdition))
+  .filter((activity) => activity.type === 'video' && activity.includeInFirstEdition !== false))
 
 async function runFfmpeg(input, outputDir) {
   await mkdir(outputDir, { recursive: true })

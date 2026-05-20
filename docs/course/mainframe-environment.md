@@ -33,7 +33,3 @@
 ## 閱讀材料
 
 - [深入認識 z/OS](./readings/diving-deeper-into-zos)
-
-## 延後項目
-
-本章的 Checkpoint 題庫會納入後續版本，不在第一版公開內容範圍內。

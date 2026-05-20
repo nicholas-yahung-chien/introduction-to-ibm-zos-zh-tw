@@ -5,12 +5,7 @@
     "title": "Introduction to IBM z/OS",
     "locale": "zh-Hant-TW",
     "sourceUrl": "https://learn.ibm.com/course/view.php?id=6815",
-    "capturedAt": "2026-05-19T00:00:00+08:00",
-    "firstEditionScope": {
-      "include": ["video", "page"],
-      "exclude": ["quiz", "hvp", "lab", "forum", "certificate", "questionnaire", "badge-claim"],
-      "future": ["checkpoint-question-bank", "badge-quiz", "lab-and-interactive-content"]
-    }
+    "capturedAt": "2026-05-19T00:00:00+08:00"
   },
   "sections": [
     {
@@ -28,8 +23,7 @@
             "partnerId": "1773841",
             "uiconfId": "27941801",
             "entryId": "1_ru7q9spi"
-          },
-          "includeInFirstEdition": true
+          }
         }
       ]
     },
@@ -48,8 +42,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_vb8qf96d"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -61,8 +54,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_7e45b5a8"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -74,8 +66,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_1fl2qymd"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -87,8 +78,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_jicvw3wr"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -100,24 +90,14 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_q1drndng"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "page",
           "slug": "diving-deeper-into-zos",
           "title": "Diving deeper into z/OS",
           "titleZh": "深入認識 z/OS",
-          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96087",
-          "includeInFirstEdition": true
-        },
-        {
-          "type": "quiz",
-          "slug": "checkpoint-1",
-          "title": "Checkpoint 1",
-          "titleZh": "Checkpoint 1 題庫",
-          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
-          "includeInFirstEdition": false
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96087"
         }
       ]
     },
@@ -136,8 +116,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_rqvsd0rw"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -149,8 +128,7 @@
             "partnerId": "1773841",
             "uiconfId": "27941801",
             "entryId": "1_j4rkx3qu"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -162,16 +140,14 @@
             "partnerId": "1773841",
             "uiconfId": "27941801",
             "entryId": "1_1v889967"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "page",
           "slug": "ibm-z-configuration-setup",
           "title": "IBM Z Configuration Setup",
           "titleZh": "IBM Z 組態設定",
-          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96630",
-          "includeInFirstEdition": true
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96630"
         },
         {
           "type": "video",
@@ -183,8 +159,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_lwog53qm"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -196,8 +171,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_6kwwnujx"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -209,24 +183,14 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_0umo87q5"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "page",
           "slug": "ibm-z-glossary",
           "title": "A complete IBM Z Glossary of Terms",
           "titleZh": "IBM Z 完整詞彙表",
-          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96632",
-          "includeInFirstEdition": true
-        },
-        {
-          "type": "quiz",
-          "slug": "checkpoint-2",
-          "title": "Checkpoint 2",
-          "titleZh": "Checkpoint 2 題庫",
-          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
-          "includeInFirstEdition": false
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96632"
         }
       ]
     },
@@ -245,16 +209,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_b3hd3sa0"
-          },
-          "includeInFirstEdition": true
-        },
-        {
-          "type": "hvp",
-          "slug": "security-addendum",
-          "title": "Security Addendum",
-          "titleZh": "安全補充內容",
-          "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=129741",
-          "includeInFirstEdition": false
+          }
         },
         {
           "type": "video",
@@ -266,8 +221,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_1ndlj8bd"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -279,8 +233,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_52mzshqn"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -292,8 +245,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_5hs3mb8z"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -305,8 +257,7 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_hchvg5wh"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "video",
@@ -318,32 +269,14 @@
             "partnerId": "1773841",
             "uiconfId": "39954662",
             "entryId": "1_c1w1vq9x"
-          },
-          "includeInFirstEdition": true
+          }
         },
         {
           "type": "page",
           "slug": "zos-mvs-ipl",
           "title": "z/OS MVS System Initialization Logic Initial Program Load (IPL)",
           "titleZh": "z/OS MVS 系統初始化邏輯與初始程式載入 (IPL)",
-          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96731",
-          "includeInFirstEdition": true
-        },
-        {
-          "type": "quiz",
-          "slug": "checkpoint-3",
-          "title": "Checkpoint 3",
-          "titleZh": "Checkpoint 3 題庫",
-          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
-          "includeInFirstEdition": false
-        },
-        {
-          "type": "quiz",
-          "slug": "badge-quiz",
-          "title": "Badge quiz",
-          "titleZh": "Badge quiz 題庫",
-          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
-          "includeInFirstEdition": false
+          "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96731"
         }
       ]
     }

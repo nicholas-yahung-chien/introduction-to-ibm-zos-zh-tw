@@ -1,6 +1,6 @@
 # 大型主機安全
 
-本單元介紹 z/OS 安全概念、交易層級安全、Crypto Express、IOCDS、啟動設定檔與 IPL 流程。第一版先整理影片與閱讀材料；Lab 實作與 H5P 互動內容暫不納入。
+本單元介紹 z/OS 安全概念、交易層級安全、Crypto Express、IOCDS、啟動設定檔與 IPL 流程。
 
 ## 本章目標
 
@@ -37,8 +37,3 @@
 ## 閱讀材料
 
 - [z/OS MVS 系統初始化邏輯與 IPL](./readings/zos-mvs-ipl)
-
-## 延後項目
-
-- Security Addendum 屬於 H5P 互動內容，視為 Lab/互動教材候選項目，第一版不靜態化。
-- 本章 Checkpoint 題庫與 Badge quiz 會納入後續版本規劃，不在第一版公開內容範圍內。

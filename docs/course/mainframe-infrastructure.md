@@ -38,7 +38,3 @@
 
 - [IBM Z 組態設定](./readings/ibm-z-configuration-setup)
 - [IBM Z 完整詞彙表](../glossary/)
-
-## 延後項目
-
-本章的 Checkpoint 題庫會納入後續版本，不在第一版公開內容範圍內。

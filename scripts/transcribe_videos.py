@@ -34,7 +34,7 @@ def included_videos():
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     for section in manifest["sections"]:
         for activity in section["activities"]:
-            if activity.get("type") == "video" and activity.get("includeInFirstEdition"):
+            if activity.get("type") == "video" and activity.get("includeInFirstEdition") is not False:
                 yield section, activity
 
 
@@ -94,4 +94,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

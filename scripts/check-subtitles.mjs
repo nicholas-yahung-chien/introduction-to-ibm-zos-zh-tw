@@ -4,7 +4,7 @@ import path from 'node:path'
 const root = process.cwd()
 const manifest = JSON.parse(await readFile(path.join(root, 'data', 'course-manifest.json'), 'utf8'))
 const subtitlesDir = path.join(root, 'docs', 'public', 'subtitles')
-const videos = manifest.sections.flatMap((section) => section.activities.filter((activity) => activity.type === 'video' && activity.includeInFirstEdition))
+const videos = manifest.sections.flatMap((section) => section.activities.filter((activity) => activity.type === 'video' && activity.includeInFirstEdition !== false))
 
 const missing = []
 const emptyCues = []

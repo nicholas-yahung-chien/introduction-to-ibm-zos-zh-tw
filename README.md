@@ -1,13 +1,13 @@
-# Introduction to IBM z/OS 繁體中文化課程
+# Introduction to IBM z/OS 台灣繁體中文課程
 
-這個專案用 VitePress 建置 IBM 授權課程 **Introduction to IBM z/OS / DL10999G** 的台灣繁體中文靜態版本。
+這個 repository 使用 VitePress 建置 IBM 授權課程 **Introduction to IBM z/OS / DL10999G** 的台灣繁體中文化靜態教材。
 
-第一版範圍：
+目前內容包含：
 
-- 課程章節與閱讀頁內容繁體中文化
-- 18 支課程影片，採自管 HLS + `zh-Hant-TW.vtt` 網頁字幕 track
-- IBM Z 詞彙表匯入與課程用語一致化
-- 排除 quiz、forum、certificate、survey 與 badge claim
+- 課程章節頁、閱讀頁與影片摘要
+- 18 支課程影片的 HLS 版本與 `zh-Hant-TW.vtt` 網頁字幕 track
+- IBM Z 詞彙表與審稿清單
+- Learn activity URL、Kaltura entry ID 與素材處理 manifest
 
 ## 開發
 
@@ -16,26 +16,25 @@ npm install
 npm run dev
 ```
 
-## 建置與部署
+## 建置
 
 ```powershell
 npm run build:github
 npm run build:cloudflare
 ```
 
-GitHub Pages 使用 `/introduction-to-ibm-zos-zh-tw/` base；Cloudflare Pages 使用 `/` base。Cloudflare Pages 的建議設定請參考 [docs/deploy-cloudflare.md](./docs/deploy-cloudflare.md)。
+GitHub Pages 使用 `/introduction-to-ibm-zos-zh-tw/` base；Cloudflare Pages 使用 `/` base。內部規劃、部署筆記與後續 TODO 請見本地端 `PROJECT-TODO.md`。
 
-## 重要素材
-
-授權下載的 MP4 會先放在 `media/` 或 `docs/public/media/`，再轉為 `docs/public/hls/` 供靜態站播放。HLS segment 以 Git LFS 追蹤。
+## 素材處理
 
 ```powershell
 npm run capture:course
 npm run glossary:import
 npm run download:videos -- --dry-run
 npm run subtitles:check
+npm run subtitles:audit
 ```
 
-## 授權備註
+## 授權
 
-請參考 [LICENSE-NOTES.md](./LICENSE-NOTES.md)。正式公開前，需由 IBM 台灣確認課程內容、影片、字幕與詞彙整理的公開授權範圍。
+授權與使用範圍請依 IBM 課程授權與內部審核結果為準。詳細授權備註請見 `LICENSE-NOTES.md`。
