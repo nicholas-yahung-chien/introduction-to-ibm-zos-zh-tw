@@ -57,7 +57,7 @@ npm run subtitles:audit
 - GitHub Pages uses `/introduction-to-ibm-zos-zh-tw/` as the VitePress base.
 - Cloudflare Pages uses `/` as the VitePress base.
 - Release checks are documented in `RELEASE-CHECKLIST.md`.
-- GitHub Actions uses `npm ci`, Node.js 22 for project builds, and opts action runtime into Node 24 with `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24`.
+- GitHub Actions uses `npm ci`, Node.js 22 for project builds, current Node 24-compatible action versions, and `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24`.
 - Suggested Cloudflare Pages settings:
   - Repository: `nicholas-yahung-chien/introduction-to-ibm-zos-zh-tw`
   - Production branch: `main`
