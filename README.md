@@ -19,11 +19,14 @@ npm run dev
 ## 建置
 
 ```powershell
+npm run verify:release
 npm run build:github
 npm run build:cloudflare
 ```
 
 GitHub Pages 使用 `/introduction-to-ibm-zos-zh-tw/` base；Cloudflare Pages 使用 `/` base。內部規劃、部署筆記與後續 TODO 請見本地端 `PROJECT-TODO.md`。
+
+發布前檢查請見 `RELEASE-CHECKLIST.md`。
 
 影片 HLS 媒體由獨立 Cloudflare Pages 專案提供：`https://introduction-to-ibm-zos-media.pages.dev`。建置腳本會透過 `VITE_MEDIA_BASE_URL` 指向該媒體站，避免 GitHub Actions 下載 Git LFS 媒體物件。
 
