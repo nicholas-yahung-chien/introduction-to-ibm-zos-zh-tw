@@ -1,0 +1,108 @@
+[
+  {
+    "id": "mainframe-environment-001",
+    "section": "大型主機環境",
+    "lessonSlug": "virtualization",
+    "lessonTitle": "虛擬化",
+    "sourceType": "video-derived",
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=95225",
+    "prompt": "在 IBM Z 中，LPAR 的主要用途是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "把一台實體大型主機分割成多個彼此隔離、可獨立執行作業系統的邏輯分割區。"
+      },
+      {
+        "id": "b",
+        "text": "只用來備份 COBOL 原始程式，和執行環境無關。"
+      },
+      {
+        "id": "c",
+        "text": "把所有處理器資源鎖定給單一應用程式使用。"
+      },
+      {
+        "id": "d",
+        "text": "取代 HMC，直接作為硬體操作介面。"
+      }
+    ],
+    "correctChoiceId": "a",
+    "explanation": "LPAR 是 IBM Z 虛擬化的核心概念之一，可將同一台實體系統切分成多個隔離的邏輯環境，讓不同作業系統或工作負載獨立運作。",
+    "review": {
+      "label": "複習：虛擬化",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_1fl2qymd",
+      "hint": "回到「虛擬化」影片，留意 LPAR 如何把實體資源轉成可管理的邏輯環境。"
+    }
+  },
+  {
+    "id": "mainframe-infrastructure-001",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "hmc-and-se",
+    "lessonTitle": "HMC 與 SE",
+    "sourceType": "video-derived",
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=96597",
+    "prompt": "HMC 在 IBM Z 環境中的主要角色是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "提供集中式硬體管理入口，用來管理、監控與操作 IBM Z 系統。"
+      },
+      {
+        "id": "b",
+        "text": "編譯大型主機上的 COBOL 應用程式。"
+      },
+      {
+        "id": "c",
+        "text": "取代 Sysplex，負責跨系統資料同步。"
+      },
+      {
+        "id": "d",
+        "text": "只負責儲存一般使用者的登入密碼。"
+      }
+    ],
+    "correctChoiceId": "a",
+    "explanation": "HMC 是 Hardware Management Console，用來提供 IBM Z 硬體與系統的集中管理能力；SE 則是和單一系統更直接相關的支援元件。",
+    "review": {
+      "label": "複習：HMC 與 SE",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_6kwwnujx",
+      "hint": "回到「HMC 與 SE」影片，留意 HMC 與 Support Element 的管理層級差異。"
+    }
+  },
+  {
+    "id": "mainframe-security-001",
+    "section": "大型主機安全",
+    "lessonSlug": "transaction-level-security",
+    "lessonTitle": "交易層級安全",
+    "sourceType": "video-interaction-derived",
+    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=96603",
+    "sourceTimeRange": "00:02:41.830-00:04:46.950",
+    "prompt": "依照「交易層級安全」影片脈絡，CPACF 與 Crypto Express 對 IBM Z 安全性的共同價值是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "提供硬體層級的加密與金鑰保護能力，協助降低敏感資料暴露風險。"
+      },
+      {
+        "id": "b",
+        "text": "把所有 LPAR 合併成單一不分隔的執行環境。"
+      },
+      {
+        "id": "c",
+        "text": "讓 z/OS 自動改寫 Linux 應用程式。"
+      },
+      {
+        "id": "d",
+        "text": "只用來產生課程影片的中文字幕。"
+      }
+    ],
+    "correctChoiceId": "a",
+    "explanation": "影片說明 CPACF 與 Crypto Express 都和加密能力相關；前者提供處理器層級加密支援，後者則提供更進階的硬體安全與金鑰管理能力。",
+    "review": {
+      "label": "複習：交易層級安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_1ndlj8bd",
+      "hint": "回到「交易層級安全」影片約 03:34 之後，複習 CPACF 與 Crypto Express 的角色。"
+    }
+  }
+]

@@ -12,6 +12,7 @@ rg -n "TODO|待補|等待課程|等待.*補|第一版|未納入|不納入|題庫
 
 - Confirm `npm run verify:release` completes successfully.
 - Confirm the public-page hygiene scan returns no project planning or deployment notes.
+- Confirm practice question edits pass `npm run practice:check`; this is included in `npm run verify:release`.
 - Run `npm run subtitles:wrap` before verification after editing subtitle text.
 - If subtitles changed, also run `npm run subtitles:audit` and inspect the generated report.
 - If video HLS assets changed, redeploy `docs/public` to the media Pages project before publishing the course site.

@@ -38,7 +38,7 @@ The practice page should communicate by behavior, not by exam language. Avoid la
 
 ## Recommended Data Shape
 
-Store question data outside Vue components, likely as `data/practice-questions.json`.
+Store question data outside Vue components in `data/practice-questions.json`. Track source activities and capture status in `data/practice-sources.json`.
 
 ```json
 [
@@ -75,6 +75,8 @@ Store question data outside Vue components, likely as `data/practice-questions.j
 
 In-video or between-video short questions should be recorded with the closest source activity, source video, or course section.
 
+The initial source inventory is stored in `data/practice-sources.json`. The initial practice data intentionally includes only video-derived questions; IBM Learn quiz items remain marked for authorized capture.
+
 ## Implementation Plan
 
 1. Confirm authorization for using quiz and interaction question text in the static course site.
@@ -83,6 +85,7 @@ In-video or between-video short questions should be recorded with the closest so
 4. Add a Vue component for local, non-persistent answer selection.
 5. Add the practice page to navigation only after content authorization and QA are complete.
 6. Run `npm run verify:release`.
+7. Run `npm run practice:check` whenever practice data changes.
 
 ## QA Checklist
 

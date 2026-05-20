@@ -22,6 +22,7 @@ This file is for project planning only. It should not be linked from the public 
 ## Future Scope
 
 - Practice-question requirements are specified in `SECOND-PHASE-PRACTICE-SPEC.md`.
+- Practice-question source inventory is stored in `data/practice-sources.json`; initial video-derived practice items are stored in `data/practice-questions.json`.
 - Question banks are confirmed as future scope, but not part of the first edition.
 - Future quiz work needs a separate plan for authorization, question presentation, answer visibility, scoring, validation workflow, and whether the static site should host questions at all.
 - Known quiz activities:
