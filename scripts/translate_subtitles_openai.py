@@ -93,6 +93,13 @@ def align_translations(cues, result):
     raise ValueError(f"Translation response did not include all cues; missing ids: {missing[:8]}")
 
 
+def validate_translations(translations):
+    empty = [index for index, text in enumerate(translations) if not str(text).strip()]
+    if empty:
+        raise ValueError(f"Translation response included empty subtitles for ids: {empty[:8]}")
+    return translations
+
+
 def translate_cues(client, model: str, glossary: str, cues):
     request = {
         "glossary": glossary,
@@ -125,7 +132,7 @@ def translate_cues(client, model: str, glossary: str, cues):
             ]
         )
         try:
-            return align_translations(cues, parse_json_array(response.output_text))
+            return validate_translations(align_translations(cues, parse_json_array(response.output_text)))
         except (json.JSONDecodeError, ValueError) as exc:
             last_error = exc
             print(f"retrying chunk after malformed response (attempt {attempt}/3): {exc}", flush=True)
