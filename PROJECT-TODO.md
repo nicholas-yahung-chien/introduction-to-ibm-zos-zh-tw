@@ -4,6 +4,7 @@ This file is for project planning only. It should not be linked from the public 
 
 ## First Edition Scope
 
+- First-edition signoff is recorded in `FIRST-EDITION-SIGNOFF.md`.
 - Include course videos, Traditional Chinese subtitles, lesson summaries, static reading pages, and the IBM Z glossary.
 - Glossary terms have been confirmed and the current translations can be used as-is for the first edition.
 - Keep public learner pages focused on course content. Avoid publishing implementation notes, deployment notes, scope tradeoffs, or internal TODO text in `docs/`.
@@ -20,6 +21,7 @@ This file is for project planning only. It should not be linked from the public 
 
 ## Future Scope
 
+- Practice-question requirements are specified in `SECOND-PHASE-PRACTICE-SPEC.md`.
 - Question banks are confirmed as future scope, but not part of the first edition.
 - Future quiz work needs a separate plan for authorization, question presentation, answer visibility, scoring, validation workflow, and whether the static site should host questions at all.
 - Known quiz activities:
@@ -30,6 +32,7 @@ This file is for project planning only. It should not be linked from the public 
 
 ## Lab and Interactive Content
 
+- Lab handling requirements are specified in `SECOND-PHASE-LABS-SPEC.md`.
 - Lab-style activities and H5P interactive content are not part of the first edition.
 - Security Addendum is currently represented in the manifest as future scope:
   - `https://learn.ibm.com/mod/hvp/view.php?id=129741`
