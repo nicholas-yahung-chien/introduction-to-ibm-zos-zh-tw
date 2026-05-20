@@ -12,10 +12,11 @@ const props = defineProps<{
 }>()
 
 const mediaVersion = 'hls-f6d6b21'
+const subtitleVersion = 'subtitles-c6aa9c9'
 const mediaBaseUrl = import.meta.env.VITE_MEDIA_BASE_URL?.replace(/\/$/, '')
 
-function appendVersion(src: string) {
-  return `${src}${src.includes('?') ? '&' : '?'}v=${mediaVersion}`
+function appendVersion(src: string, version = mediaVersion) {
+  return `${src}${src.includes('?') ? '&' : '?'}v=${version}`
 }
 
 function isAbsoluteUrl(src: string) {
@@ -38,7 +39,7 @@ const versionedVideoSrc = computed(() => {
 
 const subtitleTrackSrc = computed(() => {
   if (!props.subtitleSrc) return undefined
-  return siteAsset(props.subtitleSrc)
+  return appendVersion(siteAsset(props.subtitleSrc), subtitleVersion)
 })
 
 const videoRef = ref<HTMLVideoElement>()
