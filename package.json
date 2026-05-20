@@ -17,7 +17,8 @@
     "subtitles:transcribe": "python scripts/transcribe_videos.py",
     "subtitles:translate": "python scripts/translate_subtitles_openai.py",
     "subtitles:translate:local": "python scripts/translate_subtitles_local.py",
-    "subtitles:check": "node scripts/check-subtitles.mjs"
+    "subtitles:check": "node scripts/check-subtitles.mjs",
+    "subtitles:audit": "node scripts/audit-subtitle-alignment.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^6.0.0",
