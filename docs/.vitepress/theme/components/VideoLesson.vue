@@ -12,7 +12,7 @@ const props = defineProps<{
 }>()
 
 const mediaVersion = 'hls-f6d6b21'
-const subtitleVersion = 'subtitles-semantic-sweep'
+const subtitleVersion = 'subtitles-quality-wrap'
 const mediaBaseUrl = import.meta.env.VITE_MEDIA_BASE_URL?.replace(/\/$/, '')
 
 function appendVersion(src: string, version = mediaVersion) {

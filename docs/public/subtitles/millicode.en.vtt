@@ -2,7 +2,7 @@ WEBVTT
 
 1
 00:00:03.310 --> 00:00:08.670
-Hi, I'm Brunchandama. I'm a lead design engineer walking on Millicoat. So what is Millicoat?
+Hi, I'm Brunchandama. I'm a lead design engineer working on Millicode. So what is Millicode?
 
 2
 00:00:08.670 --> 00:00:18.270
@@ -38,7 +38,7 @@ that we introduced 10 years ago, functionally it does the same thing, but microa
 
 10
 00:00:53.590 --> 00:00:59.110
-really how we get to that answer is very different. And in Millicoat, we make those changes so
+really how we get to that answer is very different. And in Millicode, we make those changes so
 
 11
 00:00:59.110 --> 00:01:03.110
@@ -50,7 +50,7 @@ In addition to the instruction set, the implemented instruction set on the princ
 
 13
 00:01:10.310 --> 00:01:17.430
-Millicoat is also involved in a few other key aspects of IBMC. We do system initialization,
+Millicode is also involved in a few other key aspects of IBM Z. We do system initialization,
 
 14
 00:01:17.430 --> 00:01:22.710
@@ -58,7 +58,7 @@ which basically means you pull an on the system, going to the IML steps, initial
 
 15
 00:01:22.790 --> 00:01:29.190
-that's IML. Millicoat is involved with virtualization. So you have a single resource, a system,
+that's IML. Millicode is involved with virtualization. So you have a single resource, a system,
 
 16
 00:01:29.190 --> 00:01:33.270
@@ -70,11 +70,11 @@ in each partition. For that, to be possible, you need an instruction that's call
 
 18
 00:01:38.470 --> 00:01:43.270
-psi or start interpretive execution, and that instruction is implemented in Millicoat.
+SIE or start interpretive execution, and that instruction is implemented in Millicode.
 
 19
 00:01:43.270 --> 00:01:48.150
-So that's Millicoat in a nutshell. As you can see, the things that we do on the system is
+So that's Millicode in a nutshell. As you can see, the things that we do on the system is
 
 20
 00:01:48.150 --> 00:01:55.190
@@ -82,4 +82,4 @@ important, especially for recovery, for availability, and for serviceability. I'
 
 21
 00:01:55.190 --> 00:02:06.790
-my work in Millicoat, and it's been fun joining so far. Thank you.
+my work in Millicode, and it's been fun joining so far. Thank you.

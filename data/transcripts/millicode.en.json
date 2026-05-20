@@ -7,7 +7,7 @@
     {
       "start": 3.31,
       "end": 8.67,
-      "text": "Hi, I'm Brunchandama. I'm a lead design engineer walking on Millicoat. So what is Millicoat?"
+      "text": "Hi, I'm Brunchandama. I'm a lead design engineer working on Millicode. So what is Millicode?"
     },
     {
       "start": 8.67,
@@ -52,7 +52,7 @@
     {
       "start": 53.59,
       "end": 59.11,
-      "text": "really how we get to that answer is very different. And in Millicoat, we make those changes so"
+      "text": "really how we get to that answer is very different. And in Millicode, we make those changes so"
     },
     {
       "start": 59.11,
@@ -67,7 +67,7 @@
     {
       "start": 70.31,
       "end": 77.43,
-      "text": "Millicoat is also involved in a few other key aspects of IBMC. We do system initialization,"
+      "text": "Millicode is also involved in a few other key aspects of IBM Z. We do system initialization,"
     },
     {
       "start": 77.43,
@@ -77,7 +77,7 @@
     {
       "start": 82.79,
       "end": 89.19,
-      "text": "that's IML. Millicoat is involved with virtualization. So you have a single resource, a system,"
+      "text": "that's IML. Millicode is involved with virtualization. So you have a single resource, a system,"
     },
     {
       "start": 89.19,
@@ -92,12 +92,12 @@
     {
       "start": 98.47,
       "end": 103.27,
-      "text": "psi or start interpretive execution, and that instruction is implemented in Millicoat."
+      "text": "SIE or start interpretive execution, and that instruction is implemented in Millicode."
     },
     {
       "start": 103.27,
       "end": 108.15,
-      "text": "So that's Millicoat in a nutshell. As you can see, the things that we do on the system is"
+      "text": "So that's Millicode in a nutshell. As you can see, the things that we do on the system is"
     },
     {
       "start": 108.15,
@@ -107,7 +107,7 @@
     {
       "start": 115.19,
       "end": 126.79,
-      "text": "my work in Millicoat, and it's been fun joining so far. Thank you."
+      "text": "my work in Millicode, and it's been fun joining so far. Thank you."
     }
   ]
 }
