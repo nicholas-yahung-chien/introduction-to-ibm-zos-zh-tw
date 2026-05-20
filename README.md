@@ -6,7 +6,7 @@
 
 - 課程章節頁、閱讀頁與影片摘要
 - 18 支課程影片的外部 HLS 媒體與 `zh-Hant-TW.vtt` 網頁字幕 track
-- IBM Z 詞彙表與審稿清單
+- IBM Z 詞彙表
 - Learn activity URL、Kaltura entry ID 與素材處理 manifest
 
 ## 開發

@@ -41,7 +41,6 @@ export default defineConfig({
         items: [
           { text: '影片總覽', link: '/videos/' },
           { text: '詞彙表', link: '/glossary/' },
-          { text: '審稿清單', link: '/glossary/review' },
           { text: '授權資訊', link: '/license-notes' }
         ]
       }

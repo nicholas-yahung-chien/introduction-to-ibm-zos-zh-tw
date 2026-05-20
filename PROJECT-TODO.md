@@ -5,6 +5,7 @@ This file is for project planning only. It should not be linked from the public 
 ## First Edition Scope
 
 - Include course videos, Traditional Chinese subtitles, lesson summaries, static reading pages, and the IBM Z glossary.
+- Glossary terms have been confirmed and the current translations can be used as-is for the first edition.
 - Keep public learner pages focused on course content. Avoid publishing implementation notes, deployment notes, scope tradeoffs, or internal TODO text in `docs/`.
 - Exclude forum, certificate, survey, badge claim, and other Moodle workflow features from the static learner experience.
 
@@ -20,7 +21,7 @@ This file is for project planning only. It should not be linked from the public 
 ## Future Scope
 
 - Question banks are confirmed as future scope, but not part of the first edition.
-- Future quiz work needs a separate plan for authorization, question presentation, answer visibility, scoring, review workflow, and whether the static site should host questions at all.
+- Future quiz work needs a separate plan for authorization, question presentation, answer visibility, scoring, validation workflow, and whether the static site should host questions at all.
 - Known quiz activities:
   - Checkpoint 1: `https://learn.ibm.com/mod/quiz/view.php?id=96088`
   - Checkpoint 2: `https://learn.ibm.com/mod/quiz/view.php?id=101250`
