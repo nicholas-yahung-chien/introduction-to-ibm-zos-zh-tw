@@ -1,6 +1,6 @@
 # Subtitle Alignment Audit
 
-Generated at: 2026-05-20T02:17:36.908Z
+Generated at: 2026-05-20T02:45:16.475Z
 
 This report checks structural alignment between English and Traditional Chinese WebVTT files. It catches deterministic issues such as mismatched cue counts, mismatched ids/timecodes, empty cues, punctuation-only cues, suspiciously short cues, likely merged cues, and near-duplicates. It does not prove semantic correctness; flagged windows should be reviewed against audio and source English cues.
 

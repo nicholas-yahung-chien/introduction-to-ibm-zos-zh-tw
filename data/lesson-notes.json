@@ -1,0 +1,164 @@
+{
+  "course-introduction": {
+    "summary": "本課程說明 IBM Z 與 z/OS 在關鍵業務系統中的角色，並建立學習大型主機時需要採取的心態：理解硬體、作業系統、安全性與營運可靠性的整體關係。",
+    "keyPoints": [
+      "大型主機支撐高可用性、高安全性與大量交易處理場景。",
+      "學習重點不只是看完影片或通過測驗，而是能解釋系統如何被設計與操作。",
+      "課程會逐步介紹 IBM Z 硬體、z/OS、虛擬化、基礎架構與安全概念。"
+    ],
+    "terms": ["IBM Z", "z/OS", "大型主機", "高可用性", "交易處理"]
+  },
+  "computer-architecture": {
+    "summary": "本影片從一般電腦架構切入，說明資料、指令與邏輯設計如何被轉換成處理器可執行的形式，為後續理解大型主機架構奠定基礎。",
+    "keyPoints": [
+      "電腦系統需要把人類可描述的問題轉成可由硬體表示與執行的形式。",
+      "處理器、記憶體與 I/O 是理解系統架構的核心元素。",
+      "邏輯設計、數位設計與實體設計共同構成硬體實作的路徑。"
+    ],
+    "terms": ["CPU", "記憶體", "I/O", "邏輯閘", "物理設計"]
+  },
+  "mainframe-architecture": {
+    "summary": "本影片介紹大型主機架構與一般伺服器的差異，聚焦在處理器、記憶體、位址空間與高度整合的系統設計。",
+    "keyPoints": [
+      "大型主機不是單一大型伺服器，而是為可靠性、擴充性與集中管理設計的系統平台。",
+      "位址空間提供使用者與應用程式可使用的儲存映射。",
+      "大型主機架構將硬體能力與作業系統功能緊密結合。"
+    ],
+    "terms": ["大型主機架構", "位址空間", "處理器", "儲存體", "工作負載"]
+  },
+  "virtualization": {
+    "summary": "本影片說明 IBM Z 如何透過邏輯分割區與專用處理器支援虛擬化，讓同一套實體資源能安全、有效率地承載多個系統與工作負載。",
+    "keyPoints": [
+      "LPAR 讓實體大型主機被切分成多個邏輯系統。",
+      "CP、IFL、zIIP 等處理器類型可依工作負載用途配置。",
+      "通道與邏輯通道子系統決定分割區如何存取 I/O 資源。"
+    ],
+    "terms": ["LPAR", "CP", "IFL", "zIIP", "邏輯通道子系統"]
+  },
+  "what-is-an-operating-system": {
+    "summary": "本影片重新定義作業系統的角色：它不只是使用者介面，而是管理硬體資源、排程工作、保護系統並提供應用程式執行環境的核心軟體。",
+    "keyPoints": [
+      "作業系統負責協調處理器、記憶體、儲存與 I/O。",
+      "應用程式透過作業系統取得受控的系統資源。",
+      "大型主機作業系統特別重視隔離、可靠性與可管理性。"
+    ],
+    "terms": ["作業系統", "資源管理", "排程", "I/O", "應用程式"]
+  },
+  "mainframe-operating-systems": {
+    "summary": "本影片整理 IBM Z 上常見的作業系統，說明 z/OS 與 Linux on IBM Z、z/VM、z/VSE、z/TPF 等平台在不同情境中的定位。",
+    "keyPoints": [
+      "IBM Z 可執行多種作業系統，而 z/OS 是企業核心交易與資料處理的重要平台。",
+      "z/VM 與 Linux on IBM Z 常用於虛擬化與整合工作負載。",
+      "不同作業系統對應不同的歷史脈絡、應用型態與營運需求。"
+    ],
+    "terms": ["z/OS", "Linux on IBM Z", "z/VM", "z/VSE", "z/TPF"]
+  },
+  "why-use-mainframes": {
+    "summary": "本影片說明企業為什麼仍然使用大型主機：它能在集中化平台上提供高吞吐量、高可靠性、安全性與資源整合效益。",
+    "keyPoints": [
+      "大型主機適合承載高交易量、需長時間穩定運作的核心業務。",
+      "虛擬化與整合可降低分散式系統的資源重複與管理負擔。",
+      "IBM Z 能同時支援傳統 z/OS 應用與 Linux 工作負載。"
+    ],
+    "terms": ["整合", "交易量", "虛擬化", "pervasive encryption", "Linux on IBM Z"]
+  },
+  "ibm-z-components": {
+    "summary": "本影片介紹 IBM Z 的主要硬體與管理元件，協助學習者建立從機櫃、處理器到管理介面的整體圖像。",
+    "keyPoints": [
+      "IBM Z 系統由處理器、記憶體、I/O 與管理元件共同組成。",
+      "CPC 是理解大型主機硬體組態時的重要概念。",
+      "HMC 與 SE 提供管理與操作大型主機環境的入口。"
+    ],
+    "terms": ["IBM Z", "CPC", "HMC", "SE", "I/O"]
+  },
+  "mainframe-features": {
+    "summary": "本影片整理大型主機平台的核心特性，包括可靠性、可用性、可維護性、安全性與支援關鍵工作負載的能力。",
+    "keyPoints": [
+      "RAS 是大型主機設計與營運的核心價值。",
+      "平台特性不只來自硬體，也仰賴作業系統與管理流程。",
+      "大型主機強調在不中斷或低中斷情境下維持服務。"
+    ],
+    "terms": ["RAS", "可靠性", "可用性", "可維護性", "安全性"]
+  },
+  "millicode": {
+    "summary": "本影片介紹 Millicode 在 IBM Z 處理器中的角色，說明它如何支援複雜指令、錯誤復原與系統服務性。",
+    "keyPoints": [
+      "Millicode 介於硬體實作與機器指令行為之間。",
+      "它可協助處理複雜或特殊的處理器操作。",
+      "Millicode 對復原、可用性與可維護性具有重要意義。"
+    ],
+    "terms": ["Millicode", "處理器", "機器指令", "復原", "可維護性"]
+  },
+  "hmc-and-se": {
+    "summary": "本影片說明 HMC 與 Support Element 如何協助管理大型主機硬體、設定組態、啟動系統並監控平台狀態。",
+    "keyPoints": [
+      "HMC 是操作與管理大型主機環境的重要主控台。",
+      "SE 是系統內部支援硬體管理與控制的元件。",
+      "管理介面與權限控管對大型主機營運安全非常關鍵。"
+    ],
+    "terms": ["HMC", "Support Element", "SE", "硬體管理", "系統啟動"]
+  },
+  "sysplex": {
+    "summary": "本影片介紹 Sysplex 如何讓多個 z/OS 系統協同運作，並透過共享資料、時間同步與協調機制提升可用性與擴充能力。",
+    "keyPoints": [
+      "Sysplex 讓多個系統被視為共同提供服務的整體。",
+      "共享資料時需要協調與序列化，避免資源衝突。",
+      "Parallel Sysplex 與 Coupling Facility 可進一步提升系統協作能力。"
+    ],
+    "terms": ["Sysplex", "Parallel Sysplex", "Coupling Facility", "XCF", "GRS"]
+  },
+  "zos-security": {
+    "summary": "本影片介紹 z/OS 安全的基本面向，包含身分、權限、資料保護、稽核與可用性，建立後續交易安全與加密主題的基礎。",
+    "keyPoints": [
+      "安全性需要同時考慮機密性、完整性與可用性。",
+      "存取控制要確保資源只提供給被授權的人與程式。",
+      "大型主機安全設計會把政策、稽核與營運需求放在一起思考。"
+    ],
+    "terms": ["z/OS Security", "RACF", "機密性", "完整性", "可用性"]
+  },
+  "transaction-level-security": {
+    "summary": "本影片說明交易層級安全與加密功能如何保護企業資料，並介紹 IBM Z 從硬體到軟體共同支援加密工作的方式。",
+    "keyPoints": [
+      "交易處理中的資料需要在不同層級受到保護。",
+      "加密、解密與金鑰管理可透過專用硬體與軟體功能卸載。",
+      "pervasive encryption 讓資料保護更容易涵蓋整個平台。"
+    ],
+    "terms": ["交易層級安全", "加密", "pervasive encryption", "CPACF", "Crypto Express"]
+  },
+  "crypto-express-key-management": {
+    "summary": "本影片聚焦 Crypto Express 與金鑰管理，說明 clear key、secured key 與 protected key 的差異，以及硬體安全模組如何降低金鑰暴露風險。",
+    "keyPoints": [
+      "金鑰是否以明文存在，會直接影響安全風險。",
+      "Crypto Express 可協助保護金鑰並執行密碼運算。",
+      "CPACF 與受保護金鑰讓效能與安全性取得平衡。"
+    ],
+    "terms": ["Crypto Express", "clear key", "secured key", "protected key", "CPACF"]
+  },
+  "iocds": {
+    "summary": "本影片介紹 IOCDS 如何描述大型主機 I/O 組態，包含通道路徑、實體通道、控制單元、裝置與 LPAR 存取關係。",
+    "keyPoints": [
+      "IOCDS 是硬體 I/O 組態的重要資料集。",
+      "CHPID、PCHID、控制單元與裝置定義共同描述 I/O 路徑。",
+      "正確的 I/O 組態會影響 LPAR 能否存取所需資源。"
+    ],
+    "terms": ["IOCDS", "CHPID", "PCHID", "control unit", "LPAR"]
+  },
+  "activation-profiles": {
+    "summary": "本影片說明啟動設定檔如何保存 CPC、LPAR 與作業系統啟動相關組態，並區分 reset、activation 與 load profile 的角色。",
+    "keyPoints": [
+      "啟動設定檔定義大型主機啟動時需要載入的硬體與邏輯組態。",
+      "reset profile 會處理 POR、IOCDS 與邏輯定義建立。",
+      "load profile 會指定 LPAR 啟動作業系統時需要的載入資訊。"
+    ],
+    "terms": ["activation profile", "reset profile", "load profile", "POR", "IOCDS"]
+  },
+  "ipling-an-operating-system": {
+    "summary": "本影片說明 IPL 的概念與流程，介紹系統如何從指定裝置載入作業系統，並把控制權交給初始程式繼續完成啟動。",
+    "keyPoints": [
+      "IPL 是大型主機啟動作業系統的核心流程。",
+      "系統需要知道從哪個裝置與位置載入初始程式。",
+      "LOADxx 等設定會影響 z/OS 初始化時載入的參數與環境。"
+    ],
+    "terms": ["IPL", "LOADxx", "初始程式載入", "z/OS", "啟動流程"]
+  }
+}

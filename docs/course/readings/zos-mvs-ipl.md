@@ -1,6 +1,15 @@
 # z/OS MVS 系統初始化邏輯與 IPL
 
-本頁將由 `npm run capture:course` 從授權 IBM Learn session 擷取原始 Moodle page 後整理。
+> 來源活動：https://learn.ibm.com/mod/page/view.php?id=96731
 
-來源活動：https://learn.ibm.com/mod/page/view.php?id=96731
+本閱讀頁補充 z/OS MVS 系統初始化邏輯與 IPL 流程。原始課程說明這部分不屬於測驗重點，但若學習者未來要進入 IBM z/OS 相關工作，先理解 IPL logical flow 會很有幫助。
 
+## 學習重點
+
+- IPL 是大型主機載入作業系統的關鍵流程。
+- z/OS 初始化不只是「開機」，還包含載入參數、建立系統環境與啟動必要服務。
+- 若要理解實務上的啟動、故障排除或系統程式員工作，IPL 流程是重要背景知識。
+
+## 建議閱讀方式
+
+先搭配「啟動設定檔」與「對作業系統執行 IPL」兩支影片理解整體順序，再閱讀 IPL logical flow。第一次閱讀時重點放在流程名稱與相依關係，不需要立刻記住每個細節。

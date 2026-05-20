@@ -8,14 +8,14 @@ function normalizeBase(base: string | undefined) {
 
 export default defineConfig({
   title: 'Introduction to IBM z/OS',
-  description: 'IBM z/OS 入門課程繁體中文化版本',
+  description: 'IBM z/OS 入門課程台灣繁體中文化靜態版本',
   lang: 'zh-Hant-TW',
   cleanUrls: true,
   base: normalizeBase(process.env.VITEPRESS_BASE),
   head: [
     ['meta', { name: 'theme-color', content: '#0f62fe' }],
-    ['meta', { property: 'og:title', content: 'Introduction to IBM z/OS 繁體中文化課程' }],
-    ['meta', { property: 'og:description', content: 'IBM z/OS 入門課程的台灣繁體中文靜態版本。' }]
+    ['meta', { property: 'og:title', content: 'Introduction to IBM z/OS 台灣繁體中文課程' }],
+    ['meta', { property: 'og:description', content: 'IBM 授權 z/OS 入門課程的繁體中文靜態教材、影片與字幕。' }]
   ],
   themeConfig: {
     logo: '/ibm-z-mark.svg',
@@ -37,11 +37,11 @@ export default defineConfig({
         ]
       },
       {
-        text: '參考',
+        text: '資源',
         items: [
-          { text: '影片清單', link: '/videos/' },
+          { text: '影片總覽', link: '/videos/' },
           { text: '詞彙表', link: '/glossary/' },
-          { text: '用語審稿', link: '/glossary/review' },
+          { text: '審稿清單', link: '/glossary/review' },
           { text: '授權備註', link: '/license-notes' }
         ]
       }
@@ -50,7 +50,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/nicholas-yahung-chien/introduction-to-ibm-zos-zh-tw' }
     ],
     footer: {
-      message: 'IBM 授權課程中文化工作稿。正式公開前需完成內容與影片授權審核。',
+      message: 'IBM 授權課程台灣繁體中文化教材，供 IBM Taiwan enablement 使用。',
       copyright: 'Prepared for IBM Taiwan enablement use.'
     },
     search: {

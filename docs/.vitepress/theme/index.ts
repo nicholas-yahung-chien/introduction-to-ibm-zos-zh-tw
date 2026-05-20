@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import VideoLesson from './components/VideoLesson.vue'
 import CourseManifest from './components/CourseManifest.vue'
+import LessonNotes from './components/LessonNotes.vue'
 import './custom.css'
 
 export default {
@@ -8,6 +9,6 @@ export default {
   enhanceApp({ app }) {
     app.component('VideoLesson', VideoLesson)
     app.component('CourseManifest', CourseManifest)
+    app.component('LessonNotes', LessonNotes)
   }
 }
-

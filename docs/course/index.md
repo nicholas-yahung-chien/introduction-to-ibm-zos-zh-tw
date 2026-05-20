@@ -2,13 +2,13 @@
 
 <div class="course-dashboard">
   <div class="course-lede">
-    這是 IBM 授權課程 <strong>Introduction to IBM z/OS</strong> 的台灣繁體中文化靜態版本。第一版聚焦在課程內容、閱讀材料與影片字幕，不納入測驗題庫、論壇、證書或徽章申請流程。
+    這是 IBM 授權課程 <strong>Introduction to IBM z/OS</strong> 的台灣繁體中文化靜態版本。第一版聚焦在課程影片、中文字幕、繁體中文摘要、閱讀材料與詞彙表；題庫與 Lab 實作會納入後續版本規劃。
   </div>
   <div class="course-stats">
     <div class="course-stat"><strong>18</strong><span>課程影片</span></div>
     <div class="course-stat"><strong>3</strong><span>主要單元</span></div>
     <div class="course-stat"><strong>3</strong><span>閱讀頁</span></div>
-    <div class="course-stat"><strong>1</strong><span>H5P 補充內容</span></div>
+    <div class="course-stat"><strong>18</strong><span>影片摘要</span></div>
   </div>
 </div>
 
@@ -33,6 +33,8 @@
   </a>
 </div>
 
-## 第一版活動清單
+## 活動清單與範圍
+
+表格中的第一版狀態只代表本靜態網站第一版的公開範圍。題庫、Badge quiz 與 Lab/H5P 互動內容已列入後續規劃，但需要另外處理授權呈現、答案揭露與實作環境依賴。
 
 <CourseManifest />

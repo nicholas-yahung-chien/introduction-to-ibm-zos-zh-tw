@@ -7,8 +7,9 @@
     "sourceUrl": "https://learn.ibm.com/course/view.php?id=6815",
     "capturedAt": "2026-05-19T00:00:00+08:00",
     "firstEditionScope": {
-      "include": ["video", "page", "hvp"],
-      "exclude": ["quiz", "forum", "certificate", "questionnaire", "badge-claim"]
+      "include": ["video", "page"],
+      "exclude": ["quiz", "hvp", "lab", "forum", "certificate", "questionnaire", "badge-claim"],
+      "future": ["checkpoint-question-bank", "badge-quiz", "lab-and-interactive-content"]
     }
   },
   "sections": [
@@ -114,6 +115,7 @@
           "type": "quiz",
           "slug": "checkpoint-1",
           "title": "Checkpoint 1",
+          "titleZh": "Checkpoint 1 題庫",
           "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
           "includeInFirstEdition": false
         }
@@ -217,6 +219,14 @@
           "titleZh": "IBM Z 完整詞彙表",
           "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96632",
           "includeInFirstEdition": true
+        },
+        {
+          "type": "quiz",
+          "slug": "checkpoint-2",
+          "title": "Checkpoint 2",
+          "titleZh": "Checkpoint 2 題庫",
+          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
+          "includeInFirstEdition": false
         }
       ]
     },
@@ -244,7 +254,7 @@
           "title": "Security Addendum",
           "titleZh": "安全補充內容",
           "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=129741",
-          "includeInFirstEdition": true
+          "includeInFirstEdition": false
         },
         {
           "type": "video",
@@ -318,9 +328,24 @@
           "titleZh": "z/OS MVS 系統初始化邏輯與初始程式載入 (IPL)",
           "sourceUrl": "https://learn.ibm.com/mod/page/view.php?id=96731",
           "includeInFirstEdition": true
+        },
+        {
+          "type": "quiz",
+          "slug": "checkpoint-3",
+          "title": "Checkpoint 3",
+          "titleZh": "Checkpoint 3 題庫",
+          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+          "includeInFirstEdition": false
+        },
+        {
+          "type": "quiz",
+          "slug": "badge-quiz",
+          "title": "Badge quiz",
+          "titleZh": "Badge quiz 題庫",
+          "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+          "includeInFirstEdition": false
         }
       ]
     }
   ]
 }
-

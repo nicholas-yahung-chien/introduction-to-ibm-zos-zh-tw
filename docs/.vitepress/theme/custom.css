@@ -101,6 +101,42 @@
   padding: 3px 8px;
 }
 
+.lesson-notes {
+  margin: -12px 0 36px;
+  padding: 16px 18px;
+  border-left: 4px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-soft);
+}
+
+.lesson-notes__summary {
+  margin: 0 0 14px;
+  line-height: 1.75;
+}
+
+.lesson-notes__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(220px, 0.8fr);
+  gap: 20px;
+}
+
+.lesson-notes h3 {
+  margin: 0 0 8px;
+  font-size: 0.95rem;
+}
+
+.lesson-notes ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.lesson-notes li {
+  margin: 4px 0;
+}
+
+.lesson-notes__terms {
+  columns: 1;
+}
+
 .manifest-table {
   width: 100%;
   border-collapse: collapse;
@@ -128,5 +164,8 @@
   .course-stats {
     grid-template-columns: 1fr;
   }
-}
 
+  .lesson-notes__grid {
+    grid-template-columns: 1fr;
+  }
+}
