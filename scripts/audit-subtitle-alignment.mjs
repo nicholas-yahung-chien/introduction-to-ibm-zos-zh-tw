@@ -90,6 +90,32 @@ function punctuationOnly(text) {
   return Boolean(compact) && /^[\p{P}\p{S}]+$/u.test(compact)
 }
 
+const technicalTermAnchors = [
+  { label: 'physical design', en: /\bphysical design\b/i, zh: /物理設計/ },
+  { label: 'logic gates', en: /\blogic gates?\b/i, zh: /邏輯閘/ },
+  { label: 'physical chips', en: /\bphysical chips?\b/i, zh: /實體晶片/ },
+  { label: 'digital design', en: /\bdigital design\b/i, zh: /數位設計/ },
+  { label: 'circuit implementation', en: /\bcircuit implementation\b/i, zh: /電路實作/ },
+  { label: 'physical implementation', en: /\bphysical implementation\b/i, zh: /物理實作/ },
+  { label: 'multiple image facility', en: /\bmultiple image facility\b/i, zh: /multiple image facility|MIF ID/i },
+  { label: 'Telum', en: /\b(?:tell them|telum)\b/i, zh: /Telum/i },
+  { label: 'Millicode', en: /\bMillico(?:de|at)\b/i, zh: /Millicode/i },
+  { label: 'server-time protocol', en: /\bserver-time protocol\b/i, zh: /server-time protocol|伺服器時間協定/i }
+]
+
+function findSemanticNeighborDrift(enCues, zhCue, index) {
+  const neighborWindow = [index + 1, index + 2]
+    .filter((candidate) => candidate >= 0 && candidate < enCues.length)
+
+  return technicalTermAnchors
+    .filter((anchor) => anchor.zh.test(zhCue.text) && !anchor.en.test(enCues[index]?.text || ''))
+    .map((anchor) => {
+      const neighbor = neighborWindow.find((candidate) => anchor.en.test(enCues[candidate]?.text || ''))
+      return neighbor == null ? null : { anchor, neighbor: enCues[neighbor] }
+    })
+    .filter(Boolean)
+}
+
 function cueUrl(slug, cue) {
   return `../docs/public/subtitles/${slug}.zh-Hant-TW.vtt#cue-${cue.id}`
 }
@@ -194,6 +220,10 @@ for (const video of videos) {
     const startsWithPunctuation = /^[\p{P}\p{S}]/u.test(zhCue.text)
     if (startsWithPunctuation) {
       addIssue(issues, 'medium', 'starts_with_punctuation', video, zhCue, 'Chinese cue starts with punctuation', enCue)
+    }
+
+    for (const drift of findSemanticNeighborDrift(enCues, zhCue, index)) {
+      addIssue(issues, 'medium', 'semantic_neighbor_drift', video, zhCue, `ZH contains ${drift.anchor.label}, but EN cue ${drift.neighbor.id} contains that term`, enCue)
     }
   }
 
