@@ -10,6 +10,8 @@ docs/.vitepress/dist/
 .env.*
 !.env.example
 /media/
+docs/public/hls/
+docs/public/media/
 tmp/
 logs/
 *.log

@@ -52,8 +52,11 @@ npm run subtitles:audit
   - Build command: `npm ci && npm run build:cloudflare`
   - Build output directory: `docs/.vitepress/dist`
   - Node.js version: `22`
+- Course media is hosted by the dedicated Cloudflare Pages media project:
+  - `https://introduction-to-ibm-zos-media.pages.dev`
+- Build scripts set `VITE_MEDIA_BASE_URL` to the media project so CI does not need Git LFS objects.
 - Current HLS media footprint is roughly 1,022 files and 825 MB, with maximum segment size around 3.1 MB.
-- If media is moved to R2 or another CDN later, set `VITE_MEDIA_BASE_URL` before building.
+- Local generated HLS files may remain under `docs/public/hls/`, but that directory is ignored, pruned from site builds, and should be redeployed to the media project when media changes.
 
 ## Public Page Hygiene
 
