@@ -9,6 +9,7 @@
     <div class="course-stat"><strong>3</strong><span>主要單元</span></div>
     <div class="course-stat"><strong>3</strong><span>閱讀頁</span></div>
     <div class="course-stat"><strong>54</strong><span>互動練習</span></div>
+    <div class="course-stat"><strong>1</strong><span>Lab 說明</span></div>
   </div>
 </div>
 
@@ -19,6 +20,7 @@
 3. 每支影片先看完一次，再回到影片下方摘要確認學習重點與重要術語。
 4. 遇到不熟悉的 IBM Z 名詞時，搭配詞彙表查閱原文術語與繁體中文說明。
 5. 完成單元後到「互動練習」確認概念，答錯時回到對應影片複習。
+6. 需要實作或互動活動時，閱讀「Lab 與互動實作」後回到 IBM Learn 原課程完成。
 
 ## 課程單元
 
@@ -42,6 +44,10 @@
   <a class="lesson-card" href="../practice/">
     <h3>互動練習</h3>
     <p>完成各單元後，透過即時回饋確認重點概念。</p>
+  </a>
+  <a class="lesson-card" href="../labs/">
+    <h3>Lab 與互動實作</h3>
+    <p>了解原課程提供的實作活動與建議複習順序。</p>
   </a>
 </div>
 

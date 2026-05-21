@@ -4,6 +4,7 @@ import { join, sep } from 'node:path'
 
 const contentTargets = [
   'docs/course',
+  'docs/labs',
   'docs/practice',
   'docs/videos',
   'docs/index.md',
@@ -11,6 +12,7 @@ const contentTargets = [
   'docs/public/subtitles',
   'data/lesson-notes.json',
   'data/course-manifest.json',
+  'data/labs.json',
 ]
 
 const maxSubtitleLineLength = 42

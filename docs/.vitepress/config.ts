@@ -23,6 +23,7 @@ export default defineConfig({
       { text: '課程', link: '/course/' },
       { text: '影片', link: '/videos/' },
       { text: '互動練習', link: '/practice/' },
+      { text: 'Lab', link: '/labs/' },
       { text: '詞彙表', link: '/glossary/' },
       { text: '授權資訊', link: '/license-notes' }
     ],
@@ -35,13 +36,15 @@ export default defineConfig({
           { text: '大型主機環境', link: '/course/mainframe-environment' },
           { text: '大型主機基礎架構', link: '/course/mainframe-infrastructure' },
           { text: '大型主機安全', link: '/course/mainframe-security' },
-          { text: '互動練習', link: '/practice/' }
+          { text: '互動練習', link: '/practice/' },
+          { text: 'Lab 與互動實作', link: '/labs/' }
         ]
       },
       {
         text: '資源',
         items: [
           { text: '影片總覽', link: '/videos/' },
+          { text: 'Lab 與互動實作', link: '/labs/' },
           { text: '詞彙表', link: '/glossary/' },
           { text: '授權資訊', link: '/license-notes' }
         ]

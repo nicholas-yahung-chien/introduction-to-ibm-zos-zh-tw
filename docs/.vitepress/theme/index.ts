@@ -3,6 +3,7 @@ import VideoLesson from './components/VideoLesson.vue'
 import CourseManifest from './components/CourseManifest.vue'
 import LessonNotes from './components/LessonNotes.vue'
 import PracticeQuestions from './components/PracticeQuestions.vue'
+import LabList from './components/LabList.vue'
 import './custom.css'
 
 export default {
@@ -12,5 +13,6 @@ export default {
     app.component('CourseManifest', CourseManifest)
     app.component('LessonNotes', LessonNotes)
     app.component('PracticeQuestions', PracticeQuestions)
+    app.component('LabList', LabList)
   }
 }

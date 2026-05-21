@@ -1,0 +1,22 @@
+[
+  {
+    "id": "security-addendum",
+    "title": "Security Addendum",
+    "titleZh": "安全補充互動活動",
+    "type": "H5P 互動活動",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=129741",
+    "courseUrl": "https://learn.ibm.com/course/view.php?id=6815",
+    "section": "大型主機安全",
+    "summary": "在 IBM Learn 原課程中完成的安全主題互動活動，協助學習者確認資料集存取權限與 RACF Profile 類型等基本概念。",
+    "learningPurpose": [
+      "辨識資料集 ALTER 與 UPDATE 存取權限的差異。",
+      "確認常用於控制單一資料集存取的 RACF Profile 類型。",
+      "把 z/OS 安全影片中的存取控制概念轉換成簡短情境判斷。"
+    ],
+    "recommendedBefore": [
+      "z/OS 安全",
+      "交易層級安全"
+    ],
+    "launchGuidance": "請登入 IBM Learn 原課程後開啟此活動；本站僅提供活動說明與學習指引。"
+  }
+]
