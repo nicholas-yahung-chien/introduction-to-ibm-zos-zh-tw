@@ -33,6 +33,19 @@ const discouragedTerms = new Map([
   ['事務', '交易'],
 ])
 
+const publicPlanningTerms = [
+  'TODO',
+  '待辦',
+  '專案規劃',
+  '規劃方向',
+  '等待補入',
+  '第一版',
+  '第一版範圍',
+  '內部筆記',
+  'project planning',
+  'second-phase',
+]
+
 async function listFiles(target) {
   if (!existsSync(target)) return []
   if (statSync(target).isFile()) return [target]
@@ -85,6 +98,12 @@ for (const file of files) {
     for (const [discouraged, preferred] of discouragedTerms) {
       if (line.includes(discouraged)) {
         findings.push(`${file}:${index + 1}: use "${preferred}" instead of "${discouraged}"`)
+      }
+    }
+
+    for (const term of publicPlanningTerms) {
+      if (line.includes(term)) {
+        findings.push(`${file}:${index + 1}: public page contains internal planning term "${term}"`)
       }
     }
 

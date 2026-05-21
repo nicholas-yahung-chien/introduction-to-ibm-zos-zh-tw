@@ -23,7 +23,7 @@ export default defineConfig({
       { text: '課程', link: '/course/' },
       { text: '影片', link: '/videos/' },
       { text: '互動練習', link: '/practice/' },
-      { text: 'Lab', link: '/labs/' },
+      { text: 'Lab 與互動實作', link: '/labs/' },
       { text: '詞彙表', link: '/glossary/' },
       { text: '授權資訊', link: '/license-notes' }
     ],
