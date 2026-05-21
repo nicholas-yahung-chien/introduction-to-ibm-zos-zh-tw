@@ -7,11 +7,13 @@ Use this checklist before publishing course content changes.
 ```powershell
 npm ci
 npm run verify:release
-rg -n "TODO|待補|等待課程|等待.*補|第一版|未納入|不納入|題庫|測驗|Cloudflare|GitHub Pages|Git LFS|R2" docs --glob "*.md" --glob "*.vue" --glob "*.ts"
 ```
 
 - Confirm `npm run verify:release` completes successfully.
-- Confirm the public-page hygiene scan returns no project planning or deployment notes.
+- Confirm `npm run site:check` passes; this is included in `npm run verify:release`.
+- Confirm the public-page hygiene checks return no project planning, TODO, or deployment notes.
+- Confirm required public pages are present: home, course, videos, practice, labs, glossary, and license notes.
+- Confirm internal links, video/subtitle inventory, practice question count, and Lab metadata pass the automated checks.
 - Confirm practice question edits pass `npm run practice:check`; this is included in `npm run verify:release`.
 - Run `npm run subtitles:wrap` before verification after editing subtitle text.
 - If subtitles changed, also run `npm run subtitles:audit` and inspect the generated report.
