@@ -127,6 +127,8 @@ npm run verify:release
 
 ## 重要維護檔案
 
+- 維護流程指南：`handoff/maintenance-guide.md`
+- 課程模板化與經驗傳承規劃：`handoff/course-template-playbook.md`
 - 課程 manifest：`data/course-manifest.json`
 - 影片摘要：`data/lesson-notes.json`
 - 練習題：`data/practice-questions.json`
