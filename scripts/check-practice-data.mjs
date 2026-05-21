@@ -5,6 +5,7 @@ const sourceInventory = JSON.parse(await readFile('data/practice-sources.json', 
 
 const findings = []
 const questionIds = new Set()
+const sourceIds = new Set()
 const mojibakeHints = ['�', '憭批', '銝餅', '蝟餌', '隤脩', '摰']
 
 function checkTextEncoding(label, fieldName, value) {
@@ -23,7 +24,7 @@ if (!Array.isArray(questions)) {
   for (const [index, question] of questions.entries()) {
     const label = question?.id || `question at index ${index}`
 
-    for (const field of ['id', 'section', 'lessonSlug', 'lessonTitle', 'sourceType', 'sourceUrl', 'prompt', 'correctChoiceId', 'explanation']) {
+    for (const field of ['id', 'section', 'lessonSlug', 'lessonTitle', 'sourceType', 'sourceUrl', 'sourceReference', 'prompt', 'explanation']) {
       if (!question?.[field] || typeof question[field] !== 'string') {
         findings.push(`${label}: missing string field "${field}".`)
       } else {
@@ -45,8 +46,14 @@ if (!Array.isArray(questions)) {
         if (choiceIds.has(choice.id)) findings.push(`${label}: duplicate choice id "${choice.id}".`)
         if (choice.id) choiceIds.add(choice.id)
       }
-      if (!choiceIds.has(question.correctChoiceId)) {
-        findings.push(`${label}: correctChoiceId must match one of the choices.`)
+      if (!Array.isArray(question.correctChoiceIds) || question.correctChoiceIds.length === 0) {
+        findings.push(`${label}: correctChoiceIds must contain at least one choice id.`)
+      } else {
+        for (const correctChoiceId of question.correctChoiceIds) {
+          if (!choiceIds.has(correctChoiceId)) {
+            findings.push(`${label}: correctChoiceIds includes unknown choice id "${correctChoiceId}".`)
+          }
+        }
       }
     }
 
@@ -67,7 +74,6 @@ if (!Array.isArray(questions)) {
 if (!sourceInventory || !Array.isArray(sourceInventory.sources)) {
   findings.push('data/practice-sources.json must include a sources array.')
 } else {
-  const sourceIds = new Set()
   for (const source of sourceInventory.sources) {
     const label = source?.id || 'source without id'
     for (const field of ['id', 'title', 'type', 'sourceUrl', 'sectionSlug', 'sectionTitle', 'status', 'intendedUse']) {
@@ -79,6 +85,25 @@ if (!sourceInventory || !Array.isArray(sourceInventory.sources)) {
     }
     if (sourceIds.has(source.id)) findings.push(`${label}: duplicate source id.`)
     if (source.id) sourceIds.add(source.id)
+  }
+}
+
+if (Array.isArray(questions) && sourceIds.size > 0) {
+  const questionCounts = new Map()
+  for (const question of questions) {
+    if (!sourceIds.has(question.sourceReference)) {
+      findings.push(`${question.id}: sourceReference does not match data/practice-sources.json.`)
+    }
+    questionCounts.set(question.sourceReference, (questionCounts.get(question.sourceReference) || 0) + 1)
+  }
+
+  for (const source of sourceInventory.sources) {
+    if (typeof source.capturedQuestionCount === 'number') {
+      const actual = questionCounts.get(source.id) || 0
+      if (actual !== source.capturedQuestionCount) {
+        findings.push(`${source.id}: capturedQuestionCount is ${source.capturedQuestionCount}, but ${actual} question(s) reference it.`)
+      }
+    }
   }
 }
 

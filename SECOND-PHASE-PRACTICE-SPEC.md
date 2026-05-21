@@ -43,18 +43,19 @@ Store question data outside Vue components in `data/practice-questions.json`. Tr
 ```json
 [
   {
-    "id": "mainframe-environment-001",
+    "id": "checkpoint-1-001",
     "section": "大型主機環境",
     "lessonSlug": "computer-architecture",
     "lessonTitle": "電腦架構",
-    "sourceType": "checkpoint",
+    "sourceType": "quiz-review",
     "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
     "prompt": "Question text goes here.",
     "choices": [
       { "id": "a", "text": "Choice A" },
       { "id": "b", "text": "Choice B" }
     ],
-    "correctChoiceId": "a",
+    "correctChoiceIds": ["a"],
     "explanation": "Explain why the answer is correct.",
     "review": {
       "label": "複習：電腦架構",
@@ -70,26 +71,28 @@ Store question data outside Vue components in `data/practice-questions.json`. Tr
 
 - Checkpoint 1: `https://learn.ibm.com/mod/quiz/view.php?id=96088`
 - Checkpoint 2: `https://learn.ibm.com/mod/quiz/view.php?id=101250`
+- Security Addendum: `https://learn.ibm.com/mod/hvp/view.php?id=129741`
 - Checkpoint 3: `https://learn.ibm.com/mod/quiz/view.php?id=101251`
 - Badge quiz: `https://learn.ibm.com/mod/quiz/view.php?id=348797`
 
 In-video or between-video short questions should be recorded with the closest source activity, source video, or course section.
 
-The initial source inventory is stored in `data/practice-sources.json`. The initial practice data intentionally includes only video-derived questions; IBM Learn quiz items remain marked for authorized capture.
+The source inventory is stored in `data/practice-sources.json`. The first authorized capture normalized 54 static practice questions from Checkpoint 1, Checkpoint 2, Security Addendum, Checkpoint 3, and Badge quiz into `data/practice-questions.json`.
 
 ## Implementation Plan
 
 1. Confirm authorization for using quiz and interaction question text in the static course site.
-2. Capture and normalize question data into `data/practice-questions.json`.
-3. Add a VitePress page under `docs/practice/index.md`.
-4. Add a Vue component for local, non-persistent answer selection.
-5. Add the practice page to navigation only after content authorization and QA are complete.
-6. Run `npm run verify:release`.
-7. Run `npm run practice:check` whenever practice data changes.
+2. Capture source question data with `npm run practice:capture`.
+3. Translate and normalize question data into `data/practice-questions.json` with `npm run practice:translate`.
+4. Add a VitePress page under `docs/practice/index.md`.
+5. Add a Vue component for local, non-persistent answer selection.
+6. Add the practice page to navigation only after content authorization and QA are complete.
+7. Run `npm run verify:release`.
+8. Run `npm run practice:check` whenever practice data changes.
 
 ## QA Checklist
 
-- Every question has exactly one defined correct answer unless explicitly designed as multi-select.
+- Every question has at least one defined correct answer; multi-select questions use multiple `correctChoiceIds`.
 - Every question has an explanation.
 - Every incorrect answer path points to a concrete video, unit, or reading page.
 - No score, pass/fail, badge, certificate, progress persistence, or user identity is shown.

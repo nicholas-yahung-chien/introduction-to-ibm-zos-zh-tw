@@ -1,108 +1,2021 @@
 [
   {
-    "id": "mainframe-environment-001",
+    "id": "checkpoint-1-001",
     "section": "大型主機環境",
-    "lessonSlug": "virtualization",
-    "lessonTitle": "虛擬化",
-    "sourceType": "video-derived",
-    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=95225",
-    "prompt": "在 IBM Z 中，LPAR 的主要用途是什麼？",
+    "lessonSlug": "mainframe-operating-systems",
+    "lessonTitle": "大型主機作業系統",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
+    "prompt": "以下哪一個 IBM 交易處理監控程式提供快速大量的交易處理？",
     "choices": [
       {
         "id": "a",
-        "text": "把一台實體大型主機分割成多個彼此隔離、可獨立執行作業系統的邏輯分割區。"
+        "text": "COP (Customer online program)"
       },
       {
         "id": "b",
-        "text": "只用來備份 COBOL 原始程式，和執行環境無關。"
+        "text": "TPS (Transaction processing system)"
       },
       {
         "id": "c",
-        "text": "把所有處理器資源鎖定給單一應用程式使用。"
+        "text": "TBDD (Transaction block device driver)"
       },
       {
         "id": "d",
-        "text": "取代 HMC，直接作為硬體操作介面。"
+        "text": "CICS (Customer information control system)"
       }
     ],
-    "correctChoiceId": "a",
-    "explanation": "LPAR 是 IBM Z 虛擬化的核心概念之一，可將同一台實體系統切分成多個隔離的邏輯環境，讓不同作業系統或工作負載獨立運作。",
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "CICS 是專為提供高速且高容量交易處理設計的 IBM 交易處理監控系統，適用於大量即時交易。",
     "review": {
-      "label": "複習：虛擬化",
+      "label": "複習：大型主機作業系統",
       "coursePath": "/course/mainframe-environment",
-      "videoEntryId": "1_1fl2qymd",
-      "hint": "回到「虛擬化」影片，留意 LPAR 如何把實體資源轉成可管理的邏輯環境。"
+      "videoEntryId": "1_q1drndng",
+      "hint": "如果答錯，請重新閱讀大型主機作業系統課程了解交易處理監控程式的功能。"
     }
   },
   {
-    "id": "mainframe-infrastructure-001",
-    "section": "大型主機基礎架構",
-    "lessonSlug": "hmc-and-se",
-    "lessonTitle": "HMC 與 SE",
-    "sourceType": "video-derived",
-    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=96597",
-    "prompt": "HMC 在 IBM Z 環境中的主要角色是什麼？",
+    "id": "checkpoint-1-002",
+    "section": "大型主機環境",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
+    "prompt": "哪一種程序狀態描述程序正在被建立？",
     "choices": [
       {
         "id": "a",
-        "text": "提供集中式硬體管理入口，用來管理、監控與操作 IBM Z 系統。"
+        "text": "新建 (New)"
       },
       {
         "id": "b",
-        "text": "編譯大型主機上的 COBOL 應用程式。"
+        "text": "等待 (Waiting)"
       },
       {
         "id": "c",
-        "text": "取代 Sysplex，負責跨系統資料同步。"
+        "text": "構建 (Building)"
       },
       {
         "id": "d",
-        "text": "只負責儲存一般使用者的登入密碼。"
+        "text": "創建 (Creation)"
       }
     ],
-    "correctChoiceId": "a",
-    "explanation": "HMC 是 Hardware Management Console，用來提供 IBM Z 硬體與系統的集中管理能力；SE 則是和單一系統更直接相關的支援元件。",
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "『新建 (New)』狀態代表程序剛被建立，尚未開始執行。",
     "review": {
-      "label": "複習：HMC 與 SE",
-      "coursePath": "/course/mainframe-infrastructure",
-      "videoEntryId": "1_6kwwnujx",
-      "hint": "回到「HMC 與 SE」影片，留意 HMC 與 Support Element 的管理層級差異。"
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "如果答錯，請重新閱讀電腦架構課程中的程序狀態單元。"
     }
   },
   {
-    "id": "mainframe-security-001",
+    "id": "checkpoint-1-003",
+    "section": "大型主機環境",
+    "lessonSlug": "mainframe-architecture",
+    "lessonTitle": "大型主機架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
+    "prompt": "大型主機的記憶體通常也稱為：",
+    "choices": [
+      {
+        "id": "a",
+        "text": "地址頁 (Address page)"
+      },
+      {
+        "id": "b",
+        "text": "分頁 (Paging)"
+      },
+      {
+        "id": "c",
+        "text": "DASD"
+      },
+      {
+        "id": "d",
+        "text": "儲存體 (Storage)"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "大型主機中的記憶體通常被稱為儲存體，代表系統中可用來快速存取資料的主要記憶元件。",
+    "review": {
+      "label": "複習：大型主機架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_7e45b5a8",
+      "hint": "如果答錯，請重新閱讀大型主機架構課程中關於記憶體的章節。"
+    }
+  },
+  {
+    "id": "checkpoint-1-004",
+    "section": "大型主機環境",
+    "lessonSlug": "mainframe-operating-systems",
+    "lessonTitle": "大型主機作業系統",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
+    "prompt": "以下關於應用程式軟體，哪一敘述是正確的？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "是設計給系統程式設計師使用的程式或程式群組"
+      },
+      {
+        "id": "b",
+        "text": "在作業系統之上執行"
+      },
+      {
+        "id": "c",
+        "text": "以上皆是"
+      },
+      {
+        "id": "d",
+        "text": "通常稱為程式產品"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "應用程式軟體是指在作業系統之上執行的程式，提供給使用者的功能和服務。",
+    "review": {
+      "label": "複習：大型主機作業系統",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_q1drndng",
+      "hint": "如果答錯，請重新閱讀大型主機作業系統課程有關應用程式軟體的部分。"
+    }
+  },
+  {
+    "id": "checkpoint-1-005",
+    "section": "大型主機環境",
+    "lessonSlug": "what-is-an-operating-system",
+    "lessonTitle": "什麼是作業系統？",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
+    "prompt": "哪一項作業系統功能可以確保系統上所有正在執行的程式和程序彼此協調運作？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "資源管理 (Resource Management)"
+      },
+      {
+        "id": "b",
+        "text": "資料庫管理 (Database Management)"
+      },
+      {
+        "id": "c",
+        "text": "配置管理 (Allocation Management)"
+      },
+      {
+        "id": "d",
+        "text": "儲存管理 (Storage Management)"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "資源管理功能能確保所有程式和程序能有效共享系統資源且協調運作，避免衝突。",
+    "review": {
+      "label": "複習：什麼是作業系統？",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_jicvw3wr",
+      "hint": "如果答錯，請重新閱讀作業系統介紹課程中關於資源管理的單元。"
+    }
+  },
+  {
+    "id": "checkpoint-1-006",
+    "section": "大型主機環境",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
+    "prompt": "關於電腦架構，哪一敘述最準確？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "它是一組描述電腦系統功能、組織和安裝的方法與規則"
+      },
+      {
+        "id": "b",
+        "text": "它是一組描述硬體系統功能、組織和實作的方法與規則"
+      },
+      {
+        "id": "c",
+        "text": "它是一組描述處於靜止狀態時電腦系統組織及實作的方法與規則"
+      },
+      {
+        "id": "d",
+        "text": "它是一組描述電腦系統功能、組織和實作的方法與規則"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "電腦架構是指描述電腦系統功能、組織及實作的方法與規則，涵蓋硬體與系統設計架構。",
+    "review": {
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "如果答錯，請重新閱讀電腦架構課程中關於電腦架構定義的章節。"
+    }
+  },
+  {
+    "id": "checkpoint-1-007",
+    "section": "大型主機環境",
+    "lessonSlug": "mainframe-operating-systems",
+    "lessonTitle": "大型主機作業系統",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
+    "sourceReference": "checkpoint-1",
+    "prompt": "哪一個作業系統選項提供遠端終端機的互動式時間共享服務？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "RPC (Remote procedure call)"
+      },
+      {
+        "id": "b",
+        "text": "SMF (System management facility)"
+      },
+      {
+        "id": "c",
+        "text": "HCD (Hardware configuration definition)"
+      },
+      {
+        "id": "d",
+        "text": "TSO (Time sharing option)"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "TSO 提供遠端終端機可進行互動式時間共享，讓使用者能同時使用系統資源。",
+    "review": {
+      "label": "複習：大型主機作業系統",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_q1drndng",
+      "hint": "如果答錯，請重新閱讀大型主機作業系統課程中關於 TSO 的單元。"
+    }
+  },
+  {
+    "id": "checkpoint-2-001",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "sysplex",
+    "lessonTitle": "Sysplex",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
+    "sourceReference": "checkpoint-2",
+    "prompt": "下列何者提供多台系統使用者存取共用 DASD 卷宗的能力？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "GRS"
+      },
+      {
+        "id": "b",
+        "text": "XCF"
+      },
+      {
+        "id": "c",
+        "text": "LPAR"
+      },
+      {
+        "id": "d",
+        "text": "TSO"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "GRS（Global Resource Serialization）管理多台系統間的資源同步，支援共用 DASD 卷宗的存取。",
+    "review": {
+      "label": "複習：Sysplex",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_0umo87q5",
+      "hint": "如果答錯，請重新閱讀 Sysplex 課程中有關 GRS 的章節。"
+    }
+  },
+  {
+    "id": "checkpoint-2-002",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "why-use-mainframes",
+    "lessonTitle": "為什麼使用大型主機？",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
+    "sourceReference": "checkpoint-2",
+    "prompt": "什麼是批次處理的範例？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "電話號碼查詢"
+      },
+      {
+        "id": "b",
+        "text": "信用卡交易"
+      },
+      {
+        "id": "c",
+        "text": "薪資"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "薪資是一個典型的批次處理範例，因為它通常會在指定時間批次處理大量資料。",
+    "review": {
+      "label": "複習：為什麼使用大型主機？",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_rqvsd0rw",
+      "hint": "答錯時請重新複習「為什麼使用大型主機？」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-2-003",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "why-use-mainframes",
+    "lessonTitle": "為什麼使用大型主機？",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
+    "sourceReference": "checkpoint-2",
+    "prompt": "IBM Z 大型主機環境通常會整合哪些項目？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "網路介面卡"
+      },
+      {
+        "id": "b",
+        "text": "CPU"
+      },
+      {
+        "id": "c",
+        "text": "冷卻系統"
+      },
+      {
+        "id": "d",
+        "text": "電源供應器"
+      }
+    ],
+    "correctChoiceIds": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "explanation": "IBM Z 大型主機環境整合了網路介面卡、CPU、冷卻系統及電源供應器，以集中管理和優化硬體資源。",
+    "review": {
+      "label": "複習：為什麼使用大型主機？",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_rqvsd0rw",
+      "hint": "答錯時請重新複習「為什麼使用大型主機？」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-2-004",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "sysplex",
+    "lessonTitle": "Sysplex",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
+    "sourceReference": "checkpoint-2",
+    "prompt": "Parallel Sysplex 環境中，z/OS 映像最多可有多少個？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "8"
+      },
+      {
+        "id": "b",
+        "text": "10"
+      },
+      {
+        "id": "c",
+        "text": "16"
+      },
+      {
+        "id": "d",
+        "text": "32"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "Parallel Sysplex 環境最多支援 32 個 z/OS 映像，能提供高度可用性及擴充性。",
+    "review": {
+      "label": "複習：Sysplex",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_0umo87q5",
+      "hint": "答錯時請重新複習「Sysplex」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-2-005",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "ibm-z-components",
+    "lessonTitle": "IBM Z 元件",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
+    "sourceReference": "checkpoint-2",
+    "prompt": "哪個大型主機元件會在多台伺服器間同步時間？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "同步元件"
+      },
+      {
+        "id": "b",
+        "text": "Server time protocol"
+      },
+      {
+        "id": "c",
+        "text": "伺服器連接"
+      },
+      {
+        "id": "d",
+        "text": "Sysplex 計時器"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "Server time protocol 在多台 IBM Z 伺服器間同步時間，確保系統時鐘一致。",
+    "review": {
+      "label": "複習：IBM Z 元件",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_j4rkx3qu",
+      "hint": "答錯時請重新複習「IBM Z 元件」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-3-001",
+    "section": "大型主機安全",
+    "lessonSlug": "zos-security",
+    "lessonTitle": "z/OS 安全",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "在假設使用 RACF 的情況下，使用者的初始安全請求流程為何？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "使用者請求 -> SAF -> RACF -> RACF 資料庫"
+      },
+      {
+        "id": "b",
+        "text": "使用者請求 -> 資源管理者 -> SAD -> SAF -> RACF -> RACF 資料庫"
+      },
+      {
+        "id": "c",
+        "text": "使用者請求 -> 資源管理者 -> SAF -> RACF -> RACF 資料庫"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "使用者的初始安全請求會經由資源管理者，再由 SAF 轉給 RACF 進行驗證，最後查詢 RACF 資料庫。",
+    "review": {
+      "label": "複習：z/OS 安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_b3hd3sa0",
+      "hint": "答錯時請重新複習「z/OS 安全」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-3-002",
     "section": "大型主機安全",
     "lessonSlug": "transaction-level-security",
     "lessonTitle": "交易層級安全",
-    "sourceType": "video-interaction-derived",
-    "sourceUrl": "https://learn.ibm.com/mod/video/view.php?id=96603",
-    "sourceTimeRange": "00:02:41.830-00:04:46.950",
-    "prompt": "依照「交易層級安全」影片脈絡，CPACF 與 Crypto Express 對 IBM Z 安全性的共同價值是什麼？",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "哪種類型的密碼學使用一對金鑰，而非單一金鑰？",
     "choices": [
       {
         "id": "a",
-        "text": "提供硬體層級的加密與金鑰保護能力，協助降低敏感資料暴露風險。"
+        "text": "Secure Key"
       },
       {
         "id": "b",
-        "text": "把所有 LPAR 合併成單一不分隔的執行環境。"
+        "text": "User Key"
       },
       {
         "id": "c",
-        "text": "讓 z/OS 自動改寫 Linux 應用程式。"
+        "text": "Private Key"
       },
       {
         "id": "d",
-        "text": "只用來產生課程影片的中文字幕。"
+        "text": "Public Key"
       }
     ],
-    "correctChoiceId": "a",
-    "explanation": "影片說明 CPACF 與 Crypto Express 都和加密能力相關；前者提供處理器層級加密支援，後者則提供更進階的硬體安全與金鑰管理能力。",
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "公鑰 (Public Key) 密碼學使用一對金鑰（公鑰和私鑰）來進行資料加密與解密。",
     "review": {
       "label": "複習：交易層級安全",
       "coursePath": "/course/mainframe-security",
       "videoEntryId": "1_1ndlj8bd",
-      "hint": "回到「交易層級安全」影片約 03:34 之後，複習 CPACF 與 Crypto Express 的角色。"
+      "hint": "答錯時請重新複習「交易層級安全」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-3-003",
+    "section": "大型主機安全",
+    "lessonSlug": "zos-security",
+    "lessonTitle": "z/OS 安全",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "系統安全的三大主要目標為何？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "完整性、可用性和惡意軟體"
+      },
+      {
+        "id": "b",
+        "text": "機密性、完整性和品質"
+      },
+      {
+        "id": "c",
+        "text": "機密性、完整性和可用性"
+      },
+      {
+        "id": "d",
+        "text": "完整性、品質和優勢"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "系統安全的三大目標是機密性、完整性和可用性，以確保資料和服務的保護。",
+    "review": {
+      "label": "複習：z/OS 安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_b3hd3sa0",
+      "hint": "答錯時請重新複習「z/OS 安全」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-3-004",
+    "section": "大型主機安全",
+    "lessonSlug": "zos-security",
+    "lessonTitle": "z/OS 安全",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "哪個系統元件決定系統資源的分配？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "資源處理器"
+      },
+      {
+        "id": "b",
+        "text": "資源主管"
+      },
+      {
+        "id": "c",
+        "text": "資源管理者"
+      },
+      {
+        "id": "d",
+        "text": "效能管理者"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "資源管理者負責系統資源的分配與管理，以確保系統運作效率。",
+    "review": {
+      "label": "複習：z/OS 安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_b3hd3sa0",
+      "hint": "答錯時請重新複習「z/OS 安全」這個課程。"
+    }
+  },
+  {
+    "id": "checkpoint-3-005",
+    "section": "大型主機安全",
+    "lessonSlug": "iocds",
+    "lessonTitle": "IOCDS",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "IOCDS 儲存在何處？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "主記憶體"
+      },
+      {
+        "id": "b",
+        "text": "DASD"
+      },
+      {
+        "id": "c",
+        "text": "Support elements"
+      },
+      {
+        "id": "d",
+        "text": "硬體系統區域"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "IOCDS 儲存在 Support elements，因為它們是用來管理大型主機硬體和配置的特殊支援模組。",
+    "review": {
+      "label": "複習：IOCDS",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_5hs3mb8z",
+      "hint": "若答錯此題，請回顧 IOCDS 課程以了解 Support elements 的功能與作用。"
+    }
+  },
+  {
+    "id": "checkpoint-3-006",
+    "section": "大型主機安全",
+    "lessonSlug": "iocds",
+    "lessonTitle": "IOCDS",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "Load Parameter 由 8 個位置組成，前 4 個位置表示什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "LOADxx 裝置號碼"
+      },
+      {
+        "id": "b",
+        "text": "IPL.PARM 裝置號碼"
+      },
+      {
+        "id": "c",
+        "text": "IODF 裝置號碼"
+      },
+      {
+        "id": "d",
+        "text": "IPL 裝置號碼"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "Load Parameter 的前四個位置用於指定 IODF 裝置號碼，它指出系統啟動時所使用的硬體與軟體配置。",
+    "review": {
+      "label": "複習：IOCDS",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_5hs3mb8z",
+      "hint": "若答錯此題，請回顧 IOCDS 課程中有關 Load Parameter 與 IODF 的內容。"
+    }
+  },
+  {
+    "id": "checkpoint-3-007",
+    "section": "大型主機安全",
+    "lessonSlug": "ipling-an-operating-system",
+    "lessonTitle": "對作業系統執行 IPL",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "哪個裝置包含 IPL 可載入的程式碼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "SYSRES"
+      },
+      {
+        "id": "b",
+        "text": "SYS1.IPL"
+      },
+      {
+        "id": "c",
+        "text": "IRIM"
+      },
+      {
+        "id": "d",
+        "text": "IPL"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "SYSRES 包含 IPL 時所需載入的程式碼，這是系統啟動過程中的重要元件。",
+    "review": {
+      "label": "複習：對作業系統執行 IPL",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_c1w1vq9x",
+      "hint": "答錯請回顧 IPL 課程，釐清 SYSRES 與系統啟動的關係。"
+    }
+  },
+  {
+    "id": "checkpoint-3-008",
+    "section": "大型主機安全",
+    "lessonSlug": "ibm-z-components",
+    "lessonTitle": "IBM Z 元件",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "哪一個大型主機硬體元件位於處理器上用於對稱金鑰功能？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "PCIeCC3"
+      },
+      {
+        "id": "b",
+        "text": "HSM"
+      },
+      {
+        "id": "c",
+        "text": "SSL"
+      },
+      {
+        "id": "d",
+        "text": "CPACF"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "CPACF 位於處理器上，專責處理對稱式加密金鑰的功能，提高加密效能。",
+    "review": {
+      "label": "複習：IBM Z 元件",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_j4rkx3qu",
+      "hint": "答錯此題請複習 IBM Z 元件中關於 CPACF 及其加密功能之內容。"
+    }
+  },
+  {
+    "id": "checkpoint-3-009",
+    "section": "大型主機安全",
+    "lessonSlug": "iocds",
+    "lessonTitle": "IOCDS",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "哪個 IOCDS 陳述語用來定義 FICON 交換機位址？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Resource"
+      },
+      {
+        "id": "b",
+        "text": "CNTLUNIT"
+      },
+      {
+        "id": "c",
+        "text": "IODEVICE"
+      },
+      {
+        "id": "d",
+        "text": "CHPID"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "CHPID 用於指定 FICON 交換機的通道路徑識別碼，確定資料傳輸路徑。",
+    "review": {
+      "label": "複習：IOCDS",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_5hs3mb8z",
+      "hint": "若答錯請回顧 IOCDS 課程中 CHPID 的定義與用途。"
+    }
+  },
+  {
+    "id": "checkpoint-3-010",
+    "section": "大型主機安全",
+    "lessonSlug": "transaction-level-security",
+    "lessonTitle": "交易層級安全",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
+    "sourceReference": "checkpoint-3",
+    "prompt": "將金鑰放入儲存的原因是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "效能較佳"
+      },
+      {
+        "id": "b",
+        "text": "更安全"
+      },
+      {
+        "id": "c",
+        "text": "更有保障"
+      },
+      {
+        "id": "d",
+        "text": "更易控制"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "將金鑰放入儲存可提升效能，因為能減少運算時的延遲，提高處理速度。",
+    "review": {
+      "label": "複習：交易層級安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_1ndlj8bd",
+      "hint": "若答錯請複習交易層級安全課程中金鑰管理與效能相關內容。"
+    }
+  },
+  {
+    "id": "badge-quiz-001",
+    "section": "課程整體",
+    "lessonSlug": "iocds",
+    "lessonTitle": "IOCDS",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "哪個檔案或資料集在 IPL 過程中使用，且包含系統的硬體與軟體定義？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "IODF"
+      },
+      {
+        "id": "b",
+        "text": "VSAM"
+      },
+      {
+        "id": "c",
+        "text": "IOSM"
+      },
+      {
+        "id": "d",
+        "text": "IOCP"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "IODF 包含大型主機系統的硬體與軟體定義，是 IPL 時必須使用的關鍵資料集。",
+    "review": {
+      "label": "複習：IOCDS",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_5hs3mb8z",
+      "hint": "答錯請回顧 IOCDS 課程中關於 IODF 的定義與角色。"
+    }
+  },
+  {
+    "id": "badge-quiz-002",
+    "section": "課程整體",
+    "lessonSlug": "sysplex",
+    "lessonTitle": "Sysplex",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "哪個 z/OS 元件用於管理工作負載分配、負載平衡及分配資源給競爭的工作負載？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Resource control"
+      },
+      {
+        "id": "b",
+        "text": "Workload manager"
+      },
+      {
+        "id": "c",
+        "text": "Resource balancing"
+      },
+      {
+        "id": "d",
+        "text": "Workload distribution"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "Workload manager 負責工作負載的管理、平衡與資源分配，確保系統效能與效率。",
+    "review": {
+      "label": "複習：Sysplex",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_0umo87q5",
+      "hint": "答錯請回顧 Sysplex 課程中 Workload manager 的功能與重要性。"
+    }
+  },
+  {
+    "id": "badge-quiz-003",
+    "section": "大型主機環境",
+    "lessonSlug": "virtualization",
+    "lessonTitle": "虛擬化",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "在大型主機中，處理器單元 (PU) 是未特化的處理器。哪種特化的處理器執行指令？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "CP (Central processor)"
+      },
+      {
+        "id": "b",
+        "text": "zAAP (z Application assist processor)"
+      },
+      {
+        "id": "c",
+        "text": "zIIP (Integrated information processor)"
+      },
+      {
+        "id": "d",
+        "text": "SAP (System assistance processor)"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "CP (Central processor) 是執行指令的特化處理器，負責執行所有一般運算工作。",
+    "review": {
+      "label": "複習：虛擬化",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_1fl2qymd",
+      "hint": "如果答錯，請重新觀看「虛擬化」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-004",
+    "section": "大型主機環境",
+    "lessonSlug": "virtualization",
+    "lessonTitle": "虛擬化",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "下列哪個敘述定義了 LPARs 和邏輯通道子系統？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "IODEVICE"
+      },
+      {
+        "id": "b",
+        "text": "Resource"
+      },
+      {
+        "id": "c",
+        "text": "CHIPID"
+      },
+      {
+        "id": "d",
+        "text": "ID"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "LPARs 和邏輯通道子系統被視為系統資源，因為它們管理和分配硬體功能。",
+    "review": {
+      "label": "複習：虛擬化",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_1fl2qymd",
+      "hint": "如果答錯，請重新觀看「虛擬化」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-005",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "sysplex",
+    "lessonTitle": "Sysplex",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "GDPS 是什麼縮寫？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Geomegric Duplicity Parallel Sysplex"
+      },
+      {
+        "id": "b",
+        "text": "Geographically Dispersed Parallel Sysplex"
+      },
+      {
+        "id": "c",
+        "text": "Graphic DiPlo Sysplex"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "GDPS 是 Geographically Dispersed Parallel Sysplex，指跨地理區域分散的 Parallel Sysplex 系統。",
+    "review": {
+      "label": "複習：Sysplex",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_0umo87q5",
+      "hint": "如果答錯，請重新觀看「Sysplex」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-006",
+    "section": "大型主機安全",
+    "lessonSlug": "ipling-an-operating-system",
+    "lessonTitle": "對作業系統執行 IPL",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "從 SYSRES 裝置載入作業系統至主記憶體的過程稱為什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "POR"
+      },
+      {
+        "id": "b",
+        "text": "Load"
+      },
+      {
+        "id": "c",
+        "text": "IPL"
+      },
+      {
+        "id": "d",
+        "text": "CPC"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "IPL (Initial Program Load) 是從 SYSRES 載入作業系統到主記憶體的程序。",
+    "review": {
+      "label": "複習：對作業系統執行 IPL",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_c1w1vq9x",
+      "hint": "如果答錯，請重新觀看「對作業系統執行 IPL」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-007",
+    "section": "大型主機安全",
+    "lessonSlug": "transaction-level-security",
+    "lessonTitle": "交易層級安全",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "非對稱加密的另一個名稱是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "公開金鑰加密"
+      },
+      {
+        "id": "b",
+        "text": "大型主機加密"
+      },
+      {
+        "id": "c",
+        "text": "資料安全加密"
+      },
+      {
+        "id": "d",
+        "text": "標記化"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "非對稱加密通常稱為公開金鑰加密，使用公鑰和私鑰來進行加解密。",
+    "review": {
+      "label": "複習：交易層級安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_1ndlj8bd",
+      "hint": "如果答錯，請重新觀看「交易層級安全」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-008",
+    "section": "大型主機安全",
+    "lessonSlug": "activation-profiles",
+    "lessonTitle": "啟動設定檔",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "Load Parameter 中哪個位置包含 IPL 時顯示訊息的資訊？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "7"
+      },
+      {
+        "id": "b",
+        "text": "6"
+      },
+      {
+        "id": "c",
+        "text": "1, 2, 3 和 4"
+      },
+      {
+        "id": "d",
+        "text": "7 和 8"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "Load Parameter 的第 7 個位置包含關於 IPL 過程中顯示訊息的資訊。",
+    "review": {
+      "label": "複習：啟動設定檔",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_hchvg5wh",
+      "hint": "如果答錯，請重新觀看「啟動設定檔」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-009",
+    "section": "大型主機安全",
+    "lessonSlug": "sysplex",
+    "lessonTitle": "Sysplex",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "哪個 z/OS 元件管理 Parallel Sysplex 中應用程式之間的通訊？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "TCP/IP"
+      },
+      {
+        "id": "b",
+        "text": "VTAM"
+      },
+      {
+        "id": "c",
+        "text": "Hipersockets"
+      },
+      {
+        "id": "d",
+        "text": "Cross-system coupling facility"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "Cross-system coupling facility 負責管理 Parallel Sysplex 中系統間的通訊與協調。",
+    "review": {
+      "label": "複習：Sysplex",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_0umo87q5",
+      "hint": "如果答錯，請重新觀看「Sysplex」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-010",
+    "section": "大型主機架構",
+    "lessonSlug": "mainframe-architecture",
+    "lessonTitle": "大型主機架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "作業系統將資料從輔助儲存裝置移動到中央儲存裝置的術語是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Retrieving"
+      },
+      {
+        "id": "b",
+        "text": "Paging"
+      },
+      {
+        "id": "c",
+        "text": "Passing"
+      },
+      {
+        "id": "d",
+        "text": "Relocating"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "Paging 是作業系統將資料從輔助儲存裝置搬移到中央儲存裝置的過程，用以管理記憶體。",
+    "review": {
+      "label": "複習：大型主機架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_7e45b5a8",
+      "hint": "如果答錯，請重新觀看「大型主機架構」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-011",
+    "section": "課程整體",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "透過一連串簡化介面在作業系統上執行的應用程式稱為應用程式介面 (API)。",
+    "choices": [
+      {
+        "id": "a",
+        "text": "正確"
+      },
+      {
+        "id": "b",
+        "text": "錯誤"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "正確答案是「正確」，因為應用程式介面 (API) 是透過簡化的介面讓應用程式在作業系統上運作。",
+    "review": {
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "答錯時，請重溫「大型主機環境」課程中的「電腦架構」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-012",
+    "section": "課程整體",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "哪種類型的通道提供 3270 會話以作為作業系統的載具？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "OSC"
+      },
+      {
+        "id": "b",
+        "text": "CFR"
+      },
+      {
+        "id": "c",
+        "text": "CFS"
+      },
+      {
+        "id": "d",
+        "text": "OSD"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "正確答案是 OSC，因為 OSC 通道類型提供 3270 會話以支援作業系統。",
+    "review": {
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "答錯時，請重溫「大型主機環境」課程中的「電腦架構」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-013",
+    "section": "課程整體",
+    "lessonSlug": "activation-profiles",
+    "lessonTitle": "啟動設定檔",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "情境：大型主機已開機且所有 85 個 LPAR 都已 IPL。啟動哪種啟動設定檔會造成所有 85 個 LPAR 及其作業系統崩潰？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Load"
+      },
+      {
+        "id": "b",
+        "text": "Reset"
+      },
+      {
+        "id": "c",
+        "text": "Group"
+      },
+      {
+        "id": "d",
+        "text": "Image"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "正確答案是 Reset，因為 Reset 啟動設定檔會重置並使所有 LPAR 及其作業系統崩潰。",
+    "review": {
+      "label": "複習：啟動設定檔",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_hchvg5wh",
+      "hint": "答錯時，請重溫「大型主機安全」課程中的「啟動設定檔」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-014",
+    "section": "課程整體",
+    "lessonSlug": "transaction-level-security",
+    "lessonTitle": "交易層級安全",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "什麼技術允許資料在需要時立刻被解密？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "普及加密 (Pervasive encryption)"
+      },
+      {
+        "id": "b",
+        "text": "普遍加密 (Prevalent encryption)"
+      },
+      {
+        "id": "c",
+        "text": "滲透加密 (Pervading encryption)"
+      },
+      {
+        "id": "d",
+        "text": "加密金鑰 (Encryption key)"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "正確答案是普及加密，因為它讓資料在使用時即時解密，增強安全性。",
+    "review": {
+      "label": "複習：交易層級安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_1ndlj8bd",
+      "hint": "答錯時，請重溫「大型主機安全」課程中的「交易層級安全」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-015",
+    "section": "課程整體",
+    "lessonSlug": "ibm-z-components",
+    "lessonTitle": "IBM Z 元件",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "每個 IBM Z 處理器所搭載的高效能密碼學引擎名稱是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "HSM"
+      },
+      {
+        "id": "b",
+        "text": "CPACF"
+      },
+      {
+        "id": "c",
+        "text": "LDAP"
+      },
+      {
+        "id": "d",
+        "text": "PCIe"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "正確答案是 CPACF，因為它是 IBM Z 處理器上的高效能密碼學協處理器。",
+    "review": {
+      "label": "複習：IBM Z 元件",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_j4rkx3qu",
+      "hint": "答錯時，請重溫「大型主機基礎架構」課程中的「IBM Z 元件」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-016",
+    "section": "課程整體",
+    "lessonSlug": "mainframe-operating-systems",
+    "lessonTitle": "大型主機作業系統",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "VSAM 的全名是？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Virtually Stored Accessories Methodology"
+      },
+      {
+        "id": "b",
+        "text": "Virtual Storage Access Method"
+      },
+      {
+        "id": "c",
+        "text": "Virtual Safe Access Method"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "正確答案是 Virtual Storage Access Method，這是 VSAM 在大型主機中的資料存取方法。",
+    "review": {
+      "label": "複習：大型主機作業系統",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_q1drndng",
+      "hint": "答錯時，請重溫「大型主機環境」課程中的「大型主機作業系統」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-017",
+    "section": "課程整體",
+    "lessonSlug": "iocds",
+    "lessonTitle": "IOCDS",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "以下哪些 IOCP 宣告是選用的？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "以上所有選項"
+      },
+      {
+        "id": "b",
+        "text": "CNTLUNIT"
+      },
+      {
+        "id": "c",
+        "text": "CHIPID"
+      },
+      {
+        "id": "d",
+        "text": "IODEVICE"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "正確答案是「以上所有選項」，因為這些 IOCP 宣告都是選用的。",
+    "review": {
+      "label": "複習：IOCDS",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_5hs3mb8z",
+      "hint": "答錯時，請重溫「大型主機安全」課程中的「IOCDS」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-018",
+    "section": "課程整體",
+    "lessonSlug": "ipling-an-operating-system",
+    "lessonTitle": "對作業系統執行 IPL",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "在初始程式載入 (IPL) 過程中，包含作業系統的裝置名稱是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "SYSPROG"
+      },
+      {
+        "id": "b",
+        "text": "SYSRES"
+      },
+      {
+        "id": "c",
+        "text": "CPC"
+      },
+      {
+        "id": "d",
+        "text": "WLM"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "正確答案是 SYSRES，該裝置包含作業系統並於 IPL 時使用。",
+    "review": {
+      "label": "複習：對作業系統執行 IPL",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_c1w1vq9x",
+      "hint": "答錯時，請重溫「大型主機安全」課程中的「對作業系統執行 IPL」單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-019",
+    "section": "大型主機環境",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "當流程正在等待處理器來處理請求時，管理程序狀態是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "New（新啟動）"
+      },
+      {
+        "id": "b",
+        "text": "Running（執行中）"
+      },
+      {
+        "id": "c",
+        "text": "Holding（等待中）"
+      },
+      {
+        "id": "d",
+        "text": "Ready（準備中）"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "正確答案是 Ready（準備中），表示該程序已完成準備，正等待處理器分配以開始執行。",
+    "review": {
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "若答錯了，請複習「電腦架構」課程中的大型主機環境單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-020",
+    "section": "大型主機環境",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "以下哪一項提供作業系統將使用的共通方法集？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "軟體"
+      },
+      {
+        "id": "b",
+        "text": "Firmware（韌體）"
+      },
+      {
+        "id": "c",
+        "text": "Operating System（作業系統）"
+      },
+      {
+        "id": "d",
+        "text": "硬體"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "正確答案是 Firmware（韌體），它提供低層次的共通程序和介面，供作業系統執行特定功能。",
+    "review": {
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "若答錯了，請複習「電腦架構」課程中的大型主機環境單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-021",
+    "section": "大型主機安全",
+    "lessonSlug": "iocds",
+    "lessonTitle": "IOCDS",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "哪一個 CNTLUNIT 關鍵字指定控制單元所連接的位址？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Link Director（連結導向）"
+      },
+      {
+        "id": "b",
+        "text": "Link address（連結位址）"
+      },
+      {
+        "id": "c",
+        "text": "Link Control（連結控制）"
+      },
+      {
+        "id": "d",
+        "text": "Link cssid（連結 CSSID）"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "正確答案是 Link address（連結位址），用來指定控制單元所連接的具體位址。",
+    "review": {
+      "label": "複習：IOCDS",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_5hs3mb8z",
+      "hint": "若答錯了，請複習「IOCDS」課程中關於 CNTLUNIT 的章節。"
+    }
+  },
+  {
+    "id": "badge-quiz-022",
+    "section": "大型主機環境",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "何謂網路介面卡（NIC）最準確的定義？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "NIC 控制從 IP 到 TCP 的資訊流傳送，涵蓋硬體與軟體。"
+      },
+      {
+        "id": "b",
+        "text": "NIC 包含硬體及軟體元件，可將 RJ-15 線材連接至 RJ-45。"
+      },
+      {
+        "id": "c",
+        "text": "NIC 是將電腦連接到網路的電腦硬體組件。"
+      },
+      {
+        "id": "d",
+        "text": "NIC 將資訊直接從電腦傳送到互聯網上的其他電腦。"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "正確答案是 NIC 是將電腦連接到網路的硬體元件，主要負責網路通訊的介接。",
+    "review": {
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "若答錯了，請複習「電腦架構」課程中的大型主機環境單元。"
+    }
+  },
+  {
+    "id": "badge-quiz-023",
+    "section": "大型主機作業系統",
+    "lessonSlug": "mainframe-operating-systems",
+    "lessonTitle": "大型主機作業系統",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "在 TSO/ISPF 中，包含多個成員（每個成員又是子資料集）的資料集名稱為何？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "子資料集"
+      },
+      {
+        "id": "b",
+        "text": "序列資料集"
+      },
+      {
+        "id": "c",
+        "text": "Partitioned data set（分割資料集）"
+      },
+      {
+        "id": "d",
+        "text": "成員資料集"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "正確答案是 Partitioned data set（分割資料集），它是一個包含多個成員的資料集類型。",
+    "review": {
+      "label": "複習：大型主機作業系統",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_q1drndng",
+      "hint": "若答錯了，請複習「大型主機作業系統」課程中 TSO/ISPF 相關內容。"
+    }
+  },
+  {
+    "id": "badge-quiz-024",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "sysplex",
+    "lessonTitle": "Sysplex",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "Sysplex 中的 LPAR 最少需要多少個？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "32"
+      },
+      {
+        "id": "c",
+        "text": "16"
+      },
+      {
+        "id": "d",
+        "text": "1"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "正確答案是 1，Sysplex 可以由單一 LPAR 組成，但通常為多個以實現高可用與負載平衡。",
+    "review": {
+      "label": "複習：Sysplex",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_0umo87q5",
+      "hint": "若答錯了，請複習「Sysplex」課程中 LPAR 和系統群集相關章節。"
+    }
+  },
+  {
+    "id": "badge-quiz-025",
+    "section": "大型主機安全",
+    "lessonSlug": "zos-security",
+    "lessonTitle": "z/OS 安全",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "LDAP 的最佳定義為何？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "一種在啟動時可顯示可見光或紅外光的半導體晶片。"
+      },
+      {
+        "id": "b",
+        "text": "一套系統指令與程式庫例程，讓使用者建立及控制邏輯磁碟儲存。"
+      },
+      {
+        "id": "c",
+        "text": "定義了存取及更新目錄資訊的標準方法。"
+      }
+    ],
+    "correctChoiceIds": [
+      "c"
+    ],
+    "explanation": "正確答案為 LDAP，它是用於目錄服務的標準協定，方便存取與管理目錄資料。",
+    "review": {
+      "label": "複習：z/OS 安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_b3hd3sa0",
+      "hint": "若答錯了，請複習「z/OS 安全」課程中有關 LDAP 的內容。"
+    }
+  },
+  {
+    "id": "badge-quiz-026",
+    "section": "大型主機安全",
+    "lessonSlug": "activation-profiles",
+    "lessonTitle": "啟動設定檔",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "映像啟動順序（Image activation order）定義在哪一個設定檔中？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Reset（重設）"
+      },
+      {
+        "id": "b",
+        "text": "Group（群組）"
+      },
+      {
+        "id": "c",
+        "text": "Image（映像）"
+      },
+      {
+        "id": "d",
+        "text": "Load（載入）"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "映像啟動順序定義於 Reset（重設）設定檔，用以控制系統重新啟動時各映像的載入順序。",
+    "review": {
+      "label": "複習：啟動設定檔",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_hchvg5wh",
+      "hint": "若答錯了，請複習「啟動設定檔」課程中 Reset 設定檔的相關內容。"
+    }
+  },
+  {
+    "id": "badge-quiz-027",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "hmc-and-se",
+    "lessonTitle": "HMC 與 SE",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "啟動設定檔可以從哪裡啟動？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "DASD 主控台"
+      },
+      {
+        "id": "b",
+        "text": "HMC 與 SE"
+      },
+      {
+        "id": "c",
+        "text": "作業系統主控台"
+      },
+      {
+        "id": "d",
+        "text": "HMC"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "啟動設定檔是由 HMC 與 SE 所啟動和管理，這是啟動大型主機系統的重要組成部分。",
+    "review": {
+      "label": "複習：HMC 與 SE",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_6kwwnujx",
+      "hint": "答錯時請複習「HMC 與 SE」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-028",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "iocds",
+    "lessonTitle": "IOCDS",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "在 HSA 中載入 IOCDS 的程序名稱是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "CPC"
+      },
+      {
+        "id": "b",
+        "text": "IPL"
+      },
+      {
+        "id": "c",
+        "text": "Activate"
+      },
+      {
+        "id": "d",
+        "text": "POR"
+      }
+    ],
+    "correctChoiceIds": [
+      "d"
+    ],
+    "explanation": "POR（Power On Reset）是載入 IOCDS 至 HSA 的程序，確保系統硬體及設定正確加載。",
+    "review": {
+      "label": "複習：IOCDS",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_5hs3mb8z",
+      "hint": "答錯時請複習「IOCDS」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-029",
+    "section": "大型主機基礎架構",
+    "lessonSlug": "ibm-z-components",
+    "lessonTitle": "IBM Z 元件",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "讓大型主機硬體能運作的軟體名稱是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "LMC (Licensed machine code)"
+      },
+      {
+        "id": "b",
+        "text": "LIC (Licensed internal code)"
+      },
+      {
+        "id": "c",
+        "text": "PR/SM (Processor resource/system manager)"
+      },
+      {
+        "id": "d",
+        "text": "PDF (Program development facility)"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "LIC（Licensed internal code）是 IBM Z 硬體的核心韌體軟體，負責控制與管理硬體資源。",
+    "review": {
+      "label": "複習：IBM Z 元件",
+      "coursePath": "/course/mainframe-infrastructure",
+      "videoEntryId": "1_j4rkx3qu",
+      "hint": "答錯時請複習「IBM Z 元件」課程。"
+    }
+  },
+  {
+    "id": "badge-quiz-030",
+    "section": "大型主機環境",
+    "lessonSlug": "computer-architecture",
+    "lessonTitle": "電腦架構",
+    "sourceType": "quiz-review",
+    "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
+    "sourceReference": "badge-quiz",
+    "prompt": "架構（Architecture）是由什麼組成？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "軟體與硬體"
+      },
+      {
+        "id": "b",
+        "text": "硬體與作業系統"
+      },
+      {
+        "id": "c",
+        "text": "軟體與韌體"
+      },
+      {
+        "id": "d",
+        "text": "硬體與韌體"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "架構由軟體與硬體組成，共同決定系統的運作方式和功能實現。",
+    "review": {
+      "label": "複習：電腦架構",
+      "coursePath": "/course/mainframe-environment",
+      "videoEntryId": "1_vb8qf96d",
+      "hint": "答錯時請複習「電腦架構」課程。"
+    }
+  },
+  {
+    "id": "security-addendum-001",
+    "section": "大型主機安全",
+    "lessonSlug": "zos-security",
+    "lessonTitle": "z/OS 安全",
+    "sourceType": "h5p",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=129741",
+    "sourceReference": "security-addendum",
+    "prompt": "具有 ALTER 存取權限的資料集，您可以做什麼是 UPDATE 存取權限所不能做的？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "刪除"
+      },
+      {
+        "id": "b",
+        "text": "讀取"
+      },
+      {
+        "id": "c",
+        "text": "寫入"
+      }
+    ],
+    "correctChoiceIds": [
+      "a"
+    ],
+    "explanation": "ALTER 權限包括刪除資料集的能力，而 UPDATE 權限則不允許刪除。",
+    "review": {
+      "label": "複習：z/OS 安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_b3hd3sa0",
+      "hint": "答錯時請複習「z/OS 安全」課程。"
+    }
+  },
+  {
+    "id": "security-addendum-002",
+    "section": "大型主機安全",
+    "lessonSlug": "zos-security",
+    "lessonTitle": "z/OS 安全",
+    "sourceType": "h5p",
+    "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=129741",
+    "sourceReference": "security-addendum",
+    "prompt": "通常用於控制單一資料集存取的 RACF Profile 類型是什麼？",
+    "choices": [
+      {
+        "id": "a",
+        "text": "GENERIC"
+      },
+      {
+        "id": "b",
+        "text": "DISCRETE"
+      },
+      {
+        "id": "c",
+        "text": "PROTECTALL"
+      }
+    ],
+    "correctChoiceIds": [
+      "b"
+    ],
+    "explanation": "DISCRETE 類型的 RACF Profile 通常控制單一資料集的存取權限，直接設定具體物件。",
+    "review": {
+      "label": "複習：z/OS 安全",
+      "coursePath": "/course/mainframe-security",
+      "videoEntryId": "1_b3hd3sa0",
+      "hint": "答錯時請複習「z/OS 安全」課程。"
     }
   }
 ]

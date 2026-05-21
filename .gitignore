@@ -15,5 +15,6 @@ docs/public/media/
 tmp/
 logs/
 *.log
+data/captured/practice-source-extract.json
 .DS_Store
 Thumbs.db

@@ -9,8 +9,9 @@
       "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=96088",
       "sectionSlug": "mainframe-environment",
       "sectionTitle": "大型主機環境",
-      "status": "pending-authorized-capture",
-      "intendedUse": "Convert authorized quiz items into static instant-feedback practice questions."
+      "status": "captured-and-normalized",
+      "intendedUse": "Convert authorized quiz items into static instant-feedback practice questions.",
+      "capturedQuestionCount": 7
     },
     {
       "id": "checkpoint-2",
@@ -19,8 +20,9 @@
       "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101250",
       "sectionSlug": "mainframe-infrastructure",
       "sectionTitle": "大型主機基礎架構",
-      "status": "pending-authorized-capture",
-      "intendedUse": "Convert authorized quiz items into static instant-feedback practice questions."
+      "status": "captured-and-normalized",
+      "intendedUse": "Convert authorized quiz items into static instant-feedback practice questions.",
+      "capturedQuestionCount": 5
     },
     {
       "id": "security-addendum",
@@ -29,8 +31,9 @@
       "sourceUrl": "https://learn.ibm.com/mod/hvp/view.php?id=129741",
       "sectionSlug": "mainframe-security",
       "sectionTitle": "大型主機安全",
-      "status": "pending-authorized-capture",
-      "intendedUse": "Review for short in-video or interactive questions; do not reproduce H5P behavior."
+      "status": "captured-and-normalized",
+      "intendedUse": "Review for short in-video or interactive questions; do not reproduce H5P behavior.",
+      "capturedQuestionCount": 2
     },
     {
       "id": "checkpoint-3",
@@ -39,8 +42,9 @@
       "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=101251",
       "sectionSlug": "mainframe-security",
       "sectionTitle": "大型主機安全",
-      "status": "pending-authorized-capture",
-      "intendedUse": "Convert authorized quiz items into static instant-feedback practice questions."
+      "status": "captured-and-normalized",
+      "intendedUse": "Convert authorized quiz items into static instant-feedback practice questions.",
+      "capturedQuestionCount": 10
     },
     {
       "id": "badge-quiz",
@@ -49,8 +53,9 @@
       "sourceUrl": "https://learn.ibm.com/mod/quiz/view.php?id=348797",
       "sectionSlug": "course",
       "sectionTitle": "課程整體",
-      "status": "pending-authorization-review",
-      "intendedUse": "Use only if authorized; convert into non-scored practice questions without badge or certificate behavior."
+      "status": "captured-and-normalized",
+      "intendedUse": "Authorized quiz items converted into non-scored practice questions without badge or certificate behavior.",
+      "capturedQuestionCount": 30
     },
     {
       "id": "transaction-level-security-pop-quiz",
@@ -63,7 +68,7 @@
       "lessonTitle": "交易層級安全",
       "videoEntryId": "1_1ndlj8bd",
       "timeRange": "00:02:41.830-00:02:45.870",
-      "status": "identified-in-transcript",
+      "status": "superseded-by-authorized-h5p-and-quiz-capture",
       "intendedUse": "Use nearby video context to author a static practice item."
     }
   ]

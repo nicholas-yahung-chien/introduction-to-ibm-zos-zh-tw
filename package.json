@@ -12,6 +12,8 @@
     "preview": "vitepress preview docs --host 127.0.0.1",
     "deploy:cloudflare": "npm run build:cloudflare && npx wrangler pages deploy docs/.vitepress/dist --project-name introduction-to-ibm-zos-zh-tw --branch main",
     "capture:course": "node scripts/capture-course.mjs",
+    "practice:capture": "node scripts/capture-practice-sources.mjs",
+    "practice:translate": "python scripts/translate-practice-questions.py",
     "download:videos": "node scripts/download-kaltura-videos.mjs",
     "generate:hls": "node scripts/generate-hls.mjs",
     "glossary:import": "node scripts/import-glossary.mjs",
