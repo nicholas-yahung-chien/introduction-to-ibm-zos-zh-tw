@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import VideoLesson from './components/VideoLesson.vue'
 import CourseManifest from './components/CourseManifest.vue'
 import LessonNotes from './components/LessonNotes.vue'
+import PracticeQuestions from './components/PracticeQuestions.vue'
 import './custom.css'
 
 export default {
@@ -10,5 +11,6 @@ export default {
     app.component('VideoLesson', VideoLesson)
     app.component('CourseManifest', CourseManifest)
     app.component('LessonNotes', LessonNotes)
+    app.component('PracticeQuestions', PracticeQuestions)
   }
 }

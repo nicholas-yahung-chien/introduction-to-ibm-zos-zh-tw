@@ -8,7 +8,7 @@
     <div class="course-stat"><strong>18</strong><span>課程影片</span></div>
     <div class="course-stat"><strong>3</strong><span>主要單元</span></div>
     <div class="course-stat"><strong>3</strong><span>閱讀頁</span></div>
-    <div class="course-stat"><strong>18</strong><span>影片摘要</span></div>
+    <div class="course-stat"><strong>54</strong><span>互動練習</span></div>
   </div>
 </div>
 
@@ -18,6 +18,7 @@
 2. 依序完成「大型主機環境」、「大型主機基礎架構」與「大型主機安全」三個單元。
 3. 每支影片先看完一次，再回到影片下方摘要確認學習重點與重要術語。
 4. 遇到不熟悉的 IBM Z 名詞時，搭配詞彙表查閱原文術語與繁體中文說明。
+5. 完成單元後到「互動練習」確認概念，答錯時回到對應影片複習。
 
 ## 課程單元
 
@@ -37,6 +38,10 @@
   <a class="lesson-card" href="./mainframe-security">
     <h3>大型主機安全</h3>
     <p>z/OS 安全、交易層級安全、Crypto Express、IOCDS 與 IPL。</p>
+  </a>
+  <a class="lesson-card" href="../practice/">
+    <h3>互動練習</h3>
+    <p>完成各單元後，透過即時回饋確認重點概念。</p>
   </a>
 </div>
 

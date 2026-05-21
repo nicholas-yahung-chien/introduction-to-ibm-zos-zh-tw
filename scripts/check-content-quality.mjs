@@ -4,6 +4,7 @@ import { join, sep } from 'node:path'
 
 const contentTargets = [
   'docs/course',
+  'docs/practice',
   'docs/videos',
   'docs/index.md',
   'docs/license-notes.md',
