@@ -34,6 +34,7 @@ const allSectionsLabel = '全部'
 const sectionOptions = [allSectionsLabel, ...Array.from(new Set(questions.map((question) => question.section)))]
 const selectedSection = ref(allSectionsLabel)
 const selectedChoices = reactive<Record<string, string[]>>({})
+const checkedQuestions = reactive<Record<string, boolean>>({})
 
 const sourceLabels: Record<string, string> = {
   'checkpoint-1': '檢核 1',
@@ -68,6 +69,7 @@ function isMultiSelect(question: PracticeQuestion) {
 function choose(question: PracticeQuestion, choiceId: string) {
   if (!isMultiSelect(question)) {
     selectedChoices[question.id] = [choiceId]
+    checkedQuestions[question.id] = true
     return
   }
 
@@ -75,10 +77,21 @@ function choose(question: PracticeQuestion, choiceId: string) {
   if (current.has(choiceId)) current.delete(choiceId)
   else current.add(choiceId)
   selectedChoices[question.id] = Array.from(current)
+  checkedQuestions[question.id] = false
 }
 
 function isAnswered(question: PracticeQuestion) {
+  return isMultiSelect(question)
+    ? checkedQuestions[question.id] === true
+    : selectionFor(question).length > 0
+}
+
+function canCheck(question: PracticeQuestion) {
   return selectionFor(question).length > 0
+}
+
+function checkAnswer(question: PracticeQuestion) {
+  if (canCheck(question)) checkedQuestions[question.id] = true
 }
 
 function isChoiceSelected(question: PracticeQuestion, choiceId: string) {
@@ -163,6 +176,18 @@ function sourceLabel(question: PracticeQuestion) {
           >
             <span class="practice-choice__mark">{{ choice.id.toUpperCase() }}</span>
             <span class="practice-choice__text">{{ choice.text }}</span>
+          </button>
+        </div>
+
+        <div v-if="isMultiSelect(question)" class="practice-question__actions">
+          <span>請選完所有適用選項後再檢查答案。</span>
+          <button
+            class="practice-check"
+            type="button"
+            :disabled="!canCheck(question)"
+            @click="checkAnswer(question)"
+          >
+            檢查答案
           </button>
         </div>
 
