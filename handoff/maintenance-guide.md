@@ -290,3 +290,24 @@ npm run deploy:cloudflare
 - 若修改字幕或影片，至少抽查一支受影響影片。
 - 若修改練習題，至少抽查單選題與多選題互動。
 - 若修改導覽，抽查首頁、課程頁、影片頁、練習頁、Lab 頁、詞彙表、授權頁。
+
+## 詞彙表收斂
+
+正式網站的詞彙表不是完整 IBM Z glossary，而是只發布本課程提及或直接相關的項目。
+
+維護流程：
+
+```powershell
+npm run glossary:import
+```
+
+此指令會從本機來源專案重新讀取 IBM Z glossary，掃描課程頁、字幕、逐字稿、練習題與 Lab metadata，然後只輸出課程相關詞彙到 `docs/glossary/`。完整來源說明仍保留在 `references/`，篩選結果與排除原因會寫入 `handoff/glossary-relevance-report.md`。
+
+更新後請執行：
+
+```powershell
+npm run site:check
+npm run verify:release
+```
+
+`site:check` 會確認詞彙表不是完整來源詞彙庫，並檢查必要課程詞彙仍存在。

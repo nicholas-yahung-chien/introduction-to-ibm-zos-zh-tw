@@ -209,6 +209,41 @@ if (!Array.isArray(labs) || labs.length === 0) {
   }
 }
 
+const glossaryFiles = await listFiles(path.join(docsDir, 'glossary'), (file) => /^[a-z]\.md$/.test(path.basename(file)))
+const glossaryTerms = []
+for (const file of glossaryFiles) {
+  const markdown = await readFile(file, 'utf8')
+  for (const match of markdown.matchAll(/^##\s+(.+)$/gm)) {
+    glossaryTerms.push(match[1].trim())
+  }
+}
+
+const requiredGlossaryTerms = [
+  'IBM Z',
+  'z/OS',
+  'Initial Program Load (IPL)',
+  'Hardware Management Console (HMC)',
+  'Resource Access Control Facility (RACF)',
+]
+const disallowedGlossaryTerms = [
+  'Action bar (ISPF)',
+  'All-Flash configuration',
+  'Cluster Structure Storage System (CSS)',
+  'z/OS Global Mirror',
+]
+
+if (glossaryTerms.length < 80 || glossaryTerms.length > 170) {
+  findings.push(`glossary: expected a course-filtered term count between 80 and 170, found ${glossaryTerms.length}`)
+}
+
+for (const term of requiredGlossaryTerms) {
+  if (!glossaryTerms.includes(term)) findings.push(`glossary: missing required course term "${term}"`)
+}
+
+for (const term of disallowedGlossaryTerms) {
+  if (glossaryTerms.includes(term)) findings.push(`glossary: contains non-course source glossary term "${term}"`)
+}
+
 if (findings.length > 0) {
   console.error(findings.join('\n'))
   process.exit(1)
